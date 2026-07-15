@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/*
+  Pure React/Tailwind, WordPress/Elementor fully retired (see git history
+  if the old markup is ever needed). Design language departs from the
+  Figma mock intentionally - same content/copy/images, own visual system.
+  Fonts: Cairo (headings) and Tajawal (body), via next/font in layout.tsx.
+*/
+:root {
+  --brand-green: #0f6b40;
+  --brand-green-dark: #0b4d2e;
+  --brand-ink: #14201a;
+  --brand-sand: #b8987f;
+  --brand-cream: #faf8f4;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-tajawal), sans-serif;
+  background: var(--brand-cream);
+}
+
+.font-heading {
+  font-family: var(--font-cairo), sans-serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid var(--brand-sand);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--brand-green);
+  color: white;
+}
+
