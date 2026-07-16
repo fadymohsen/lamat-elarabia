@@ -22,10 +22,12 @@ interface CountRow {
 export default async function AdminDashboard() {
   const session = await verifySession();
 
-  const [{ rows: pages }, { rows: mediaCountRows }] = await Promise.all([
+  const [pagesResult, mediaCountResult] = await Promise.all([
     query<PageRow>("SELECT id, slug, locale, title, updated_at FROM pages ORDER BY slug, locale"),
     query<CountRow>("SELECT count(*)::int AS count FROM media"),
   ]);
+  const pages: PageRow[] = pagesResult.rows;
+  const mediaCountRows: CountRow[] = mediaCountResult.rows;
 
   return (
     <main dir="rtl" style={{ fontFamily: "Tajawal, sans-serif", background: "#FBFAF7", minHeight: "100vh" }}>
