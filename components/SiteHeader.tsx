@@ -9,10 +9,10 @@ interface SiteHeaderProps {
 
 const NAV = {
   ar: [
-    { href: "/", label: "الرئيسية" },
-    { href: "/الأخبار-و-المقالات", label: "الأخبار و مقالات" },
-    { href: "/التوظيف-و-التدريب", label: "تدريب وتوظيف" },
-    { href: "/تواصل-معنا", label: "تواصل معنا" },
+    { href: "/ar", label: "الرئيسية" },
+    { href: "/ar/news", label: "الأخبار و مقالات" },
+    { href: "/ar/training", label: "تدريب وتوظيف" },
+    { href: "/ar/contact", label: "تواصل معنا" },
   ],
   en: [
     { href: "/en", label: "Home" },
@@ -25,9 +25,9 @@ const NAV = {
 export default function SiteHeader({ locale = "ar" }: SiteHeaderProps) {
   const isAr = locale !== "en";
   const links = isAr ? NAV.ar : NAV.en;
-  const switchHref = isAr ? "/en" : "/";
+  const switchHref = isAr ? "/en" : "/ar";
   const switchLabel = isAr ? "English" : "عربي";
-  const homeHref = isAr ? "/" : "/en";
+  const homeHref = isAr ? "/ar" : "/en";
 
   return (
     <div dir={isAr ? "rtl" : "ltr"} className="absolute top-0 left-0 right-0 z-50 h-0">

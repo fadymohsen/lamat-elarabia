@@ -1,10 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import { jwtVerify } from "jose";
 
-const SLUG_MAP: Record<string, string> = {
-  "/الأخبار-و-المقالات": "/news",
-  "/التوظيف-و-التدريب": "/training",
-  "/تواصل-معنا": "/contact",
+// Redirect old Arabic slug URLs to new /ar/* English slug URLs
+const LEGACY_REDIRECTS: Record<string, string> = {
+  "/الأخبار-و-المقالات": "/ar/news",
+  "/التوظيف-و-التدريب": "/ar/training",
+  "/تواصل-معنا": "/ar/contact",
+};
+
+// Redirect old /en-prefixed URLs and bare slugs
+const SIMPLE_REDIRECTS: Record<string, string> = {
+  "/news": "/ar/news",
+  "/training": "/ar/training",
+  "/contact": "/ar/contact",
 };
 
 const SESSION_COOKIE = "lamat_admin_session";
@@ -26,7 +34,7 @@ async function hasValidSession(request: NextRequest): Promise<boolean> {
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Handle admin login page (check before /admin prefix to avoid ambiguity)
+  // Handle admin login page first
   if (pathname === "/adminlogin") {
     const authed = await hasValidSession(request);
     if (authed) {
@@ -44,25 +52,24 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Public routes — forward pathname header and rewrite Arabic slugs
-  const requestHeaders = new Headers(request.headers);
-  requestHeaders.set("x-pathname", pathname);
-  const withPath = { request: { headers: requestHeaders } };
-
+  // Redirect legacy Arabic slug URLs (permanent 301)
   const decoded = decodeURIComponent(pathname).replace(/\/$/, "") || "/";
-
-  const target = SLUG_MAP[decoded];
-  if (target) {
-    const url = request.nextUrl.clone();
-    url.pathname = target;
-    return NextResponse.rewrite(url, withPath);
+  const legacyTarget = LEGACY_REDIRECTS[decoded];
+  if (legacyTarget) {
+    return NextResponse.redirect(new URL(legacyTarget, request.nextUrl), 301);
   }
 
-  return NextResponse.next(withPath);
+  // Redirect bare slugs without locale prefix
+  const simpleTarget = SIMPLE_REDIRECTS[pathname];
+  if (simpleTarget) {
+    return NextResponse.redirect(new URL(simpleTarget, request.nextUrl), 301);
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|wp-content|wp-includes|favicon.ico).*)",
+    "/((?!_next/static|_next/image|wp-content|wp-includes|favicon.ico|images).*)",
   ],
 };

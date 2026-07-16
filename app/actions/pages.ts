@@ -10,11 +10,11 @@ interface ActionResponse {
   error?: string;
 }
 
-const SLUG_TO_PATH: Record<string, string> = {
-  home: "/",
-  news: "/news",
-  training: "/training",
-  contact: "/contact",
+const SLUG_TO_PATH: Record<string, string[]> = {
+  home: ["/ar", "/en"],
+  news: ["/ar/news", "/en/news"],
+  training: ["/ar/training", "/en/training"],
+  contact: ["/ar/contact", "/en/contact"],
 };
 
 export async function savePageContent(
@@ -64,8 +64,8 @@ export async function savePageContent(
   );
   await query("UPDATE pages SET updated_at = now() WHERE id = $1", [pageId]);
 
-  const path = SLUG_TO_PATH[section.slug];
-  if (path) revalidatePath(path);
+  const paths = SLUG_TO_PATH[section.slug];
+  if (paths) paths.forEach((p) => revalidatePath(p));
   revalidatePath(`/admin/pages/${pageId}`);
 
   return { success: true };

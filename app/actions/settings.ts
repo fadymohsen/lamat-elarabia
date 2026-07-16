@@ -55,10 +55,14 @@ export async function saveSettings(
     );
   }
 
-  revalidatePath("/");
-  revalidatePath("/contact");
-  revalidatePath("/news");
-  revalidatePath("/training");
+  revalidatePath("/ar");
+  revalidatePath("/en");
+  revalidatePath("/ar/contact");
+  revalidatePath("/en/contact");
+  revalidatePath("/ar/news");
+  revalidatePath("/en/news");
+  revalidatePath("/ar/training");
+  revalidatePath("/en/training");
   revalidatePath("/admin/settings");
 
   return { success: true };

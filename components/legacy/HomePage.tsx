@@ -156,7 +156,7 @@ const COPY = {
 export default async function HomePage({ locale = "ar" }: HomePageProps) {
   const isAr = locale !== "en";
   const t = isAr ? COPY.ar : COPY.en;
-  const contactHref = isAr ? "/تواصل-معنا" : "/en/contact";
+  const contactHref = isAr ? "/ar/contact" : "/en/contact";
   const dir = isAr ? "rtl" : "ltr";
   const textAlign = isAr ? "text-right" : "text-left";
 

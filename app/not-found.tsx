@@ -15,7 +15,7 @@ export default function NotFound() {
           عذرًا، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.
         </p>
         <Link
-          href="/"
+          href="/ar"
           className="inline-block rounded-full bg-[#137547] px-8 py-3 font-['Cairo',sans-serif] font-bold text-white hover:bg-[#0e5735] transition-colors"
         >
           العودة للرئيسية
