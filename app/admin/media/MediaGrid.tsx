@@ -22,13 +22,13 @@ function MediaCard({ item }: MediaCardProps) {
     const fd = new FormData();
     fd.set("id", String(item.id));
     fd.set("alt_text", altText);
-    startTransition(() => updateMediaAlt(undefined, fd));
+    startTransition(() => { void updateMediaAlt(undefined, fd); });
   };
 
   const handleDelete = () => {
     const fd = new FormData();
     fd.set("id", String(item.id));
-    startTransition(() => deleteMedia(undefined, fd));
+    startTransition(() => { void deleteMedia(undefined, fd); });
   };
 
   return (
