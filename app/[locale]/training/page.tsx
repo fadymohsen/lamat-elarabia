@@ -1,6 +1,8 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import TrainingPage from "@/components/legacy/TrainingPage";
+import JsonLd from "@/components/JsonLd";
+import { getBreadcrumbSchema } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -35,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       alternates: {
         canonical: `${BASE}/en/training`,
-        languages: { ar: `${BASE}/ar/training`, en: `${BASE}/en/training` },
+        languages: { ar: `${BASE}/ar/training`, en: `${BASE}/en/training`, "x-default": `${BASE}/en/training` },
       },
     };
   }
@@ -63,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `${BASE}/ar/training`,
-      languages: { ar: `${BASE}/ar/training`, en: `${BASE}/en/training` },
+      languages: { ar: `${BASE}/ar/training`, en: `${BASE}/en/training`, "x-default": `${BASE}/en/training` },
     },
   };
 }
@@ -71,5 +73,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { locale } = await params;
   if (locale !== "ar" && locale !== "en") notFound();
-  return <TrainingPage locale={locale} />;
+
+  const isAr = locale === "ar";
+  const breadcrumbs = getBreadcrumbSchema(locale, [
+    { name: isAr ? "الرئيسية" : "Home", path: `/${locale}` },
+    { name: isAr ? "التوظيف والتدريب" : "Careers & Training", path: `/${locale}/training` },
+  ]);
+
+  return (
+    <>
+      <JsonLd data={breadcrumbs} />
+      <TrainingPage locale={locale} />
+    </>
+  );
 }

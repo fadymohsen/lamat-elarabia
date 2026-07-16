@@ -1,5 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
+import { getOrganizationSchema, getWebSiteSchema } from "@/lib/structured-data";
 
 const VALID_LOCALES = ["ar", "en"] as const;
 type Locale = (typeof VALID_LOCALES)[number];
@@ -23,6 +25,8 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   return (
     <div lang={locale} dir={isAr ? "rtl" : "ltr"}>
+      <JsonLd data={getOrganizationSchema(locale)} />
+      <JsonLd data={getWebSiteSchema()} />
       {children}
     </div>
   );

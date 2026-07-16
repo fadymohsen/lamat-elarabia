@@ -1,6 +1,8 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import NewsPage from "@/components/legacy/NewsPage";
+import JsonLd from "@/components/JsonLd";
+import { getBreadcrumbSchema } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -34,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       alternates: {
         canonical: `${BASE}/en/news`,
-        languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news` },
+        languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news`, "x-default": `${BASE}/en/news` },
       },
     };
   }
@@ -61,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `${BASE}/ar/news`,
-      languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news` },
+      languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news`, "x-default": `${BASE}/en/news` },
     },
   };
 }
@@ -69,5 +71,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { locale } = await params;
   if (locale !== "ar" && locale !== "en") notFound();
-  return <NewsPage locale={locale} />;
+
+  const isAr = locale === "ar";
+  const breadcrumbs = getBreadcrumbSchema(locale, [
+    { name: isAr ? "الرئيسية" : "Home", path: `/${locale}` },
+    { name: isAr ? "الأخبار والمقالات" : "News & Articles", path: `/${locale}/news` },
+  ]);
+
+  return (
+    <>
+      <JsonLd data={breadcrumbs} />
+      <NewsPage locale={locale} />
+    </>
+  );
 }

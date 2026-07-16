@@ -65,11 +65,16 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  // Uncomment and replace with your actual verification code from Google Search Console:
+  // verification: {
+  //   google: "YOUR_GOOGLE_SITE_VERIFICATION_CODE",
+  // },
   alternates: {
-    canonical: BASE_URL,
+    canonical: `${BASE_URL}/ar`,
     languages: {
       ar: `${BASE_URL}/ar`,
       en: `${BASE_URL}/en`,
+      "x-default": `${BASE_URL}/en`,
     },
   },
 };

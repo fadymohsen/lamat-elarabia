@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       alternates: {
         canonical: `${BASE}/en`,
-        languages: { ar: `${BASE}/ar`, en: `${BASE}/en` },
+        languages: { ar: `${BASE}/ar`, en: `${BASE}/en`, "x-default": `${BASE}/en` },
       },
     };
   }
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `${BASE}/ar`,
-      languages: { ar: `${BASE}/ar`, en: `${BASE}/en` },
+      languages: { ar: `${BASE}/ar`, en: `${BASE}/en`, "x-default": `${BASE}/en` },
     },
   };
 }

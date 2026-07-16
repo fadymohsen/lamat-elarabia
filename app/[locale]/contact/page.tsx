@@ -1,6 +1,8 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import ContactPage from "@/components/legacy/ContactPage";
+import JsonLd from "@/components/JsonLd";
+import { getBreadcrumbSchema, getContactPageSchema } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -35,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       alternates: {
         canonical: `${BASE}/en/contact`,
-        languages: { ar: `${BASE}/ar/contact`, en: `${BASE}/en/contact` },
+        languages: { ar: `${BASE}/ar/contact`, en: `${BASE}/en/contact`, "x-default": `${BASE}/en/contact` },
       },
     };
   }
@@ -63,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `${BASE}/ar/contact`,
-      languages: { ar: `${BASE}/ar/contact`, en: `${BASE}/en/contact` },
+      languages: { ar: `${BASE}/ar/contact`, en: `${BASE}/en/contact`, "x-default": `${BASE}/en/contact` },
     },
   };
 }
@@ -71,5 +73,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { locale } = await params;
   if (locale !== "ar" && locale !== "en") notFound();
-  return <ContactPage locale={locale} />;
+
+  const isAr = locale === "ar";
+  const breadcrumbs = getBreadcrumbSchema(locale, [
+    { name: isAr ? "الرئيسية" : "Home", path: `/${locale}` },
+    { name: isAr ? "تواصل معنا" : "Contact Us", path: `/${locale}/contact` },
+  ]);
+
+  return (
+    <>
+      <JsonLd data={breadcrumbs} />
+      <JsonLd data={getContactPageSchema(locale)} />
+      <ContactPage locale={locale} />
+    </>
+  );
 }
