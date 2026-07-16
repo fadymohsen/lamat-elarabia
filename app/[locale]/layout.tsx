@@ -1,6 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/structured-data";
 
 const VALID_LOCALES = ["ar", "en"] as const;
@@ -28,6 +29,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <JsonLd data={getOrganizationSchema(locale)} />
       <JsonLd data={getWebSiteSchema()} />
       {children}
+      <WhatsAppButton />
     </div>
   );
 }
