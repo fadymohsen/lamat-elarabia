@@ -166,7 +166,7 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
       <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
         <Image src="/images/hero-home.png" alt={t.heroAlt} fill priority className="object-cover -scale-x-100" />
         <div className="absolute inset-0 bg-black/40" />
-        <SiteHeader locale={locale} />
+        <SiteHeader locale={locale} page="" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center gap-6 px-6 text-center">
           <h1 className="font-['Cairo',sans-serif] font-extrabold text-white text-[40px] md:text-[64px] leading-tight">
             {t.name}

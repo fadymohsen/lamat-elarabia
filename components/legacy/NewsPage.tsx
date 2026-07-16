@@ -101,7 +101,7 @@ export default async function NewsPage({ locale = "ar" }: NewsPageProps) {
       <section className="relative h-[516px] w-full overflow-hidden">
         <Image src="/images/hero-home.png" alt={t.heroAlt} fill className="object-cover -scale-x-100" />
         <div className="absolute inset-0 bg-black/35" />
-        <SiteHeader locale={locale} />
+        <SiteHeader locale={locale} page="news" />
         <div className="absolute left-1/2 -translate-x-1/2 top-[172px] w-[939px] max-w-[92vw] flex flex-col items-center gap-[22px]">
           <h1 className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
             {t.title}

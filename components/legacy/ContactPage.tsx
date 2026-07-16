@@ -63,7 +63,7 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
       <section className="relative h-[516px] w-full overflow-hidden">
         <Image src="/images/hero-home.png" alt={t.heroAlt} fill className="object-cover -scale-x-100" />
         <div className="absolute inset-0 bg-black/35" />
-        <SiteHeader locale={locale} />
+        <SiteHeader locale={locale} page="contact" />
         <div className="absolute left-1/2 -translate-x-1/2 top-[220px] w-[939px] max-w-[92vw]">
           <h1 className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
             {t.title}

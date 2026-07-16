@@ -21,22 +21,56 @@ export const viewport = {
   initialScale: 1,
 };
 
+const BASE_URL = "https://lamat-elarabia.org";
+
 export const metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     template: "%s | لمعة العربية للمقاولات",
-    default: "لمعة العربية للمقاولات",
+    default: "لمعة العربية للمقاولات | شركة مقاولات عامة في السعودية",
   },
-  description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية. نبني اليوم لنصنع مستقبلًا يليق بوطننا.",
-  metadataBase: new URL("https://lamat-elarabia.org"),
+  description:
+    "لمعة العربية للمقاولات – شركة مقاولات رائدة في الرياض وجدة والقصيم. متخصصون في الإنشاءات العامة، التشطيبات، الصيانة والأعمال الكهروميكانيكية منذ 2005.",
+  keywords: [
+    "مقاولات",
+    "شركة مقاولات",
+    "مقاولات عامة",
+    "لمعة العربية",
+    "مقاولات الرياض",
+    "مقاولات جدة",
+    "بناء",
+    "تشطيبات",
+    "صيانة مباني",
+    "contracting",
+    "Saudi Arabia",
+    "Riyadh contractor",
+    "construction company",
+  ],
+  authors: [{ name: "لمعة العربية للمقاولات" }],
+  creator: "لمعة العربية للمقاولات",
+  publisher: "لمعة العربية للمقاولات",
+  formatDetection: {
+    email: false,
+    telephone: false,
+  },
   openGraph: {
     type: "website",
     locale: "ar_SA",
-    siteName: "لمعة العربية للمقاولات",
-    title: "لمعة العربية للمقاولات",
-    description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية. نبني اليوم لنصنع مستقبلًا يليق بوطننا.",
+    alternateLocale: "en_US",
+    siteName: "لمعة العربية للمقاولات | Lamat Elarabia Contracting",
+    title: "لمعة العربية للمقاولات | شركة مقاولات عامة في السعودية",
+    description:
+      "شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة. فروع في الرياض، جدة، والقصيم.",
   },
   twitter: {
     card: "summary_large_image",
+  },
+  alternates: {
+    canonical: BASE_URL,
+    languages: {
+      ar: `${BASE_URL}/ar`,
+      en: `${BASE_URL}/en`,
+    },
   },
 };
 

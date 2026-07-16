@@ -5,27 +5,29 @@ import MobileNav from "./MobileNav";
 
 interface SiteHeaderProps {
   locale?: string;
+  page?: string; // e.g. "news", "training", "contact" — empty for home
 }
 
 const NAV = {
   ar: [
-    { href: "/ar", label: "الرئيسية" },
-    { href: "/ar/news", label: "الأخبار و مقالات" },
-    { href: "/ar/training", label: "تدريب وتوظيف" },
-    { href: "/ar/contact", label: "تواصل معنا" },
+    { href: "/ar", label: "الرئيسية", page: "" },
+    { href: "/ar/news", label: "الأخبار و مقالات", page: "news" },
+    { href: "/ar/training", label: "تدريب وتوظيف", page: "training" },
+    { href: "/ar/contact", label: "تواصل معنا", page: "contact" },
   ],
   en: [
-    { href: "/en", label: "Home" },
-    { href: "/en/news", label: "News & Articles" },
-    { href: "/en/training", label: "Training & Jobs" },
-    { href: "/en/contact", label: "Contact Us" },
+    { href: "/en", label: "Home", page: "" },
+    { href: "/en/news", label: "News & Articles", page: "news" },
+    { href: "/en/training", label: "Training & Jobs", page: "training" },
+    { href: "/en/contact", label: "Contact Us", page: "contact" },
   ],
 };
 
-export default function SiteHeader({ locale = "ar" }: SiteHeaderProps) {
+export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps) {
   const isAr = locale !== "en";
   const links = isAr ? NAV.ar : NAV.en;
-  const switchHref = isAr ? "/en" : "/ar";
+  const targetLocale = isAr ? "en" : "ar";
+  const switchHref = page ? `/${targetLocale}/${page}` : `/${targetLocale}`;
   const switchLabel = isAr ? "English" : "عربي";
   const homeHref = isAr ? "/ar" : "/en";
 

@@ -3,23 +3,66 @@ import { notFound } from "next/navigation";
 import NewsPage from "@/components/legacy/NewsPage";
 import type { Metadata } from "next";
 
+const BASE = "https://lamat-elarabia.org";
+
 interface Props {
   params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+
   if (locale === "en") {
     return {
-      title: "News & Articles",
-      description: "The latest news and articles from Lamat Elarabia Contracting.",
-      openGraph: { locale: "en_US", title: "News & Articles – Lamat Elarabia Contracting" },
+      title: "News & Articles | Construction Industry Insights",
+      description:
+        "Stay updated with the latest construction news, project updates, quality standards, and building trends in Saudi Arabia from Lamat Elarabia Contracting.",
+      keywords: [
+        "construction news Saudi Arabia",
+        "building trends KSA",
+        "contracting industry updates",
+        "construction quality standards",
+        "Saudi Vision 2030 construction",
+        "Lamat Elarabia projects",
+      ],
+      openGraph: {
+        locale: "en_US",
+        title: "News & Articles | Lamat Elarabia Contracting",
+        description:
+          "Latest construction news, project updates and building industry insights from Lamat Elarabia.",
+        url: `${BASE}/en/news`,
+      },
+      alternates: {
+        canonical: `${BASE}/en/news`,
+        languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news` },
+      },
     };
   }
+
   return {
-    title: "الأخبار و المقالات",
-    description: "آخر أخبار ومقالات لمعة العربية للمقاولات.",
-    openGraph: { title: "الأخبار و المقالات – لمعة العربية للمقاولات" },
+    title: "الأخبار والمقالات | مستجدات قطاع المقاولات والبناء",
+    description:
+      "تابع أحدث أخبار المشاريع والعقود، مقالات متخصصة في معايير الجودة والسلامة، وتحليلات سوق المقاولات في المملكة العربية السعودية.",
+    keywords: [
+      "أخبار المقاولات",
+      "مشاريع بناء السعودية",
+      "معايير جودة البناء",
+      "أخبار الإنشاءات",
+      "سلامة مواقع البناء",
+      "اتجاهات البناء الحديثة",
+      "لمعة العربية أخبار",
+    ],
+    openGraph: {
+      locale: "ar_SA",
+      title: "الأخبار والمقالات | لمعة العربية للمقاولات",
+      description:
+        "أحدث أخبار المشاريع ومقالات متخصصة في قطاع المقاولات والبناء في المملكة.",
+      url: `${BASE}/ar/news`,
+    },
+    alternates: {
+      canonical: `${BASE}/ar/news`,
+      languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news` },
+    },
   };
 }
 

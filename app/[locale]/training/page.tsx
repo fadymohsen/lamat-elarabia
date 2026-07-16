@@ -3,23 +3,68 @@ import { notFound } from "next/navigation";
 import TrainingPage from "@/components/legacy/TrainingPage";
 import type { Metadata } from "next";
 
+const BASE = "https://lamat-elarabia.org";
+
 interface Props {
   params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+
   if (locale === "en") {
     return {
-      title: "Employment & Training",
-      description: "Employment and training opportunities at Lamat Elarabia Contracting.",
-      openGraph: { locale: "en_US", title: "Employment & Training – Lamat Elarabia Contracting" },
+      title: "Careers & Training Programs | Join Our Team",
+      description:
+        "Explore career opportunities at Lamat Elarabia Contracting – civil engineers, site supervisors, technicians & more. Professional training programs to develop your skills in construction.",
+      keywords: [
+        "construction jobs Saudi Arabia",
+        "contracting careers Riyadh",
+        "civil engineer jobs KSA",
+        "site supervisor vacancy",
+        "construction training programs",
+        "Lamat Elarabia careers",
+        "MEP technician jobs",
+      ],
+      openGraph: {
+        locale: "en_US",
+        title: "Careers & Training Programs | Lamat Elarabia Contracting",
+        description:
+          "Join our team – open positions for engineers, supervisors & technicians. Professional training programs available.",
+        url: `${BASE}/en/training`,
+      },
+      alternates: {
+        canonical: `${BASE}/en/training`,
+        languages: { ar: `${BASE}/ar/training`, en: `${BASE}/en/training` },
+      },
     };
   }
+
   return {
-    title: "التوظيف و التدريب",
-    description: "فرص التدريب والتوظيف لدى لمعة العربية للمقاولات.",
-    openGraph: { title: "التوظيف و التدريب – لمعة العربية للمقاولات" },
+    title: "التوظيف والتدريب | انضم لفريق لمعة العربية",
+    description:
+      "فرص وظيفية في لمعة العربية للمقاولات – مهندسين مدنيين، مشرفي مواقع، فنيين كهرباء وسباكة. برامج تدريبية متخصصة لتطوير مهاراتك في قطاع المقاولات.",
+    keywords: [
+      "وظائف مقاولات",
+      "توظيف مهندسين السعودية",
+      "وظائف بناء الرياض",
+      "فرص عمل مقاولات",
+      "تدريب مقاولات",
+      "وظائف فنيين كهرباء",
+      "وظائف مشرف موقع",
+      "لمعة العربية توظيف",
+    ],
+    openGraph: {
+      locale: "ar_SA",
+      title: "التوظيف والتدريب | لمعة العربية للمقاولات",
+      description:
+        "فرص وظيفية متنوعة وبرامج تدريبية متخصصة في قطاع المقاولات والبناء.",
+      url: `${BASE}/ar/training`,
+    },
+    alternates: {
+      canonical: `${BASE}/ar/training`,
+      languages: { ar: `${BASE}/ar/training`, en: `${BASE}/en/training` },
+    },
   };
 }
 
