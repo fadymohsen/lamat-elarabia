@@ -26,11 +26,11 @@ const BASE_URL = "https://lamat-elarabia.org";
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    template: "%s | لمعة العربية للمقاولات",
-    default: "لمعة العربية للمقاولات | شركة مقاولات عامة في السعودية",
+    template: "%s | Lamat Elarabia | لمعة العربية",
+    default: "لمعة العربية للمقاولات | Lamat Elarabia Contracting",
   },
   description:
-    "لمعة العربية للمقاولات – شركة مقاولات رائدة في الرياض وجدة والقصيم. متخصصون في الإنشاءات العامة، التشطيبات، الصيانة والأعمال الكهروميكانيكية منذ 2005.",
+    "لمعة العربية للمقاولات (Lamat Elarabia) – شركة مقاولات رائدة في الرياض وجدة والقصيم منذ 2005. إنشاءات عامة، تشطيبات، صيانة، وأعمال كهروميكانيكية.",
   keywords: [
     "مقاولات",
     "شركة مقاولات",
@@ -57,10 +57,10 @@ export const metadata = {
     type: "website",
     locale: "ar_SA",
     alternateLocale: "en_US",
-    siteName: "لمعة العربية للمقاولات | Lamat Elarabia Contracting",
-    title: "لمعة العربية للمقاولات | شركة مقاولات عامة في السعودية",
+    siteName: "Lamat Elarabia | لمعة العربية للمقاولات",
+    title: "لمعة العربية للمقاولات | Lamat Elarabia Contracting",
     description:
-      "شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة. فروع في الرياض، جدة، والقصيم.",
+      "شركة مقاولات رائدة بخبرة +20 عامًا. إنشاءات، تشطيبات، صيانة. الرياض – جدة – القصيم.",
   },
   twitter: {
     card: "summary_large_image",

@@ -14,23 +14,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return {
-      title: "Lamat Elarabia Contracting | General Contractor in Saudi Arabia",
+      title: "General Contractor in Riyadh, Jeddah & Qassim",
       description:
-        "Leading contracting company in Riyadh, Jeddah & Qassim. 20+ years of experience in construction, finishing, MEP works and facility maintenance across KSA.",
+        "Lamat Elarabia Contracting – 20+ years building Saudi Arabia. General construction, finishing, MEP, and facility maintenance. Trusted by 25+ major clients.",
       keywords: [
-        "contracting company Saudi Arabia",
-        "general contractor Riyadh",
-        "construction company KSA",
-        "building contractor Jeddah",
-        "MEP contractor",
-        "facility maintenance Saudi",
         "Lamat Elarabia",
+        "Lamat Elarabia Contracting",
+        "لمعة العربية",
+        "general contractor Saudi Arabia",
+        "construction company Riyadh",
+        "contractor Jeddah",
+        "MEP contractor KSA",
+        "facility maintenance Saudi",
+        "building contractor Qassim",
       ],
       openGraph: {
         locale: "en_US",
         title: "Lamat Elarabia Contracting | General Contractor in Saudi Arabia",
         description:
-          "Leading contracting company in Riyadh, Jeddah & Qassim. 20+ years in construction, finishing & maintenance.",
+          "20+ years building Saudi Arabia. Construction, finishing, MEP & maintenance. Riyadh – Jeddah – Qassim.",
         url: `${BASE}/en`,
       },
       alternates: {
@@ -41,25 +43,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: "لمعة العربية للمقاولات | مقاولات عامة وتشطيبات في الرياض وجدة",
+    title: "شركة مقاولات عامة في الرياض وجدة والقصيم",
     description:
-      "شركة لمعة العربية للمقاولات – خبرة تتجاوز 20 عامًا في الإنشاءات العامة، التشطيبات الحديثة، الصيانة، والأعمال الكهروميكانيكية. فروع في الرياض وجدة والقصيم.",
+      "لمعة العربية للمقاولات (Lamat Elarabia) – خبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة والأعمال الكهروميكانيكية. أكثر من 25 عميل رئيسي وفريق يتجاوز 150 متخصصًا.",
     keywords: [
-      "شركة مقاولات",
-      "مقاولات عامة الرياض",
-      "تشطيبات جدة",
-      "صيانة مباني",
-      "أعمال كهروميكانيكية",
-      "مقاولات القصيم",
+      "لمعة العربية",
       "لمعة العربية للمقاولات",
-      "شركة بناء السعودية",
-      "مقاولات رؤية 2030",
+      "Lamat Elarabia",
+      "شركة مقاولات الرياض",
+      "مقاولات عامة جدة",
+      "تشطيبات السعودية",
+      "صيانة مباني",
+      "مقاولات القصيم",
+      "شركة بناء رؤية 2030",
     ],
     openGraph: {
       locale: "ar_SA",
-      title: "لمعة العربية للمقاولات | مقاولات عامة وتشطيبات في الرياض وجدة",
+      title: "لمعة العربية للمقاولات | شركة مقاولات عامة في السعودية",
       description:
-        "شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة. فروع في الرياض، جدة، والقصيم.",
+        "خبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة. الرياض – جدة – القصيم.",
       url: `${BASE}/ar`,
     },
     alternates: {

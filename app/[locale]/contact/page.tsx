@@ -16,9 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return {
-      title: "Contact Us | Get a Free Quote for Your Project",
+      title: "Contact Us – Free Consultation & Project Quote",
       description:
-        "Reach Lamat Elarabia Contracting via phone, WhatsApp or email. Offices in Riyadh, Jeddah & Qassim. Request a consultation or free project estimate today.",
+        "Get in touch with Lamat Elarabia Contracting via phone, WhatsApp or email. Offices in Riyadh, Jeddah & Qassim. Free consultation and project estimate.",
       keywords: [
         "contact contractor Saudi Arabia",
         "construction quote Riyadh",
@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: "تواصل معنا | احصل على عرض سعر لمشروعك",
+    title: "تواصل معنا – استشارة مجانية وعرض سعر",
     description:
-      "تواصل مع لمعة العربية للمقاولات عبر الهاتف أو واتساب أو البريد الإلكتروني. فروعنا في الرياض وجدة والقصيم. استشارة مجانية وعرض أسعار لمشروعك.",
+      "تواصل مع لمعة العربية للمقاولات عبر الهاتف أو واتساب أو البريد الإلكتروني. فروع في الرياض وجدة والقصيم. احصل على استشارة مجانية وعرض سعر لمشروعك.",
     keywords: [
       "تواصل شركة مقاولات",
       "عرض سعر مقاولات",
