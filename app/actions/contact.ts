@@ -24,7 +24,7 @@ export async function submitContact(
   });
 
   if (!validated.success) {
-    const firstError = validated.error.errors[0]?.message ?? "بيانات غير صالحة";
+    const firstError = validated.error.issues[0]?.message ?? "بيانات غير صالحة";
     return { error: firstError };
   }
 
