@@ -40,10 +40,10 @@ export default async function SiteFooter({ locale = "ar" }: SiteFooterProps) {
         <div className="relative mx-auto max-w-6xl rounded-3xl overflow-hidden bg-[#14201a]">
           <Image src="/images/hero-home.png" alt="" fill className="object-cover opacity-30" />
           <div className="relative z-10 grid gap-10 md:grid-cols-[1.3fr_1fr] items-center px-8 py-14 md:px-14">
-            <div className={`${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-              <p className="font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[48px] mb-5">
+            <div className={`${isAr ? "text-right" : "text-left"}`}>
+              <h2 className="font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[48px] mb-5">
                 {t.heading}
-              </p>
+              </h2>
               <p className="font-['Tajawal',sans-serif] text-white/85 text-[16px] md:text-[20px] leading-relaxed">
                 {t.body}
               </p>

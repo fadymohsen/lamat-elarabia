@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import ContactForm from "@/components/ContactForm";
 import { getSiteSettings } from "@/lib/settings";
 
 interface ContactPageProps {
@@ -10,7 +11,6 @@ interface ContactPageProps {
 
 const COPY = {
   ar: {
-    tagline: "نُشيد الحاضر … ونرسم ملامح الغد",
     title: "تواصل معنا",
     intro: "نسعد بتواصلكم معنا في أي وقت، سواء كنتم تبحثون عن شريك موثوق لتنفيذ مشروع جديد أو تحتاجون إلى استشارة. فريقنا جاهز للرد بسرعة.",
     phoneLabel: "الهاتف",
@@ -27,9 +27,9 @@ const COPY = {
       { city: "الرياض", addr: "حي النرجس – شارع الأمير مشعل", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27686.24!2d46.6753!3d24.7745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2ssa" },
       { city: "القصيم", addr: "بريدة – حي الأخضر", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26952.56!2d43.9750!3d26.3264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2ssa" },
     ],
+    heroAlt: "لمعة العربية - تواصل معنا",
   },
   en: {
-    tagline: "We build the present … and shape the future",
     title: "Contact Us",
     intro: "We'd love to hear from you at any time — whether you're looking for a trusted partner for a new project or need a consultation. Our team is ready to respond quickly.",
     phoneLabel: "Phone",
@@ -46,6 +46,7 @@ const COPY = {
       { city: "Riyadh", addr: "Al-Nargis - Prince Mishal Street", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27686.24!2d46.6753!3d24.7745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa" },
       { city: "Qassim", addr: "Buraydah - Al-Akhdar", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26952.56!2d43.9750!3d26.3264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa" },
     ],
+    heroAlt: "Lama3t Al-Arabia - Contact Us",
   },
 };
 
@@ -53,26 +54,28 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
   const isAr = locale !== "en";
   const t = isAr ? COPY.ar : COPY.en;
   const settings = await getSiteSettings();
+  const dir = isAr ? "rtl" : "ltr";
+  const textAlign = isAr ? "text-right" : "text-left";
 
   return (
-    <main dir={isAr ? "rtl" : "ltr"} className="bg-white">
+    <main dir={dir} className="bg-white">
       {/* Hero */}
       <section className="relative h-[516px] w-full overflow-hidden">
-        <Image src="/images/hero-home.png" alt="" fill className="object-cover -scale-x-100" />
+        <Image src="/images/hero-home.png" alt={t.heroAlt} fill className="object-cover -scale-x-100" />
         <div className="absolute inset-0 bg-black/35" />
         <SiteHeader locale={locale} />
         <div className="absolute left-1/2 -translate-x-1/2 top-[220px] w-[939px] max-w-[92vw]">
-          <p className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
+          <h1 className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
             {t.title}
-          </p>
+          </h1>
         </div>
       </section>
 
       {/* Intro + contact info */}
-      <section className={`mx-auto max-w-[1041px] px-6 py-24 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-        <p className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
+      <section className={`mx-auto max-w-[1041px] px-6 py-24 ${textAlign}`}>
+        <h2 className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
           {t.title}
-        </p>
+        </h2>
         <p className="font-['Tajawal',sans-serif] text-[18px] md:text-[24px] text-[#1e1e1e] leading-relaxed mb-10">
           {t.intro}
         </p>
@@ -81,7 +84,7 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
           {settings?.phone_display && (
             <div className="rounded-2xl bg-[#f5f5f3] p-6 text-center">
               <div className="flex justify-center mb-3">
-                <svg className="h-8 w-8 text-[#137547]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-8 w-8 text-[#137547]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
@@ -94,7 +97,7 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
           {settings?.email && (
             <div className="rounded-2xl bg-[#f5f5f3] p-6 text-center">
               <div className="flex justify-center mb-3">
-                <svg className="h-8 w-8 text-[#137547]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-8 w-8 text-[#137547]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -127,42 +130,23 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
 
       {/* Contact Form */}
       <section className="bg-[#f7f3ec] py-20">
-        <div className="mx-auto max-w-4xl px-6" dir={isAr ? "rtl" : "ltr"}>
-          <p className={`font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[48px] text-[#1e1e1e] mb-10 ${isAr ? "text-right" : "text-left"}`}>
+        <div className="mx-auto max-w-4xl px-6">
+          <h2 className={`font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[48px] text-[#1e1e1e] mb-10 ${textAlign}`}>
             {t.formTitle}
-          </p>
-          <form className="grid gap-6">
-            <input
-              type="text"
-              placeholder={t.formName}
-              className="rounded-xl border border-[#1e1e1e]/20 bg-white px-6 py-4 font-['Tajawal',sans-serif] text-[#1e1e1e] placeholder-[#1e1e1e]/40 focus:outline-none focus:border-[#137547]"
-            />
-            <input
-              type="email"
-              placeholder={t.formEmail}
-              className="rounded-xl border border-[#1e1e1e]/20 bg-white px-6 py-4 font-['Tajawal',sans-serif] text-[#1e1e1e] placeholder-[#1e1e1e]/40 focus:outline-none focus:border-[#137547]"
-            />
-            <textarea
-              rows={6}
-              placeholder={t.formMessage}
-              className="rounded-xl border border-[#1e1e1e]/20 bg-white px-6 py-4 font-['Tajawal',sans-serif] text-[#1e1e1e] placeholder-[#1e1e1e]/40 focus:outline-none focus:border-[#137547] resize-none"
-            />
-            <button
-              type="submit"
-              className="rounded-xl bg-[#137547] px-8 py-4 font-['Cairo',sans-serif] font-bold text-white hover:bg-[#0e5735] transition-colors"
-            >
-              {t.formSubmit}
-            </button>
-          </form>
+          </h2>
+          <ContactForm
+            labels={{ name: t.formName, email: t.formEmail, message: t.formMessage, submit: t.formSubmit }}
+            isAr={isAr}
+          />
         </div>
       </section>
 
-      {/* Branches with Maps */}
+      {/* Branches */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <p className={`font-['Cairo',sans-serif] font-extrabold text-[#1e1e1e] text-[32px] md:text-[56px] mb-16 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
+          <h2 className={`font-['Cairo',sans-serif] font-extrabold text-[#1e1e1e] text-[32px] md:text-[56px] mb-16 ${textAlign}`}>
             {t.branchesTitle}
-          </p>
+          </h2>
           <div className="grid gap-10 md:grid-cols-3">
             {t.branches.map((b, i) => (
               <div key={i} className="rounded-2xl overflow-hidden border border-[#1e1e1e]/10">
@@ -178,8 +162,8 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
                     title={b.city}
                   />
                 </div>
-                <div className={`bg-[#f5f5f3] p-6 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-                  <p className="font-['Cairo',sans-serif] font-extrabold text-[#137547] text-[22px] mb-2">{b.city}</p>
+                <div className={`bg-[#f5f5f3] p-6 ${textAlign}`}>
+                  <h3 className="font-['Cairo',sans-serif] font-extrabold text-[#137547] text-[22px] mb-2">{b.city}</h3>
                   <p className="font-['Tajawal',sans-serif] text-[#1e1e1e]/70 text-[16px]">{b.addr}</p>
                 </div>
               </div>

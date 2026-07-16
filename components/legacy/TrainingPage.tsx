@@ -9,7 +9,6 @@ interface TrainingPageProps {
 
 const COPY = {
   ar: {
-    tagline: "نُشيد الحاضر … ونرسم ملامح الغد",
     title: "التوظيف والتدريب",
     intro: "ننمو دائمًا، ونبحث عن كفاءات طموحة تنضم إلى فريق لمعة العربية للمقاولات لتكون جزءًا من رحلة بناء المستقبل.",
     positionsTitle: "الفرص المتاحة",
@@ -23,9 +22,9 @@ const COPY = {
     trainingBody: "نؤمن بأن الاستثمار في الكوادر البشرية هو أساس النجاح، لذلك نقدم برامج تدريبية متخصصة لصقل مهارات موظفينا ومواكبة أحدث التقنيات في قطاع المقاولات.",
     cta: "أرسل سيرتك الذاتية إلى",
     email: "Lama3t_elarabia@hotmail.com",
+    heroAlt: "لمعة العربية - التوظيف والتدريب",
   },
   en: {
-    tagline: "We build the present … and shape the future",
     title: "Employment & Training",
     intro: "We're always growing, seeking ambitious talent to join the Lama3t Al-Arabia team and be part of building the future.",
     positionsTitle: "Available Opportunities",
@@ -39,32 +38,35 @@ const COPY = {
     trainingBody: "We believe investing in people is the foundation of success, so we offer specialized training programs to sharpen our team's skills and keep pace with the latest construction technologies.",
     cta: "Send your CV to",
     email: "Lama3t_elarabia@hotmail.com",
+    heroAlt: "Lama3t Al-Arabia - Employment & Training",
   },
 };
 
 export default async function TrainingPage({ locale = "ar" }: TrainingPageProps) {
   const isAr = locale !== "en";
   const t = isAr ? COPY.ar : COPY.en;
+  const dir = isAr ? "rtl" : "ltr";
+  const textAlign = isAr ? "text-right" : "text-left";
 
   return (
-    <main dir={isAr ? "rtl" : "ltr"} className="bg-white">
-      {/* Hero - matches News/Contact inner-page hero pattern (516px, exact per Figma) */}
+    <main dir={dir} className="bg-white">
+      {/* Hero */}
       <section className="relative h-[516px] w-full overflow-hidden">
-        <Image src="/images/hero-home.png" alt="" fill className="object-cover -scale-x-100" />
+        <Image src="/images/hero-home.png" alt={t.heroAlt} fill className="object-cover -scale-x-100" />
         <div className="absolute inset-0 bg-black/35" />
         <SiteHeader locale={locale} />
         <div className="absolute left-1/2 -translate-x-1/2 top-[220px] w-[939px] max-w-[92vw]">
-          <p className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
+          <h1 className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
             {t.title}
-          </p>
+          </h1>
         </div>
       </section>
 
       {/* Intro */}
-      <section className={`mx-auto max-w-[1041px] px-6 py-24 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-        <p className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
+      <section className={`mx-auto max-w-[1041px] px-6 py-24 ${textAlign}`}>
+        <h2 className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
           {t.title}
-        </p>
+        </h2>
         <p className="font-['Tajawal',sans-serif] text-[18px] md:text-[24px] text-[#1e1e1e] leading-relaxed">
           {t.intro}
         </p>
@@ -72,14 +74,14 @@ export default async function TrainingPage({ locale = "ar" }: TrainingPageProps)
 
       {/* Positions */}
       <section className="bg-[#1e1e1e] py-20">
-        <div className="mx-auto max-w-6xl px-6" dir={isAr ? "rtl" : "ltr"}>
-          <p className={`font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[56px] mb-10 ${isAr ? "text-right" : "text-left"}`}>
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className={`font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[56px] mb-10 ${textAlign}`}>
             {t.positionsTitle}
-          </p>
+          </h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {t.positions.map((p, i) => (
-              <div key={i} className={`rounded-2xl bg-white/5 border border-white/10 p-8 ${isAr ? "text-right" : "text-left"}`}>
-                <p className="font-['Cairo',sans-serif] font-extrabold text-white text-[22px] mb-3">{p.title}</p>
+              <div key={i} className={`rounded-2xl bg-white/5 border border-white/10 p-8 ${textAlign}`}>
+                <h3 className="font-['Cairo',sans-serif] font-extrabold text-white text-[22px] mb-3">{p.title}</h3>
                 <p className="font-['Tajawal',sans-serif] text-white/70 leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -92,10 +94,10 @@ export default async function TrainingPage({ locale = "ar" }: TrainingPageProps)
         <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[60px] size-[500px] opacity-30">
           <Image src="/images/figma/ellipse-glow.svg" alt="" fill className="object-contain" />
         </div>
-        <div className={`relative z-10 mx-auto max-w-[1041px] px-6 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-          <p className="font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[56px] mb-5">
+        <div className={`relative z-10 mx-auto max-w-[1041px] px-6 ${textAlign}`}>
+          <h2 className="font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[56px] mb-5">
             {t.trainingTitle}
-          </p>
+          </h2>
           <p className="font-['Tajawal',sans-serif] text-white text-[18px] md:text-[24px] leading-relaxed">
             {t.trainingBody}
           </p>

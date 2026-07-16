@@ -29,8 +29,14 @@ export async function savePageContent(
 
   if (!textsStr || !imagesStr) return { error: "بيانات غير صالحة" };
 
-  const texts = JSON.parse(textsStr as string);
-  const images = JSON.parse(imagesStr as string);
+  let texts: unknown;
+  let images: unknown;
+  try {
+    texts = JSON.parse(textsStr as string);
+    images = JSON.parse(imagesStr as string);
+  } catch {
+    return { error: "بيانات غير صالحة" };
+  }
 
   if (!Number.isInteger(pageId)) return { error: "صفحة غير صالحة" };
   if (!Array.isArray(texts) || !Array.isArray(images)) return { error: "بيانات غير صالحة" };

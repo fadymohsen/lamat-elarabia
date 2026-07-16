@@ -86,10 +86,6 @@ const COPY = {
       "الخدمات الفنية: الكهرباء – السباكة – أنظمة التكييف (HVAC) – الدفاع المدني والسلامة – أعمال الخرسانة المسلحة والبنية التحتية",
       "التوريد التجاري: توريد وبيع مواد البناء والتشطيب – مواد وأدوات التنظيف والعناية",
     ],
-    serviceCards: [
-      { title: "صيانة المرافق", img: "/images/service-maintenance.png" },
-      { title: "المقاولات العامة", img: "/images/service-contracting.png" },
-    ],
     certsTitle: "نحن خبراء بشهاداتكم المعتمدة",
     certsBody: "تفخر شركة لمعة العربية للمقاولات بحصولها على عدة شهادات وخطابات شكر وتقدير من جهات حكومية وخاصة، تقديرًا لالتزامها بالجودة العالية، ودقتها في التنفيذ، واحترافيتها في إدارة المشاريع.",
     certsTagline: "شهاداتنا … دلالة ثقة لعملائنا",
@@ -103,6 +99,10 @@ const COPY = {
       { role: "مدير المشاريع بالشرقية", name: "م/ فهد مطلق" },
     ],
     cta: "تواصل معنا",
+    heroAlt: "مشروع بناء لمعة العربية للمقاولات",
+    expAlt: "فريق عمل لمعة العربية في الموقع",
+    servicesAlt: "خدمات لمعة العربية للمقاولات",
+    visionAlt: "مبنى رؤية لمعة العربية",
   },
   en: {
     tagline: "We build the present … and shape the future",
@@ -133,10 +133,6 @@ const COPY = {
       "Technical Services: electrical – plumbing – HVAC – civil defense and safety",
       "Commercial Supply: supply and sale of building and finishing materials",
     ],
-    serviceCards: [
-      { title: "Facility Maintenance", img: "/images/service-maintenance.png" },
-      { title: "General Contracting", img: "/images/service-contracting.png" },
-    ],
     certsTitle: "We're Experts, Certified",
     certsBody: "Lama3t Al-Arabia is proud to have received several certificates and letters of appreciation from government and private entities.",
     certsTagline: "Our Certificates … a Sign of Trust for Our Clients",
@@ -150,6 +146,10 @@ const COPY = {
       { role: "Eastern Province Projects Manager", name: "Fahad Mutlaq" },
     ],
     cta: "Contact Us",
+    heroAlt: "Lama3t Al-Arabia construction project",
+    expAlt: "Lama3t Al-Arabia team on site",
+    servicesAlt: "Lama3t Al-Arabia contracting services",
+    visionAlt: "Lama3t Al-Arabia vision building",
   },
 };
 
@@ -157,12 +157,14 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
   const isAr = locale !== "en";
   const t = isAr ? COPY.ar : COPY.en;
   const contactHref = isAr ? "/تواصل-معنا" : "/en/contact";
+  const dir = isAr ? "rtl" : "ltr";
+  const textAlign = isAr ? "text-right" : "text-left";
 
   return (
-    <main dir={isAr ? "rtl" : "ltr"} className="bg-white">
+    <main dir={dir} className="bg-white">
       {/* Hero */}
       <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
-        <Image src="/images/hero-home.png" alt="" fill priority className="object-cover -scale-x-100" />
+        <Image src="/images/hero-home.png" alt={t.heroAlt} fill priority className="object-cover -scale-x-100" />
         <div className="absolute inset-0 bg-black/40" />
         <SiteHeader locale={locale} />
         <div className="relative z-10 flex h-full flex-col items-center justify-center gap-6 px-6 text-center">
@@ -181,24 +183,24 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
         </div>
       </section>
 
-      {/* لماذا نحن متميزين - exact (node 53:627) */}
-      <section className={`mx-auto max-w-[1041px] px-6 py-24 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-        <p className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
+      {/* Why us */}
+      <section className={`mx-auto max-w-[1041px] px-6 py-24 ${textAlign}`}>
+        <h2 className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
           {t.whyTitle}
-        </p>
+        </h2>
         <p className="font-['Tajawal',sans-serif] text-[18px] md:text-[24px] text-[#1e1e1e] leading-relaxed">
           {t.whyBody}
         </p>
       </section>
 
-      {/* خبراتنا السابقة */}
+      {/* Experience */}
       <section className="relative bg-[#1e1e1e] overflow-hidden min-h-auto md:min-h-[65vh] pt-12 pb-0 md:py-0">
-        {/* Mobile: text, then centered arch photo flush with section bottom */}
+        {/* Mobile */}
         <div className="md:hidden flex flex-col">
-          <div className={`px-6 mb-8 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-            <p className="font-['Cairo',sans-serif] font-extrabold text-[24px] text-white mb-3">
+          <div className={`px-6 mb-8 ${textAlign}`}>
+            <h2 className="font-['Cairo',sans-serif] font-extrabold text-[24px] text-white mb-3">
               {t.expTitle}
-            </p>
+            </h2>
             <p className="font-['Tajawal',sans-serif] text-[13px] text-white leading-relaxed mb-3">
               {t.expIntro}
             </p>
@@ -211,7 +213,7 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
           <div className="relative mx-auto w-full max-w-[280px] leading-[0]">
             <div className="relative aspect-square w-full rounded-t-full bg-[#b8987f] pt-3 px-3 pb-0">
               <div className="relative h-full w-full overflow-hidden rounded-t-full">
-                <Image src="/images/experience-workers.png" alt="" fill className="object-cover object-center" />
+                <Image src="/images/experience-workers.png" alt={t.expAlt} fill className="object-cover object-center" />
               </div>
             </div>
             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 size-20">
@@ -221,22 +223,22 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
         </div>
 
         <div className="mx-auto max-w-6xl px-6">
-          {/* Desktop: side by side */}
-          <div className="hidden md:grid gap-10 items-end grid-cols-[380px_1fr]" dir={isAr ? "rtl" : "ltr"}>
+          {/* Desktop */}
+          <div className="hidden md:grid gap-10 items-end grid-cols-[380px_1fr]">
             <div className={`relative mx-auto md:mx-0 w-full max-w-[380px] self-end mt-[15px] ${isAr ? "" : "order-2"}`}>
               <div className="relative aspect-square w-full rounded-t-full bg-[#b8987f] pt-3 px-3 pb-0">
                 <div className="relative h-full w-full overflow-hidden rounded-t-full">
-                  <Image src="/images/experience-workers.png" alt="" fill className="object-cover object-top" />
+                  <Image src="/images/experience-workers.png" alt={t.expAlt} fill className="object-cover object-top" />
                 </div>
               </div>
               <div className={`absolute bottom-2 size-24 ${isAr ? "-left-4" : "-right-4"}`}>
                 <Image src="/images/since-2005-stamp.png" alt="Since 2005" fill className="object-contain" />
               </div>
             </div>
-            <div className={`self-center pb-4 text-right md:order-1`} dir={isAr ? "rtl" : "ltr"}>
-              <p className="font-['Cairo',sans-serif] font-extrabold text-[44px] text-white mb-4">
+            <div className={`self-center pb-4 ${textAlign} md:order-1`}>
+              <h2 className="font-['Cairo',sans-serif] font-extrabold text-[44px] text-white mb-4">
                 {t.expTitle}
-              </p>
+              </h2>
               <p className="font-['Tajawal',sans-serif] text-[18px] font-medium text-white leading-snug mb-2">
                 {t.expIntro}
               </p>
@@ -250,11 +252,11 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
         </div>
       </section>
 
-      {/* عملاؤنا المميزين */}
+      {/* Clients */}
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <p className="font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[56px] text-[#1e1e1e] text-center mb-14">
+        <h2 className="font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[56px] text-[#1e1e1e] text-center mb-14">
           {t.clientsTitle}
-        </p>
+        </h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
           {CLIENTS.map((c, i) => (
             <div
@@ -272,44 +274,41 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
         </div>
       </section>
 
-      {/* رؤيتنا في لمعة العربية - exact (node 53:636) */}
+      {/* Vision */}
       <section className="relative bg-[#203524] overflow-hidden min-h-auto md:min-h-screen flex md:items-center pt-12 pb-0 md:py-12">
         <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[60px] size-[611px] opacity-40">
           <Image src="/images/figma/ellipse-glow.svg" alt="" fill className="object-contain" />
         </div>
-
-        {/* bleeds off the section's true left edge, independent of the text grid's padding */}
         <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[12%] aspect-video w-[55vw] max-w-[750px]">
-          <Image src="/images/vision-building.png" alt="" fill className="object-cover" />
+          <Image src="/images/vision-building.png" alt={t.visionAlt} fill className="object-cover" />
         </div>
         <div className={`mx-auto max-w-6xl px-6 relative z-10 w-full md:ml-auto md:mr-0 ${isAr ? "md:max-w-[45%]" : "md:max-w-[40%]"} flex flex-col md:block`}>
-          <div className={isAr ? "text-right order-1" : "text-left order-1"} dir={isAr ? "rtl" : "ltr"}>
-            <p className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[44px] text-white mb-4">
+          <div className={`${textAlign} order-1`}>
+            <h2 className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[44px] text-white mb-4">
               {t.visionTitle}
-            </p>
+            </h2>
             {t.visionBody.map((p, i) => (
               <p key={i} className="font-['Tajawal',sans-serif] text-[14px] md:text-[17px] text-white leading-snug whitespace-pre-line mb-3">
                 {p}
               </p>
             ))}
           </div>
-
           <div className="md:hidden relative w-full mt-6 order-2 leading-[0]">
-            <Image src="/images/vision-building.png" alt="" width={800} height={450} className="w-full h-auto object-contain block" />
+            <Image src="/images/vision-building.png" alt={t.visionAlt} width={800} height={450} className="w-full h-auto object-contain block" />
           </div>
         </div>
       </section>
 
-      {/* خدماتنا المميزة */}
+      {/* Services */}
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className={`grid gap-10 md:grid-cols-2 items-center mb-12 ${isAr ? "" : "md:flex-row-reverse"}`} dir={isAr ? "rtl" : "ltr"}>
+        <div className={`grid gap-10 md:grid-cols-2 items-center mb-12`}>
           <div className={`relative aspect-square w-full max-w-[420px] mx-auto ${isAr ? "order-2 md:order-1" : "order-1 md:order-2"}`}>
-            <Image src="/wp-content/uploads/2025/11/Hero-section-4-1.png" alt="" fill className="object-contain" />
+            <Image src="/wp-content/uploads/2025/11/Hero-section-4-1.png" alt={t.servicesAlt} fill className="object-contain" />
           </div>
-          <div className={`${isAr ? "text-right order-1 md:order-2" : "text-left order-2 md:order-1"}`} dir={isAr ? "rtl" : "ltr"}>
-            <p className="font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[56px] text-[#1e1e1e] mb-5">
+          <div className={`${isAr ? "text-right order-1 md:order-2" : "text-left order-2 md:order-1"}`}>
+            <h2 className="font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[56px] text-[#1e1e1e] mb-5">
               {t.servicesTitle}
-            </p>
+            </h2>
             <p className="font-['Tajawal',sans-serif] text-[16px] md:text-[22px] text-[#1e1e1e] leading-relaxed mb-4">
               {t.servicesIntro}
             </p>
@@ -322,16 +321,16 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
         </div>
       </section>
 
-      {/* نحن خبراء بشهاداتكم المعتمدة */}
+      {/* Certificates */}
       <section className="bg-[#1e1e1e] py-16">
-        <div className={`mx-auto max-w-5xl px-6 grid gap-8 md:grid-cols-[auto_1fr] items-center ${isAr ? "" : "md:grid-cols-[1fr_auto]"}`} dir={isAr ? "rtl" : "ltr"}>
+        <div className={`mx-auto max-w-5xl px-6 grid gap-8 md:grid-cols-[auto_1fr] items-center ${isAr ? "" : "md:grid-cols-[1fr_auto]"}`}>
           <div className={`relative h-24 w-24 rounded-full overflow-hidden shrink-0 mx-auto md:mx-0 ${isAr ? "" : "md:order-2"}`}>
-            <Image src="/wp-content/uploads/2025/10/icon6-2-300x300.jpg" alt="" fill className="object-cover" />
+            <Image src="/wp-content/uploads/2025/10/icon6-2-300x300.jpg" alt="Certificates icon" fill className="object-cover" />
           </div>
-          <div className={`${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
-            <p className="font-['Cairo',sans-serif] font-extrabold text-white text-[28px] md:text-[40px] mb-4">
+          <div className={textAlign}>
+            <h2 className="font-['Cairo',sans-serif] font-extrabold text-white text-[28px] md:text-[40px] mb-4">
               {t.certsTitle}
-            </p>
+            </h2>
             <p className="font-['Tajawal',sans-serif] text-white/85 text-[15px] md:text-[18px] leading-relaxed">
               {t.certsBody}
             </p>
@@ -347,21 +346,21 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
         </p>
       </section>
 
-      {/* الهيكل الإداري */}
+      {/* Org structure */}
       <section className="bg-[#f7f3ec] px-6 py-24">
         <div className="mx-auto max-w-6xl">
-          <p className={`font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[48px] text-[#1e1e1e] mb-12 ${isAr ? "text-right" : "text-left"}`} dir={isAr ? "rtl" : "ltr"}>
+          <h2 className={`font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[48px] text-[#1e1e1e] mb-12 ${textAlign}`}>
             {t.orgTitle}
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-10 gap-x-6" dir={isAr ? "rtl" : "ltr"}>
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-10 gap-x-6">
             {t.orgList.map((person, i) => (
               <div key={i} className="flex flex-col items-center text-center">
                 <div className="relative h-24 w-24 rounded-full border-2 border-[#137547] bg-white overflow-hidden flex items-center justify-center mb-3">
-                  <svg viewBox="0 0 24 24" className="h-12 w-12 text-[#c9c2b4]" fill="currentColor">
+                  <svg viewBox="0 0 24 24" className="h-12 w-12 text-[#c9c2b4]" fill="currentColor" aria-hidden="true">
                     <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.24-8 5v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1c0-2.76-3.6-5-8-5Z" />
                   </svg>
                 </div>
-                <p className="font-['Cairo',sans-serif] font-bold text-[#1e1e1e] text-[14px] leading-snug">{person.name}</p>
+                <h3 className="font-['Cairo',sans-serif] font-bold text-[#1e1e1e] text-[14px] leading-snug">{person.name}</h3>
                 <p className="font-['Tajawal',sans-serif] text-[#1e1e1e]/60 text-[12px] leading-snug">{person.role}</p>
               </div>
             ))}

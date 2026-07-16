@@ -18,6 +18,19 @@ function MediaCard({ item }: MediaCardProps) {
   const [altText, setAltText] = useState(item.alt_text || "");
   const [isPending, startTransition] = useTransition();
 
+  const handleAltBlur = () => {
+    const fd = new FormData();
+    fd.set("id", String(item.id));
+    fd.set("alt_text", altText);
+    startTransition(() => updateMediaAlt(undefined, fd));
+  };
+
+  const handleDelete = () => {
+    const fd = new FormData();
+    fd.set("id", String(item.id));
+    startTransition(() => deleteMedia(undefined, fd));
+  };
+
   return (
     <div
       style={{
@@ -37,7 +50,7 @@ function MediaCard({ item }: MediaCardProps) {
         <input
           value={altText}
           onChange={(e) => setAltText(e.target.value)}
-          onBlur={() => startTransition(() => updateMediaAlt(item.id, altText))}
+          onBlur={handleAltBlur}
           placeholder="النص البديل"
           style={{
             width: "100%",
@@ -51,7 +64,7 @@ function MediaCard({ item }: MediaCardProps) {
           }}
         />
         <button
-          onClick={() => startTransition(() => deleteMedia(item.id))}
+          onClick={handleDelete}
           disabled={isPending}
           style={{
             background: "transparent",

@@ -17,6 +17,14 @@ const IMG_RE = /<img\b[^>]*>/gi;
 const SRC_RE = /\bsrc="([^"]*)"/i;
 const ALT_RE = /\balt="([^"]*)"/i;
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 export interface EditableText {
   index: number;
   value: string;
@@ -76,7 +84,7 @@ export function applyEdits(html: string, texts: string[], images: { src: string;
     const start = m.index + 1; // skip the ">"
     const end = start + m[1].length;
     if (texts[i] !== undefined && texts[i] !== m[1]) {
-      splices.push({ start, end, value: texts[i] });
+      splices.push({ start, end, value: escapeHtml(texts[i]) });
     }
     i++;
   }
@@ -94,16 +102,16 @@ export function applyEdits(html: string, texts: string[], images: { src: string;
     if (edit !== undefined) {
       let newTag = tag;
       if (edit.src !== srcMatch[1]) {
-        newTag = newTag.replace(SRC_RE, `src="${edit.src}"`);
+        newTag = newTag.replace(SRC_RE, `src="${escapeHtml(edit.src)}"`);
         newTag = newTag.replace(/\s(srcset|sizes)="[^"]*"/gi, "");
       }
       const altMatch = ALT_RE.exec(newTag);
       if (altMatch) {
         if (edit.alt !== altMatch[1]) {
-          newTag = newTag.replace(ALT_RE, `alt="${edit.alt}"`);
+          newTag = newTag.replace(ALT_RE, `alt="${escapeHtml(edit.alt)}"`);
         }
       } else if (edit.alt) {
-        newTag = newTag.replace(/<img\b/i, `<img alt="${edit.alt}"`);
+        newTag = newTag.replace(/<img\b/i, `<img alt="${escapeHtml(edit.alt)}"`);
       }
       if (newTag !== tag) {
         splices.push({ start: m.index, end: m.index + tag.length, value: newTag });

@@ -26,7 +26,22 @@ export const metadata = {
     template: "%s | لمعة العربية للمقاولات",
     default: "لمعة العربية للمقاولات",
   },
-  description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية.",
+  description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية. نبني اليوم لنصنع مستقبلًا يليق بوطننا.",
+  metadataBase: new URL("https://lamat-elarabia.org"),
+  openGraph: {
+    type: "website",
+    locale: "ar_SA",
+    siteName: "لمعة العربية للمقاولات",
+    title: "لمعة العربية للمقاولات",
+    description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية. نبني اليوم لنصنع مستقبلًا يليق بوطننا.",
+    images: [{ url: "/images/hero-home.png", width: 1200, height: 630, alt: "لمعة العربية للمقاولات" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "لمعة العربية للمقاولات",
+    description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية.",
+    images: ["/images/hero-home.png"],
+  },
 };
 
 interface RootLayoutProps {
@@ -35,7 +50,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="ar" className={`${cairo.variable} ${tajawal.variable}`} suppressHydrationWarning>
+    <html lang="ar" dir="rtl" className={`${cairo.variable} ${tajawal.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );
