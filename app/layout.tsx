@@ -34,13 +34,9 @@ export const metadata = {
     siteName: "لمعة العربية للمقاولات",
     title: "لمعة العربية للمقاولات",
     description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية. نبني اليوم لنصنع مستقبلًا يليق بوطننا.",
-    images: [{ url: "/images/hero-home.png", width: 1200, height: 630, alt: "لمعة العربية للمقاولات" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "لمعة العربية للمقاولات",
-    description: "لمعة العربية للمقاولات، شركة مقاولات في السعودية.",
-    images: ["/images/hero-home.png"],
   },
 };
 

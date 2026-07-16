@@ -13,11 +13,36 @@ const EDITABLE_KEYS = [
   "address_url",
 ];
 
+function isValidUrl(str: string): boolean {
+  try {
+    const url = new URL(str);
+    return url.protocol === "https:" || url.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
 export async function saveSettings(
   prevState: ActionState | undefined,
   formData: FormData
 ): Promise<ActionState> {
   await verifySession();
+
+  // Validate address_url if provided
+  const addressUrl = formData.get("address_url");
+  if (addressUrl && typeof addressUrl === "string" && addressUrl.trim() !== "") {
+    if (!isValidUrl(addressUrl)) {
+      return { error: "رابط خرائط جوجل غير صالح. يجب أن يبدأ بـ https://" };
+    }
+  }
+
+  // Validate email format
+  const email = formData.get("email");
+  if (email && typeof email === "string") {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return { error: "البريد الإلكتروني غير صالح" };
+    }
+  }
 
   for (const key of EDITABLE_KEYS) {
     const value = formData.get(key);

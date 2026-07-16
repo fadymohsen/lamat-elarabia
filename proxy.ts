@@ -26,19 +26,25 @@ async function hasValidSession(request: NextRequest): Promise<boolean> {
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const authed = await hasValidSession(request);
-  const isLoginRoute = pathname === "/adminlogin";
-
-  if (pathname.startsWith("/admin") || pathname === "/adminlogin") {
-    if (!authed && !isLoginRoute) {
-      return NextResponse.redirect(new URL("/adminlogin", request.nextUrl));
-    }
-    if (authed && isLoginRoute) {
+  // Handle admin login page (check before /admin prefix to avoid ambiguity)
+  if (pathname === "/adminlogin") {
+    const authed = await hasValidSession(request);
+    if (authed) {
       return NextResponse.redirect(new URL("/admin", request.nextUrl));
     }
     return NextResponse.next();
   }
 
+  // Handle all /admin/* routes
+  if (pathname.startsWith("/admin")) {
+    const authed = await hasValidSession(request);
+    if (!authed) {
+      return NextResponse.redirect(new URL("/adminlogin", request.nextUrl));
+    }
+    return NextResponse.next();
+  }
+
+  // Public routes — forward pathname header and rewrite Arabic slugs
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-pathname", pathname);
   const withPath = { request: { headers: requestHeaders } };

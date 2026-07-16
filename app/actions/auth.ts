@@ -3,6 +3,7 @@
 import * as z from "zod";
 import bcrypt from "bcryptjs";
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { query } from "@/lib/db";
 import { createSession, deleteSession } from "@/lib/session";
 import { ActionState } from "./media";
@@ -18,7 +19,32 @@ interface UserRow {
   password_hash: string;
 }
 
+// Simple in-memory rate limiter: max 5 attempts per key per 15 minutes
+const attempts = new Map<string, { count: number; resetAt: number }>();
+const MAX_ATTEMPTS = 5;
+const WINDOW_MS = 15 * 60 * 1000;
+
+function checkRateLimit(key: string): boolean {
+  const now = Date.now();
+  const entry = attempts.get(key);
+
+  if (!entry || now > entry.resetAt) {
+    attempts.set(key, { count: 1, resetAt: now + WINDOW_MS });
+    return false;
+  }
+
+  entry.count++;
+  return entry.count > MAX_ATTEMPTS;
+}
+
 export async function login(prevState: ActionState | undefined, formData: FormData): Promise<ActionState> {
+  const hdrs = await headers();
+  const ip = hdrs.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+
+  if (checkRateLimit(ip)) {
+    return { error: "تم تجاوز عدد المحاولات المسموح. حاول مرة أخرى بعد 15 دقيقة." };
+  }
+
   const validated = LoginSchema.safeParse({
     email: formData.get("email"),
     password: formData.get("password"),
@@ -44,6 +70,9 @@ export async function login(prevState: ActionState | undefined, formData: FormDa
   if (!passwordMatches) {
     return { error: "البريد الإلكتروني أو كلمة المرور غير صحيحة" };
   }
+
+  // Clear rate limit on success
+  attempts.delete(ip);
 
   await createSession(user.id, user.email);
   redirect("/admin");

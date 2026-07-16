@@ -54,7 +54,7 @@ export default async function SiteFooter({ locale = "ar" }: SiteFooterProps) {
                   href={`https://wa.me/${settings.whatsapp_number ?? ""}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white font-['Almarai',sans-serif] text-[16px] hover:bg-white/20 transition-colors"
+                  className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white font-['Tajawal',sans-serif] text-[16px] hover:bg-white/20 transition-colors"
                 >
                   <Image src="/images/figma/whatsapp-icon.svg" alt="" width={20} height={20} />
                   {settings.phone_display}
@@ -63,7 +63,7 @@ export default async function SiteFooter({ locale = "ar" }: SiteFooterProps) {
               {settings?.email && (
                 <a
                   href={`mailto:${settings.email}`}
-                  className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white font-['Almarai',sans-serif] text-[15px] hover:bg-white/20 transition-colors break-all"
+                  className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white font-['Tajawal',sans-serif] text-[15px] hover:bg-white/20 transition-colors break-all"
                 >
                   {settings.email}
                 </a>
@@ -73,7 +73,7 @@ export default async function SiteFooter({ locale = "ar" }: SiteFooterProps) {
                   href={settings.address_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white font-['Almarai',sans-serif] text-[15px] hover:bg-white/20 transition-colors"
+                  className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white font-['Tajawal',sans-serif] text-[15px] hover:bg-white/20 transition-colors"
                 >
                   <Image src="/images/figma/gmaps-icon.png" alt="" width={20} height={20} />
                   {t.address}
