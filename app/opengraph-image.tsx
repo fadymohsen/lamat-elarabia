@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "لمعة العربية للمقاولات";
+export const alt = "Lamat Elarabia Contracting";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -36,27 +36,27 @@ export default function OgImage() {
             color: "#137547",
           }}
         >
-          ل
+          L
         </div>
         <div
           style={{
-            fontSize: "64px",
+            fontSize: "56px",
             fontWeight: 800,
             textAlign: "center",
-            lineHeight: 1.2,
+            lineHeight: 1.3,
             marginBottom: "20px",
           }}
         >
-          لمعة العربية للمقاولات
+          Lamat Elarabia Contracting
         </div>
         <div
           style={{
-            fontSize: "28px",
+            fontSize: "24px",
             color: "#b8987f",
             textAlign: "center",
           }}
         >
-          نبني اليوم... لنصنع مستقبلًا يليق بوطننا
+          We build today... to make a future worthy of our nation
         </div>
       </div>
     ),
