@@ -35,6 +35,9 @@ export function getOrganizationSchema(locale: string) {
       { "@type": "City", name: isAr ? "جدة" : "Jeddah" },
       { "@type": "City", name: isAr ? "القصيم" : "Qassim" },
     ],
+    priceRange: "$$$$",
+    currenciesAccepted: "SAR",
+    paymentAccepted: "Cash, Bank Transfer",
     sameAs: [
       // Add social media URLs here when available
     ],
@@ -154,17 +157,173 @@ export function getContactPageSchema(locale: string) {
   };
 }
 
-// ── JobPosting-like page (Training) ──
+// ── LocalBusiness branches (for Google Maps / local search) ──
+
+export function getLocalBusinessSchemas(locale: string) {
+  const isAr = locale === "ar";
+  const branches = [
+    {
+      name: isAr ? "لمعة العربية للمقاولات – الرياض" : "Lamat Elarabia Contracting – Riyadh",
+      street: isAr ? "حي النرجس – شارع الأمير مشعل" : "Al-Nargis - Prince Mishal Street",
+      city: isAr ? "الرياض" : "Riyadh",
+      region: isAr ? "منطقة الرياض" : "Riyadh Region",
+      lat: 24.7136,
+      lng: 46.6753,
+    },
+    {
+      name: isAr ? "لمعة العربية للمقاولات – جدة" : "Lamat Elarabia Contracting – Jeddah",
+      street: isAr ? "حي الرواسي – شارع قادة الفكر" : "Al-Rawasi - Leaders Street",
+      city: isAr ? "جدة" : "Jeddah",
+      region: isAr ? "منطقة مكة المكرمة" : "Makkah Region",
+      lat: 21.4858,
+      lng: 39.1925,
+    },
+    {
+      name: isAr ? "لمعة العربية للمقاولات – القصيم" : "Lamat Elarabia Contracting – Qassim",
+      street: isAr ? "بريدة – حي الأخضر" : "Buraydah - Al-Akhdar",
+      city: isAr ? "بريدة" : "Buraydah",
+      region: isAr ? "منطقة القصيم" : "Qassim Region",
+      lat: 26.3292,
+      lng: 43.9750,
+    },
+  ];
+
+  return branches.map((b) => ({
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    name: b.name,
+    parentOrganization: { "@id": `${BASE}/#organization` },
+    url: `${BASE}/${locale}`,
+    telephone: "+966550928077",
+    email: "info@lamat-elarabia.org",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: b.street,
+      addressLocality: b.city,
+      addressRegion: b.region,
+      addressCountry: "SA",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: b.lat,
+      longitude: b.lng,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+      opens: "08:00",
+      closes: "17:00",
+    },
+  }));
+}
+
+// ── FAQPage schema (rich snippets in Google) ──
+
+export function getFAQSchema(locale: string) {
+  const isAr = locale === "ar";
+  const faqs = isAr
+    ? [
+        {
+          q: "ما هي الخدمات التي تقدمها لمعة العربية للمقاولات؟",
+          a: "نقدم خدمات المقاولات العامة، التشطيبات والديكور، الأعمال الكهروميكانيكية (MEP)، صيانة المرافق، والتوريد التجاري لمواد البناء.",
+        },
+        {
+          q: "أين تقع فروع لمعة العربية للمقاولات؟",
+          a: "لدينا ثلاثة فروع في المملكة العربية السعودية: الرياض (حي النرجس)، جدة (حي الرواسي)، والقصيم (بريدة – حي الأخضر).",
+        },
+        {
+          q: "كم سنة خبرة لدى لمعة العربية في قطاع المقاولات؟",
+          a: "تأسست لمعة العربية للمقاولات عام 2005، أي أكثر من 20 عامًا من الخبرة في مجال الإنشاءات والمقاولات العامة في المملكة.",
+        },
+        {
+          q: "هل يمكنني الحصول على استشارة مجانية وعرض سعر؟",
+          a: "نعم، نقدم استشارات مجانية وعروض أسعار لجميع المشاريع. تواصل معنا عبر الهاتف أو واتساب على الرقم 0550928077.",
+        },
+        {
+          q: "هل تقبل لمعة العربية مشاريع حكومية؟",
+          a: "نعم، لدينا خبرة واسعة في تنفيذ المشاريع الحكومية والخاصة على حد سواء، مع التزام تام بمعايير الجودة والسلامة.",
+        },
+      ]
+    : [
+        {
+          q: "What services does Lamat Elarabia Contracting offer?",
+          a: "We offer general contracting, finishing & decor, MEP (mechanical, electrical, plumbing), facility maintenance, and commercial supply of construction materials.",
+        },
+        {
+          q: "Where are Lamat Elarabia's offices located?",
+          a: "We have three branches across Saudi Arabia: Riyadh (Al-Nargis district), Jeddah (Al-Rawasi district), and Qassim (Buraydah – Al-Akhdar district).",
+        },
+        {
+          q: "How many years of experience does Lamat Elarabia have?",
+          a: "Lamat Elarabia Contracting was founded in 2005, bringing over 20 years of experience in general construction and contracting across Saudi Arabia.",
+        },
+        {
+          q: "Can I get a free consultation and project quote?",
+          a: "Yes, we provide free consultations and project estimates. Contact us via phone or WhatsApp at +966550928077.",
+        },
+        {
+          q: "Does Lamat Elarabia handle government projects?",
+          a: "Yes, we have extensive experience executing both government and private sector projects with full commitment to quality and safety standards.",
+        },
+      ];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+}
+
+// ── Training / Careers page schema ──
 
 export function getEmployerSchema(locale: string) {
   const isAr = locale === "ar";
   return {
     "@context": "https://schema.org",
-    "@type": "EmployerAggregateRating",
-    itemReviewed: {
+    "@type": "WebPage",
+    name: isAr ? "التوظيف والتدريب" : "Careers & Training",
+    url: `${BASE}/${locale}/training`,
+    about: {
       "@type": "Organization",
       "@id": `${BASE}/#organization`,
       name: isAr ? "لمعة العربية للمقاولات" : "Lamat Elarabia Contracting",
+      numberOfEmployees: {
+        "@type": "QuantitativeValue",
+        minValue: 150,
+      },
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      name: isAr ? "الوظائف المتاحة" : "Available Positions",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: isAr ? "مهندس مدني" : "Civil Engineer",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: isAr ? "مشرف موقع" : "Site Supervisor",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: isAr ? "فني كهرباء" : "Electrician",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: isAr ? "فني سباكة" : "Plumber",
+        },
+      ],
     },
   };
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import HomePage from "@/components/legacy/HomePage";
+import JsonLd from "@/components/JsonLd";
+import { getFAQSchema, getLocalBusinessSchemas } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -74,5 +76,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { locale } = await params;
   if (locale !== "ar" && locale !== "en") notFound();
-  return <HomePage locale={locale} />;
+
+  const localBusinessSchemas = getLocalBusinessSchemas(locale);
+
+  return (
+    <>
+      <JsonLd data={getFAQSchema(locale)} />
+      {localBusinessSchemas.map((schema, i) => (
+        <JsonLd key={i} data={schema} />
+      ))}
+      <HomePage locale={locale} />
+    </>
+  );
 }

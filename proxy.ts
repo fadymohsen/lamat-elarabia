@@ -65,6 +65,13 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL(simpleTarget, request.nextUrl), 301);
   }
 
+  // SEO: redirect root "/" to preferred locale using Accept-Language
+  if (pathname === "/") {
+    const acceptLanguage = request.headers.get("accept-language") || "";
+    const preferredLocale = acceptLanguage.toLowerCase().includes("en") ? "en" : "ar";
+    return NextResponse.redirect(new URL(`/${preferredLocale}`, request.nextUrl), 301);
+  }
+
   return NextResponse.next();
 }
 

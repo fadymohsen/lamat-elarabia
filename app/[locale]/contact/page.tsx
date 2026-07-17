@@ -2,7 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import ContactPage from "@/components/legacy/ContactPage";
 import JsonLd from "@/components/JsonLd";
-import { getBreadcrumbSchema, getContactPageSchema } from "@/lib/structured-data";
+import { getBreadcrumbSchema, getContactPageSchema, getLocalBusinessSchemas } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -80,10 +80,15 @@ export default async function Page({ params }: Props) {
     { name: isAr ? "تواصل معنا" : "Contact Us", path: `/${locale}/contact` },
   ]);
 
+  const localBusinessSchemas = getLocalBusinessSchemas(locale);
+
   return (
     <>
       <JsonLd data={breadcrumbs} />
       <JsonLd data={getContactPageSchema(locale)} />
+      {localBusinessSchemas.map((schema, i) => (
+        <JsonLd key={i} data={schema} />
+      ))}
       <ContactPage locale={locale} />
     </>
   );
