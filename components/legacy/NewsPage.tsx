@@ -97,21 +97,15 @@ export default async function NewsPage({ locale = "ar" }: NewsPageProps) {
 
   return (
     <main dir={dir} className="bg-white">
-      {/* Hero */}
-      <section className="relative h-[516px] w-full overflow-hidden">
+      {/* Short Header */}
+      <section className="relative h-[200px] md:h-[240px] w-full overflow-hidden">
         <Image src="/images/hero-home.png" alt={t.heroAlt} fill className="object-cover -scale-x-100" />
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/50" />
         <SiteHeader locale={locale} page="news" />
-        <div className="absolute left-1/2 -translate-x-1/2 top-[172px] w-[939px] max-w-[92vw] flex flex-col items-center gap-[22px]">
-          <h1 className="font-['Cairo',sans-serif] font-extrabold text-[28px] md:text-[40px] text-[#ececec] text-center">
+        <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-10">
+          <h1 className="font-['Cairo',sans-serif] font-extrabold text-[24px] md:text-[36px] text-[#ececec] text-center">
             {t.title}
           </h1>
-          <div className="relative size-[140px]">
-            <Image src="/images/logo-badge.png" alt="" fill className="object-contain" />
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[102px] rounded-full bg-[#ff7000] overflow-hidden">
-              <Image src="/images/figma/logo-inner.png" alt="" fill className="object-cover" />
-            </div>
-          </div>
         </div>
       </section>
 
