@@ -37,6 +37,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description:
           "20+ years building Saudi Arabia. Construction, finishing, MEP & maintenance. Riyadh – Jeddah – Qassim.",
         url: `${BASE}/en`,
+        siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
+        images: [
+          {
+            url: `${BASE}/en/opengraph-image`,
+            width: 1200,
+            height: 630,
+            alt: "Lamaat Al-Arabiya Contracting – General Contractor in Saudi Arabia",
+          },
+        ],
       },
       alternates: {
         canonical: `${BASE}/en`,
@@ -66,6 +75,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description:
         "خبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة. الرياض – جدة – القصيم.",
       url: `${BASE}/ar`,
+      siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
+      images: [
+        {
+          url: `${BASE}/ar/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: "لمعة العربية للمقاولات – شركة مقاولات عامة في السعودية",
+        },
+      ],
     },
     alternates: {
       canonical: `${BASE}/ar`,

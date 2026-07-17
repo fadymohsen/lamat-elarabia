@@ -34,6 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description:
           "Join our team – open positions for engineers, supervisors & technicians. Professional training programs available.",
         url: `${BASE}/en/training`,
+        siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
+        images: [{ url: `${BASE}/en/opengraph-image`, width: 1200, height: 630 }],
       },
       alternates: {
         canonical: `${BASE}/en/training`,
@@ -62,6 +64,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description:
         "فرص وظيفية متنوعة وبرامج تدريبية متخصصة في قطاع المقاولات والبناء.",
       url: `${BASE}/ar/training`,
+      siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
+      images: [{ url: `${BASE}/ar/opengraph-image`, width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `${BASE}/ar/training`,

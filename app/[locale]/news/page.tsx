@@ -33,6 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description:
           "Latest construction news, project updates and building industry insights from Lamaat Al-Arabiya.",
         url: `${BASE}/en/news`,
+        siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
+        images: [{ url: `${BASE}/en/opengraph-image`, width: 1200, height: 630 }],
       },
       alternates: {
         canonical: `${BASE}/en/news`,
@@ -60,6 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description:
         "أحدث أخبار المشاريع ومقالات متخصصة في قطاع المقاولات والبناء في المملكة.",
       url: `${BASE}/ar/news`,
+      siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
+      images: [{ url: `${BASE}/ar/opengraph-image`, width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `${BASE}/ar/news`,
