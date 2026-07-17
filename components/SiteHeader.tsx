@@ -54,19 +54,15 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
               {link.label}
             </Link>
           ))}
+          <span className="w-[1px] h-[24px] bg-white/30" />
+          <Link
+            href={switchHref}
+            className="font-['Tajawal',sans-serif] text-[14px] text-[#b8987f] whitespace-nowrap hover:text-white transition-colors"
+          >
+            {switchLabel}
+          </Link>
         </nav>
       </div>
-
-      {/* Language switch - desktop */}
-      <Link
-        href={switchHref}
-        className="absolute top-[54px] left-[48px] w-[108px] h-[54px] items-center hidden md:flex"
-      >
-        <Image src="/images/figma/lang-pill-bg.svg" alt="" fill className="object-fill" />
-        <span className="relative z-10 mx-auto font-['Tajawal',sans-serif] text-white text-[13px] font-medium">
-          {switchLabel}
-        </span>
-      </Link>
 
       {/* Mobile nav (client component) */}
       <MobileNav
