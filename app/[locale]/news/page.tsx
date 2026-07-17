@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "News & Articles – Projects, Trends & Quality Standards",
       description:
-        "Latest construction news from Lamat Elarabia – project updates, quality standards, safety best practices, and building trends shaping Saudi Arabia's Vision 2030.",
+        "Latest construction news from Lamat Elarabia Contracting (لمعة العربية للمقاولات) – project updates, quality standards, safety best practices, and building trends shaping Saudi Arabia's Vision 2030.",
       keywords: [
         "construction news Saudi Arabia",
         "building trends KSA",
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "الأخبار والمقالات – مشاريع ومعايير جودة البناء",
     description:
-      "تابع أحدث أخبار المشاريع والعقود، مقالات متخصصة في معايير الجودة والسلامة، وتحليلات سوق المقاولات في المملكة العربية السعودية.",
+      "تابع أحدث أخبار لمعة العربية للمقاولات (Lamat Elarabia) – مشاريع وعقود جديدة، مقالات متخصصة في معايير الجودة والسلامة، وتحليلات سوق المقاولات في المملكة العربية السعودية.",
     keywords: [
       "أخبار المقاولات",
       "مشاريع بناء السعودية",

@@ -26,11 +26,11 @@ const BASE_URL = "https://lamat-elarabia.org";
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    template: "%s | Lamat Elarabia | لمعة العربية",
+    template: "%s | لمعة العربية للمقاولات | Lamat Elarabia Contracting",
     default: "لمعة العربية للمقاولات | Lamat Elarabia Contracting",
   },
   description:
-    "لمعة العربية للمقاولات (Lamat Elarabia) – شركة مقاولات رائدة في الرياض وجدة والقصيم منذ 2005. إنشاءات عامة، تشطيبات، صيانة، وأعمال كهروميكانيكية.",
+    "لمعة العربية للمقاولات (Lamat Elarabia Contracting) – شركة مقاولات رائدة في الرياض وجدة والقصيم منذ 2005. إنشاءات عامة، تشطيبات، صيانة، وأعمال كهروميكانيكية.",
   keywords: [
     "مقاولات",
     "شركة مقاولات",

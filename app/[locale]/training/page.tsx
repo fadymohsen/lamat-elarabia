@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Careers & Training – Engineers, Supervisors & Technicians",
       description:
-        "Join Lamat Elarabia Contracting – open positions for civil engineers, site supervisors, electricians & plumbers. Professional training programs in construction and MEP.",
+        "Join Lamat Elarabia Contracting (لمعة العربية للمقاولات) – open positions for civil engineers, site supervisors, electricians & plumbers. Professional training programs in construction and MEP.",
       keywords: [
         "construction jobs Saudi Arabia",
         "contracting careers Riyadh",
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "التوظيف والتدريب – مهندسين ومشرفين وفنيين",
     description:
-      "انضم لفريق لمعة العربية – وظائف شاغرة لمهندسين مدنيين، مشرفي مواقع، وفنيين كهرباء وسباكة. برامج تدريبية متخصصة لتطوير مهاراتك في قطاع المقاولات.",
+      "انضم لفريق لمعة العربية للمقاولات (Lamat Elarabia Contracting) – وظائف شاغرة لمهندسين مدنيين، مشرفي مواقع، وفنيين كهرباء وسباكة. برامج تدريبية متخصصة لتطوير مهاراتك في قطاع المقاولات.",
     keywords: [
       "وظائف مقاولات",
       "توظيف مهندسين السعودية",

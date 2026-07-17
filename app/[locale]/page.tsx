@@ -16,13 +16,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return {
-      title: "General Contractor in Riyadh, Jeddah & Qassim",
+      title: "Lamat Elarabia Contracting – General Contractor in Riyadh, Jeddah & Qassim",
       description:
-        "Lamat Elarabia Contracting – 20+ years building Saudi Arabia. General construction, finishing, MEP, and facility maintenance. Trusted by 25+ major clients.",
+        "Lamat Elarabia Contracting (لمعة العربية للمقاولات) – 20+ years building Saudi Arabia. General construction, finishing, MEP, and facility maintenance across Riyadh, Jeddah & Qassim. Trusted by 25+ major clients.",
       keywords: [
         "Lamat Elarabia",
         "Lamat Elarabia Contracting",
         "لمعة العربية",
+        "لمعة العربية للمقاولات",
         "general contractor Saudi Arabia",
         "construction company Riyadh",
         "contractor Jeddah",
@@ -45,9 +46,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: "شركة مقاولات عامة في الرياض وجدة والقصيم",
+    title: "لمعة العربية للمقاولات – شركة مقاولات عامة في الرياض وجدة والقصيم",
     description:
-      "لمعة العربية للمقاولات (Lamat Elarabia) – خبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة والأعمال الكهروميكانيكية. أكثر من 25 عميل رئيسي وفريق يتجاوز 150 متخصصًا.",
+      "لمعة العربية للمقاولات (Lamat Elarabia Contracting) – شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات العامة والتشطيبات والصيانة والأعمال الكهروميكانيكية. أكثر من 25 عميل رئيسي وفريق يتجاوز 150 متخصصًا. الرياض – جدة – القصيم.",
     keywords: [
       "لمعة العربية",
       "لمعة العربية للمقاولات",
