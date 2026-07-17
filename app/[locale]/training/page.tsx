@@ -18,19 +18,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Careers & Training – Engineers, Supervisors & Technicians",
       description:
-        "Join Lamat Elarabia Contracting (لمعة العربية للمقاولات) – open positions for civil engineers, site supervisors, electricians & plumbers. Professional training programs in construction and MEP.",
+        "Join Lamaat Al-Arabiya Contracting (لمعة العربية للمقاولات) – open positions for civil engineers, site supervisors, electricians & plumbers. Professional training programs in construction and MEP.",
       keywords: [
         "construction jobs Saudi Arabia",
         "contracting careers Riyadh",
         "civil engineer jobs KSA",
         "site supervisor vacancy",
         "construction training programs",
-        "Lamat Elarabia careers",
+        "Lamaat Al-Arabiya careers",
         "MEP technician jobs",
       ],
       openGraph: {
         locale: "en_US",
-        title: "Careers & Training Programs | Lamat Elarabia Contracting",
+        title: "Careers & Training Programs | Lamaat Al-Arabiya Contracting",
         description:
           "Join our team – open positions for engineers, supervisors & technicians. Professional training programs available.",
         url: `${BASE}/en/training`,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "التوظيف والتدريب – مهندسين ومشرفين وفنيين",
     description:
-      "انضم لفريق لمعة العربية للمقاولات (Lamat Elarabia Contracting) – وظائف شاغرة لمهندسين مدنيين، مشرفي مواقع، وفنيين كهرباء وسباكة. برامج تدريبية متخصصة لتطوير مهاراتك في قطاع المقاولات.",
+      "انضم لفريق لمعة العربية للمقاولات (Lamaat Al-Arabiya Contracting) – وظائف شاغرة لمهندسين مدنيين، مشرفي مواقع، وفنيين كهرباء وسباكة. برامج تدريبية متخصصة لتطوير مهاراتك في قطاع المقاولات.",
     keywords: [
       "وظائف مقاولات",
       "توظيف مهندسين السعودية",

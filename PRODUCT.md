@@ -13,7 +13,7 @@ Three audiences, all Arabic-speaking, mostly Saudi:
 
 ## Product Purpose
 
-Marketing site for لمعة العربية للمقاولات (Lamat Elarabia Contracting), a Riyadh-based contracting company. Site exists to build trust with prospective clients and partners, surface news/press, and support hiring. Success looks like: visitors trust the company's scale and legitimacy within seconds, and job seekers or clients know exactly how to make contact (WhatsApp, email, phone all present in footer).
+Marketing site for لمعة العربية للمقاولات (Lamaat Al-Arabiya Contracting), a Riyadh-based contracting company. Site exists to build trust with prospective clients and partners, surface news/press, and support hiring. Success looks like: visitors trust the company's scale and legitimacy within seconds, and job seekers or clients know exactly how to make contact (WhatsApp, email, phone all present in footer).
 
 ## Brand Personality
 

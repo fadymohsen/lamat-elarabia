@@ -1,5 +1,5 @@
 ---
-name: Lamat Elarabia Contracting
+name: Lamaat Al-Arabiya Contracting
 description: Riyadh-based contracting company site, rebuilt from WordPress/Elementor into Next.js
 colors:
   forest-primary: "#137547"
@@ -52,7 +52,7 @@ components:
     padding: "10px 20px"
 ---
 
-# Design System: Lamat Elarabia Contracting
+# Design System: Lamaat Al-Arabiya Contracting
 
 ## 1. Overview
 

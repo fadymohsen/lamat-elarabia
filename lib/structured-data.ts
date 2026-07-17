@@ -9,8 +9,8 @@ export function getOrganizationSchema(locale: string) {
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "@id": `${BASE}/#organization`,
-    name: isAr ? "لمعة العربية للمقاولات" : "Lamat Elarabia Contracting",
-    alternateName: isAr ? "Lamat Elarabia Contracting" : "لمعة العربية للمقاولات",
+    name: isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting",
+    alternateName: isAr ? "Lamaat Al-Arabiya Contracting" : "لمعة العربية للمقاولات",
     url: `${BASE}/${locale}`,
     logo: LOGO,
     image: `${BASE}/images/hero-home.png`,
@@ -43,7 +43,7 @@ export function getOrganizationSchema(locale: string) {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: isAr ? "خدمات لمعة العربية" : "Lamat Elarabia Services",
+      name: isAr ? "خدمات لمعة العربية" : "Lamaat Al-Arabiya Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -112,7 +112,7 @@ export function getWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${BASE}/#website`,
-    name: "لمعة العربية للمقاولات | Lamat Elarabia Contracting",
+    name: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
     url: BASE,
     inLanguage: ["ar", "en"],
   };
@@ -130,7 +130,7 @@ export function getContactPageSchema(locale: string) {
     mainEntity: {
       "@type": "GeneralContractor",
       "@id": `${BASE}/#organization`,
-      name: isAr ? "لمعة العربية للمقاولات" : "Lamat Elarabia Contracting",
+      name: isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting",
       telephone: "+966550928077",
       email: "info@lamat-elarabia.org",
       address: [
@@ -163,7 +163,7 @@ export function getLocalBusinessSchemas(locale: string) {
   const isAr = locale === "ar";
   const branches = [
     {
-      name: isAr ? "لمعة العربية للمقاولات – الرياض" : "Lamat Elarabia Contracting – Riyadh",
+      name: isAr ? "لمعة العربية للمقاولات – الرياض" : "Lamaat Al-Arabiya Contracting – Riyadh",
       street: isAr ? "حي النرجس – شارع الأمير مشعل" : "Al-Nargis - Prince Mishal Street",
       city: isAr ? "الرياض" : "Riyadh",
       region: isAr ? "منطقة الرياض" : "Riyadh Region",
@@ -171,7 +171,7 @@ export function getLocalBusinessSchemas(locale: string) {
       lng: 46.6753,
     },
     {
-      name: isAr ? "لمعة العربية للمقاولات – جدة" : "Lamat Elarabia Contracting – Jeddah",
+      name: isAr ? "لمعة العربية للمقاولات – جدة" : "Lamaat Al-Arabiya Contracting – Jeddah",
       street: isAr ? "حي الرواسي – شارع قادة الفكر" : "Al-Rawasi - Leaders Street",
       city: isAr ? "جدة" : "Jeddah",
       region: isAr ? "منطقة مكة المكرمة" : "Makkah Region",
@@ -179,7 +179,7 @@ export function getLocalBusinessSchemas(locale: string) {
       lng: 39.1925,
     },
     {
-      name: isAr ? "لمعة العربية للمقاولات – القصيم" : "Lamat Elarabia Contracting – Qassim",
+      name: isAr ? "لمعة العربية للمقاولات – القصيم" : "Lamaat Al-Arabiya Contracting – Qassim",
       street: isAr ? "بريدة – حي الأخضر" : "Buraydah - Al-Akhdar",
       city: isAr ? "بريدة" : "Buraydah",
       region: isAr ? "منطقة القصيم" : "Qassim Region",
@@ -246,23 +246,23 @@ export function getFAQSchema(locale: string) {
       ]
     : [
         {
-          q: "What services does Lamat Elarabia Contracting offer?",
+          q: "What services does Lamaat Al-Arabiya Contracting offer?",
           a: "We offer general contracting, finishing & decor, MEP (mechanical, electrical, plumbing), facility maintenance, and commercial supply of construction materials.",
         },
         {
-          q: "Where are Lamat Elarabia's offices located?",
+          q: "Where are Lamaat Al-Arabiya's offices located?",
           a: "We have three branches across Saudi Arabia: Riyadh (Al-Nargis district), Jeddah (Al-Rawasi district), and Qassim (Buraydah – Al-Akhdar district).",
         },
         {
-          q: "How many years of experience does Lamat Elarabia have?",
-          a: "Lamat Elarabia Contracting was founded in 2005, bringing over 20 years of experience in general construction and contracting across Saudi Arabia.",
+          q: "How many years of experience does Lamaat Al-Arabiya have?",
+          a: "Lamaat Al-Arabiya Contracting was founded in 2005, bringing over 20 years of experience in general construction and contracting across Saudi Arabia.",
         },
         {
           q: "Can I get a free consultation and project quote?",
           a: "Yes, we provide free consultations and project estimates. Contact us via phone or WhatsApp at +966550928077.",
         },
         {
-          q: "Does Lamat Elarabia handle government projects?",
+          q: "Does Lamaat Al-Arabiya handle government projects?",
           a: "Yes, we have extensive experience executing both government and private sector projects with full commitment to quality and safety standards.",
         },
       ];
@@ -293,7 +293,7 @@ export function getEmployerSchema(locale: string) {
     about: {
       "@type": "Organization",
       "@id": `${BASE}/#organization`,
-      name: isAr ? "لمعة العربية للمقاولات" : "Lamat Elarabia Contracting",
+      name: isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting",
       numberOfEmployees: {
         "@type": "QuantitativeValue",
         minValue: 150,

@@ -18,20 +18,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "News & Articles – Projects, Trends & Quality Standards",
       description:
-        "Latest construction news from Lamat Elarabia Contracting (لمعة العربية للمقاولات) – project updates, quality standards, safety best practices, and building trends shaping Saudi Arabia's Vision 2030.",
+        "Latest construction news from Lamaat Al-Arabiya Contracting (لمعة العربية للمقاولات) – project updates, quality standards, safety best practices, and building trends shaping Saudi Arabia's Vision 2030.",
       keywords: [
         "construction news Saudi Arabia",
         "building trends KSA",
         "contracting industry updates",
         "construction quality standards",
         "Saudi Vision 2030 construction",
-        "Lamat Elarabia projects",
+        "Lamaat Al-Arabiya projects",
       ],
       openGraph: {
         locale: "en_US",
-        title: "News & Articles | Lamat Elarabia Contracting",
+        title: "News & Articles | Lamaat Al-Arabiya Contracting",
         description:
-          "Latest construction news, project updates and building industry insights from Lamat Elarabia.",
+          "Latest construction news, project updates and building industry insights from Lamaat Al-Arabiya.",
         url: `${BASE}/en/news`,
       },
       alternates: {
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "الأخبار والمقالات – مشاريع ومعايير جودة البناء",
     description:
-      "تابع أحدث أخبار لمعة العربية للمقاولات (Lamat Elarabia) – مشاريع وعقود جديدة، مقالات متخصصة في معايير الجودة والسلامة، وتحليلات سوق المقاولات في المملكة العربية السعودية.",
+      "تابع أحدث أخبار لمعة العربية للمقاولات (Lamaat Al-Arabiya) – مشاريع وعقود جديدة، مقالات متخصصة في معايير الجودة والسلامة، وتحليلات سوق المقاولات في المملكة العربية السعودية.",
     keywords: [
       "أخبار المقاولات",
       "مشاريع بناء السعودية",

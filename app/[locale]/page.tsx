@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return {
-      title: "Lamat Elarabia Contracting – General Contractor in Riyadh, Jeddah & Qassim",
+      title: "Lamaat Al-Arabiya Contracting – General Contractor in Riyadh, Jeddah & Qassim",
       description:
-        "Lamat Elarabia Contracting (لمعة العربية للمقاولات) – 20+ years building Saudi Arabia. General construction, finishing, MEP, and facility maintenance across Riyadh, Jeddah & Qassim. Trusted by 25+ major clients.",
+        "Lamaat Al-Arabiya Contracting (لمعة العربية للمقاولات) – 20+ years building Saudi Arabia. General construction, finishing, MEP, and facility maintenance across Riyadh, Jeddah & Qassim. Trusted by 25+ major clients.",
       keywords: [
-        "Lamat Elarabia",
-        "Lamat Elarabia Contracting",
+        "Lamaat Al-Arabiya",
+        "Lamaat Al-Arabiya Contracting",
         "لمعة العربية",
         "لمعة العربية للمقاولات",
         "general contractor Saudi Arabia",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
       openGraph: {
         locale: "en_US",
-        title: "Lamat Elarabia Contracting | General Contractor in Saudi Arabia",
+        title: "Lamaat Al-Arabiya Contracting | General Contractor in Saudi Arabia",
         description:
           "20+ years building Saudi Arabia. Construction, finishing, MEP & maintenance. Riyadh – Jeddah – Qassim.",
         url: `${BASE}/en`,
@@ -48,11 +48,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "لمعة العربية للمقاولات – شركة مقاولات عامة في الرياض وجدة والقصيم",
     description:
-      "لمعة العربية للمقاولات (Lamat Elarabia Contracting) – شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات العامة والتشطيبات والصيانة والأعمال الكهروميكانيكية. أكثر من 25 عميل رئيسي وفريق يتجاوز 150 متخصصًا. الرياض – جدة – القصيم.",
+      "لمعة العربية للمقاولات (Lamaat Al-Arabiya Contracting) – شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات العامة والتشطيبات والصيانة والأعمال الكهروميكانيكية. أكثر من 25 عميل رئيسي وفريق يتجاوز 150 متخصصًا. الرياض – جدة – القصيم.",
     keywords: [
       "لمعة العربية",
       "لمعة العربية للمقاولات",
-      "Lamat Elarabia",
+      "Lamaat Al-Arabiya",
       "شركة مقاولات الرياض",
       "مقاولات عامة جدة",
       "تشطيبات السعودية",

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Lamat Elarabia Contracting - لمعة العربية للمقاولات";
+export const alt = "Lamaat Al-Arabiya Contracting - لمعة العربية للمقاولات";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -17,7 +17,7 @@ export default async function OgImage({ params }: Props) {
   const logoData = await readFile(join(process.cwd(), "public/images/figma/logo-inner.png"));
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
 
-  const title = isAr ? "لمعة العربية للمقاولات" : "Lamat Elarabia Contracting";
+  const title = isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting";
   const tagline = isAr
     ? "شركة مقاولات رائدة في المملكة العربية السعودية"
     : "General Contractor in Saudi Arabia";

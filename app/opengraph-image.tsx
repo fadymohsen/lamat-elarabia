@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Lamat Elarabia Contracting - General Contractor in Saudi Arabia";
+export const alt = "Lamaat Al-Arabiya Contracting - General Contractor in Saudi Arabia";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -52,7 +52,7 @@ export default async function OgImage() {
 
         {/* Company name */}
         <div style={{ fontSize: 52, fontWeight: 800, textAlign: "center", lineHeight: 1.2, marginBottom: 16 }}>
-          Lamat Elarabia Contracting
+          Lamaat Al-Arabiya Contracting
         </div>
 
         {/* Tagline */}

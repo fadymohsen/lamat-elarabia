@@ -9,7 +9,7 @@ import pg from "pg";
 import { extractEditable, applyEdits } from "../lib/html-editor.ts";
 
 const TITLES = {
-  home: "Lamat Elarabia Contracting",
+  home: "Lamaat Al-Arabiya Contracting",
   news: "News & Articles",
   training: "Employment & Training",
   contact: "Contact Us",
