@@ -281,6 +281,47 @@ export function getFAQSchema(locale: string) {
   };
 }
 
+// ── News articles schema (rich results for article listings) ──
+
+export function getNewsArticlesSchema(locale: string) {
+  const isAr = locale === "ar";
+  const articles = isAr
+    ? [
+        { title: "معايير الجودة في قطاع المقاولات", img: "/images/quality-photo.jpg" },
+        { title: "أحدث اتجاهات البناء في السعودية", img: "/images/trends-photo.jpg" },
+        { title: "كيف تضمن شركات المقاولات حماية فرق العمل والمواقع؟", img: "/images/safety-photo.jpg" },
+      ]
+    : [
+        { title: "Quality Standards in Contracting", img: "/images/quality-photo.jpg" },
+        { title: "Latest Construction Trends in Saudi Arabia", img: "/images/trends-photo.jpg" },
+        { title: "How Contracting Companies Ensure Protection for Teams and Sites", img: "/images/safety-photo.jpg" },
+      ];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: isAr ? "الأخبار والمقالات" : "News & Articles",
+    url: `${BASE}/${locale}/news`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: articles.map((a, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Article",
+          headline: a.title,
+          image: `${BASE}${a.img}`,
+          publisher: {
+            "@type": "Organization",
+            "@id": `${BASE}/#organization`,
+            name: isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting",
+          },
+        },
+      })),
+    },
+  };
+}
+
 // ── Training / Careers page schema ──
 
 export function getEmployerSchema(locale: string) {

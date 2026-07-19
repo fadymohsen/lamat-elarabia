@@ -2,7 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import TrainingPage from "@/components/legacy/TrainingPage";
 import JsonLd from "@/components/JsonLd";
-import { getBreadcrumbSchema } from "@/lib/structured-data";
+import { getBreadcrumbSchema, getEmployerSchema } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -103,6 +103,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <JsonLd data={breadcrumbs} />
+      <JsonLd data={getEmployerSchema(locale)} />
       <TrainingPage locale={locale} />
     </>
   );

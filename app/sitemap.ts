@@ -10,12 +10,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const page of PAGES) {
     const isHome = page === "";
-    const changeFreq = isHome ? "weekly" : page === "/news" ? "daily" : "monthly";
+    const changeFreq: "weekly" | "daily" | "monthly" = isHome
+      ? "weekly"
+      : page === "/news"
+        ? "daily"
+        : "monthly";
 
     const arEntry: MetadataRoute.Sitemap[number] = {
       url: `${BASE}/ar${page}`,
       lastModified: now,
-      changeFrequency: changeFreq as any,
+      changeFrequency: changeFreq,
       priority: isHome ? 1.0 : page === "/news" ? 0.85 : page === "/contact" ? 0.8 : 0.7,
       alternates: {
         languages: {
@@ -29,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const enEntry: MetadataRoute.Sitemap[number] = {
       url: `${BASE}/en${page}`,
       lastModified: now,
-      changeFrequency: changeFreq as any,
+      changeFrequency: changeFreq,
       priority: isHome ? 0.9 : page === "/news" ? 0.75 : page === "/contact" ? 0.7 : 0.6,
       alternates: {
         languages: {
