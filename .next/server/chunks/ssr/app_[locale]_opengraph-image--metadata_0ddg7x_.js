@@ -1,0 +1,3 @@
+module.exports=[87368,a=>{"use strict";a.i(7997),a.i(99475),a.i(12714),a.i(50227);var b=a.i(52425);let c={alt:"Lamaat Al-Arabiya Contracting - لمعة العربية للمقاولات",contentType:"image/png",size:{width:1200,height:630}};async function d(a){let{__metadata_id__:d,...e}=await a.params,f=(0,b.fillMetadataSegment)("/[locale]",e,"opengraph-image",!1);return[function(a){let b={alt:a.alt,type:a.contentType||"image/png",url:f+"?0c7a5af88c0c5ba1"},{size:c}=a;return c&&(b.width=c.width,b.height=c.height),b}(c)]}a.s(["default",0,d],87368)},27894,a=>{a.n(a.i(87368))}];
+
+//# sourceMappingURL=app_%5Blocale%5D_opengraph-image--metadata_0ddg7x_.js.map

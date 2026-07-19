@@ -1,0 +1,41 @@
+{
+  "node": {
+    "60483f5f6277259fcba58134e5873cfe424cd754a4": {
+      "workers": {
+        "app/admin/media/page": {
+          "moduleId": 43029,
+          "async": true,
+          "exportedName": "uploadMedia",
+          "filename": "app/actions/media.ts"
+        }
+      },
+      "exportedName": "uploadMedia",
+      "filename": "app/actions/media.ts"
+    },
+    "6094d604c0abc74f814fc488f91b667ba9b8a5838b": {
+      "workers": {
+        "app/admin/media/page": {
+          "moduleId": 43029,
+          "async": true,
+          "exportedName": "updateMediaAlt",
+          "filename": "app/actions/media.ts"
+        }
+      },
+      "exportedName": "updateMediaAlt",
+      "filename": "app/actions/media.ts"
+    },
+    "60539532ae09fe0e4e5f87560af2b519c523cb48b5": {
+      "workers": {
+        "app/admin/media/page": {
+          "moduleId": 43029,
+          "async": true,
+          "exportedName": "deleteMedia",
+          "filename": "app/actions/media.ts"
+        }
+      },
+      "exportedName": "deleteMedia",
+      "filename": "app/actions/media.ts"
+    }
+  },
+  "edge": {}
+}
