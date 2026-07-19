@@ -12,6 +12,7 @@ interface ContactPageProps {
 const COPY = {
   ar: {
     title: "تواصل معنا",
+    sectionHeading: "تواصل مع لمعة العربية للمقاولات",
     intro: "نسعد بتواصلكم معنا في أي وقت، سواء كنتم تبحثون عن شريك موثوق لتنفيذ مشروع جديد أو تحتاجون إلى استشارة. فريقنا جاهز للرد بسرعة.",
     phoneLabel: "الهاتف",
     emailLabel: "البريد الإلكتروني",
@@ -21,7 +22,7 @@ const COPY = {
     formEmail: "البريد الإلكتروني",
     formMessage: "الرسالة",
     formSubmit: "إرسال",
-    branchesTitle: "فروعنا",
+    branchesTitle: "فروع لمعة العربية للمقاولات",
     branches: [
       { city: "جدة", addr: "حي الرواسي – شارع قادة الفكر", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27898.32!2d39.1876!3d21.5338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2ssa" },
       { city: "الرياض", addr: "حي النرجس – شارع الأمير مشعل", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27686.24!2d46.6753!3d24.7745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2ssa" },
@@ -31,6 +32,7 @@ const COPY = {
   },
   en: {
     title: "Contact Us",
+    sectionHeading: "Contact Lamaat Al-Arabiya Contracting",
     intro: "We'd love to hear from you at any time — whether you're looking for a trusted partner for a new project or need a consultation. Our team is ready to respond quickly.",
     phoneLabel: "Phone",
     emailLabel: "Email",
@@ -40,7 +42,7 @@ const COPY = {
     formEmail: "Email",
     formMessage: "Message",
     formSubmit: "Send",
-    branchesTitle: "Our Branches",
+    branchesTitle: "Lamaat Al-Arabiya Contracting Branches",
     branches: [
       { city: "Jeddah", addr: "Al-Rawasi - Leaders Street", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27898.32!2d39.1876!3d21.5338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa" },
       { city: "Riyadh", addr: "Al-Nargis - Prince Mishal Street", mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27686.24!2d46.6753!3d24.7745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa" },
@@ -74,7 +76,7 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
       {/* Intro + contact info */}
       <section className={`mx-auto max-w-[1041px] px-6 py-24 ${textAlign}`}>
         <h2 className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
-          {t.title}
+          {t.sectionHeading}
         </h2>
         <p className="font-['Tajawal',sans-serif] text-[18px] md:text-[24px] text-[#1e1e1e] leading-relaxed mb-10">
           {t.intro}
@@ -111,7 +113,7 @@ export default async function ContactPage({ locale = "ar" }: ContactPageProps) {
             <div className="rounded-2xl bg-[#f5f5f3] p-6 text-center">
               <div className="flex justify-center mb-3">
                 <div className="flex items-center justify-center size-8 rounded-full bg-[#137547] p-1.5">
-                  <Image src="/images/figma/whatsapp-icon.svg" alt="" width={20} height={20} />
+                  <Image src="/images/figma/whatsapp-icon.svg" alt="WhatsApp" width={20} height={20} />
                 </div>
               </div>
               <p className="font-['Tajawal',sans-serif] text-[#1e1e1e]/60 mb-2">{t.whatsappLabel}</p>

@@ -38,7 +38,7 @@ export default async function SiteFooter({ locale = "ar" }: SiteFooterProps) {
       {/* Contact card - exact colors/type from Figma News page footer */}
       <div className="px-6 py-16">
         <div className="relative mx-auto max-w-6xl rounded-3xl overflow-hidden bg-[#14201a]">
-          <Image src="/images/hero-home.png" alt="" fill className="object-cover opacity-30" />
+          <Image src="/images/hero-home.png" alt={isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting"} fill className="object-cover opacity-30" />
           <div className="relative z-10 grid gap-10 md:grid-cols-[1.3fr_1fr] items-center px-8 py-14 md:px-14">
             <div className={`${isAr ? "text-right" : "text-left"}`}>
               <h2 className="font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[48px] mb-5">
@@ -95,7 +95,7 @@ export default async function SiteFooter({ locale = "ar" }: SiteFooterProps) {
 
         <div className="relative z-10 flex flex-col items-center gap-6 py-16 text-center">
           <div className="md:hidden relative size-16 rounded-full bg-white overflow-hidden">
-            <Image src="/images/figma/logo-inner.png" alt="" fill className="object-cover" />
+            <Image src="/images/figma/logo-inner.png" alt={isAr ? "شعار لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting logo"} fill className="object-cover" />
           </div>
           <p className="font-['Tajawal',sans-serif] text-white text-[20px] md:text-[24px]">{t.tagline}</p>
           <p className="font-['Cairo',sans-serif] font-extrabold text-white text-[26px] md:text-[32px]">{t.name}</p>

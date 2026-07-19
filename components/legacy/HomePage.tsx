@@ -86,6 +86,7 @@ const COPY = {
       "الخدمات الفنية: الكهرباء – السباكة – أنظمة التكييف (HVAC) – الدفاع المدني والسلامة – أعمال الخرسانة المسلحة والبنية التحتية",
       "التوريد التجاري: توريد وبيع مواد البناء والتشطيب – مواد وأدوات التنظيف والعناية",
     ],
+    servicesCta: "احصل على عرض سعر",
     certsTitle: "نحن خبراء بشهاداتكم المعتمدة",
     certsBody: "تفخر شركة لمعة العربية للمقاولات بحصولها على عدة شهادات وخطابات شكر وتقدير من جهات حكومية وخاصة، تقديرًا لالتزامها بالجودة العالية، ودقتها في التنفيذ، واحترافيتها في إدارة المشاريع.",
     certsTagline: "شهاداتنا … دلالة ثقة لعملائنا",
@@ -133,6 +134,7 @@ const COPY = {
       "Technical Services: electrical – plumbing – HVAC – civil defense and safety",
       "Commercial Supply: supply and sale of building and finishing materials",
     ],
+    servicesCta: "Get a Free Quote",
     certsTitle: "We're Experts, Certified",
     certsBody: "Lama3t Al-Arabia is proud to have received several certificates and letters of appreciation from government and private entities.",
     certsTagline: "Our Certificates … a Sign of Trust for Our Clients",
@@ -317,6 +319,12 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
                 <li key={i}>{s}</li>
               ))}
             </ul>
+            <Link
+              href={contactHref}
+              className="mt-6 inline-block rounded-full bg-[#137547] px-8 py-3 font-['Cairo',sans-serif] font-bold text-white hover:bg-[#0e5735] transition-colors"
+            >
+              {t.servicesCta}
+            </Link>
           </div>
         </div>
       </section>

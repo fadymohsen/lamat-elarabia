@@ -75,6 +75,12 @@ export const metadata = {
     email: false,
     telephone: false,
   },
+  other: {
+    "geo.region": "SA",
+    "geo.placename": "Riyadh, Saudi Arabia",
+    "geo.position": "24.7136;46.6753",
+    ICBM: "24.7136, 46.6753",
+  },
   openGraph: {
     type: "website",
     locale: "ar_SA",

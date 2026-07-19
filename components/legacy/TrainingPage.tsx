@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -10,8 +11,9 @@ interface TrainingPageProps {
 const COPY = {
   ar: {
     title: "التوظيف والتدريب",
+    sectionHeading: "التوظيف والتدريب في لمعة العربية للمقاولات",
     intro: "ننمو دائمًا، ونبحث عن كفاءات طموحة تنضم إلى فريق لمعة العربية للمقاولات لتكون جزءًا من رحلة بناء المستقبل.",
-    positionsTitle: "الفرص المتاحة",
+    positionsTitle: "الوظائف المتاحة في لمعة العربية",
     positions: [
       { title: "مهندس مدني", desc: "إشراف على تنفيذ المشاريع الإنشائية ومتابعة الجودة والسلامة." },
       { title: "مشرف موقع", desc: "متابعة سير العمل اليومي وتنسيق فرق التنفيذ في الموقع." },
@@ -21,13 +23,15 @@ const COPY = {
     trainingTitle: "برامج التدريب",
     trainingBody: "نؤمن بأن الاستثمار في الكوادر البشرية هو أساس النجاح، لذلك نقدم برامج تدريبية متخصصة لصقل مهارات موظفينا ومواكبة أحدث التقنيات في قطاع المقاولات.",
     cta: "أرسل سيرتك الذاتية إلى",
+    contactCta: "أو تواصل معنا مباشرة",
     email: "Lama3t_elarabia@hotmail.com",
     heroAlt: "لمعة العربية - التوظيف والتدريب",
   },
   en: {
     title: "Employment & Training",
+    sectionHeading: "Careers & Training at Lamaat Al-Arabiya Contracting",
     intro: "We're always growing, seeking ambitious talent to join the Lama3t Al-Arabia team and be part of building the future.",
-    positionsTitle: "Available Opportunities",
+    positionsTitle: "Open Positions at Lamaat Al-Arabiya",
     positions: [
       { title: "Civil Engineer", desc: "Oversee construction project execution and quality/safety compliance." },
       { title: "Site Supervisor", desc: "Coordinate daily on-site work and execution teams." },
@@ -37,6 +41,7 @@ const COPY = {
     trainingTitle: "Training Programs",
     trainingBody: "We believe investing in people is the foundation of success, so we offer specialized training programs to sharpen our team's skills and keep pace with the latest construction technologies.",
     cta: "Send your CV to",
+    contactCta: "Or contact us directly",
     email: "Lama3t_elarabia@hotmail.com",
     heroAlt: "Lama3t Al-Arabia - Employment & Training",
   },
@@ -65,7 +70,7 @@ export default async function TrainingPage({ locale = "ar" }: TrainingPageProps)
       {/* Intro */}
       <section className={`mx-auto max-w-[1041px] px-6 py-24 ${textAlign}`}>
         <h2 className="font-['Cairo',sans-serif] font-extrabold text-[36px] md:text-[56px] text-[#1e1e1e] mb-5">
-          {t.title}
+          {t.sectionHeading}
         </h2>
         <p className="font-['Tajawal',sans-serif] text-[18px] md:text-[24px] text-[#1e1e1e] leading-relaxed">
           {t.intro}
@@ -113,6 +118,14 @@ export default async function TrainingPage({ locale = "ar" }: TrainingPageProps)
         >
           {t.email}
         </a>
+        <div className="mt-4">
+          <Link
+            href={isAr ? "/ar/contact" : "/en/contact"}
+            className="inline-block rounded-full bg-white px-8 py-3 font-['Cairo',sans-serif] font-bold text-[#137547] hover:bg-white/90 transition-colors"
+          >
+            {t.contactCta}
+          </Link>
+        </div>
       </section>
 
       <SiteFooter locale={locale} />

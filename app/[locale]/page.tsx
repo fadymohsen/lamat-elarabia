@@ -2,7 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import HomePage from "@/components/legacy/HomePage";
 import JsonLd from "@/components/JsonLd";
-import { getFAQSchema, getHomePageSchema, getLocalBusinessSchemas } from "@/lib/structured-data";
+import { getBreadcrumbSchema, getFAQSchema, getHomePageSchema, getLocalBusinessSchemas } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -107,10 +107,15 @@ export default async function Page({ params }: Props) {
   const { locale } = await params;
   if (locale !== "ar" && locale !== "en") notFound();
 
+  const isAr = locale === "ar";
   const localBusinessSchemas = getLocalBusinessSchemas(locale);
+  const breadcrumbs = getBreadcrumbSchema(locale, [
+    { name: isAr ? "الرئيسية" : "Home", path: `/${locale}` },
+  ]);
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <JsonLd data={getHomePageSchema(locale)} />
       <JsonLd data={getFAQSchema(locale)} />
       {localBusinessSchemas.map((schema, i) => (

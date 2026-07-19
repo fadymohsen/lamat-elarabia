@@ -10,6 +10,7 @@ interface NewsPageProps {
 const COPY = {
   ar: {
     title: "الأخبار والمقالات",
+    sectionHeading: "أخبار ومقالات لمعة العربية للمقاولات",
     intro: "مرحبًا بكم في نافذة لمعة العربية على قطاع المقاولات والتطوير العمراني.\nفي هذه الصفحة نشارككم:",
     bullets: [
       "أحدث الأخبار عن المشاريع والعقود الجديدة.",
@@ -45,6 +46,7 @@ const COPY = {
   },
   en: {
     title: "News & Articles",
+    sectionHeading: "Lamaat Al-Arabiya Contracting News & Articles",
     intro: "Welcome to Lama3t Al-Arabia's window into contracting and urban development.\nOn this page we share:",
     bullets: [
       "The latest news on new projects and contracts.",
@@ -81,12 +83,12 @@ const COPY = {
 };
 
 const PROJECT_IMAGES = [
-  { src: "/images/project-1.jpg", alt: "مشروع 1" },
-  { src: "/images/project-2.jpg", alt: "مشروع 2" },
-  { src: "/images/project-3.jpg", alt: "مشروع 3" },
-  { src: "/images/project-4.jpg", alt: "مشروع 4" },
-  { src: "/images/project-5.jpg", alt: "مشروع 5" },
-  { src: "/images/project-6.jpg", alt: "مشروع 6" },
+  { src: "/images/project-1.jpg", alt: "مشروع إنشائي لمعة العربية للمقاولات", altEn: "Lamaat Al-Arabiya construction project" },
+  { src: "/images/project-2.jpg", alt: "مشروع تشطيبات لمعة العربية", altEn: "Lamaat Al-Arabiya finishing project" },
+  { src: "/images/project-3.jpg", alt: "مشروع بناء لمعة العربية في السعودية", altEn: "Lamaat Al-Arabiya building project in Saudi Arabia" },
+  { src: "/images/project-4.jpg", alt: "أعمال مقاولات لمعة العربية", altEn: "Lamaat Al-Arabiya contracting works" },
+  { src: "/images/project-5.jpg", alt: "مشروع صيانة لمعة العربية", altEn: "Lamaat Al-Arabiya maintenance project" },
+  { src: "/images/project-6.jpg", alt: "مشروع كهروميكانيكي لمعة العربية", altEn: "Lamaat Al-Arabiya MEP project" },
 ];
 
 export default async function NewsPage({ locale = "ar" }: NewsPageProps) {
@@ -116,7 +118,7 @@ export default async function NewsPage({ locale = "ar" }: NewsPageProps) {
         </div>
         <div className={`${isAr ? "text-right order-1 md:order-2" : "text-left order-2 md:order-1"}`}>
           <h2 className="font-['Cairo',sans-serif] font-extrabold text-[32px] md:text-[56px] text-[#1e1e1e] mb-5">
-            {t.title}
+            {t.sectionHeading}
           </h2>
           <p className="font-['Tajawal',sans-serif] text-[16px] md:text-[24px] text-[#1e1e1e] leading-relaxed whitespace-pre-line mb-3">
             {t.intro}
@@ -137,7 +139,7 @@ export default async function NewsPage({ locale = "ar" }: NewsPageProps) {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {PROJECT_IMAGES.map((proj, i) => (
             <div key={i} className="relative h-[280px] rounded-3xl overflow-hidden">
-              <Image src={proj.src} alt={isAr ? proj.alt : `Project ${i + 1}`} fill className="object-cover" />
+              <Image src={proj.src} alt={isAr ? proj.alt : proj.altEn} fill className="object-cover" />
             </div>
           ))}
         </div>
