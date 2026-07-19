@@ -1,3 +1,0 @@
-module.exports=[80398,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function(){return(0,b.jsx)("div",{className:"flex min-h-screen items-center justify-center bg-[#FBFAF7]",children:(0,b.jsxs)("div",{className:"flex flex-col items-center gap-4",children:[(0,b.jsx)("div",{className:"h-10 w-10 animate-spin rounded-full border-4 border-[#137547] border-t-transparent"}),(0,b.jsx)("p",{style:{fontFamily:"Tajawal, sans-serif",color:"#5a5a55"},children:"جارٍ التحميل..."})]})})}])},81625,a=>{a.n(a.i(80398))}];
-
-//# sourceMappingURL=app_admin_loading_tsx_10-mj9-._.js.map
