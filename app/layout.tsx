@@ -91,7 +91,7 @@ export const metadata = {
       "شركة مقاولات رائدة بخبرة +20 عامًا. إنشاءات، تشطيبات، صيانة. الرياض – جدة – القصيم.",
   },
   verification: {
-    google: "GOOGLE_SITE_VERIFICATION_CODE_HERE",
+    google: "UM08_6bx4_mqtBWclKRLppAIDeYIBYhpg5B7St7grCA",
   },
   robots: {
     index: true,
