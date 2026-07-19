@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
       openGraph: {
         locale: "en_US",
+        type: "website",
         title: "Lamaat Al-Arabiya Contracting | General Contractor in Saudi Arabia",
         description:
           "20+ years building Saudi Arabia. Construction, finishing, MEP & maintenance. Riyadh – Jeddah – Qassim.",
@@ -71,6 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       locale: "ar_SA",
+      type: "website",
       title: "لمعة العربية للمقاولات | شركة مقاولات عامة في السعودية",
       description:
         "خبرة +20 عامًا في الإنشاءات والتشطيبات والصيانة. الرياض – جدة – القصيم.",

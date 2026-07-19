@@ -30,12 +30,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
       openGraph: {
         locale: "en_US",
+        type: "website",
         title: "Contact Us | Lamaat Al-Arabiya Contracting",
         description:
           "Get in touch with our team in Riyadh, Jeddah or Qassim. Free project consultations and estimates.",
         url: `${BASE}/en/contact`,
         siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
-        images: [{ url: `${BASE}/en/opengraph-image`, width: 1200, height: 630 }],
+        images: [
+          {
+            url: `${BASE}/en/opengraph-image`,
+            width: 1200,
+            height: 630,
+            alt: "Contact Lamaat Al-Arabiya Contracting",
+          },
+        ],
       },
       alternates: {
         canonical: `${BASE}/en/contact`,
@@ -60,12 +68,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       locale: "ar_SA",
+      type: "website",
       title: "تواصل معنا | لمعة العربية للمقاولات",
       description:
         "تواصل معنا للحصول على استشارة مجانية وعرض سعر. فروع في الرياض، جدة، والقصيم.",
       url: `${BASE}/ar/contact`,
       siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
-      images: [{ url: `${BASE}/ar/opengraph-image`, width: 1200, height: 630 }],
+      images: [
+        {
+          url: `${BASE}/ar/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: "تواصل مع لمعة العربية",
+        },
+      ],
     },
     alternates: {
       canonical: `${BASE}/ar/contact`,

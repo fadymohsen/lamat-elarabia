@@ -6,16 +6,17 @@ const PAGES = ["", "/news", "/training", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-
   const entries: MetadataRoute.Sitemap = [];
 
   for (const page of PAGES) {
     const isHome = page === "";
-    entries.push({
+    const changeFreq = isHome ? "weekly" : page === "/news" ? "daily" : "monthly";
+
+    const arEntry: MetadataRoute.Sitemap[number] = {
       url: `${BASE}/ar${page}`,
       lastModified: now,
-      changeFrequency: isHome ? "weekly" : page === "/news" ? "weekly" : "monthly",
-      priority: isHome ? 1.0 : page === "/contact" ? 0.8 : 0.7,
+      changeFrequency: changeFreq as any,
+      priority: isHome ? 1.0 : page === "/news" ? 0.85 : page === "/contact" ? 0.8 : 0.7,
       alternates: {
         languages: {
           ar: `${BASE}/ar${page}`,
@@ -23,12 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
           "x-default": `${BASE}/en${page}`,
         },
       },
-    });
-    entries.push({
+    };
+
+    const enEntry: MetadataRoute.Sitemap[number] = {
       url: `${BASE}/en${page}`,
       lastModified: now,
-      changeFrequency: isHome ? "weekly" : page === "/news" ? "weekly" : "monthly",
-      priority: isHome ? 0.9 : page === "/contact" ? 0.7 : 0.6,
+      changeFrequency: changeFreq as any,
+      priority: isHome ? 0.9 : page === "/news" ? 0.75 : page === "/contact" ? 0.7 : 0.6,
       alternates: {
         languages: {
           ar: `${BASE}/ar${page}`,
@@ -36,7 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
           "x-default": `${BASE}/en${page}`,
         },
       },
-    });
+    };
+
+    entries.push(arEntry);
+    entries.push(enEntry);
   }
 
   return entries;

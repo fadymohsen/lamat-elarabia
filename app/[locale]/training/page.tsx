@@ -30,12 +30,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
       openGraph: {
         locale: "en_US",
+        type: "website",
         title: "Careers & Training Programs | Lamaat Al-Arabiya Contracting",
         description:
           "Join our team – open positions for engineers, supervisors & technicians. Professional training programs available.",
         url: `${BASE}/en/training`,
         siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
-        images: [{ url: `${BASE}/en/opengraph-image`, width: 1200, height: 630 }],
+        images: [
+          {
+            url: `${BASE}/en/opengraph-image`,
+            width: 1200,
+            height: 630,
+            alt: "Lamaat Al-Arabiya Careers & Training",
+          },
+        ],
       },
       alternates: {
         canonical: `${BASE}/en/training`,
@@ -60,12 +68,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       locale: "ar_SA",
+      type: "website",
       title: "التوظيف والتدريب | لمعة العربية للمقاولات",
       description:
         "فرص وظيفية متنوعة وبرامج تدريبية متخصصة في قطاع المقاولات والبناء.",
       url: `${BASE}/ar/training`,
       siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
-      images: [{ url: `${BASE}/ar/opengraph-image`, width: 1200, height: 630 }],
+      images: [
+        {
+          url: `${BASE}/ar/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: "التوظيف والتدريب لمعة العربية",
+        },
+      ],
     },
     alternates: {
       canonical: `${BASE}/ar/training`,
