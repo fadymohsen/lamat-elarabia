@@ -90,6 +90,29 @@ export function getOrganizationSchema(locale: string) {
   };
 }
 
+// ── WebPage schema for homepage (reinforces brand in Google) ──
+
+export function getHomePageSchema(locale: string) {
+  const isAr = locale === "ar";
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${BASE}/${locale}/#webpage`,
+    name: isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting",
+    url: `${BASE}/${locale}`,
+    isPartOf: { "@id": `${BASE}/#website` },
+    about: { "@id": `${BASE}/#organization` },
+    description: isAr
+      ? "لمعة العربية للمقاولات – شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات العامة والتشطيبات والصيانة في الرياض وجدة والقصيم"
+      : "Lamaat Al-Arabiya Contracting – Leading contractor with 20+ years in general construction, finishing, and maintenance across Riyadh, Jeddah & Qassim",
+    inLanguage: isAr ? "ar" : "en",
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${BASE}/images/hero-home.png`,
+    },
+  };
+}
+
 // ── Breadcrumbs (shows in Google as: Home > News) ──
 
 export function getBreadcrumbSchema(locale: string, items: { name: string; path: string }[]) {

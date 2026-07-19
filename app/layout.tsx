@@ -37,6 +37,9 @@ export const metadata = {
     "مقاولات عامة",
     "لمعة العربية",
     "لمعة العربية للمقاولات",
+    "لمعه العربيه للمقاولات",
+    "لمعة العربيه",
+    "لمعه العربية",
     "مقاولات الرياض",
     "مقاولات جدة",
     "مقاولات القصيم",
@@ -53,6 +56,11 @@ export const metadata = {
     "construction company",
     "Lamaat Al-Arabiya",
     "Lamaat Al-Arabiya Contracting",
+    "Lamaat Alarabiya",
+    "Lam3at Al Arabia",
+    "Lama3t Al-Arabia",
+    "Lamat Elarabia",
+    "Lamat Al Arabia Contracting",
     "general contractor KSA",
     "Jeddah contractor",
     "Qassim construction",
@@ -110,9 +118,13 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const { headers } = await import("next/headers");
+  const headersList = await headers();
+  const lang = headersList.get("x-locale") ?? "ar";
+
   return (
-    <html lang="ar" className={`${cairo.variable} ${tajawal.variable}`} suppressHydrationWarning>
+    <html lang={lang} className={`${cairo.variable} ${tajawal.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

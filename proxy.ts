@@ -72,7 +72,10 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL(`/${preferredLocale}`, request.nextUrl), 301);
   }
 
-  return NextResponse.next();
+  const locale = pathname.startsWith("/en") ? "en" : "ar";
+  const response = NextResponse.next();
+  response.headers.set("x-locale", locale);
+  return response;
 }
 
 export const config = {

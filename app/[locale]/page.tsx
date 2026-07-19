@@ -2,7 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import HomePage from "@/components/legacy/HomePage";
 import JsonLd from "@/components/JsonLd";
-import { getFAQSchema, getLocalBusinessSchemas } from "@/lib/structured-data";
+import { getFAQSchema, getHomePageSchema, getLocalBusinessSchemas } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
 const BASE = "https://lamat-elarabia.org";
@@ -22,6 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       keywords: [
         "Lamaat Al-Arabiya",
         "Lamaat Al-Arabiya Contracting",
+        "Lamaat Alarabiya",
+        "Lam3at Al Arabia",
+        "Lama3t Al-Arabia",
+        "Lamat Elarabia",
+        "Lamat Al Arabia Contracting",
         "لمعة العربية",
         "لمعة العربية للمقاولات",
         "general contractor Saudi Arabia",
@@ -62,7 +67,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: [
       "لمعة العربية",
       "لمعة العربية للمقاولات",
+      "لمعه العربيه للمقاولات",
+      "لمعة العربيه",
+      "لمعه العربية",
       "Lamaat Al-Arabiya",
+      "Lamat Elarabia",
       "شركة مقاولات الرياض",
       "مقاولات عامة جدة",
       "تشطيبات السعودية",
@@ -102,6 +111,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={getHomePageSchema(locale)} />
       <JsonLd data={getFAQSchema(locale)} />
       {localBusinessSchemas.map((schema, i) => (
         <JsonLd key={i} data={schema} />
