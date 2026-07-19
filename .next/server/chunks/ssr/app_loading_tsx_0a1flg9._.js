@@ -1,3 +1,0 @@
-module.exports=[63588,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function(){return(0,b.jsx)("div",{className:"flex min-h-screen items-center justify-center bg-[#faf8f4]",children:(0,b.jsxs)("div",{className:"flex flex-col items-center gap-4",children:[(0,b.jsx)("div",{className:"h-10 w-10 animate-spin rounded-full border-4 border-[#137547] border-t-transparent"}),(0,b.jsx)("p",{className:"font-['Tajawal',sans-serif] text-[#1e1e1e]/60 text-sm",children:"جارٍ التحميل..."})]})})}])},45538,a=>{a.n(a.i(63588))}];
-
-//# sourceMappingURL=app_loading_tsx_0a1flg9._.js.map
