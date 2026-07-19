@@ -106,7 +106,7 @@ const COPY = {
   },
   en: {
     tagline: "We build the present … and shape the future",
-    name: "لمعة العربية للمقاولات",
+    name: "Lamaat Al-Arabiya Contracting",
     whyTitle: "Why We Stand Out",
     whyBody:
       "With over 20 years of experience in the Saudi market, Lama3t Al-Arabia has established itself as a leading contracting company, combining deep-rooted expertise with a modern vision. Our team of 150+ qualified professionals forms the foundation of the company's success. We hold a strong track record delivering major government and private projects, with strict commitment to quality and safety standards at every stage.",
