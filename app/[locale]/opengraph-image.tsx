@@ -1,6 +1,4 @@
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 
 export const alt = "Lamaat Al-Arabiya Contracting - لمعة العربية للمقاولات";
 export const size = { width: 1200, height: 630 };
@@ -14,12 +12,13 @@ export default async function OgImage({ params }: Props) {
   const { locale } = await params;
   const isAr = locale === "ar";
 
-  const [logoData, fontBuffer] = await Promise.all([
-    readFile(join(process.cwd(), "public/images/figma/logo-inner.png")),
-    readFile(join(process.cwd(), "public/fonts/Cairo-Bold.ttf")),
+  const [logoRes, fontRes] = await Promise.all([
+    fetch(new URL("/images/figma/logo-inner.png", "https://lamat-elarabia.org")),
+    fetch("https://fonts.gstatic.com/s/cairo/v31/SLXgc1nY6HkvangtZmpQdkhzfH5lkSs2SgRjCAGMQ1z0hAc5W1Q.ttf"),
   ]);
+  const logoData = Buffer.from(await logoRes.arrayBuffer());
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
-  const fontData = fontBuffer.buffer.slice(fontBuffer.byteOffset, fontBuffer.byteOffset + fontBuffer.byteLength);
+  const fontData = await fontRes.arrayBuffer();
 
   const title = isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting";
   const tagline = isAr
