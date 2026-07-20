@@ -20,15 +20,17 @@ export default async function OgImage({ params }: Props) {
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
   const fontData = await fontRes.arrayBuffer();
 
-  const title = isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting";
+  // Use Unicode RLE (\u202B) + PDF (\u202C) to force RTL text rendering in Satori
+  const rtl = (text: string) => `\u202B${text}\u202C`;
+  const title = isAr ? rtl("لمعة العربية للمقاولات") : "Lamaat Al-Arabiya Contracting";
   const tagline = isAr
-    ? "شركة مقاولات رائدة في المملكة العربية السعودية"
+    ? rtl("شركة مقاولات رائدة في المملكة العربية السعودية")
     : "General Contractor in Saudi Arabia";
   const services = isAr
-    ? ["إنشاءات", "تشطيبات", "كهروميكانيك", "صيانة"]
+    ? [rtl("إنشاءات"), rtl("تشطيبات"), rtl("كهروميكانيك"), rtl("صيانة")]
     : ["Construction", "Finishing", "MEP", "Maintenance"];
-  const cities = isAr ? "الرياض – جدة – القصيم" : "Riyadh - Jeddah - Qassim";
-  const experience = isAr ? "خبرة +20 عامًا" : "20+ Years Experience";
+  const cities = isAr ? rtl("الرياض – جدة – القصيم") : "Riyadh - Jeddah - Qassim";
+  const experience = isAr ? rtl("خبرة +20 عامًا") : "20+ Years Experience";
   return new ImageResponse(
     (
       <div
