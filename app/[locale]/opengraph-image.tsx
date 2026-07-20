@@ -14,11 +14,12 @@ export default async function OgImage({ params }: Props) {
   const { locale } = await params;
   const isAr = locale === "ar";
 
-  const [logoData, fontData] = await Promise.all([
+  const [logoData, fontBuffer] = await Promise.all([
     readFile(join(process.cwd(), "public/images/figma/logo-inner.png")),
     readFile(join(process.cwd(), "public/fonts/Cairo-Bold.ttf")),
   ]);
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
+  const fontData = fontBuffer.buffer.slice(fontBuffer.byteOffset, fontBuffer.byteOffset + fontBuffer.byteLength);
 
   const title = isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting";
   const tagline = isAr
@@ -29,8 +30,6 @@ export default async function OgImage({ params }: Props) {
     : ["Construction", "Finishing", "MEP", "Maintenance"];
   const cities = isAr ? "الرياض – جدة – القصيم" : "Riyadh - Jeddah - Qassim";
   const experience = isAr ? "خبرة +20 عامًا" : "20+ Years Experience";
-  const direction = isAr ? "rtl" : "ltr";
-
   return new ImageResponse(
     (
       <div
@@ -43,10 +42,9 @@ export default async function OgImage({ params }: Props) {
           justifyContent: "center",
           background: "linear-gradient(135deg, #1a3a22 0%, #203524 40%, #137547 100%)",
           color: "white",
-          fontFamily: "Cairo, sans-serif",
+          fontFamily: "Cairo",
           padding: "60px",
           position: "relative",
-          direction,
         }}
       >
         {/* Decorative circles */}
@@ -83,7 +81,6 @@ export default async function OgImage({ params }: Props) {
             background: "white",
             marginBottom: 28,
             overflow: "hidden",
-            boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
           }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -91,7 +88,7 @@ export default async function OgImage({ params }: Props) {
         </div>
 
         {/* Company name */}
-        <div style={{ fontSize: 48, fontWeight: 800, textAlign: "center", lineHeight: 1.2, marginBottom: 12 }}>
+        <div style={{ fontSize: 48, fontWeight: 700, textAlign: "center", lineHeight: 1.2, marginBottom: 12 }}>
           {title}
         </div>
 
