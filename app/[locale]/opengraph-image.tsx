@@ -14,7 +14,10 @@ export default async function OgImage({ params }: Props) {
   const { locale } = await params;
   const isAr = locale === "ar";
 
-  const logoData = await readFile(join(process.cwd(), "public/images/figma/logo-inner.png"));
+  const [logoData, fontData] = await Promise.all([
+    readFile(join(process.cwd(), "public/images/figma/logo-inner.png")),
+    readFile(join(process.cwd(), "public/fonts/Cairo-Bold.ttf")),
+  ]);
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
 
   const title = isAr ? "لمعة العربية للمقاولات" : "Lamaat Al-Arabiya Contracting";
@@ -40,7 +43,7 @@ export default async function OgImage({ params }: Props) {
           justifyContent: "center",
           background: "linear-gradient(135deg, #1a3a22 0%, #203524 40%, #137547 100%)",
           color: "white",
-          fontFamily: "sans-serif",
+          fontFamily: "Cairo, sans-serif",
           padding: "60px",
           position: "relative",
           direction,
@@ -113,6 +116,16 @@ export default async function OgImage({ params }: Props) {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [
+        {
+          name: "Cairo",
+          data: fontData,
+          weight: 700 as const,
+          style: "normal" as const,
+        },
+      ],
+    }
   );
 }
