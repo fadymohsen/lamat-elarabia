@@ -65,11 +65,11 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL(simpleTarget, request.nextUrl), 301);
   }
 
-  // SEO: redirect root "/" to preferred locale using Accept-Language
+  // Redirect root "/" to preferred locale using Accept-Language (302 so Google indexes both locales)
   if (pathname === "/") {
     const acceptLanguage = request.headers.get("accept-language") || "";
     const preferredLocale = acceptLanguage.toLowerCase().includes("en") ? "en" : "ar";
-    return NextResponse.redirect(new URL(`/${preferredLocale}`, request.nextUrl), 301);
+    return NextResponse.redirect(new URL(`/${preferredLocale}`, request.nextUrl), 302);
   }
 
   const locale = pathname.startsWith("/en") ? "en" : "ar";

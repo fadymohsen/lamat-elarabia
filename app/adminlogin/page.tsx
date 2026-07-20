@@ -3,6 +3,10 @@ import LoginForm from "./LoginForm";
 
 export const metadata = {
   title: "تسجيل الدخول - لوحة التحكم",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function AdminLoginPage() {

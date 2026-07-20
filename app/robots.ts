@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
-        disallow: ["/admin", "/admin/*", "/adminlogin"],
+        allow: ["/ar", "/ar/*", "/en", "/en/*"],
+        disallow: ["/admin", "/admin/*", "/adminlogin", "/api", "/api/*", "/_next", "/_next/*"],
       },
     ],
     sitemap: "https://lamat-elarabia.org/sitemap.xml",
