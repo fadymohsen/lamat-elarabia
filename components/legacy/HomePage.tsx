@@ -226,14 +226,14 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
 
         <div className="mx-auto max-w-6xl px-6">
           {/* Desktop */}
-          <div className="hidden md:grid gap-10 items-end grid-cols-[380px_1fr]">
+          <div className={`hidden md:grid gap-10 items-end ${isAr ? "grid-cols-[380px_1fr]" : "grid-cols-[1fr_380px]"}`}>
             <div className={`relative mx-auto md:mx-0 w-full max-w-[380px] self-end mt-[15px] ${isAr ? "" : "order-2"}`}>
               <div className="relative aspect-square w-full rounded-t-full bg-[#b8987f] pt-3 px-3 pb-0">
                 <div className="relative h-full w-full overflow-hidden rounded-t-full">
                   <Image src="/images/experience-workers.png" alt={t.expAlt} fill className="object-cover object-top" />
                 </div>
               </div>
-              <div className={`absolute bottom-2 size-24 ${isAr ? "-left-4" : "-right-4"}`}>
+              <div className="absolute bottom-2 size-24 -left-4">
                 <Image src="/images/since-2005-stamp.png" alt="Since 2005" fill className="object-contain" />
               </div>
             </div>

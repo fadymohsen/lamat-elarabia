@@ -27,7 +27,9 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
     <>
       <button
         onClick={() => setOpen((v) => !v)}
-        className="md:hidden absolute top-[44px] left-[24px] size-[48px] rounded-full bg-[#141e16]/60 backdrop-blur-sm flex items-center justify-center text-white pointer-events-auto"
+        className={`md:hidden absolute top-[44px] size-[48px] rounded-full bg-[#141e16]/60 backdrop-blur-sm flex items-center justify-center text-white pointer-events-auto ${
+          isAr ? "left-[24px]" : "right-[24px]"
+        }`}
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
       >

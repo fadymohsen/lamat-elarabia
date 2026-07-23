@@ -36,7 +36,9 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
       {/* Logo */}
       <Link
         href={homeHref}
-        className="absolute top-[39px] right-[24px] size-[58px] md:top-[48px] md:right-[76px] md:size-[56px] rounded-full bg-white overflow-hidden block pointer-events-auto"
+        className={`absolute top-[39px] size-[58px] md:top-[48px] md:size-[56px] rounded-full bg-white overflow-hidden block pointer-events-auto ${
+          isAr ? "right-[24px] md:right-[76px]" : "left-[24px] md:left-[76px]"
+        }`}
       >
         <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-cover" />
       </Link>
