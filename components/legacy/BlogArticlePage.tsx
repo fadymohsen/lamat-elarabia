@@ -28,7 +28,7 @@ export default function BlogArticlePage({ locale = "ar", slug }: BlogArticlePage
       <SiteHeader locale={locale} />
       <main className="bg-white text-gray-900">
         {/* Hero */}
-        <section className="relative bg-gradient-to-br from-[#203524] to-[#137547] text-white py-20 px-6">
+        <section className="relative bg-gradient-to-br from-[#203524] to-[#137547] text-white pt-36 md:pt-40 pb-16 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-sm uppercase tracking-widest mb-4 opacity-70 font-[family-name:var(--font-tajawal)]">
               {isAr ? "مدونة لمعة العربية" : "Lamaat Al-Arabiya Blog"}

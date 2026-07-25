@@ -11,13 +11,13 @@ interface SiteHeaderProps {
 const NAV = {
   ar: [
     { href: "/ar", label: "الرئيسية", page: "" },
-    { href: "/ar/news", label: "الأخبار و مقالات", page: "news" },
+    { href: "/ar/news", label: "المدونة", page: "news" },
     { href: "/ar/training", label: "تدريب وتوظيف", page: "training" },
     { href: "/ar/contact", label: "تواصل معنا", page: "contact" },
   ],
   en: [
     { href: "/en", label: "Home", page: "" },
-    { href: "/en/news", label: "News & Articles", page: "news" },
+    { href: "/en/news", label: "Blogs", page: "news" },
     { href: "/en/training", label: "Training & Jobs", page: "training" },
     { href: "/en/contact", label: "Contact Us", page: "contact" },
   ],
