@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -82,6 +83,61 @@ const COPY = {
   },
 };
 
+const BLOG_CARDS = {
+  ar: [
+    {
+      slug: "villa-construction",
+      title: "بناء فلل عظم وتشطيب – تسليم مفتاح",
+      excerpt: "من الأساسات إلى التشطيب الكامل بنظام تسليم مفتاح. تشطيبات داخلية وخارجية وأعمال كهروميكانيكية في الرياض وجدة والقصيم.",
+      tag: "مقاولات سكنية",
+    },
+    {
+      slug: "mosque-construction",
+      title: "بناء مساجد وجوامع بالمملكة",
+      excerpt: "تنفيذ وتشطيب دور العبادة بأعلى معايير الجودة. مآذن وقباب وقاعات صلاة ومرافق مساندة.",
+      tag: "مقاولات دينية",
+    },
+    {
+      slug: "commercial-finishing",
+      title: "تشطيبات تجارية – مولات ومطارات",
+      excerpt: "تشطيبات احترافية للمولات والمطارات والفنادق والمجمعات التجارية بمعايير عالمية.",
+      tag: "تشطيبات كبرى",
+    },
+    {
+      slug: "sandblasting",
+      title: "خدمات السفع الرملي الصناعي",
+      excerpt: "معالجة الأسطح المعدنية وتجهيز الهياكل الحديدية والخزانات والأنابيب وفق المعايير القياسية الدولية.",
+      tag: "خدمات صناعية",
+    },
+  ],
+  en: [
+    {
+      slug: "villa-construction",
+      title: "Villa Construction & Finishing – Turnkey",
+      excerpt: "From foundation to full finishing with turnkey delivery. Interior/exterior finishing and MEP systems in Riyadh, Jeddah & Qassim.",
+      tag: "Residential",
+    },
+    {
+      slug: "mosque-construction",
+      title: "Mosque & Jamea Construction in Saudi Arabia",
+      excerpt: "Building houses of worship to the highest standards. Minarets, domes, prayer halls, and supporting facilities.",
+      tag: "Religious Facilities",
+    },
+    {
+      slug: "commercial-finishing",
+      title: "Commercial Finishing – Malls & Airports",
+      excerpt: "Expert commercial finishing for malls, airports, hotels, and commercial complexes to international standards.",
+      tag: "Large-Scale Finishing",
+    },
+    {
+      slug: "sandblasting",
+      title: "Industrial Sandblasting Services",
+      excerpt: "Metal surface preparation, structural steel treatment, and tank & pipe cleaning to international standards (ISO, SSPC, NACE).",
+      tag: "Industrial Services",
+    },
+  ],
+};
+
 const PROJECT_IMAGES = [
   { src: "/images/project-1.jpg", alt: "مشروع إنشائي لمعة العربية للمقاولات", altEn: "Lamaat Al-Arabiya construction project" },
   { src: "/images/project-2.jpg", alt: "مشروع تشطيبات لمعة العربية", altEn: "Lamaat Al-Arabiya finishing project" },
@@ -141,6 +197,35 @@ export default async function NewsPage({ locale = "ar" }: NewsPageProps) {
             <div key={i} className="relative h-[280px] rounded-3xl overflow-hidden">
               <Image src={proj.src} alt={isAr ? proj.alt : proj.altEn} fill className="object-cover" />
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Blog Posts */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <h2 className="font-['Cairo',sans-serif] font-extrabold text-[#1e1e1e] text-[32px] md:text-[56px] text-center mb-14">
+          {isAr ? "مقالات متخصصة" : "Specialized Articles"}
+        </h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {(isAr ? BLOG_CARDS.ar : BLOG_CARDS.en).map((card) => (
+            <Link
+              key={card.slug}
+              href={`/${locale}/blogs/${card.slug}`}
+              className="group block rounded-3xl border border-gray-200 p-6 hover:border-[#137547] hover:shadow-lg transition-all"
+            >
+              <span className="inline-block bg-[#137547] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
+                {card.tag}
+              </span>
+              <h3 className="font-['Cairo',sans-serif] font-bold text-[20px] md:text-[24px] text-[#1e1e1e] mb-2 group-hover:text-[#137547] transition-colors">
+                {card.title}
+              </h3>
+              <p className="font-['Tajawal',sans-serif] text-[15px] md:text-[17px] text-gray-600 leading-relaxed">
+                {card.excerpt}
+              </p>
+              <span className="inline-block mt-4 text-[#137547] font-bold text-sm">
+                {isAr ? "اقرأ المزيد ←" : "Read more →"}
+              </span>
+            </Link>
           ))}
         </div>
       </section>

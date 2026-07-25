@@ -1,6 +1,6 @@
 const BASE = "https://lamat-elarabia.org";
 
-const PAGES = ["", "/news", "/training", "/contact", "/villa-construction", "/mosque-construction", "/commercial-finishing", "/sandblasting"];
+const PAGES = ["", "/news", "/training", "/contact", "/blogs/villa-construction", "/blogs/mosque-construction", "/blogs/commercial-finishing", "/blogs/sandblasting"];
 
 export function GET() {
   const now = new Date().toISOString();
@@ -9,7 +9,7 @@ export function GET() {
 
   for (const page of PAGES) {
     const isHome = page === "";
-    const isService = ["/villa-construction", "/mosque-construction", "/commercial-finishing", "/sandblasting"].includes(page);
+    const isService = page.startsWith("/blogs/");
     const changeFreq = isHome ? "weekly" : page === "/news" ? "daily" : isService ? "weekly" : "monthly";
     const arPriority = isHome ? "1.0" : page === "/news" ? "0.85" : isService ? "0.85" : page === "/contact" ? "0.8" : "0.7";
     const enPriority = isHome ? "0.9" : page === "/news" ? "0.75" : isService ? "0.75" : page === "/contact" ? "0.7" : "0.6";

@@ -90,7 +90,7 @@ export function getOrganizationSchema(locale: string) {
           itemOffered: {
             "@type": "Service",
             name: isAr ? "بناء الفلل" : "Villa Construction",
-            url: `${BASE}/${locale}/villa-construction`,
+            url: `${BASE}/${locale}/blogs/villa-construction`,
             description: isAr
               ? "بناء فلل عظم وتشطيب كامل بنظام تسليم مفتاح – تشطيبات داخلية وخارجية وأعمال كهروميكانيكية"
               : "Villa shell & core and full finishing with turnkey delivery – interior/exterior finishing and MEP works",
@@ -101,7 +101,7 @@ export function getOrganizationSchema(locale: string) {
           itemOffered: {
             "@type": "Service",
             name: isAr ? "بناء المساجد والجوامع" : "Mosque & Jamea Construction",
-            url: `${BASE}/${locale}/mosque-construction`,
+            url: `${BASE}/${locale}/blogs/mosque-construction`,
             description: isAr
               ? "بناء وتشطيب المساجد والجوامع بالكامل – مآذن وقباب وقاعات صلاة ومرافق مساندة"
               : "Complete mosque and jamea construction and finishing – minarets, domes, prayer halls, and supporting facilities",
@@ -112,7 +112,7 @@ export function getOrganizationSchema(locale: string) {
           itemOffered: {
             "@type": "Service",
             name: isAr ? "التشطيبات التجارية" : "Commercial Finishing",
-            url: `${BASE}/${locale}/commercial-finishing`,
+            url: `${BASE}/${locale}/blogs/commercial-finishing`,
             description: isAr
               ? "تشطيبات تجارية للمولات والمطارات والفنادق والمجمعات التجارية بمعايير عالمية"
               : "Commercial finishing for malls, airports, hotels, and commercial complexes to international standards",
@@ -123,7 +123,7 @@ export function getOrganizationSchema(locale: string) {
           itemOffered: {
             "@type": "Service",
             name: isAr ? "السفع الرملي الصناعي" : "Industrial Sandblasting",
-            url: `${BASE}/${locale}/sandblasting`,
+            url: `${BASE}/${locale}/blogs/sandblasting`,
             description: isAr
               ? "خدمات السفع الرملي الصناعي لمعالجة الأسطح المعدنية وتجهيز الهياكل الحديدية والخزانات والأنابيب"
               : "Industrial sandblasting services for metal surface treatment, structural steel preparation, and tank & pipe cleaning",
@@ -401,7 +401,7 @@ export function getSandblastingServiceSchema(locale: string) {
     description: isAr
       ? "خدمات السفع الرملي الصناعي لمعالجة الأسطح المعدنية وتجهيز الهياكل الحديدية وتنظيف الخزانات والأنابيب المعدنية وفق المعايير القياسية الدولية"
       : "Industrial sandblasting services for metal surface treatment, structural steel preparation, and tank & pipe cleaning according to international standards",
-    url: `${BASE}/${locale}/sandblasting`,
+    url: `${BASE}/${locale}/blogs/sandblasting`,
     provider: { "@id": `${BASE}/#organization` },
     areaServed: [
       { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
@@ -433,7 +433,7 @@ export function getVillaServiceSchema(locale: string) {
     description: isAr
       ? "بناء فلل سكنية بنظام تسليم مفتاح – من الأساسات والهيكل الإنشائي إلى التشطيبات الداخلية والخارجية والأعمال الكهروميكانيكية"
       : "Residential villa construction with turnkey delivery – from foundation and structural shell to interior/exterior finishing and MEP systems",
-    url: `${BASE}/${locale}/villa-construction`,
+    url: `${BASE}/${locale}/blogs/villa-construction`,
     provider: { "@id": `${BASE}/#organization` },
     areaServed: [
       { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
@@ -455,7 +455,7 @@ export function getMosqueServiceSchema(locale: string) {
     description: isAr
       ? "بناء وتشطيب المساجد والجوامع بالكامل – أعمال إنشائية ومآذن وقباب وتشطيبات داخلية وخارجية وأنظمة كهروميكانيكية ومرافق مساندة"
       : "Complete mosque and jamea construction – structural works, minarets, domes, interior/exterior finishing, MEP systems, and supporting facilities",
-    url: `${BASE}/${locale}/mosque-construction`,
+    url: `${BASE}/${locale}/blogs/mosque-construction`,
     provider: { "@id": `${BASE}/#organization` },
     areaServed: [
       { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
@@ -477,7 +477,7 @@ export function getCommercialFinishingServiceSchema(locale: string) {
     description: isAr
       ? "تشطيبات تجارية احترافية للمولات والمطارات والفنادق والمجمعات التجارية – تشطيبات داخلية وخارجية وأعمال كهروميكانيكية"
       : "Professional commercial finishing for malls, airports, hotels, and commercial complexes – interior/exterior finishing and MEP systems",
-    url: `${BASE}/${locale}/commercial-finishing`,
+    url: `${BASE}/${locale}/blogs/commercial-finishing`,
     provider: { "@id": `${BASE}/#organization` },
     areaServed: [
       { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
