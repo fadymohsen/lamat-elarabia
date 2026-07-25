@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Lamaat Al-Arabiya Contracting – General Contractor in Riyadh, Jeddah & Qassim",
       description:
-        "Lamaat Al-Arabiya Contracting (لمعة العربية للمقاولات) – 20+ years building Saudi Arabia. General construction, finishing, MEP, and facility maintenance across Riyadh, Jeddah & Qassim. Trusted by 25+ major clients.",
+        "Lamaat Al-Arabiya Contracting (لمعة العربية للمقاولات) – 20+ years building Saudi Arabia. Villa construction (turnkey), mosque building, commercial finishing for malls & airports, industrial sandblasting, MEP & maintenance. Riyadh, Jeddah & Qassim.",
       keywords: [
         "Lamaat Al-Arabiya",
         "Lamaat Al-Arabiya Contracting",
@@ -35,6 +35,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "MEP contractor KSA",
         "facility maintenance Saudi",
         "building contractor Qassim",
+        "villa construction Riyadh",
+        "turnkey villa Saudi Arabia",
+        "mosque construction Saudi",
+        "commercial finishing malls airports",
+        "industrial sandblasting Riyadh Qassim",
+        "sandblasting services KSA",
       ],
       openGraph: {
         locale: "en_US",
@@ -63,17 +69,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: "لمعة العربية للمقاولات – شركة مقاولات عامة في الرياض وجدة والقصيم",
     description:
-      "لمعة العربية للمقاولات (Lamaat Al-Arabiya Contracting) – شركة مقاولات رائدة بخبرة +20 عامًا في الإنشاءات العامة والتشطيبات والصيانة والأعمال الكهروميكانيكية. أكثر من 25 عميل رئيسي وفريق يتجاوز 150 متخصصًا. الرياض – جدة – القصيم.",
+      "لمعة العربية للمقاولات (Lamaat Al-Arabiya Contracting) – شركة مقاولات رائدة بخبرة +20 عامًا. بناء فلل عظم وتشطيب (تسليم مفتاح)، بناء مساجد وجوامع، تشطيبات مولات ومطارات ومجمعات تجارية، سفع رملي صناعي، أعمال كهروميكانيكية. الرياض – جدة – القصيم.",
     keywords: [
       "لمعة العربية",
       "لمعة العربية للمقاولات",
       "لمعه العربيه للمقاولات",
       "لمعة العربيه",
       "لمعه العربية",
+      "لمعه",
+      "لمعة",
       "Lamaat Al-Arabiya",
       "Lamat Elarabia",
       "شركة مقاولات الرياض",
+      "شركة مقاولات في الرياض والقصيم",
       "مقاولات عامة جدة",
+      "بناء فلل عظم وتشطيب",
+      "بناء فلل تسليم مفتاح",
+      "مقاولات بناء مساجد وجوامع بالمملكة",
+      "تشطيبات تجارية للمولات والمطارات",
+      "تنفيذ وتشطيب مجمعات تجارية",
+      "تشطيبات داخلية وخارجية",
+      "سفع رملي صناعي بالرياض والقصيم",
+      "معالجة الأسطح المعدنية بالسفع الرملي",
       "تشطيبات السعودية",
       "صيانة مباني",
       "مقاولات القصيم",

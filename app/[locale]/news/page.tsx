@@ -26,6 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "construction quality standards",
         "Saudi Vision 2030 construction",
         "Lamaat Al-Arabiya projects",
+        "villa construction updates",
+        "mosque building projects Saudi",
+        "sandblasting industry news",
+        "commercial finishing projects",
       ],
       openGraph: {
         locale: "en_US",
@@ -63,6 +67,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "سلامة مواقع البناء",
       "اتجاهات البناء الحديثة",
       "لمعة العربية أخبار",
+      "لمعه العربية",
+      "مشاريع فلل ومساجد",
+      "أخبار التشطيبات التجارية",
+      "السفع الرملي الصناعي",
     ],
     openGraph: {
       locale: "ar_SA",

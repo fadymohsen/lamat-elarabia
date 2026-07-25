@@ -85,6 +85,50 @@ export function getOrganizationSchema(locale: string) {
               : "Supply and sale of building and finishing materials",
           },
         },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: isAr ? "بناء الفلل" : "Villa Construction",
+            url: `${BASE}/${locale}/villa-construction`,
+            description: isAr
+              ? "بناء فلل عظم وتشطيب كامل بنظام تسليم مفتاح – تشطيبات داخلية وخارجية وأعمال كهروميكانيكية"
+              : "Villa shell & core and full finishing with turnkey delivery – interior/exterior finishing and MEP works",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: isAr ? "بناء المساجد والجوامع" : "Mosque & Jamea Construction",
+            url: `${BASE}/${locale}/mosque-construction`,
+            description: isAr
+              ? "بناء وتشطيب المساجد والجوامع بالكامل – مآذن وقباب وقاعات صلاة ومرافق مساندة"
+              : "Complete mosque and jamea construction and finishing – minarets, domes, prayer halls, and supporting facilities",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: isAr ? "التشطيبات التجارية" : "Commercial Finishing",
+            url: `${BASE}/${locale}/commercial-finishing`,
+            description: isAr
+              ? "تشطيبات تجارية للمولات والمطارات والفنادق والمجمعات التجارية بمعايير عالمية"
+              : "Commercial finishing for malls, airports, hotels, and commercial complexes to international standards",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: isAr ? "السفع الرملي الصناعي" : "Industrial Sandblasting",
+            url: `${BASE}/${locale}/sandblasting`,
+            description: isAr
+              ? "خدمات السفع الرملي الصناعي لمعالجة الأسطح المعدنية وتجهيز الهياكل الحديدية والخزانات والأنابيب"
+              : "Industrial sandblasting services for metal surface treatment, structural steel preparation, and tank & pipe cleaning",
+          },
+        },
       ],
     },
   };
@@ -342,6 +386,106 @@ export function getNewsArticlesSchema(locale: string) {
         },
       })),
     },
+  };
+}
+
+// ── Service page schemas (landing pages) ──
+
+export function getSandblastingServiceSchema(locale: string) {
+  const isAr = locale === "ar";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${BASE}/${locale}/sandblasting/#service`,
+    name: isAr ? "خدمات السفع الرملي الصناعي" : "Industrial Sandblasting Services",
+    description: isAr
+      ? "خدمات السفع الرملي الصناعي لمعالجة الأسطح المعدنية وتجهيز الهياكل الحديدية وتنظيف الخزانات والأنابيب المعدنية وفق المعايير القياسية الدولية"
+      : "Industrial sandblasting services for metal surface treatment, structural steel preparation, and tank & pipe cleaning according to international standards",
+    url: `${BASE}/${locale}/sandblasting`,
+    provider: { "@id": `${BASE}/#organization` },
+    areaServed: [
+      { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
+      { "@type": "City", name: isAr ? "جدة" : "Jeddah" },
+      { "@type": "City", name: isAr ? "القصيم" : "Qassim" },
+    ],
+    serviceType: isAr ? "سفع رملي صناعي" : "Industrial Sandblasting",
+    category: isAr ? "خدمات صناعية" : "Industrial Services",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: isAr ? "خدمات السفع الرملي" : "Sandblasting Services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: isAr ? "معالجة الأسطح المعدنية" : "Metal Surface Treatment" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: isAr ? "تجهيز الهياكل المعدنية والحديدية" : "Structural Steel Preparation" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: isAr ? "تنظيف الخزانات والأنابيب المعدنية" : "Tank & Pipe Cleaning" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: isAr ? "تجهيز الأسطح للدهانات الصناعية" : "Surface Preparation for Industrial Coatings" } },
+      ],
+    },
+  };
+}
+
+export function getVillaServiceSchema(locale: string) {
+  const isAr = locale === "ar";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${BASE}/${locale}/villa-construction/#service`,
+    name: isAr ? "بناء فلل عظم وتشطيب – تسليم مفتاح" : "Villa Construction – Turnkey Delivery",
+    description: isAr
+      ? "بناء فلل سكنية بنظام تسليم مفتاح – من الأساسات والهيكل الإنشائي إلى التشطيبات الداخلية والخارجية والأعمال الكهروميكانيكية"
+      : "Residential villa construction with turnkey delivery – from foundation and structural shell to interior/exterior finishing and MEP systems",
+    url: `${BASE}/${locale}/villa-construction`,
+    provider: { "@id": `${BASE}/#organization` },
+    areaServed: [
+      { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
+      { "@type": "City", name: isAr ? "جدة" : "Jeddah" },
+      { "@type": "City", name: isAr ? "القصيم" : "Qassim" },
+    ],
+    serviceType: isAr ? "بناء فلل" : "Villa Construction",
+    category: isAr ? "مقاولات سكنية" : "Residential Construction",
+  };
+}
+
+export function getMosqueServiceSchema(locale: string) {
+  const isAr = locale === "ar";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${BASE}/${locale}/mosque-construction/#service`,
+    name: isAr ? "بناء مساجد وجوامع" : "Mosque & Jamea Construction",
+    description: isAr
+      ? "بناء وتشطيب المساجد والجوامع بالكامل – أعمال إنشائية ومآذن وقباب وتشطيبات داخلية وخارجية وأنظمة كهروميكانيكية ومرافق مساندة"
+      : "Complete mosque and jamea construction – structural works, minarets, domes, interior/exterior finishing, MEP systems, and supporting facilities",
+    url: `${BASE}/${locale}/mosque-construction`,
+    provider: { "@id": `${BASE}/#organization` },
+    areaServed: [
+      { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
+      { "@type": "City", name: isAr ? "جدة" : "Jeddah" },
+      { "@type": "City", name: isAr ? "القصيم" : "Qassim" },
+    ],
+    serviceType: isAr ? "بناء مساجد" : "Mosque Construction",
+    category: isAr ? "مقاولات دينية" : "Religious Facility Construction",
+  };
+}
+
+export function getCommercialFinishingServiceSchema(locale: string) {
+  const isAr = locale === "ar";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${BASE}/${locale}/commercial-finishing/#service`,
+    name: isAr ? "تشطيبات تجارية للمولات والمطارات" : "Commercial Finishing – Malls & Airports",
+    description: isAr
+      ? "تشطيبات تجارية احترافية للمولات والمطارات والفنادق والمجمعات التجارية – تشطيبات داخلية وخارجية وأعمال كهروميكانيكية"
+      : "Professional commercial finishing for malls, airports, hotels, and commercial complexes – interior/exterior finishing and MEP systems",
+    url: `${BASE}/${locale}/commercial-finishing`,
+    provider: { "@id": `${BASE}/#organization` },
+    areaServed: [
+      { "@type": "City", name: isAr ? "الرياض" : "Riyadh" },
+      { "@type": "City", name: isAr ? "جدة" : "Jeddah" },
+      { "@type": "City", name: isAr ? "القصيم" : "Qassim" },
+    ],
+    serviceType: isAr ? "تشطيبات تجارية" : "Commercial Finishing",
+    category: isAr ? "تشطيبات مشاريع كبرى" : "Large-Scale Project Finishing",
   };
 }
 
