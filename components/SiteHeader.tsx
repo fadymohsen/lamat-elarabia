@@ -33,20 +33,14 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
 
   return (
     <div dir={isAr ? "rtl" : "ltr"} className="absolute top-0 left-0 right-0 z-50 h-0">
-      {/* Logo */}
-      <Link
-        href={homeHref}
-        className={`absolute top-[39px] size-[58px] md:top-[48px] md:size-[56px] rounded-full bg-white overflow-hidden block pointer-events-auto ${
-          isAr ? "right-[24px] md:right-[76px]" : "left-[24px] md:left-[76px]"
-        }`}
-      >
-        <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-cover" />
-      </Link>
-
       {/* Nav pill - desktop */}
-      <div className="absolute top-[44px] left-1/2 -translate-x-1/2 w-[800px] max-w-[92vw] h-[64px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block">
+      <div className="absolute top-[44px] left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[64px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block">
         <Image src="/images/figma/nav-pill-bg.svg" alt="" fill className="object-fill" />
-        <nav className="relative z-10 h-full flex items-center justify-center gap-[64px]">
+        <nav className={`relative z-10 h-full flex items-center justify-center gap-[48px] px-6 ${isAr ? "flex-row-reverse" : ""}`}>
+          {/* Logo inside nav */}
+          <Link href={homeHref} className="relative size-[44px] rounded-full bg-white overflow-hidden shrink-0">
+            <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-cover" />
+          </Link>
           {links.map((link) => (
             <Link
               key={link.href}
