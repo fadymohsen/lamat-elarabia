@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         : "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
       images: [
         {
-          url: `${BASE}/${locale}/opengraph-image`,
+          url: `${BASE}/images/figma/logo-inner.png`,
           width: 1200,
           height: 630,
           alt: post.title[lang],

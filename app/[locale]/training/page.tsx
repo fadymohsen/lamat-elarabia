@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
         images: [
           {
-            url: `${BASE}/en/opengraph-image`,
+            url: `${BASE}/images/figma/logo-inner.png`,
             width: 1200,
             height: 630,
             alt: "Lamaat Al-Arabiya Careers & Training",
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
       images: [
         {
-          url: `${BASE}/ar/opengraph-image`,
+          url: `${BASE}/images/figma/logo-inner.png`,
           width: 1200,
           height: 630,
           alt: "التوظيف والتدريب لمعة العربية",

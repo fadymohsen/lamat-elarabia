@@ -108,12 +108,21 @@ export const metadata = {
     title: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
     description:
       "شركة مقاولات رائدة بخبرة +20 عامًا. بناء فلل ومساجد، تشطيبات مولات ومطارات، سفع رملي صناعي. الرياض – جدة – القصيم.",
+    images: [
+      {
+        url: `${BASE_URL}/images/figma/logo-inner.png`,
+        width: 512,
+        height: 512,
+        alt: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
     description:
       "شركة مقاولات رائدة بخبرة +20 عامًا. بناء فلل ومساجد، تشطيبات مولات ومطارات، سفع رملي صناعي. الرياض – جدة – القصيم.",
+    images: [`${BASE_URL}/images/figma/logo-inner.png`],
   },
   verification: {
     google: "UM08_6bx4_mqtBWclKRLppAIDeYIBYhpg5B7St7grCA",
