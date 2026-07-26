@@ -368,7 +368,7 @@ export function getNewsArticlesSchema(locale: string) {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: isAr ? "الأخبار والمقالات" : "News & Articles",
-    url: `${BASE}/${locale}/news`,
+    url: `${BASE}/${locale}/blogs`,
     mainEntity: {
       "@type": "ItemList",
       itemListElement: articles.map((a, i) => ({

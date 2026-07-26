@@ -83,7 +83,7 @@ export default async function Page({ params }: Props) {
   const isAr = locale === "ar";
   const breadcrumbs = getBreadcrumbSchema(locale, [
     { name: isAr ? "الرئيسية" : "Home", path: `/${locale}` },
-    { name: isAr ? "المدونة" : "Blog", path: `/${locale}/news` },
+    { name: isAr ? "المدونة" : "Blog", path: `/${locale}/blogs` },
     { name: post.title[isAr ? "ar" : "en"], path: `/${locale}/blogs/${slug}` },
   ]);
 

@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: "News & Articles | Lamaat Al-Arabiya Contracting",
         description:
           "Latest construction news, project updates and building industry insights from Lamaat Al-Arabiya.",
-        url: `${BASE}/en/news`,
+        url: `${BASE}/en/blogs`,
         siteName: "Lamaat Al-Arabiya Contracting | لمعة العربية للمقاولات",
         images: [
           {
@@ -49,8 +49,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ],
       },
       alternates: {
-        canonical: `${BASE}/en/news`,
-        languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news`, "x-default": `${BASE}/en/news` },
+        canonical: `${BASE}/en/blogs`,
+        languages: { ar: `${BASE}/ar/blogs`, en: `${BASE}/en/blogs`, "x-default": `${BASE}/en/blogs` },
       },
     };
   }
@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "الأخبار والمقالات | لمعة العربية للمقاولات",
       description:
         "أحدث أخبار المشاريع ومقالات متخصصة في قطاع المقاولات والبناء في المملكة.",
-      url: `${BASE}/ar/news`,
+      url: `${BASE}/ar/blogs`,
       siteName: "لمعة العربية للمقاولات | Lamaat Al-Arabiya Contracting",
       images: [
         {
@@ -90,8 +90,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
     },
     alternates: {
-      canonical: `${BASE}/ar/news`,
-      languages: { ar: `${BASE}/ar/news`, en: `${BASE}/en/news`, "x-default": `${BASE}/en/news` },
+      canonical: `${BASE}/ar/blogs`,
+      languages: { ar: `${BASE}/ar/blogs`, en: `${BASE}/en/blogs`, "x-default": `${BASE}/en/blogs` },
     },
   };
 }
@@ -103,7 +103,7 @@ export default async function Page({ params }: Props) {
   const isAr = locale === "ar";
   const breadcrumbs = getBreadcrumbSchema(locale, [
     { name: isAr ? "الرئيسية" : "Home", path: `/${locale}` },
-    { name: isAr ? "الأخبار والمقالات" : "News & Articles", path: `/${locale}/news` },
+    { name: isAr ? "المدونة" : "Blogs", path: `/${locale}/blogs` },
   ]);
 
   return (

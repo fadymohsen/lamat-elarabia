@@ -3,14 +3,14 @@ import { jwtVerify } from "jose";
 
 // Redirect old Arabic slug URLs to new /ar/* English slug URLs
 const LEGACY_REDIRECTS: Record<string, string> = {
-  "/الأخبار-و-المقالات": "/ar/news",
+  "/الأخبار-و-المقالات": "/ar/blogs",
   "/التوظيف-و-التدريب": "/ar/training",
   "/تواصل-معنا": "/ar/contact",
 };
 
 // Redirect old /en-prefixed URLs and bare slugs
 const SIMPLE_REDIRECTS: Record<string, string> = {
-  "/news": "/ar/news",
+  "/news": "/ar/blogs",
   "/training": "/ar/training",
   "/contact": "/ar/contact",
 };
