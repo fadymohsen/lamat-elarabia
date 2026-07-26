@@ -25,7 +25,7 @@ export default function BlogArticlePage({ locale = "ar", slug }: BlogArticlePage
 
   return (
     <>
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} page={`blogs/${slug}`} />
       <main className="bg-white text-gray-900">
         {/* Hero */}
         <section className="relative bg-gradient-to-br from-[#203524] to-[#137547] text-white pt-36 md:pt-40 pb-16 px-6">
