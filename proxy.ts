@@ -31,8 +31,24 @@ async function hasValidSession(request: NextRequest): Promise<boolean> {
   }
 }
 
+// Patterns matching old WordPress spam/hacked pages (cracked software, activators, etc.)
+const SPAM_SLUG_PATTERN =
+  /^\/(trojan-remover-|adobe-acrobat-freeactivated-|poweriso-portable-|pc-maclan-|fl-studio-cracked-|vb-decompiler-|lightwave-3d-|nano-antivirus-|pdfcamp-|themida-|breathwork-basics-)/;
+
 export default async function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname, hostname } = request.nextUrl;
+
+  // Redirect www → non-www to consolidate domain signals
+  if (hostname === "www.lamat-elarabia.org") {
+    const url = request.nextUrl.clone();
+    url.hostname = "lamat-elarabia.org";
+    return NextResponse.redirect(url, 301);
+  }
+
+  // Return 404 for old WordPress spam/hacked URLs (prevents 5xx errors)
+  if (SPAM_SLUG_PATTERN.test(pathname)) {
+    return new NextResponse("Not Found", { status: 404 });
+  }
 
   // Handle admin login page first
   if (pathname === "/adminlogin") {
