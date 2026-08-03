@@ -4,8 +4,13 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/admin", "/admin/*", "/adminlogin", "/api", "/api/*", "/_next", "/_next/*"],
+      },
+      {
         userAgent: "*",
-        allow: ["/ar", "/ar/*", "/en", "/en/*"],
+        allow: "/",
         disallow: ["/admin", "/admin/*", "/adminlogin", "/api", "/api/*", "/_next", "/_next/*"],
       },
     ],
