@@ -109,6 +109,36 @@ const BLOG_CARDS = {
       excerpt: "معالجة الأسطح المعدنية وتجهيز الهياكل الحديدية والخزانات والأنابيب وفق المعايير القياسية الدولية.",
       tag: "خدمات صناعية",
     },
+    {
+      slug: "vision-2030-smart-cities-construction",
+      title: "رؤية السعودية 2030 وتوجهات مستقبل قطاع البناء",
+      excerpt: "كيف تعيد رؤية 2030 تشكيل قطاع المقاولات السعودي عبر الاستدامة والمدن الذكية ورفع معايير الأداء.",
+      tag: "رؤى الصناعة",
+    },
+    {
+      slug: "commercial-finishing-malls-airports",
+      title: "تشطيبات المولات والمطارات التجارية الكبرى",
+      excerpt: "ما يشمله تنفيذ تشطيبات المشاريع التجارية الكبرى ولماذا يهم الالتزام بالمعايير العالمية في كل مرحلة.",
+      tag: "الإنشاءات التجارية",
+    },
+    {
+      slug: "turnkey-villa-construction-guide",
+      title: "دليل شامل لبناء الفلل بنظام تسليم مفتاح",
+      excerpt: "تعرف كيف تنفذ لمعة العربية مشروع فيلتك من الأساسات حتى التشطيب النهائي في الرياض وجدة والقصيم.",
+      tag: "الإنشاءات السكنية",
+    },
+    {
+      slug: "mosque-jamea-construction-standards",
+      title: "معايير بناء المساجد والجوامع في السعودية",
+      excerpt: "المعايير الهندسية والصوتية لبناء المساجد والجوامع، من القباب والمآذن إلى قاعات الصلاة ومرافق الوضوء.",
+      tag: "المنشآت الدينية",
+    },
+    {
+      slug: "mep-contracting-electrical-plumbing-hvac",
+      title: "الأعمال الكهروميكانيكية في مشاريع البناء",
+      excerpt: "كيف تضمن أعمال الكهرباء والسباكة والتكييف سلامة وكفاءة المشاريع السكنية والتجارية في المملكة.",
+      tag: "الخدمات الفنية",
+    },
   ],
   en: [
     {
@@ -134,6 +164,36 @@ const BLOG_CARDS = {
       title: "Industrial Sandblasting Services",
       excerpt: "Metal surface preparation, structural steel treatment, and tank & pipe cleaning to international standards (ISO, SSPC, NACE).",
       tag: "Industrial Services",
+    },
+    {
+      slug: "vision-2030-smart-cities-construction",
+      title: "Vision 2030 and the Future of Construction in Saudi Arabia",
+      excerpt: "How Vision 2030 is reshaping the Saudi construction sector through sustainability, smart cities and rising contractor standards.",
+      tag: "Industry Insights",
+    },
+    {
+      slug: "commercial-finishing-malls-airports",
+      title: "Commercial Finishing for Malls, Airports & Hotels in KSA",
+      excerpt: "What large-scale commercial finishing involves and why international-standard execution matters at every stage.",
+      tag: "Commercial Construction",
+    },
+    {
+      slug: "turnkey-villa-construction-guide",
+      title: "Turnkey Villa Construction Guide for Saudi Homeowners",
+      excerpt: "Learn how Lamaat Al-Arabiya delivers foundation-to-finish villas in Riyadh, Jeddah and Qassim on schedule.",
+      tag: "Residential Construction",
+    },
+    {
+      slug: "mosque-jamea-construction-standards",
+      title: "Mosque & Jamea Construction Standards in Saudi Arabia",
+      excerpt: "The engineering and acoustic standards behind mosque construction, from domes and minarets to prayer halls and ablution areas.",
+      tag: "Religious Facilities",
+    },
+    {
+      slug: "mep-contracting-electrical-plumbing-hvac",
+      title: "MEP Contracting in Saudi Arabia: Electrical, Plumbing, HVAC",
+      excerpt: "How electrical, plumbing and HVAC contracting keeps Saudi construction projects safe, efficient and code-compliant.",
+      tag: "Technical Services",
     },
   ],
 };
