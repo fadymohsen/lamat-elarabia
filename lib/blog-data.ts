@@ -20,6 +20,11 @@ export const BLOG_SLUGS = [
   "mosque-construction",
   "commercial-finishing",
   "sandblasting",
+  "vision-2030-smart-cities-construction",
+  "commercial-finishing-malls-airports",
+  "turnkey-villa-construction-guide",
+  "mosque-jamea-construction-standards",
+  "mep-contracting-electrical-plumbing-hvac",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -337,6 +342,376 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تحتاج تجهيز غرف سفع رملي أو تركيب مضخات ميكانيكية؟", description: "تواصل معنا للحصول على استشارة فنية مجانية وعرض سعر مخصص لمشروعك.", button: "اطلب عرض سعر" },
       en: { title: "Need Sandblasting Room Setup or Mechanical Pump Installation?", description: "Contact us for a free technical consultation and customized quote for your project.", button: "Request a Quote" },
+    },
+  },
+
+  "vision-2030-smart-cities-construction": {
+    slug: "vision-2030-smart-cities-construction",
+    title: {
+      ar: "رؤية السعودية 2030 وتوجهات مستقبل قطاع البناء بالمملكة",
+      en: "Vision 2030 and the Future of Construction in Saudi Arabia",
+    },
+    subtitle: {
+      ar: "كيف تعيد رؤية 2030 تشكيل قطاع المقاولات والبناء في المملكة",
+      en: "Sustainability, Smart Cities and Rising Contractor Standards Across the Kingdom",
+    },
+    description: {
+      ar: "تعيد رؤية 2030 تشكيل قطاع المقاولات السعودي عبر الاستدامة والمدن الذكية والتقنيات الحديثة المتطورة. تعرف على أبرز التوجهات التي تقود شركات البناء بالمملكة.",
+      en: "Vision 2030 is redefining Saudi construction with sustainability, smart cities and advanced technology. See the trends shaping contractors across the Kingdom.",
+    },
+    keywords: {
+      ar: ["رؤية 2030 والمقاولات", "المدن الذكية السعودية", "البناء المستدام المملكة", "مستقبل المقاولات السعودية", "تقنيات البناء الرياض", "توجهات قطاع المقاولات السعودي"],
+      en: ["Vision 2030 construction", "smart cities Saudi Arabia", "sustainable construction KSA", "future of construction Saudi Arabia", "construction technology Riyadh", "Saudi construction industry trends"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الاستدامة تتحول إلى ممارسة معيارية",
+          body: "أصبحت أنظمة التكييف الموفرة للطاقة، وتصميم السباكة المراعي لاستهلاك المياه، وتوريد المواد المستدامة، تنتقل من كونها تحسينات اختيارية إلى ممارسة متوقعة، خصوصًا في المشاريع الحكومية والخاصة الكبرى المرتبطة بأهداف التنمية الوطنية.",
+        },
+        {
+          title: "المدن الذكية والبنية التحتية المتكاملة",
+          body: "يتطلب تطوير المدن الذكية تصميم المباني مع مراعاة التقنية المتكاملة منذ اليوم الأول، بدءًا من الأنظمة الكهربائية الداعمة للتحكم الذكي وصولًا إلى بنية تحتية تستشرف احتياجات الاتصال المستقبلية. يرتبط هذا مباشرة بكيفية تخطيط وتركيب الأنظمة الكهروميكانيكية.",
+        },
+        {
+          title: "ارتفاع المعايير المطلوبة من المقاولين",
+          body: "مع تحديث قطاع المقاولات في المملكة، يُتوقع من المقاولين تلبية معايير أعلى في السلامة والتوثيق وضمان الجودة. الشركات ذات السجل الطويل في تنفيذ المشاريع الحكومية والخاصة في وضع جيد لمواكبة هذا التحول، بعد أن بنت بالفعل العمليات الداخلية التي تدفع رؤية 2030 القطاع بأكمله نحوها.",
+        },
+      ],
+      en: [
+        {
+          title: "Sustainability Becomes Standard Practice",
+          body: "Energy-efficient HVAC systems, water-conscious plumbing design, and sustainable material sourcing are shifting from optional upgrades to expected practice, particularly on government and large private projects tied to national development goals.",
+        },
+        {
+          title: "Smart Cities and Integrated Infrastructure",
+          body: "Smart city development calls for buildings designed with integrated technology in mind from day one — from electrical systems that support smart controls to infrastructure that anticipates future connectivity needs. This connects directly to how MEP systems are planned and installed.",
+        },
+        {
+          title: "Rising Standards for Contractors",
+          body: "As the Kingdom's construction sector modernizes, contractors are expected to meet higher standards for safety, documentation and quality assurance. Companies with a long track record of government and private project delivery are well positioned to meet this shift, having already built the internal processes that Vision 2030 is pushing the wider industry toward.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في السوق السعودي",
+        "مشاركة فعلية في مشاريع حكومية وخاصة",
+        "الجمع بين الخبرة الهندسية والنهج الحديث في البناء",
+        "شريك طويل الأمد في مسيرة تنمية المملكة",
+        "تغطية شاملة: الرياض – جدة – القصيم",
+      ],
+      en: [
+        "More than 20 years in the Saudi market",
+        "Active participation in government and private development projects",
+        "Engineering expertise combined with a modern construction approach",
+        "Positioned as a long-term partner in the Kingdom's development journey",
+        "Full coverage: Riyadh – Jeddah – Qassim",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "كن شريكًا معنا في مسيرة التنمية", description: "تواصل مع لمعة العربية للمقاولات للحصول على استشارة مجانية حول مشروعك القادم.", button: "تواصل معنا" },
+      en: { title: "Partner With Us in the Kingdom's Development", description: "Contact Lamaat Al-Arabiya Contracting for a free consultation on your next project.", button: "Contact Us" },
+    },
+  },
+
+  "commercial-finishing-malls-airports": {
+    slug: "commercial-finishing-malls-airports",
+    title: {
+      ar: "تشطيبات المولات والمطارات التجارية الكبرى في السعودية",
+      en: "Commercial Finishing for Malls, Airports & Hotels in KSA",
+    },
+    subtitle: {
+      ar: "تشطيبات تجارية واسعة النطاق للمولات والمطارات والفنادق بمعايير عالمية",
+      en: "Large-Scale Commercial Finishing for Malls, Airports and Hotels to International Standards",
+    },
+    description: {
+      ar: "استكشف ما يشمله تنفيذ تشطيبات المشاريع التجارية الكبرى مثل المولات والمطارات والفنادق في السعودية، ولماذا يهم الالتزام بالمعايير العالمية في كل مرحلة تنفيذ.",
+      en: "Explore what large-scale commercial finishing involves for malls, airports and hotels in Saudi Arabia, and why international-standard execution matters.",
+    },
+    keywords: {
+      ar: ["تشطيبات تجارية السعودية", "مقاول تشطيب مولات", "تشطيب مطارات المملكة", "تشطيب فنادق الرياض", "تجهيز محلات تجارية السعودية", "مقاول تجاري جدة", "تشطيبات واسعة النطاق"],
+      en: ["commercial finishing Saudi Arabia", "mall finishing contractor", "airport finishing KSA", "hotel finishing Riyadh", "retail fit-out Saudi Arabia", "commercial contractor Jeddah", "large-scale finishing"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ماذا تشمل التشطيبات التجارية",
+          body: "تشمل التشطيبات التجارية الأرضيات، وكسوة الجدران، وأنظمة الأسقف، ودمج الإضاءة، والبنية التحتية للافتات، وتنسيق التخصصات الدقيقة كأعمال الزجاج والنجارة الفنية. وفي المولات والمطارات تحديدًا، يجب أن يراعي التشطيب الحركة العالية جدًا للزوار، مما يجعل متانة المواد بأهمية المظهر الجمالي.",
+        },
+        {
+          title: "العمل وفق المعايير العالمية",
+          body: "أصبحت المطارات والمشاريع التجارية الكبرى في السعودية خاضعة بشكل متزايد لمعايير عالمية في المواد والسلامة من الحريق وإمكانية الوصول. يحتاج المقاولون إلى عمليات موثقة ومنفذين معتمدين وسجل ناجح في اجتياز فحوصات جهات خارجية، وهو نفس الانضباط الذي نطبقه في معايير الجودة عبر جميع أنواع المشاريع.",
+        },
+        {
+          title: "تنفيذ الأعمال أثناء استمرار التشغيل",
+          body: "تجري كثير من مشاريع التشطيب التجاري في مساحات تبقى مشغّلة جزئيًا، كجناح في مول قيد التجديد بينما تبقى المحلات المجاورة مفتوحة، أو صالة مطار يتم تحديثها ليلًا بين مواعيد الرحلات. يتطلب ذلك جدولة دقيقة، والتحكم بالضوضاء والغبار، وتنسيقًا وثيقًا مع إدارة المرفق، وهنا يكتسب المقاول ذو الخبرة سمعته.",
+        },
+      ],
+      en: [
+        {
+          title: "What Commercial Finishing Covers",
+          body: "Commercial finishing includes flooring, wall cladding, ceiling systems, lighting integration, signage infrastructure, and the coordination of specialty trades like glazing and millwork. In malls and airports specifically, finishing must also account for extremely high foot traffic, meaning material durability is as important as appearance.",
+        },
+        {
+          title: "Working to International Standards",
+          body: "Airports and large commercial developments in Saudi Arabia are increasingly held to international benchmarks for materials, fire safety, and accessibility. Contractors need documented processes, certified installers, and a track record of passing third-party inspections — the same discipline we apply to our quality standards across every project type.",
+        },
+        {
+          title: "Phasing Work Around Live Operations",
+          body: "Many commercial finishing projects happen in spaces that stay partially operational — a mall wing under renovation while stores next door remain open, or an airport terminal upgraded overnight between flight schedules. This requires careful phasing, noise and dust control, and close coordination with facility management, which is where an experienced general contractor earns its reputation.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "فريق عمل يضم أكثر من 150 مختصًا",
+        "عملاء من المطورين الخاصين إلى المؤسسات الكبرى",
+        "الحجم والانضباط اللازمين للتعامل مع مشاريع بأي حجم",
+        "تسليم ضمن الجدول الزمني ووفق المواصفات",
+        "سجل أعمال: فنادق، محلات تجارية، مراكز تجميل، مطاعم",
+      ],
+      en: [
+        "Team of 150+ professionals",
+        "Clients ranging from private developers to major institutions",
+        "Scale and discipline to handle commercial projects of any size",
+        "Delivered on schedule and to specification",
+        "Track record: hotels, retail stores, beauty centers, restaurants",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل لديك مشروع تشطيب تجاري كبير؟", description: "تواصل معنا للحصول على عرض سعر مجاني ومخصص لمشروعك.", button: "احصل على عرض سعر" },
+      en: { title: "Have a Large Commercial Finishing Project?", description: "Contact us for a free, tailored quote for your project.", button: "Get a Free Quote" },
+    },
+  },
+
+  "turnkey-villa-construction-guide": {
+    slug: "turnkey-villa-construction-guide",
+    title: {
+      ar: "دليل شامل لبناء الفلل بنظام تسليم مفتاح في السعودية",
+      en: "Turnkey Villa Construction Guide for Saudi Homeowners",
+    },
+    subtitle: {
+      ar: "من الحفر حتى التسليم النهائي في الرياض وجدة والقصيم",
+      en: "From Foundation to Handover in Riyadh, Jeddah and Qassim",
+    },
+    description: {
+      ar: "تخطط لبناء فيلا بنظام تسليم مفتاح؟ تعرف كيف تنفذ شركة لمعة العربية مشروعك من الأساسات حتى التشطيب النهائي في الرياض وجدة والقصيم بالتزام تام بالجودة والمواعيد.",
+      en: "Planning turnkey villa construction in Saudi Arabia? Learn how Lamaat Al-Arabiya delivers foundation-to-finish villas in Riyadh, Jeddah and Qassim on schedule.",
+    },
+    keywords: {
+      ar: ["بناء فلل تسليم مفتاح", "مقاول فلل الرياض", "بناء فلل جدة", "بناء فلل القصيم", "مقاولات سكنية السعودية", "تشطيب فلل السعودية", "لمعة العربية للمقاولات"],
+      en: ["turnkey villa construction Saudi Arabia", "villa contractor Riyadh", "villa construction Jeddah", "villa building Qassim", "residential contractor KSA", "villa finishing Saudi Arabia", "Lamaat Al-Arabiya villas"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ماذا يعني نظام تسليم مفتاح فعليًا",
+          body: "يجمع مشروع الفيلا بنظام تسليم مفتاح بين أعمال العظم الإنشائي، والتشطيبات الداخلية والخارجية، والأنظمة الكهروميكانيكية ضمن عقد واحد وجهة مسؤولة واحدة. بدلًا من تنسيق مقاولين منفصلين للخرسانة والكهرباء والسباكة والتشطيب، يتعامل العميل مع فريق واحد من مرحلة التنسيق مع التصميم وحتى الاستلام النهائي، مما يقلل التأخير ويمنح المالك جدولًا زمنيًا وميزانية واضحة وثابتة.",
+        },
+        {
+          title: "مراحل مشروع الفيلا تسليم مفتاح",
+          body: "يمر بناء الفيلا تسليم مفتاح عادة بمراحل تجهيز الموقع والحفر، ثم الأساسات وأعمال الخرسانة الإنشائية، فالبناء والأسقف، ثم التمديدات الكهروميكانيكية الأولية، تليها التشطيبات الداخلية والخارجية، وأخيرًا الفحص النهائي قبل التسليم. تُفحص كل مرحلة قبل بدء التالية، وهنا تظهر قيمة المقاول ذي الخبرة الفعلية كمشروع فلل المزيرعي بالرياض.",
+        },
+        {
+          title: "لماذا تهم مراقبة الجودة في بناء الفلل",
+          body: "تُسكن الفلل لعقود طويلة، لذا فإن أي تقصير أثناء التنفيذ يظهر لاحقًا على شكل تشققات أو تسريبات أو أعطال كهربائية. يلتزم المقاول المنضبط بتطبيق معايير الجودة في كل مرحلة، من فحص المواد إلى الفحوصات الإنشائية وتفاوتات التشطيب، بحيث يؤدي المنزل المكتمل أداءً يوازي جماله.",
+        },
+      ],
+      en: [
+        {
+          title: "What Turnkey Construction Really Means",
+          body: "A turnkey villa project bundles structural work (the shell), interior and exterior finishing, and MEP systems into a single contract with a single point of accountability. Instead of coordinating separate contractors for concrete, electrical, plumbing and finishing, the client works with one team from design coordination through handover. This reduces delays caused by miscommunication between subcontractors and gives owners a clear, fixed timeline and budget.",
+        },
+        {
+          title: "The Phases of a Turnkey Villa Project",
+          body: "A typical turnkey villa build moves through site preparation and excavation, foundation and structural concrete work, masonry and roofing, MEP rough-in (electrical, plumbing, HVAC), interior and exterior finishing, and final inspection before handover. Each phase is inspected before the next begins — where an experienced general contractor adds real value in catching issues early, as demonstrated in projects like the Al-Muzairi Villas in Riyadh.",
+        },
+        {
+          title: "Why Quality Control Matters for Villas",
+          body: "Villas are lived in for decades, so shortcuts during construction show up later as cracks, leaks, or failing electrical systems. A disciplined contractor follows quality standards at every stage — material inspection, structural checks, and finishing tolerances — so the finished villa performs as well as it looks.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "فريق عمل يضم أكثر من 150 موظفًا",
+        "خبرة تتجاوز 20 عامًا في السوق السعودي",
+        "سجل أعمال يشمل مشاريع سكنية حكومية وخاصة",
+        "جهة اتصال واحدة من التصميم حتى المعاينة النهائية",
+        "جدولة شفافة وحرفية معتمدة",
+      ],
+      en: [
+        "150+ person team with 20+ years of Saudi market experience",
+        "Portfolio spanning government and private residential projects",
+        "Single point of contact from design through final walkthrough",
+        "Transparent scheduling and certified workmanship",
+        "Letters of appreciation from government and private entities",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "جاهز لبناء فيلا أحلامك بنظام تسليم مفتاح؟", description: "تواصل معنا للحصول على استشارة مجانية وعرض سعر تفصيلي.", button: "اطلب عرض سعر" },
+      en: { title: "Ready to Build Your Turnkey Villa?", description: "Contact us for a free consultation and detailed quote.", button: "Request a Quote" },
+    },
+  },
+
+  "mosque-jamea-construction-standards": {
+    slug: "mosque-jamea-construction-standards",
+    title: {
+      ar: "معايير بناء المساجد والجوامع في المملكة العربية السعودية",
+      en: "Mosque & Jamea Construction Standards in Saudi Arabia",
+    },
+    subtitle: {
+      ar: "من القباب والمآذن إلى قاعات الصلاة ومرافق الوضوء",
+      en: "From Domes and Minarets to Prayer Halls and Ablution Areas",
+    },
+    description: {
+      ar: "تعرف على المعايير الهندسية والصوتية ومعايير التشطيبات المعتمدة في بناء المساجد والجوامع بالسعودية، من المآذن والقباب إلى تجهيز قاعات الصلاة والمرافق المساندة.",
+      en: "Discover the engineering standards behind mosque and jamea construction in Saudi Arabia, from minarets and domes to prayer hall acoustics and accessibility.",
+    },
+    keywords: {
+      ar: ["بناء مساجد السعودية", "بناء جوامع المملكة", "مقاول مساجد الرياض", "بناء مآذن", "بناء قباب مساجد", "مقاول منشآت دينية", "صوتيات قاعة الصلاة"],
+      en: ["mosque construction Saudi Arabia", "jamea construction KSA", "mosque contractor Riyadh", "minaret construction", "mosque dome building", "religious facility contractor", "prayer hall acoustics"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الاعتبارات الإنشائية: القباب والمآذن",
+          body: "تحمل القباب والمآذن أحمالًا إنشائية فريدة تختلف عن المباني السكنية أو التجارية العادية. تُعد تفاصيل الخرسانة المسلحة، وحسابات تحمل الرياح للمآذن العالية، والقوالب الهندسية الدقيقة، عناصر أساسية لتجنب التشققات والهبوط على المدى الطويل، ما يتطلب مقاولين يمتلكون قدرة هندسية إنشائية حقيقية لا مجرد خبرة تشطيب.",
+        },
+        {
+          title: "الصوتيات وتصميم قاعة الصلاة",
+          body: "تؤثر صوتيات قاعة الصلاة مباشرة على وضوح صوت الإمام لكل مصلٍّ. يجب التخطيط لارتفاع السقف ومواد الأسطح وأنظمة الصوت أثناء التنفيذ وليس بعده، وبالتزامن مع تصميم التكييف والإضاءة المناسبين، تصبح خبرة الأعمال الكهروميكانيكية عاملًا حاسمًا في راحة المسجد اليومية.",
+        },
+        {
+          title: "التشطيبات ومرافق الوضوء وإمكانية الوصول",
+          body: "تتطلب مرافق الوضوء أنظمة سباكة وصرف وتسخين مياه موثوقة تتحمل الاستخدام اليومي المكثف، بينما يجب أن توازن مواد التشطيب كالرخام والبلاط وأعمال الخط بين المتانة والطابع التقليدي. كما تُعد إمكانية الوصول لكبار السن وذوي الاحتياجات الخاصة، بما يشمل المنحدرات والمصليات المخصصة، معيارًا نراعيه في كل تصميم.",
+        },
+      ],
+      en: [
+        {
+          title: "Structural Considerations: Domes and Minarets",
+          body: "Domes and minarets carry unique structural loads that differ from standard residential or commercial buildings. Reinforced concrete detailing, wind-load calculations for tall minarets, and precise geometric formwork are essential to avoid cracking and long-term settlement. Getting this right requires contractors with genuine structural engineering capability, not just finishing experience.",
+        },
+        {
+          title: "Acoustics and Prayer Hall Design",
+          body: "A prayer hall's acoustics directly affect how clearly the imam's voice reaches every worshipper. Ceiling height, surface materials, and sound system integration all need to be planned during construction — not retrofitted afterward. Combined with proper HVAC and lighting design, MEP contracting expertise becomes critical to a mosque's day-to-day comfort.",
+        },
+        {
+          title: "Finishing, Ablution Areas and Accessibility",
+          body: "Ablution (wudu) areas require reliable plumbing, drainage and water heating systems that can handle heavy daily use, while finishing materials — marble, tile, calligraphy work — must balance durability with traditional aesthetics. Accessibility for elderly worshippers and people with disabilities, including ramps and dedicated prayer areas, is also a standard we build into every design.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "التعامل مع كل مشروع مسجد كالتزام طويل الأمد تجاه المجتمع",
+        "نفس الانضباط المطبق في العقود الحكومية والتجارية",
+        "تنسيق الأعمال الإنشائية والكهروميكانيكية والتشطيبات تحت مظلة واحدة",
+        "مقاول واحد مسؤول من بدء الحفر وحتى يوم الافتتاح",
+        "خبرة +20 عامًا في مشاريع الأوقاف والمنشآت الدينية",
+      ],
+      en: [
+        "Every mosque project treated as a long-term commitment to the community",
+        "Same rigor applied to government and commercial contracts",
+        "Structural, MEP and finishing work coordinated under one roof",
+        "Single accountable contractor from groundbreaking to opening day",
+        "20+ years of experience in religious and endowment projects",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "المدينة المنورة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "Madinah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تخطط لبناء مسجد أو جامع؟", description: "تواصل معنا للحصول على استشارة مجانية وعرض سعر شامل لمشروعك.", button: "اطلب استشارة" },
+      en: { title: "Planning a Mosque or Jamea Project?", description: "Contact us for a free consultation and comprehensive quote.", button: "Request a Consultation" },
+    },
+  },
+
+  "mep-contracting-electrical-plumbing-hvac": {
+    slug: "mep-contracting-electrical-plumbing-hvac",
+    title: {
+      ar: "الأعمال الكهروميكانيكية في مشاريع البناء بالمملكة السعودية",
+      en: "MEP Contracting in Saudi Arabia: Electrical, Plumbing, HVAC",
+    },
+    subtitle: {
+      ar: "أنظمة الكهرباء والسباكة والتكييف في المشاريع السكنية والتجارية والدينية",
+      en: "Electrical, Plumbing and HVAC Systems for Residential, Commercial and Religious Projects",
+    },
+    description: {
+      ar: "تشكل الأنظمة الكهروميكانيكية عصب أي مبنى ناجح. تعرف كيف تضمن أعمال الكهرباء والسباكة والتكييف سلامة وكفاءة المشاريع السكنية والتجارية في أنحاء المملكة.",
+      en: "MEP systems make or break a building. See how electrical, plumbing and HVAC contracting keeps Saudi construction projects safe, efficient and code-compliant.",
+    },
+    keywords: {
+      ar: ["مقاول كهروميكانيكال السعودية", "مقاول كهرباء الرياض", "مقاول سباكة جدة", "مقاول تكييف المملكة", "التزام الدفاع المدني", "كهرباء وسباكة وتكييف السعودية", "صيانة كهروميكانيكية"],
+      en: ["MEP contractor Saudi Arabia", "electrical contractor Riyadh", "plumbing contractor Jeddah", "HVAC contractor KSA", "civil defense compliance", "mechanical electrical plumbing Saudi Arabia", "MEP maintenance"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الأنظمة الكهربائية: السلامة وتخطيط السعة",
+          body: "تحتاج المباني الحديثة إلى أنظمة كهربائية مصممة بالحجم المناسب للاستخدام الحالي والتوسع المستقبلي، مع تأريض صحيح وحماية للدوائر وتوازن للأحمال. يُعد التخطيط الكهربائي الضعيف سببًا رئيسيًا لمخاطر الحريق والتعديلات المكلفة لاحقًا، ولهذا يجب تصميم الأعمال الكهربائية بالتوازي مع الخطط الإنشائية والتشطيب وليس إضافتها لاحقًا.",
+        },
+        {
+          title: "أنظمة السباكة والمياه",
+          body: "تغطي السباكة أنظمة التزويد والصرف والمياه الساخنة، ويجب أن تراعي ضغط المياه وجودتها في السعودية. يُعد هذا الأمر حساسًا خصوصًا في المنشآت عالية الاستخدام مثل المساجد ذات مرافق الوضوء، والمباني التجارية ذات الحركة اليومية الكثيفة.",
+        },
+        {
+          title: "التكييف والالتزام بمتطلبات الدفاع المدني",
+          body: "نظرًا لمناخ المملكة، فإن تصميم التكييف ليس خيارًا بل ضرورة تحدد راحة الساكنين وتكاليف الطاقة طوال عمر المبنى. يجب دمج الالتزام بمتطلبات الدفاع المدني، بما يشمل أنظمة إطفاء الحريق والإنذار ومسارات الإخلاء الآمنة، مع تصميم التكييف والكهرباء منذ البداية، لا كبند فحص نهائي فقط.",
+        },
+      ],
+      en: [
+        {
+          title: "Electrical Systems: Safety and Capacity Planning",
+          body: "Modern buildings need electrical systems sized correctly for current use and future expansion, with proper grounding, circuit protection, and load balancing. Poor electrical planning is a leading cause of both fire risk and costly retrofits, which is why electrical work should be designed alongside structural and finishing plans, not bolted on afterward.",
+        },
+        {
+          title: "Plumbing and Water Systems",
+          body: "Plumbing covers supply, drainage, and hot water systems, and needs to account for Saudi Arabia's water pressure and quality conditions. This is especially critical in high-use facilities like mosques with ablution areas, and commercial buildings with heavy daily traffic.",
+        },
+        {
+          title: "HVAC and Civil Defense Compliance",
+          body: "Given the Kingdom's climate, HVAC design is not optional — it determines occupant comfort and energy costs for the life of the building. Civil defense compliance, including fire suppression, alarm systems and safe egress routes, must be integrated with HVAC and electrical design from the start, not treated as a final inspection checklist.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "أعمال الكهرباء والسباكة والتكييف والدفاع المدني ضمن خدمات متكاملة",
+        "تقديم الخدمات كجزء من مشاريع المقاولات العامة أو كخدمات مستقلة",
+        "تغطية في الرياض وجدة والقصيم",
+        "صيانة مستمرة متاحة بعد تسليم المشروع",
+        "خبرة في المشاريع السكنية والتجارية والدينية",
+      ],
+      en: [
+        "Integrated electrical, plumbing, HVAC and civil defense services",
+        "Available as part of general contracting or as standalone services",
+        "Coverage in Riyadh, Jeddah and Qassim",
+        "Ongoing maintenance available after project handover",
+        "Experience across residential, commercial and religious projects",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تحتاج خدمات كهروميكانيكية لمشروعك؟", description: "تواصل معنا للحصول على استشارة فنية مجانية وعرض سعر مخصص.", button: "اطلب عرض سعر" },
+      en: { title: "Need MEP Services for Your Project?", description: "Contact us for a free technical consultation and customized quote.", button: "Request a Quote" },
     },
   },
 };

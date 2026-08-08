@@ -25,7 +25,7 @@ export function generateStaticParams() {
   ]);
 }
 
-const SERVICE_SCHEMAS: Record<BlogSlug, (locale: string) => Record<string, unknown>> = {
+const SERVICE_SCHEMAS: Partial<Record<BlogSlug, (locale: string) => Record<string, unknown>>> = {
   sandblasting: getSandblastingServiceSchema,
   "villa-construction": getVillaServiceSchema,
   "mosque-construction": getMosqueServiceSchema,
