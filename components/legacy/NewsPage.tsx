@@ -139,6 +139,18 @@ const BLOG_CARDS = {
       excerpt: "كيف تضمن أعمال الكهرباء والسباكة والتكييف سلامة وكفاءة المشاريع السكنية والتجارية في المملكة.",
       tag: "الخدمات الفنية",
     },
+    {
+      slug: "industrial-sandblasting-surface-prep",
+      title: "خدمات السفع الرملي الصناعي ومعايير الجودة المعتمدة",
+      excerpt: "أعمال السفع الرملي للهياكل الفولاذية والخزانات والأنابيب وفق معايير ISO وSSPC وNACE لحماية المنشآت الصناعية من التآكل.",
+      tag: "الخدمات الصناعية",
+    },
+    {
+      slug: "construction-site-safety-ksa",
+      title: "كيف تحافظ شركات المقاولات على سلامة مواقع العمل بالمملكة",
+      excerpt: "معدات الوقاية الشخصية وأنظمة السلامة والتدريب المستمر – كيف تحمي لمعة العربية فريقها ومشاريعها في كل موقع.",
+      tag: "رؤى الصناعة",
+    },
   ],
   en: [
     {
@@ -194,6 +206,18 @@ const BLOG_CARDS = {
       title: "MEP Contracting in Saudi Arabia: Electrical, Plumbing, HVAC",
       excerpt: "How electrical, plumbing and HVAC contracting keeps Saudi construction projects safe, efficient and code-compliant.",
       tag: "Technical Services",
+    },
+    {
+      slug: "industrial-sandblasting-surface-prep",
+      title: "Industrial Sandblasting Services and Surface Prep Standards",
+      excerpt: "Sandblasting for structural steel, tanks and pipelines to ISO, SSPC and NACE standards — protecting industrial assets from corrosion.",
+      tag: "Industrial Services",
+    },
+    {
+      slug: "construction-site-safety-ksa",
+      title: "Construction Site Safety: Protecting Teams and Projects",
+      excerpt: "How Lamaat Al-Arabiya applies PPE, enforced safety systems and continuous training to protect its 150+ team and project timelines.",
+      tag: "Industry Insights",
     },
   ],
 };

@@ -25,6 +25,8 @@ export const BLOG_SLUGS = [
   "turnkey-villa-construction-guide",
   "mosque-jamea-construction-standards",
   "mep-contracting-electrical-plumbing-hvac",
+  "industrial-sandblasting-surface-prep",
+  "construction-site-safety-ksa",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -712,6 +714,170 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تحتاج خدمات كهروميكانيكية لمشروعك؟", description: "تواصل معنا للحصول على استشارة فنية مجانية وعرض سعر مخصص.", button: "اطلب عرض سعر" },
       en: { title: "Need MEP Services for Your Project?", description: "Contact us for a free technical consultation and customized quote.", button: "Request a Quote" },
+    },
+  },
+
+  "industrial-sandblasting-surface-prep": {
+    slug: "industrial-sandblasting-surface-prep",
+    title: {
+      ar: "خدمات السفع الرملي الصناعي ومعايير الجودة المعتمدة",
+      en: "Industrial Sandblasting Services and Surface Prep Standards",
+    },
+    subtitle: {
+      ar: "تجهيز الأسطح للهياكل الفولاذية والخزانات والأنابيب في المملكة العربية السعودية",
+      en: "Surface Preparation for Steel Structures, Tanks and Pipelines in Saudi Arabia",
+    },
+    description: {
+      ar: "تعرف على أعمال السفع الرملي الصناعي لمعالجة الأسطح المعدنية والهياكل والخزانات والأنابيب، ولماذا تهم معايير ISO وSSPC وNACE في حماية المنشآت الصناعية من التآكل.",
+      en: "Understand industrial sandblasting for structural steel, tanks and pipelines, and why ISO, SSPC, NACE standards matter for corrosion protection today.",
+    },
+    keywords: {
+      ar: [
+        "السفع الرملي الصناعي السعودية", "سفع رملي الرياض", "سفع رملي القصيم",
+        "معايير تجهيز الأسطح ISO", "معايير SSPC", "معايير NACE للطلاء",
+        "حماية من التآكل السعودية", "معالجة الأسطح المعدنية",
+      ],
+      en: [
+        "industrial sandblasting Saudi Arabia", "sandblasting Riyadh", "sandblasting Qassim",
+        "surface preparation ISO", "SSPC standards", "NACE coating standards",
+        "corrosion protection KSA", "steel structure sandblasting",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "لماذا يحدد تجهيز السطح عمر الطلاء",
+          body: "جودة الطلاء لا تتجاوز جودة السطح الذي وُضع عليه. تُظهر بيانات الصناعة باستمرار أن جودة تجهيز السطح هي العامل الأكبر في فشل الطلاء، أكثر أهمية حتى من منتج الطلاء نفسه. يحقق السفع الرملي درجة الخشونة المحددة التي تتطلبها أنظمة الطلاء المختلفة للالتصاق الصحيح.",
+        },
+        {
+          title: "المعايير العالمية: ISO وSSPC وNACE",
+          body: "يتبع السفع الرملي الاحترافي معايير عالمية معتمدة. يحدد معيار ISO 8501 درجات النظافة البصرية، وتضع SSPC مواصفات تجهيز الأسطح المستخدمة على نطاق واسع في أمريكا الشمالية وبشكل متزايد في الخليج، بينما تنظّم معايير NACE (المعروفة الآن باسم AMPP) مكافحة التآكل لمنشآت النفط والغاز والصناعة. يُعد الالتزام بهذه المعايير ضروريًا للمشاريع المرتبطة بعملاء صناعيين وشركاء دوليين.",
+        },
+        {
+          title: "التطبيقات: الهياكل الفولاذية والخزانات والأنابيب",
+          body: "يُستخدم السفع الرملي لتجهيز الفولاذ الإنشائي قبل الطلاء، وتنظيف خزانات التخزين من الداخل والخارج، ومعالجة خطوط الأنابيب قبل طلاء الحماية، وترميم المعدات في المنشآت الصناعية والتصنيعية. تتطلب كل تطبيقة وسيطًا كاشطًا ودرجة سفع مختلفة، ولهذا فإن الفنيين ذوي الخبرة، لا المعدات وحدها، هم من يحددون جودة النتيجة.",
+        },
+      ],
+      en: [
+        {
+          title: "Why Surface Preparation Determines Coating Life",
+          body: "A coating is only as good as the surface underneath it. Industry data consistently shows that surface preparation quality is the single biggest factor in coating failure — more important than the coating product itself. Sandblasting achieves the specific surface profile (roughness) that different coating systems require to adhere correctly.",
+        },
+        {
+          title: "International Standards: ISO, SSPC and NACE",
+          body: "Professional sandblasting follows internationally recognized standards. ISO 8501 defines visual cleanliness grades, SSPC (Society for Protective Coatings) sets surface preparation specifications used widely in North America and increasingly in the Gulf, and NACE (now AMPP) standards govern corrosion control for oil, gas and industrial facilities. Working to these standards is essential for projects tied to industrial clients and international partners.",
+        },
+        {
+          title: "Applications: Steel Structures, Tanks and Pipelines",
+          body: "Sandblasting is used to prepare structural steel before painting, clean the interior and exterior of storage tanks, treat pipelines before protective coating, and refurbish equipment in industrial and manufacturing facilities. Each application requires different abrasive media and blast profiles, which is why experienced operators — not just equipment — determine the quality of the result.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "تطبيق معايير عالمية لتجهيز الأسطح في كل مشروع",
+        "فنيون ذوو خبرة يحددون جودة النتيجة لا المعدات وحدها",
+        "أعمال وفق معايير ISO 8501 وSSPC وNACE (AMPP)",
+        "خبرة في الهياكل الفولاذية والخزانات وخطوط الأنابيب",
+        "تغطية في الرياض والقصيم وجميع مناطق المملكة",
+      ],
+      en: [
+        "International surface prep standards applied on every project",
+        "Experienced operators — not just equipment — determine quality",
+        "ISO 8501, SSPC and NACE (AMPP) compliant processes",
+        "Structural steel, storage tanks and pipeline experience",
+        "Coverage in Riyadh, Qassim and all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تحتاج خدمات السفع الرملي الصناعي؟", description: "تواصل معنا للحصول على استشارة مجانية وعرض سعر لمشروع السفع الرملي.", button: "اطلب عرض سعر" },
+      en: { title: "Need Industrial Sandblasting Services?", description: "Contact us for a free consultation and quote for your sandblasting project.", button: "Request a Quote" },
+    },
+  },
+
+  "construction-site-safety-ksa": {
+    slug: "construction-site-safety-ksa",
+    title: {
+      ar: "كيف تحافظ شركات المقاولات على سلامة مواقع العمل بالمملكة",
+      en: "Construction Site Safety: Protecting Teams and Projects",
+    },
+    subtitle: {
+      ar: "معدات الوقاية الشخصية وأنظمة السلامة والتدريب المستمر في جميع أنواع المشاريع",
+      en: "PPE, Safety Systems and Continuous Training Across All Project Types",
+    },
+    description: {
+      ar: "سلامة الموقع أساس نجاح أي مشروع إنشائي. تعرف كيف تطبق شركات المقاولات السعودية معدات الوقاية الشخصية ونظم السلامة والتدريب المستمر لحماية الفرق والمشاريع.",
+      en: "Site safety protects workers, timelines and budgets. Learn how leading Saudi contractors apply PPE, safety systems and training to prevent site accidents.",
+    },
+    keywords: {
+      ar: [
+        "سلامة مواقع العمل السعودية", "معايير السلامة في المقاولات",
+        "معدات الوقاية الشخصية للبناء", "سلامة الدفاع المدني الرياض",
+        "سلامة مكان العمل المقاول", "تدريب السلامة في البناء",
+      ],
+      en: [
+        "construction site safety Saudi Arabia", "safety standards contracting KSA",
+        "PPE construction sites", "civil defense safety Riyadh",
+        "workplace safety contractor", "safety training construction",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "معدات الوقاية الشخصية كحد أدنى",
+          body: "تُعد الخوذات وأحذية السلامة والملابس عالية الوضوح ومعدات الحماية الخاصة بكل مهمة الحد الأدنى المطلوب في أي موقع نشط. لكن معدات الوقاية وحدها لا تمنع الحوادث؛ إنها تقلل من شدة الحوادث التي كان يجب أن تمنعها إجراءات أكثر صرامة من الأساس.",
+        },
+        {
+          title: "أنظمة السلامة المطبقة والالتزام بالدفاع المدني",
+          body: "تعني سلامة الموقع الفعالة تطبيق إجراءات صارمة: التحكم في الدخول، وفحص المعدات، والحماية من السقوط في الأعمال المرتفعة، وخطط استجابة واضحة للطوارئ. في المشاريع التي تتضمن تركيب الكهرباء أو السباكة أو التكييف، يتداخل هذا مباشرة مع الالتزام بالدفاع المدني والأعمال الكهروميكانيكية، لأن سلامة الحريق والسلامة الكهربائية مرتبطتان ارتباطًا وثيقًا.",
+        },
+        {
+          title: "التدريب المستمر بدلًا من التوجيه لمرة واحدة",
+          body: "يجب ألا يكون تدريب السلامة توجيهًا يحدث مرة واحدة فقط. يبقي التدريب التنشيطي المستمر، والإحاطات الخاصة بكل مرحلة جديدة من العمل، وقنوات الإبلاغ الواضحة عن المخاطر، الوعي بالسلامة نشطًا بدلًا من معاملته كبند يُنجز عند بداية المشروع فقط.",
+        },
+      ],
+      en: [
+        {
+          title: "Personal Protective Equipment as a Baseline",
+          body: "Helmets, safety boots, high-visibility clothing, and task-specific protective gear are the minimum requirement on any active site. But PPE alone does not prevent accidents — it reduces the severity of incidents that stricter procedures should be preventing in the first place.",
+        },
+        {
+          title: "Enforced Safety Systems and Civil Defense Compliance",
+          body: "Effective site safety means enforced procedures: controlled access, equipment inspections, fall protection on elevated work, and clear emergency response plans. On projects involving electrical, plumbing or HVAC installation, this overlaps directly with civil defense and MEP compliance, since fire safety and electrical safety are closely linked.",
+        },
+        {
+          title: "Continuous Training Over One-Time Onboarding",
+          body: "Safety training should not be a one-time orientation. Ongoing refresher training, site-specific briefings for new phases of work, and clear reporting channels for hazards keep safety awareness active rather than treating it as a box to check at project start.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "تطبيق متطلبات معدات الوقاية الشخصية في جميع المواقع النشطة",
+        "التحكم في دخول الموقع وفحص المعدات بصرامة",
+        "تدريب مستمر على السلامة لأكثر من 150 موظف",
+        "خطط استجابة واضحة للطوارئ في كل مشروع",
+        "سجل سلامة في المشاريع السكنية والتجارية والصناعية",
+      ],
+      en: [
+        "PPE requirements enforced across all active sites",
+        "Controlled site access and equipment inspections",
+        "Continuous safety training for our 150+ team members",
+        "Clear emergency response plans on every project",
+        "Safety track record across residential, commercial and industrial sites",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل أنت مستعد لمناقشة متطلبات السلامة في مشروعك؟", description: "تواصل معنا للحصول على استشارة مجانية حول معايير سلامة الموقع وتخطيط المشروع.", button: "تواصل معنا" },
+      en: { title: "Ready to Discuss Your Project Safety Requirements?", description: "Contact us for a free consultation on site safety standards and project planning.", button: "Contact Us" },
     },
   },
 };
