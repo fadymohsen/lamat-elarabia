@@ -27,6 +27,7 @@ export const BLOG_SLUGS = [
   "mep-contracting-electrical-plumbing-hvac",
   "industrial-sandblasting-surface-prep",
   "construction-site-safety-ksa",
+  "construction-quality-standards-ksa",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -878,6 +879,87 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل أنت مستعد لمناقشة متطلبات السلامة في مشروعك؟", description: "تواصل معنا للحصول على استشارة مجانية حول معايير سلامة الموقع وتخطيط المشروع.", button: "تواصل معنا" },
       en: { title: "Ready to Discuss Your Project Safety Requirements?", description: "Contact us for a free consultation on site safety standards and project planning.", button: "Contact Us" },
+    },
+  },
+
+  "construction-quality-standards-ksa": {
+    slug: "construction-quality-standards-ksa",
+    title: {
+      ar: "معايير الجودة في المقاولات وأثرها على نجاح المشروع",
+      en: "Quality Standards in Construction: Why They Matter Most",
+    },
+    subtitle: {
+      ar: "من اختيار المواد إلى الفحص النهائي – ضبط الجودة في كل مرحلة",
+      en: "From Material Selection to Final Inspection – Quality Control at Every Stage",
+    },
+    description: {
+      ar: "الجودة لم تعد رفاهية في عالم المقاولات بل ضرورة لنجاح المشروع. تعرف كيف يقلل تطبيق معايير الجودة الصارمة من الأخطاء والهدر ويعزز ثقة العميل في كل مرحلة.",
+      en: "Quality control at every stage, from material sourcing to final inspection, reduces rework and delays. Learn how quality standards protect your budget.",
+    },
+    keywords: {
+      ar: [
+        "معايير الجودة في المقاولات", "ضبط الجودة الإنشائية", "فحص المشاريع السعودية",
+        "منع عيوب البناء", "ضمان جودة المقاول", "جودة البناء الرياض",
+      ],
+      en: [
+        "construction quality standards Saudi Arabia", "quality control contracting",
+        "project inspection KSA", "construction defects prevention",
+        "contractor quality assurance", "building quality Riyadh",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "اختيار المواد والتحقق منها",
+          body: "تبدأ الجودة قبل بدء التنفيذ، بتوريد مواد موثقة تلبي مواصفات المشروع. يُعد استبدال المواد غير الموثقة أو الأقل جودة لتوفير التكلفة أحد أكثر الأسباب شيوعًا لمشكلات إنشائية وتشطيبية طويلة الأمد.",
+        },
+        {
+          title: "الفحص على مراحل متعددة",
+          body: "بدلًا من الاكتفاء بالفحص عند اكتمال المشروع، يقوم المقاول المهتم بالجودة بفحص العمل في كل مرحلة: الأساسات، الإنشاء، التمديدات الكهروميكانيكية الأولية، والتشطيب، بحيث تُكتشف المشكلات وتُصحَّح وهي لا تزال قليلة التكلفة.",
+        },
+        {
+          title: "التوثيق وثقة العملاء",
+          body: "تعني عمليات الجودة أيضًا التوثيق: سجلات الفحص، وشهادات المطابقة، والتواصل الواضح مع العملاء حول ما تم تنفيذه وأسبابه. هذه الشفافية هي ما يكسب العملاء المتكررين والعقود الحكومية على مدى أكثر من 20 عامًا في سوق تنافسي.",
+        },
+      ],
+      en: [
+        {
+          title: "Material Selection and Verification",
+          body: "Quality starts before construction begins, with sourcing verified materials that meet project specifications. Substituting unverified or lower-grade materials to save cost is one of the most common causes of long-term structural and finishing problems.",
+        },
+        {
+          title: "Stage-by-Stage Inspection",
+          body: "Rather than inspecting only at project completion, quality-focused contractors check work at every phase — foundation, structural, MEP rough-in, and finishing — so issues are caught and corrected while they are still inexpensive to fix.",
+        },
+        {
+          title: "Documentation and Client Trust",
+          body: "Quality processes also mean documentation: inspection records, certificates of compliance, and clear communication with clients about what was done and why. This transparency is what earns repeat clients and government contracts over 20+ years in a competitive market.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "فريق يضم أكثر من 150 موظفًا يطبق نفس الانضباط في الجودة في كل مشروع",
+        "شهادات وخطابات شكر من جهات حكومية وخاصة على مدى 20 عامًا",
+        "فحص مرحلي موثق من الأساسات حتى التشطيب النهائي",
+        "توريد مواد موثقة تلبي مواصفات كل مشروع",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "150+ team members applying the same quality discipline across every project",
+        "Certificates and letters of appreciation from government and private entities over 20 years",
+        "Documented stage-by-stage inspection from foundation to finishing",
+        "Verified material sourcing meeting every project's specifications",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تريد ضمان جودة مشروعك الإنشائي؟", description: "تواصل معنا للحصول على استشارة مجانية حول معايير الجودة والتنفيذ.", button: "تواصل معنا" },
+      en: { title: "Want to Ensure Quality on Your Construction Project?", description: "Contact us for a free consultation on quality standards and project execution.", button: "Contact Us" },
     },
   },
 };

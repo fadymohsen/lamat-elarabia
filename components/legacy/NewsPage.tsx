@@ -151,6 +151,12 @@ const BLOG_CARDS = {
       excerpt: "معدات الوقاية الشخصية وأنظمة السلامة والتدريب المستمر – كيف تحمي لمعة العربية فريقها ومشاريعها في كل موقع.",
       tag: "رؤى الصناعة",
     },
+    {
+      slug: "construction-quality-standards-ksa",
+      title: "معايير الجودة في المقاولات وأثرها على نجاح المشروع",
+      excerpt: "الجودة لم تعد رفاهية في عالم المقاولات بل ضرورة لنجاح المشروع. تعرف كيف يقلل تطبيق معايير الجودة الصارمة من الأخطاء والهدر ويعزز ثقة العميل في كل مرحلة.",
+      tag: "رؤى الصناعة",
+    },
   ],
   en: [
     {
@@ -217,6 +223,12 @@ const BLOG_CARDS = {
       slug: "construction-site-safety-ksa",
       title: "Construction Site Safety: Protecting Teams and Projects",
       excerpt: "How Lamaat Al-Arabiya applies PPE, enforced safety systems and continuous training to protect its 150+ team and project timelines.",
+      tag: "Industry Insights",
+    },
+    {
+      slug: "construction-quality-standards-ksa",
+      title: "Quality Standards in Construction: Why They Matter Most",
+      excerpt: "Quality control at every stage — from material sourcing to final inspection — reduces rework and delays. Learn how quality standards protect your budget.",
       tag: "Industry Insights",
     },
   ],
