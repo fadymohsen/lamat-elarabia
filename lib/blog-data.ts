@@ -28,6 +28,7 @@ export const BLOG_SLUGS = [
   "industrial-sandblasting-surface-prep",
   "construction-site-safety-ksa",
   "construction-quality-standards-ksa",
+  "eurotech-me-official-agent-saudi-arabia-it-solutions",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -960,6 +961,109 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تريد ضمان جودة مشروعك الإنشائي؟", description: "تواصل معنا للحصول على استشارة مجانية حول معايير الجودة والتنفيذ.", button: "تواصل معنا" },
       en: { title: "Want to Ensure Quality on Your Construction Project?", description: "Contact us for a free consultation on quality standards and project execution.", button: "Contact Us" },
+    },
+  },
+
+  "eurotech-me-official-agent-saudi-arabia-it-solutions": {
+    slug: "eurotech-me-official-agent-saudi-arabia-it-solutions",
+    title: {
+      ar: "لمعة العربية – الوكيل الرسمي لحلول EuroTech ME التقنية في المملكة العربية السعودية",
+      en: "Lamaat Al-Arabiya – Official Agent of EuroTech ME IT Solutions in Saudi Arabia",
+    },
+    subtitle: {
+      ar: "حلول تقنية معلومات متكاملة لقطاع المقاولات والتشييد في المملكة",
+      en: "Integrated IT Solutions for the Contracting and Construction Sector in the Kingdom",
+    },
+    description: {
+      ar: "لمعة العربية للمقاولات وكيل رسمي لشركة EuroTech ME في المملكة العربية السعودية، نوفر حلول تقنية متطورة لإدارة مشاريع البناء والمقاولات. أنظمة BIM وإدارة المشاريع والبنية التحتية الرقمية لتحسين كفاءة التشييد.",
+      en: "Lamaat Al-Arabiya Contracting is the official agent of EuroTech ME in Saudi Arabia, providing advanced IT solutions for construction and contracting project management. BIM systems, project management, and digital infrastructure to improve construction efficiency.",
+    },
+    keywords: {
+      ar: [
+        "EuroTech ME الوكيل الرسمي السعودية", "حلول تقنية المعلومات للمقاولات",
+        "برامج إدارة مشاريع البناء", "BIM المملكة العربية السعودية",
+        "تقنيات البناء الذكي", "لمعة العربية EuroTech",
+        "حلول رقمية للمقاولين", "إدارة مشاريع التشييد",
+        "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "EuroTech ME official agent Saudi Arabia", "IT solutions construction Saudi Arabia",
+        "construction project management software KSA", "BIM Saudi Arabia",
+        "smart construction technology", "Lamaat Al-Arabiya EuroTech",
+        "digital solutions contractors", "construction project management",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "من هي EuroTech ME ولماذا هذه الشراكة مهمة؟",
+          body: "EuroTech ME شركة تقنية متخصصة في تقديم حلول تقنية المعلومات المتكاملة لقطاعي المقاولات والتشييد في منطقة الشرق الأوسط. تجمع هذه الشراكة بين خبرة لمعة العربية الميدانية الممتدة لأكثر من 20 عامًا في السوق السعودي وبين الحلول التقنية المتطورة من EuroTech ME، لتقديم منظومة متكاملة تربط الجانب الإنشائي بالجانب الرقمي في إدارة المشاريع.",
+        },
+        {
+          title: "حلول إدارة المشاريع الإنشائية",
+          body: "توفر EuroTech ME منظومة متكاملة لإدارة مشاريع البناء تشمل: برامج الجدولة الزمنية ومتابعة التقدم، وأنظمة إدارة الوثائق والعقود، وأدوات مراقبة التكاليف والميزانية في الوقت الفعلي، وتقارير الجودة والسلامة الرقمية. تُوظّف لمعة العربية هذه الأدوات في مشاريعها الكبرى لضمان الدقة في التسليم والالتزام بالمواصفات.",
+        },
+        {
+          title: "تقنية BIM والتحول الرقمي في التشييد",
+          body: "يشهد قطاع البناء السعودي تحولًا رقميًا متسارعًا تدفعه متطلبات رؤية 2030 والمشاريع العملاقة. تتيح حلول BIM (نمذجة معلومات البناء) من EuroTech ME تصور المشروع بالكامل رقميًا قبل الشروع في التنفيذ، مما يكشف التعارضات الهندسية مبكرًا ويقلل التعديلات المكلفة ويوحّد عمل الفرق الإنشائية والمعمارية والكهروميكانيكية في بيئة بيانات مشتركة.",
+        },
+        {
+          title: "البنية التحتية الرقمية لمواقع البناء",
+          body: "تتجاوز حلول EuroTech ME البرمجيات لتشمل البنية التحتية الرقمية لمواقع البناء: شبكات الاتصال الميداني، وأنظمة المراقبة والسلامة بالكاميرات والاستشعار، وبوابات الدخول الذكي لتتبع العمالة، وأنظمة إدارة المعدات والأصول. توفر هذه الحلول لإدارة المشاريع رؤية ميدانية لحظية تُعزز القرار وتضبط الجداول الزمنية.",
+        },
+        {
+          title: "الدعم الفني والتدريب في المملكة",
+          body: "بصفتها الوكيل الرسمي، تقدم لمعة العربية الدعم الفني الكامل لمنتجات وحلول EuroTech ME داخل المملكة العربية السعودية، بما يشمل التركيب والتهيئة، وتدريب الفرق الهندسية وفرق المشاريع، والدعم الفني المستمر، وتحديثات الأنظمة. يضمن ذلك استمرارية التشغيل وأقصى استفادة من الاستثمار التقني لعملاء القطاع.",
+        },
+      ],
+      en: [
+        {
+          title: "Who is EuroTech ME and Why Does This Partnership Matter?",
+          body: "EuroTech ME is a technology company specializing in integrated IT solutions for the contracting and construction sectors across the Middle East. This partnership combines Lamaat Al-Arabiya's 20+ years of field experience in the Saudi market with EuroTech ME's advanced technology solutions, delivering a comprehensive ecosystem that bridges the physical and digital dimensions of project management.",
+        },
+        {
+          title: "Construction Project Management Solutions",
+          body: "EuroTech ME provides an integrated construction project management suite including: scheduling and progress tracking software, document and contract management systems, real-time cost and budget monitoring tools, and digital quality and safety reporting. Lamaat Al-Arabiya deploys these tools on major projects to ensure precision in delivery and compliance with specifications.",
+        },
+        {
+          title: "BIM Technology and Digital Transformation in Construction",
+          body: "Saudi Arabia's construction sector is undergoing rapid digital transformation driven by Vision 2030 requirements and mega-projects. EuroTech ME's BIM (Building Information Modeling) solutions allow an entire project to be visualized digitally before construction begins, detecting engineering clashes early, reducing costly rework, and unifying the work of structural, architectural, and MEP teams in a shared data environment.",
+        },
+        {
+          title: "Digital Infrastructure for Construction Sites",
+          body: "EuroTech ME solutions extend beyond software to include digital infrastructure for construction sites: field communication networks, camera and sensor safety monitoring systems, smart access gates for workforce tracking, and equipment and asset management systems. These solutions give project management real-time field visibility to sharpen decisions and keep schedules on track.",
+        },
+        {
+          title: "Technical Support and Training in the Kingdom",
+          body: "As the official agent, Lamaat Al-Arabiya provides full technical support for EuroTech ME products and solutions within Saudi Arabia, covering installation and configuration, training for engineering and project teams, ongoing technical support, and system updates. This ensures continuity of operations and maximum return on technology investment for sector clients.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "الوكيل الرسمي المعتمد لـ EuroTech ME في المملكة العربية السعودية",
+        "دعم فني محلي كامل بفريق متخصص داخل المملكة",
+        "خبرة ميدانية +20 عامًا في قطاع المقاولات السعودي",
+        "تكامل الحلول التقنية مع العمليات الإنشائية الفعلية",
+        "تدريب وتأهيل الفرق الهندسية لأقصى استفادة من الأنظمة",
+        "تغطية جغرافية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "Certified official agent of EuroTech ME in Saudi Arabia",
+        "Full local technical support with a specialized in-Kingdom team",
+        "20+ years of field experience in the Saudi contracting sector",
+        "Seamless integration of technology solutions with actual construction operations",
+        "Engineering team training to maximize system value",
+        "Full geographic coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "المنطقة الشرقية", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "Eastern Province", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تريد معرفة المزيد عن حلول EuroTech ME؟", description: "تواصل مع لمعة العربية للحصول على استشارة مجانية وعرض تفصيلي لأنسب الحلول التقنية لمشروعك.", button: "تواصل معنا" },
+      en: { title: "Want to Learn More About EuroTech ME Solutions?", description: "Contact Lamaat Al-Arabiya for a free consultation and a detailed overview of the right IT solutions for your project.", button: "Contact Us" },
     },
   },
 };

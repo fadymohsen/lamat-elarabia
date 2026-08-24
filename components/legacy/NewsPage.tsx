@@ -157,6 +157,12 @@ const BLOG_CARDS = {
       excerpt: "الجودة لم تعد رفاهية في عالم المقاولات بل ضرورة لنجاح المشروع. تعرف كيف يقلل تطبيق معايير الجودة الصارمة من الأخطاء والهدر ويعزز ثقة العميل في كل مرحلة.",
       tag: "رؤى الصناعة",
     },
+    {
+      slug: "eurotech-me-official-agent-saudi-arabia-it-solutions",
+      title: "لمعة العربية – الوكيل الرسمي لحلول EuroTech ME التقنية في المملكة",
+      excerpt: "شراكة استراتيجية تجمع خبرة لمعة العربية الميدانية بحلول EuroTech ME التقنية لإدارة مشاريع البناء رقميًا – BIM وإدارة المشاريع والبنية التحتية الذكية لمواقع البناء.",
+      tag: "تقنية وابتكار",
+    },
   ],
   en: [
     {
@@ -230,6 +236,12 @@ const BLOG_CARDS = {
       title: "Quality Standards in Construction: Why They Matter Most",
       excerpt: "Quality control at every stage — from material sourcing to final inspection — reduces rework and delays. Learn how quality standards protect your budget.",
       tag: "Industry Insights",
+    },
+    {
+      slug: "eurotech-me-official-agent-saudi-arabia-it-solutions",
+      title: "Lamaat Al-Arabiya – Official Agent of EuroTech ME IT Solutions in Saudi Arabia",
+      excerpt: "A strategic partnership combining Lamaat Al-Arabiya's field expertise with EuroTech ME's technology — BIM, project management software, and smart site infrastructure for Saudi construction.",
+      tag: "Technology & Innovation",
     },
   ],
 };
