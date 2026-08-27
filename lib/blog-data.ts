@@ -29,6 +29,8 @@ export const BLOG_SLUGS = [
   "construction-site-safety-ksa",
   "construction-quality-standards-ksa",
   "eurotech-me-official-agent-saudi-arabia-it-solutions",
+  "choosing-general-contractor-riyadh-jeddah-qassim",
+  "building-maintenance-services-ksa",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1064,6 +1066,154 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تريد معرفة المزيد عن حلول EuroTech ME؟", description: "تواصل مع لمعة العربية للحصول على استشارة مجانية وعرض تفصيلي لأنسب الحلول التقنية لمشروعك.", button: "تواصل معنا" },
       en: { title: "Want to Learn More About EuroTech ME Solutions?", description: "Contact Lamaat Al-Arabiya for a free consultation and a detailed overview of the right IT solutions for your project.", button: "Contact Us" },
+    },
+  },
+
+  "choosing-general-contractor-riyadh-jeddah-qassim": {
+    slug: "choosing-general-contractor-riyadh-jeddah-qassim",
+    title: {
+      ar: "كيف تختار شركة مقاولات موثوقة في الرياض وجدة والقصيم",
+      en: "Choosing a General Contractor in Riyadh, Jeddah or Qassim",
+    },
+    subtitle: {
+      ar: "دليل عملي لاختيار المقاول المناسب لمشروعك",
+      en: "A practical guide to selecting the right contractor for your project",
+    },
+    description: {
+      ar: "اختيار شركة المقاولات المناسبة قرار مصيري لأي مشروع. قارن بين الخبرة والشهادات المعتمدة وسجل الأعمال السابقة لاختيار شريك موثوق في الرياض أو جدة أو القصيم.",
+      en: "Selecting a general contractor is a major decision. Compare experience, certifications and project portfolio to find a trusted partner in Riyadh or Jeddah.",
+    },
+    keywords: {
+      ar: ["شركة مقاولات السعودية", "اختيار مقاول الرياض", "شركة إنشاءات جدة", "كيف تختار مقاولًا", "أفضل مقاول القصيم", "مقاول موثوق المملكة", "شهادات المقاول"],
+      en: ["general contractor Saudi Arabia", "contractor selection Riyadh", "construction company Jeddah", "how to choose a contractor", "best contractor Qassim", "trusted contractor KSA", "contractor certifications"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "سجل الأعمال في مشاريع مماثلة",
+          body: "أفضل مؤشر على أداء المقاول المستقبلي هو أعماله السابقة. اطلب أمثلة على مشاريع مكتملة مماثلة في الحجم والنوع لمشروعك، سواء سكنية أو دينية أو تجارية أو صناعية، واطلب إن أمكن رؤية النتائج النهائية أو التحدث مع عملاء سابقين.",
+        },
+        {
+          title: "الشهادات والاعتراف الحكومي",
+          body: "تشير خطابات الشكر والتقدير، والخبرة في المشاريع الحكومية، والشهادات القطاعية، إلى أن المقاول قد اجتاز تدقيق عملاء جادين من قبل. المقاول الذي يمتلك سجلًا موثقًا في تنفيذ مشاريع حكومية وخاصة قد أثبت بالفعل التزامه بمعايير المطابقة والجودة المهمة لمشروعك.",
+        },
+        {
+          title: "تنوع الخدمات والمسؤولية من جهة واحدة",
+          body: "المقاولون الذين يقدمون المقاولات العامة والخدمات الفنية (الكهرباء والسباكة والتكييف) وتوريد المواد تحت مظلة واحدة يقللون من مخاطر التنسيق الناتجة عن التعامل مع عدة موردين. هذه هي الميزة الأساسية لنظام تسليم مفتاح؛ شريك واحد مسؤول بدلًا من عدة أطراف منفصلة.",
+        },
+      ],
+      en: [
+        {
+          title: "Track Record on Comparable Projects",
+          body: "A contractor's past work is the best predictor of future performance. Ask for examples of completed projects similar in scale and type to yours — residential, religious, commercial or industrial — and, where possible, ask to see the finished results or speak with past clients.",
+        },
+        {
+          title: "Certifications and Government Recognition",
+          body: "Letters of appreciation, government project experience, and industry certifications signal that a contractor has passed scrutiny from serious clients before. A contractor with a documented history of government and private project delivery has already demonstrated the compliance and quality standards that matter for your project.",
+        },
+        {
+          title: "Range of Services and Single-Point Accountability",
+          body: "Contractors who offer general contracting, technical services (electrical, plumbing, HVAC) and material supply under one roof reduce the coordination risk that comes with juggling multiple vendors. This is the core advantage of a turnkey approach — one accountable partner instead of several disconnected ones.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في السوق السعودي",
+        "فريق عمل يضم أكثر من 150 موظفًا",
+        "مكاتب في الرياض وجدة والقصيم",
+        "سجل أعمال يشمل الفلل والمساجد والتشطيبات التجارية والخدمات الصناعية",
+        "شريك واحد مسؤول من التصميم حتى التسليم",
+      ],
+      en: [
+        "20+ years in the Saudi market",
+        "150+ person team",
+        "Offices in Riyadh, Jeddah and Qassim",
+        "Portfolio spanning villas, mosques, commercial finishing and industrial services",
+        "Single accountable partner from design to handover",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تبحث عن مقاول موثوق لمشروعك؟", description: "تواصل معنا للحصول على استشارة مجانية وعرض سعر تفصيلي.", button: "احصل على استشارة" },
+      en: { title: "Looking for a Trusted Contractor?", description: "Contact us for a free consultation and detailed quote.", button: "Get a Consultation" },
+    },
+  },
+
+  "building-maintenance-services-ksa": {
+    slug: "building-maintenance-services-ksa",
+    title: {
+      ar: "خدمات صيانة المباني للمنازل والمنشآت التجارية بالسعودية",
+      en: "Building Maintenance Services for Homes and Businesses",
+    },
+    subtitle: {
+      ar: "الصيانة الوقائية والعلاجية لحماية عقارك على المدى الطويل",
+      en: "Preventive and reactive upkeep to protect your property long-term",
+    },
+    description: {
+      ar: "الصيانة الدورية تطيل عمر المبنى وتحافظ على قيمته السوقية. تعرف كيف تغطي خدمات الصيانة المتخصصة أعمال الكهرباء والسباكة والتكييف والإنشاءات في السعودية.",
+      en: "Regular maintenance extends a building's lifespan and value. See how professional maintenance covers electrical, plumbing, HVAC and structural upkeep.",
+    },
+    keywords: {
+      ar: ["صيانة المباني السعودية", "صيانة المرافق الرياض", "صيانة العقارات المملكة", "مقاول صيانة تكييف", "صيانة كهربائية جدة", "خدمات الصيانة القصيم"],
+      en: ["building maintenance Saudi Arabia", "facility maintenance Riyadh", "property maintenance KSA", "HVAC maintenance contractor", "electrical maintenance Jeddah", "maintenance services Qassim"],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الصيانة الوقائية مقابل الصيانة العلاجية",
+          body: "الصيانة الوقائية، أي الفحوصات والخدمات المجدولة قبل حدوث أي عطل، أقل تكلفة بكثير من الإصلاحات العلاجية بعد تعطل النظام. تفقد أنظمة التكييف على وجه الخصوص كفاءتها تدريجيًا، والصيانة الدورية تكتشف المشكلات قبل أن تتحول إلى استبدال كامل.",
+        },
+        {
+          title: "صيانة الكهرباء والسباكة",
+          body: "تتدهور الأنظمة الكهربائية مع الوقت بفعل الاستخدام والتعرض البيئي وتغيّر متطلبات الأحمال، بينما تواجه أنظمة السباكة التآكل والتسريبات ومشكلات الضغط. الفحص الدوري لكلا النظامين يطيل عمر المبنى ويقلل من مخاطر الأعطال المفاجئة.",
+        },
+        {
+          title: "صيانة الإنشاءات والتشطيبات",
+          body: "يجب معالجة التشققات وتسرب المياه وتآكل التشطيبات فور ظهورها، لأن المشكلات الصغيرة المهملة تميل إلى التفاقم؛ فقد يتحول تشقق بسيط اليوم إلى إصلاح إنشائي غدًا. تُعد الفحوصات الإنشائية الدورية مهمة بشكل خاص للمباني القديمة والمساحات التجارية عالية الحركة.",
+        },
+      ],
+      en: [
+        {
+          title: "Preventive vs. Reactive Maintenance",
+          body: "Preventive maintenance — scheduled inspections and servicing before something fails — is significantly cheaper than reactive repairs after a system breaks down. HVAC systems, in particular, lose efficiency gradually, and regular servicing catches problems before they turn into full replacements.",
+        },
+        {
+          title: "Electrical and Plumbing Upkeep",
+          body: "Electrical systems degrade over time through wear, environmental exposure and changing load demands, while plumbing systems face corrosion, leaks and pressure issues. Routine inspection of both extends the life of the building and reduces the risk of sudden failures.",
+        },
+        {
+          title: "Structural and Finishing Maintenance",
+          body: "Cracks, water infiltration and finishing wear should be addressed as soon as they appear, since minor issues left unaddressed tend to compound — a small crack today can become a structural repair tomorrow. Regular structural checks are especially important for older buildings and high-traffic commercial spaces.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "صيانة الكهرباء والسباكة والتكييف والأعمال الإنشائية تحت مظلة واحدة",
+        "معايير جودة مرتفعة كتلك المطبقة في مشاريع الإنشاء الجديدة",
+        "خدمة وقائية وعلاجية للعقارات السكنية والتجارية",
+        "تغطية في الرياض وجدة والقصيم",
+        "خبرة تتجاوز 20 عامًا في السوق السعودي",
+      ],
+      en: [
+        "Electrical, plumbing, HVAC and structural maintenance under one roof",
+        "Same quality standards applied to new construction",
+        "Preventive and reactive service for residential and commercial properties",
+        "Coverage in Riyadh, Jeddah and Qassim",
+        "20+ years of Saudi market experience",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تحتاج خدمات صيانة لمبناك؟", description: "تواصل معنا لجدولة زيارة صيانة والحصول على تقييم مجاني.", button: "اطلب زيارة صيانة" },
+      en: { title: "Need Maintenance Services for Your Building?", description: "Contact us to schedule a maintenance visit and get a free assessment.", button: "Schedule a Visit" },
     },
   },
 };
