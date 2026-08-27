@@ -1,6 +1,9 @@
+import { BLOG_SLUGS } from "@/lib/blog-data";
+
 const BASE = "https://lamat-elarabia.org";
 
-const PAGES = ["", "/blogs", "/training", "/contact", "/blogs/villa-construction", "/blogs/mosque-construction", "/blogs/commercial-finishing", "/blogs/sandblasting"];
+const STATIC_PAGES = ["", "/blogs", "/training", "/contact"];
+const PAGES = [...STATIC_PAGES, ...BLOG_SLUGS.map((s) => `/blogs/${s}`)];
 
 export function GET() {
   const now = new Date().toISOString();
