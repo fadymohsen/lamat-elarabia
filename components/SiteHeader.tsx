@@ -34,12 +34,17 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
   return (
     <div dir={isAr ? "rtl" : "ltr"} className="absolute top-0 left-0 right-0 z-50 h-0">
       {/* Nav pill - desktop */}
-      <div className="absolute top-[44px] left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[64px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block">
+      <div className="absolute top-[44px] left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[88px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block">
         <Image src="/images/figma/nav-pill-bg.svg" alt="" fill className="object-fill" />
         <nav className={`relative z-10 h-full flex items-center justify-center gap-[48px] px-6 ${isAr ? "flex-row-reverse" : ""}`}>
           {/* Logo inside nav */}
-          <Link href={homeHref} className="relative size-[44px] rounded-full bg-white overflow-hidden shrink-0">
-            <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-cover" />
+          <Link
+            href={homeHref}
+            className="relative size-[76px] rounded-full bg-white shrink-0 shadow-[0_8px_24px_rgba(0,0,0,0.15)] border-2 border-white/80 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
+          >
+            <div className="relative size-[54px]">
+              <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
+            </div>
           </Link>
           {links.map((link) => (
             <Link

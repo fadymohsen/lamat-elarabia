@@ -27,7 +27,7 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
     <>
       <button
         onClick={() => setOpen((v) => !v)}
-        className={`md:hidden absolute top-[44px] size-[48px] rounded-full bg-[#141e16]/60 backdrop-blur-sm flex items-center justify-center text-white pointer-events-auto ${
+        className={`md:hidden absolute top-[44px] size-[48px] rounded-full bg-[#141e16]/60 backdrop-blur-sm flex items-center justify-center text-white pointer-events-auto transition-transform duration-300 hover:scale-105 ${
           isAr ? "left-[24px]" : "right-[24px]"
         }`}
         aria-label={open ? "Close menu" : "Open menu"}
@@ -35,6 +35,20 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
       >
         {open ? <X size={22} /> : <Menu size={22} />}
       </button>
+
+      {/* Mobile Logo (visible when collapsed) */}
+      {!open && (
+        <Link
+          href={homeHref}
+          className={`md:hidden absolute top-[44px] size-[48px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 pointer-events-auto transition-all duration-300 hover:scale-105 flex items-center justify-center ${
+            isAr ? "right-[24px]" : "left-[24px]"
+          }`}
+        >
+          <div className="relative size-[34px]">
+            <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
+          </div>
+        </Link>
+      )}
 
       <div
         className={`md:hidden fixed inset-0 z-[60] bg-[#141e16] flex flex-col transition-opacity duration-300 ${
@@ -52,13 +66,15 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
           <Link
             href={homeHref}
             onClick={() => setOpen(false)}
-            className="relative size-[48px] rounded-full bg-white overflow-hidden block"
+            className="relative size-[56px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 flex items-center justify-center"
           >
-            <Image src="/images/figma/logo-inner.png" alt="" fill className="object-cover" />
+            <div className="relative size-[40px]">
+              <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
+            </div>
           </Link>
           <button
             onClick={() => setOpen(false)}
-            className="size-[48px] rounded-full bg-white/10 flex items-center justify-center text-white"
+            className="size-[48px] rounded-full bg-white/10 flex items-center justify-center text-white transition-colors hover:bg-white/20"
             aria-label="Close"
           >
             <X size={22} />
