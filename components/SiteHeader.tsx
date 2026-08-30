@@ -40,9 +40,9 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
           {/* Logo inside nav */}
           <Link
             href={homeHref}
-            className="relative size-[76px] rounded-full bg-white shrink-0 shadow-[0_8px_24px_rgba(0,0,0,0.15)] border-2 border-white/80 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
+            className="relative size-[56px] rounded-full bg-white shrink-0 shadow-[0_8px_24px_rgba(0,0,0,0.15)] border-2 border-white/80 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
           >
-            <div className="relative size-[54px]">
+            <div className="relative size-[38px] logo-3d">
               <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
             </div>
           </Link>

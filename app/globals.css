@@ -36,5 +36,21 @@ button:focus-visible,
   color: white;
 }
 
+/* 3D logo animation */
+@keyframes logo-3d {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(400px) rotateY(360deg);
+  }
+}
 
+.logo-3d {
+  animation: logo-3d 4s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
 
+.logo-3d:hover {
+  animation-play-state: paused;
+}
