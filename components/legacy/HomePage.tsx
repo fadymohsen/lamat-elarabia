@@ -167,7 +167,7 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
       {/* Hero – Apple-style */}
       <section className="relative w-full overflow-hidden" style={{ background: "linear-gradient(180deg, #1a3a5c 0%, #4a7fb5 50%, #8bb8d9 100%)" }}>
         <SiteHeader locale={locale} page="" />
-        <div className="relative z-10 flex flex-col items-center px-6 pt-16 pb-24 md:pt-24 md:pb-32 text-center">
+        <div className="relative z-10 flex flex-col items-center px-6 pt-28 pb-24 md:pt-40 md:pb-32 text-center">
           {/* Logo with glow */}
           <div className="relative mb-8 md:mb-12">
             {/* Radial glow behind logo */}
