@@ -164,21 +164,37 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
 
   return (
     <main dir={dir} className="bg-white">
-      {/* Hero */}
-      <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
-        <Image src="/images/hero-home.png" alt={t.heroAlt} fill priority className="object-cover -scale-x-100" />
-        <div className="absolute inset-0 bg-black/40" />
+      {/* Hero – Apple-style */}
+      <section className="relative w-full overflow-hidden" style={{ background: "linear-gradient(180deg, #1a3a5c 0%, #4a7fb5 50%, #8bb8d9 100%)" }}>
         <SiteHeader locale={locale} page="" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center gap-6 px-6 text-center">
-          <h1 className="font-['Cairo',sans-serif] font-extrabold text-white text-[40px] md:text-[64px] leading-tight">
+        <div className="relative z-10 flex flex-col items-center px-6 pt-16 pb-24 md:pt-24 md:pb-32 text-center">
+          {/* Logo with glow */}
+          <div className="relative mb-8 md:mb-12">
+            {/* Radial glow behind logo */}
+            <div
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full pointer-events-none"
+              style={{
+                background: "radial-gradient(circle, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.08) 40%, transparent 70%)",
+              }}
+            />
+            <Image
+              src="/images/figma/logo-inner.png"
+              alt={t.heroAlt}
+              width={280}
+              height={280}
+              priority
+              className="relative z-10 w-[200px] h-[200px] md:w-[280px] md:h-[280px] object-contain drop-shadow-[0_0_60px_rgba(255,255,255,0.4)]"
+            />
+          </div>
+          <h1 className="font-['Cairo',sans-serif] font-extrabold text-white text-[32px] md:text-[56px] leading-tight mb-3">
             {t.name}
           </h1>
-          <p className="font-['Cairo',sans-serif] font-extrabold text-[#ececec] text-[22px] md:text-[36px] max-w-3xl">
+          <p className="font-['Cairo',sans-serif] font-medium text-white/90 text-[18px] md:text-[28px] max-w-2xl mb-8">
             {t.tagline}
           </p>
           <Link
             href={contactHref}
-            className="mt-4 inline-block rounded-full bg-[#137547] px-10 py-3 font-['Cairo',sans-serif] font-bold text-white shadow-lg shadow-black/30 hover:bg-[#0e5735] transition-colors"
+            className="inline-block rounded-full border-2 border-white/80 bg-white/10 backdrop-blur-sm px-8 py-3 font-['Cairo',sans-serif] font-bold text-white text-[16px] md:text-[18px] hover:bg-white hover:text-[#1a3a5c] transition-all duration-300"
           >
             {t.cta}
           </Link>
