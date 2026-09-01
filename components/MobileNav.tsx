@@ -11,9 +11,10 @@ interface MobileNavProps {
   switchLabel: string;
   homeHref: string;
   isAr: boolean;
+  scrolled?: boolean;
 }
 
-export default function MobileNav({ links, switchHref, switchLabel, homeHref, isAr }: MobileNavProps) {
+export default function MobileNav({ links, switchHref, switchLabel, homeHref, isAr, scrolled = false }: MobileNavProps) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -27,9 +28,9 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
     <>
       <button
         onClick={() => setOpen((v) => !v)}
-        className={`md:hidden absolute top-[44px] size-[48px] rounded-full bg-[#141e16]/60 backdrop-blur-sm flex items-center justify-center text-white pointer-events-auto transition-transform duration-300 hover:scale-105 ${
+        className={`md:hidden absolute size-[48px] rounded-full bg-[#141e16]/60 backdrop-blur-sm flex items-center justify-center text-white pointer-events-auto transition-all duration-300 hover:scale-105 ${
           isAr ? "left-[24px]" : "right-[24px]"
-        }`}
+        } ${scrolled ? "top-[10px]" : "top-[44px]"}`}
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
       >
@@ -40,9 +41,9 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
       {!open && (
         <Link
           href={homeHref}
-          className={`md:hidden absolute top-[44px] size-[52px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 pointer-events-auto transition-all duration-300 hover:scale-105 flex items-center justify-center ${
+          className={`md:hidden absolute size-[52px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 pointer-events-auto transition-all duration-300 hover:scale-105 flex items-center justify-center ${
             isAr ? "right-[24px]" : "left-[24px]"
-          }`}
+          } ${scrolled ? "top-[8px]" : "top-[44px]"}`}
         >
           <div className="relative size-[36px] logo-3d">
             <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />

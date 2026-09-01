@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
@@ -31,10 +33,25 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
   const switchLabel = isAr ? "English" : "عربي";
   const homeHref = isAr ? "/ar" : "/en";
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div dir={isAr ? "rtl" : "ltr"} className="fixed top-0 left-0 right-0 z-50 h-0">
+    <div
+      dir={isAr ? "rtl" : "ltr"}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#d6eaf8]/95 backdrop-blur-sm shadow-md py-2" : "h-0"
+      }`}
+    >
       {/* Nav pill - desktop */}
-      <div className="absolute top-[44px] left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[88px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block">
+      <div className={`absolute left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[88px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block transition-all duration-300 ${
+        scrolled ? "top-[4px]" : "top-[44px]"
+      }`}>
         <Image src="/images/figma/nav-pill-bg.svg" alt="" fill className="object-fill" />
         <nav className={`relative z-10 h-full flex items-center justify-center gap-[48px] px-6 ${isAr ? "flex-row-reverse" : ""}`}>
           {/* Logo inside nav */}
@@ -72,6 +89,7 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
         switchLabel={switchLabel}
         homeHref={homeHref}
         isAr={isAr}
+        scrolled={scrolled}
       />
     </div>
   );
