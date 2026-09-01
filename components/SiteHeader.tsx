@@ -32,7 +32,7 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
   const homeHref = isAr ? "/ar" : "/en";
 
   return (
-    <div dir={isAr ? "rtl" : "ltr"} className="absolute top-0 left-0 right-0 z-50 h-0">
+    <div dir={isAr ? "rtl" : "ltr"} className="fixed top-0 left-0 right-0 z-50 h-0">
       {/* Nav pill - desktop */}
       <div className="absolute top-[44px] left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[88px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block">
         <Image src="/images/figma/nav-pill-bg.svg" alt="" fill className="object-fill" />
@@ -40,9 +40,9 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
           {/* Logo inside nav */}
           <Link
             href={homeHref}
-            className="relative size-[56px] rounded-full bg-white shrink-0 shadow-[0_8px_24px_rgba(0,0,0,0.15)] border-2 border-white/80 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
+            className="relative size-[72px] rounded-full bg-white shrink-0 shadow-[0_8px_24px_rgba(0,0,0,0.15)] border-2 border-white/80 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
           >
-            <div className="relative size-[38px] logo-3d">
+            <div className="relative size-[50px] logo-3d">
               <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
             </div>
           </Link>
