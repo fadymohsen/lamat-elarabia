@@ -41,11 +41,11 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
       {!open && (
         <Link
           href={homeHref}
-          className={`md:hidden absolute size-[52px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 pointer-events-auto transition-all duration-300 hover:scale-105 flex items-center justify-center ${
+          className={`md:hidden absolute size-[64px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 pointer-events-auto transition-all duration-300 hover:scale-105 flex items-center justify-center ${
             isAr ? "right-[24px]" : "left-[24px]"
-          } ${scrolled ? "top-[8px]" : "top-[44px]"}`}
+          } ${scrolled ? "top-[4px]" : "top-[44px]"}`}
         >
-          <div className="relative size-[36px] logo-3d">
+          <div className="relative size-[44px] logo-3d">
             <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
           </div>
         </Link>
@@ -67,9 +67,9 @@ export default function MobileNav({ links, switchHref, switchLabel, homeHref, is
           <Link
             href={homeHref}
             onClick={() => setOpen(false)}
-            className="relative size-[52px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 flex items-center justify-center"
+            className="relative size-[64px] rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/80 flex items-center justify-center"
           >
-            <div className="relative size-[36px] logo-3d">
+            <div className="relative size-[44px] logo-3d">
               <Image src="/images/figma/logo-inner.png" alt="لمعة العربية للمقاولات" fill className="object-contain" />
             </div>
           </Link>
