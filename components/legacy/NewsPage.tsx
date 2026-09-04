@@ -163,6 +163,18 @@ const BLOG_CARDS = {
       excerpt: "شراكة استراتيجية تجمع خبرة لمعة العربية الميدانية بحلول EuroTech ME التقنية لإدارة مشاريع البناء رقميًا – BIM وإدارة المشاريع والبنية التحتية الذكية لمواقع البناء.",
       tag: "تقنية وابتكار",
     },
+    {
+      slug: "psychology-of-space-commercial-fitouts",
+      title: "سيكولوجية المساحات: كيف تقود التشطيبات التجارية نجاح الأعمال",
+      excerpt: "القيمة الحقيقية للتشطيب التجاري تكمن في علم النفس – كيف يؤثر التصميم على تجربة العملاء وإنتاجية الموظفين ونجاح الأعمال.",
+      tag: "تشطيبات تجارية",
+    },
+    {
+      slug: "hidden-roi-premium-mep-systems",
+      title: "العائد الخفي على الاستثمار من أنظمة الكهروميكانيكا (MEP) الممتازة",
+      excerpt: "أنظمة MEP هي الجهاز العصبي لأي مبنى حديث – لماذا يكلفك التوفير أكثر وكيف تحقق الجودة عائداً قوياً عاماً بعد عام.",
+      tag: "خدمات فنية",
+    },
   ],
   en: [
     {
@@ -242,6 +254,18 @@ const BLOG_CARDS = {
       title: "Lamaat Al-Arabiya – Official Agent of EuroTech ME IT Solutions in Saudi Arabia",
       excerpt: "A strategic partnership combining Lamaat Al-Arabiya's field expertise with EuroTech ME's technology — BIM, project management software, and smart site infrastructure for Saudi construction.",
       tag: "Technology & Innovation",
+    },
+    {
+      slug: "psychology-of-space-commercial-fitouts",
+      title: "The Psychology of Space: How Commercial Fit-Outs Drive Business Success",
+      excerpt: "The true value of a commercial fit-out lies in psychology — how space design affects customer experience, employee productivity, and business success.",
+      tag: "Commercial Finishing",
+    },
+    {
+      slug: "hidden-roi-premium-mep-systems",
+      title: "The Hidden ROI of Premium MEP Systems in Construction",
+      excerpt: "MEP systems are the central nervous system of any modern building — why cutting corners costs more and how quality delivers strong ROI year after year.",
+      tag: "Technical Services",
     },
   ],
 };

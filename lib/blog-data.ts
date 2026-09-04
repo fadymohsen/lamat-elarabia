@@ -31,6 +31,8 @@ export const BLOG_SLUGS = [
   "eurotech-me-official-agent-saudi-arabia-it-solutions",
   "choosing-general-contractor-riyadh-jeddah-qassim",
   "building-maintenance-services-ksa",
+  "psychology-of-space-commercial-fitouts",
+  "hidden-roi-premium-mep-systems",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1214,6 +1216,174 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تحتاج خدمات صيانة لمبناك؟", description: "تواصل معنا لجدولة زيارة صيانة والحصول على تقييم مجاني.", button: "اطلب زيارة صيانة" },
       en: { title: "Need Maintenance Services for Your Building?", description: "Contact us to schedule a maintenance visit and get a free assessment.", button: "Schedule a Visit" },
+    },
+  },
+
+  "psychology-of-space-commercial-fitouts": {
+    slug: "psychology-of-space-commercial-fitouts",
+    title: {
+      ar: "سيكولوجية المساحات: كيف تقود التشطيبات التجارية نجاح الأعمال",
+      en: "The Psychology of Space: How Commercial Fit-Outs Drive Business Success",
+    },
+    subtitle: {
+      ar: "التصميم الذكي للمساحات التجارية كأداة استراتيجية لتعزيز المبيعات والإنتاجية",
+      en: "Smart Commercial Space Design as a Strategic Tool for Sales and Productivity",
+    },
+    description: {
+      ar: "القيمة الحقيقية للتشطيب التجاري المنفذ جيداً تكمن في علم النفس. كيف يجعل المكان عملاءك يشعرون؟ وكيف يؤثر على إنتاجية الموظفين؟ في لمعة العربية نتعامل مع التشطيبات التجارية كأداة استراتيجية للأعمال.",
+      en: "The true value of a well-executed commercial fit-out lies in psychology. How does the space make your customers feel? How does it affect employee productivity? At Lamat El-Arabia, we approach commercial finishing as a strategic business tool.",
+    },
+    keywords: {
+      ar: [
+        "تشطيبات تجارية السعودية", "تصميم مساحات تجارية", "تشطيب مولات",
+        "تشطيب مكاتب شركات", "سيكولوجية التصميم الداخلي", "تشطيبات متاجر التجزئة",
+        "أعمال كهروميكانيكية تجارية", "واجهات زجاجية", "لمعة العربية تشطيبات",
+        "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "commercial fit-out Saudi Arabia", "commercial space design", "mall finishing KSA",
+        "corporate office fit-out", "psychology of space design", "retail store finishing",
+        "commercial MEP services", "curtain wall systems", "Lamaat Al-Arabiya finishing",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "التصميم لتجربة العميل",
+          body: "يساهم التخطيط والإضاءة والأرضيات في رحلة العميل. بالنسبة لمساحات التجزئة، يشجع التصميم المفتوح والمضاء جيداً مع أرضيات الإيبوكسي أو البورسلين عالية الجودة العملاء على البقاء لفترة أطول. تضمن أعمالنا المعمارية المتخصصة أن تتوافق المساحة المادية مع هوية علامتك التجارية، مما يخلق جواً جذاباً يعزز المبيعات.",
+        },
+        {
+          title: "تعزيز إنتاجية الموظفين",
+          body: "بالنسبة لمكاتب الشركات، يؤثر التشطيب بشكل مباشر على القوى العاملة. إن دمج الضوء الطبيعي من خلال الواجهات الزجاجية المتقدمة، جنباً إلى جنب مع العزل الصوتي المناسب، يقلل من التوتر ويزيد من التركيز. علاوة على ذلك، تضمن أنظمة التكييف عالية الكفاءة - وهي جزء من خدماتنا الكهروميكانيكية الأساسية - مناخاً مريحاً على مدار العام.",
+        },
+        {
+          title: "الميزة التنافسية المطلقة",
+          body: "إن الاستثمار في التشطيبات التجارية الممتازة ليس مجرد تكلفة تشغيلية؛ بل هو استثمار مباشر في كيفية إدراك علامتك التجارية. تضمن الشراكة مع مقاول متكامل أن كل التفاصيل، من ألواح السقف إلى التركيبات الكهربائية، تعمل معاً لخلق بيئة مهيأة للنجاح.",
+        },
+      ],
+      en: [
+        {
+          title: "Designing for the Customer Experience",
+          body: "The layout, lighting, and flooring all contribute to the customer journey. For retail spaces, a well-lit, open-plan design with high-quality epoxy or porcelain flooring encourages customers to linger longer. Our specialized architectural works ensure that the physical space aligns with your brand identity, creating an inviting atmosphere that drives sales.",
+        },
+        {
+          title: "Boosting Employee Productivity",
+          body: "For corporate offices, the fit-out directly impacts the workforce. Integrating natural light through advanced curtain walls, combined with proper acoustic insulation, reduces stress and increases focus. Furthermore, highly efficient HVAC systems—part of our core MEP services—ensure a comfortable climate year-round.",
+        },
+        {
+          title: "The Ultimate Competitive Advantage",
+          body: "Investing in premium commercial finishing is not just an operational expense; it is a direct investment in your brand's perception. Partnering with a comprehensive contractor ensures that every detail, from the ceiling tiles to the electrical fittings, works together to create an environment primed for success.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في التشطيبات التجارية الكبرى",
+        "تنفيذ متكامل: أعمال معمارية وكهروميكانيكية تحت مظلة واحدة",
+        "تصميم مساحات يعكس هوية العلامة التجارية ويعزز تجربة العميل",
+        "أنظمة تكييف وإضاءة عالية الكفاءة لبيئة عمل مثالية",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience in large-scale commercial finishing",
+        "Integrated execution: architectural and MEP works under one roof",
+        "Space design that reflects brand identity and enhances customer experience",
+        "High-efficiency HVAC and lighting systems for an optimal work environment",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تخطط لتشطيب مساحة تجارية؟", description: "تواصل معنا للحصول على استشارة مجانية وتصور متكامل لمشروعك التجاري.", button: "اطلب استشارة" },
+      en: { title: "Planning a Commercial Fit-Out?", description: "Contact us for a free consultation and a comprehensive vision for your commercial project.", button: "Get a Consultation" },
+    },
+  },
+
+  "hidden-roi-premium-mep-systems": {
+    slug: "hidden-roi-premium-mep-systems",
+    title: {
+      ar: "العائد الخفي على الاستثمار من أنظمة الكهروميكانيكا (MEP) الممتازة",
+      en: "The Hidden ROI of Premium MEP Systems in Construction",
+    },
+    subtitle: {
+      ar: "لماذا تُعد أنظمة MEP عالية الجودة استثماراً طويل الأمد وليست تكلفة إضافية",
+      en: "Why High-Quality MEP Systems Are a Long-Term Investment, Not an Extra Cost",
+    },
+    description: {
+      ar: "الأنظمة الميكانيكية والكهربائية والسباكة (MEP) هي الجهاز العصبي لأي مبنى حديث. تعرف لماذا يكلفك التوفير في أنظمة MEP أكثر على المدى الطويل وكيف يحقق الاستثمار في الجودة عائداً قوياً عاماً بعد عام.",
+      en: "MEP systems are the central nervous system of any modern building. Learn why cutting corners on MEP costs you more long-term and how investing in quality delivers a strong ROI year after year.",
+    },
+    keywords: {
+      ar: [
+        "أنظمة كهروميكانيكية السعودية", "MEP مقاولات", "تكييف مركزي الرياض",
+        "سباكة عالية الجودة", "كهرباء مباني", "كفاءة الطاقة المباني",
+        "صيانة أنظمة MEP", "مقاول كهروميكانيكي", "لمعة العربية كهروميكانيكا",
+        "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "MEP systems Saudi Arabia", "MEP contracting KSA", "HVAC systems Riyadh",
+        "premium plumbing construction", "electrical systems buildings", "energy efficiency buildings",
+        "MEP maintenance Saudi", "MEP contractor", "Lamaat Al-Arabiya MEP",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "لماذا تكلفك أنظمة الكهروميكانيكا الرخيصة أكثر",
+          body: "في عالم المقاولات، يعد التوفير المفرط في أنظمة MEP خلال مرحلة البناء الأولية خطأً فادحاً. تؤدي الأسلاك دون المستوى، أو مجاري التكييف المصممة بشكل سيئ، أو مواد السباكة منخفضة الجودة حتماً إلى أعطال متكررة. إن تكلفة الإصلاحات بأثر رجعي، والتوقف عن العمل، وهدر الطاقة تتجاوز بكثير الوفورات الأولية.",
+        },
+        {
+          title: "العائد على الاستثمار (ROI) من الجودة",
+          body: "تعمل أنظمة التكييف المتقدمة والإضاءة الذكية على تقليل استهلاك الكهرباء بشكل كبير. في المناخات الحارة، يعتبر نظام التبريد المحسن العامل الأكبر في تقليل النفقات الشهرية. المواد الممتازة والتركيب الخبير يعني تسربات أقل، وأعطال كهربائية أقل، وعمراً أطول للعقار. كما تحمي الشبكات الكهربائية وأنظمة مكافحة الحرائق القوية الأرواح والأصول، مما يضمن الامتثال الصارم للوائح الدفاع المدني.",
+        },
+        {
+          title: "ميزة المقاول المتكامل",
+          body: "من خلال اختيار مقاول عام مثل لمعة العربية يتعامل مع أنظمة الكهروميكانيكا داخلياً جنباً إلى جنب مع الأعمال المدنية، يتجنب أصحاب المشاريع سوء الفهم والتأخير الذي غالباً ما يتسبب فيه تعدد المقاولين من الباطن. والنتيجة هي مبنى سلس وعالي الكفاءة يحقق عائداً قوياً على الاستثمار عاماً بعد عام.",
+        },
+      ],
+      en: [
+        {
+          title: "Why Cheap MEP Costs You More",
+          body: "In the contracting world, cutting corners on MEP systems during the initial construction phase is a critical mistake. Substandard wiring, poorly designed HVAC ducts, or low-quality plumbing materials inevitably lead to frequent breakdowns. The cost of retroactive repairs, operational downtime, and energy waste far exceeds the initial savings.",
+        },
+        {
+          title: "The Return on Investment (ROI) of Quality",
+          body: "Advanced HVAC and smart lighting systems significantly lower electricity consumption. In hot climates, an optimized cooling system is the biggest factor in reducing monthly overheads. Premium materials and expert installation mean fewer leaks, fewer electrical faults, and a longer lifespan for the property. Robust electrical and fire-fighting networks protect lives and assets, ensuring strict compliance with civil defense regulations.",
+        },
+        {
+          title: "The Integrated Contractor Advantage",
+          body: "By choosing a general contractor like Lamat El-Arabia that handles MEP in-house alongside civil works, project owners avoid the miscommunications and delays often caused by multiple subcontractors. The result is a seamless, highly efficient building that delivers a strong return on investment year after year.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "تنفيذ أعمال الكهرباء والسباكة والتكييف والدفاع المدني داخلياً",
+        "مواد وأنظمة عالية الجودة تضمن كفاءة الطاقة وطول العمر",
+        "مقاول متكامل: أعمال مدنية وكهروميكانيكية تحت إدارة واحدة",
+        "التزام صارم بلوائح الدفاع المدني ومعايير السلامة",
+        "خبرة +20 عامًا في المشاريع السكنية والتجارية والصناعية",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "In-house electrical, plumbing, HVAC and civil defense execution",
+        "Premium materials and systems ensuring energy efficiency and longevity",
+        "Integrated contractor: civil and MEP works under one management",
+        "Strict compliance with civil defense regulations and safety standards",
+        "20+ years of experience across residential, commercial and industrial projects",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تحتاج أنظمة كهروميكانيكية عالية الجودة لمشروعك؟", description: "تواصل معنا للحصول على استشارة فنية مجانية وعرض سعر مخصص لأنظمة MEP.", button: "اطلب عرض سعر" },
+      en: { title: "Need Premium MEP Systems for Your Project?", description: "Contact us for a free technical consultation and customized MEP quote.", button: "Request a Quote" },
     },
   },
 };
