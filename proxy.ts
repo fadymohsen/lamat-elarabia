@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { jwtVerify } from "jose";
 
-// Redirect old Arabic slug URLs to new /ar/* English slug URLs
+// Rewrite old Arabic slug URLs to new /ar/* English slug URLs
 const LEGACY_REDIRECTS: Record<string, string> = {
   "/الأخبار-و-المقالات": "/ar/blogs",
   "/التوظيف-و-التدريب": "/ar/training",
   "/تواصل-معنا": "/ar/contact",
 };
 
-// Redirect old /en-prefixed URLs and bare slugs
+// Rewrite old /en-prefixed URLs and bare slugs
 const SIMPLE_REDIRECTS: Record<string, string> = {
   "/news": "/ar/blogs",
   "/training": "/ar/training",
@@ -68,24 +68,28 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Redirect legacy Arabic slug URLs (permanent 301)
+  // Rewrite legacy Arabic slug URLs (avoids redirect chains in GSC)
   const decoded = decodeURIComponent(pathname).replace(/\/$/, "") || "/";
   const legacyTarget = LEGACY_REDIRECTS[decoded];
   if (legacyTarget) {
-    return NextResponse.redirect(new URL(legacyTarget, request.nextUrl), 301);
+    const url = request.nextUrl.clone();
+    url.pathname = legacyTarget;
+    return NextResponse.rewrite(url);
   }
 
-  // Redirect bare slugs without locale prefix
+  // Rewrite bare slugs without locale prefix
   const simpleTarget = SIMPLE_REDIRECTS[pathname];
   if (simpleTarget) {
-    return NextResponse.redirect(new URL(simpleTarget, request.nextUrl), 301);
+    const url = request.nextUrl.clone();
+    url.pathname = simpleTarget;
+    return NextResponse.rewrite(url);
   }
 
-  // Redirect root "/" to preferred locale using Accept-Language (302 so Google indexes both locales)
+  // Rewrite root "/" to /ar (no redirect — avoids GSC "page with redirect" warnings)
   if (pathname === "/") {
-    const acceptLanguage = request.headers.get("accept-language") || "";
-    const preferredLocale = acceptLanguage.toLowerCase().includes("en") ? "en" : "ar";
-    return NextResponse.redirect(new URL(`/${preferredLocale}`, request.nextUrl), 302);
+    const url = request.nextUrl.clone();
+    url.pathname = "/ar";
+    return NextResponse.rewrite(url);
   }
 
   const locale = pathname.startsWith("/en") ? "en" : "ar";
