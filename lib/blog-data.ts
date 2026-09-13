@@ -33,6 +33,8 @@ export const BLOG_SLUGS = [
   "building-maintenance-services-ksa",
   "psychology-of-space-commercial-fitouts",
   "hidden-roi-premium-mep-systems",
+  "advanced-waterproofing-guide",
+  "smart-home-villa-construction",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1384,6 +1386,170 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تحتاج أنظمة كهروميكانيكية عالية الجودة لمشروعك؟", description: "تواصل معنا للحصول على استشارة فنية مجانية وعرض سعر مخصص لأنظمة MEP.", button: "اطلب عرض سعر" },
       en: { title: "Need Premium MEP Systems for Your Project?", description: "Contact us for a free technical consultation and customized MEP quote.", button: "Request a Quote" },
+    },
+  },
+
+  "advanced-waterproofing-guide": {
+    slug: "advanced-waterproofing-guide",
+    title: {
+      ar: "لا تنتظر المطر: الدليل الشامل لأنظمة العزل المائي المتقدمة",
+      en: "Don't Wait for the Rain: The Ultimate Guide to Advanced Waterproofing",
+    },
+    subtitle: {
+      ar: "حماية استباقية من تسرب المياه للمباني السكنية والتجارية في المملكة العربية السعودية",
+      en: "Proactive Water Intrusion Protection for Residential and Commercial Buildings in Saudi Arabia",
+    },
+    description: {
+      ar: "يعد تلف المياه أحد أكثر القوى تدميراً وصمتاً في العقارات. تعرف على كيفية حماية مبناك من التسربات المائية باستخدام أنظمة العزل المائي المتقدمة مع لمعة العربية للمقاولات.",
+      en: "Water damage is one of the most silent yet destructive forces in real estate. Learn how to protect your building from water intrusion using advanced waterproofing systems with Lamat El-Arabia Contracting.",
+    },
+    keywords: {
+      ar: [
+        "عزل مائي الرياض", "عزل أسطح السعودية", "عزل مائي مباني", "شركة عزل مائي جدة",
+        "عزل حمامات وخزانات", "أغشية بيتومينية", "عزل مائي بولي يوريثين",
+        "مقاول عزل مائي المملكة", "لمعة العربية عزل مائي", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "waterproofing Saudi Arabia", "roof waterproofing Riyadh", "building waterproofing KSA",
+        "bituminous membrane waterproofing", "polyurethane waterproofing", "waterproofing contractor Jeddah",
+        "advanced waterproofing systems", "Lamaat Al-Arabiya waterproofing",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "فهم العزل المائي في البناء الحديث",
+          body: "العزل المائي هو عملية هندسية مدنية متخصصة مصممة لمنع المياه من اختراق غلاف المبنى. وهو ضروري للأسطح والأقبية والحمامات والجدران الخارجية. في لمعة العربية، نقوم بتنفيذ طبقات متعددة من الحماية باستخدام الأغشية البيتومينية عالية الجودة، وسوائل البولي يوريثين، والطلاءات الأسمنتية.",
+        },
+        {
+          title: "مخاطر إهمال العزل المائي",
+          body: "يمكن أن يؤدي تسرب المياه إلى صدأ حديد التسليح داخل الخرسانة، مما يؤدي إلى ضعف هيكلي تدريجي بمرور الوقت. كما تولد البيئات الرطبة العفن الفطري الذي يؤثر بشدة على جودة الهواء الداخلي وصحة الشاغلين. علاوة على ذلك، يؤدي تقشر الطلاء وانتفاخ الجدران وتلطخ الأسقف إلى تدمير الجاذبية البصرية للمساحات التجارية والسكنية على حد سواء، مما يرفع تكاليف الصيانة بشكل كبير.",
+        },
+        {
+          title: "نهج شامل لعزل مائي فعّال",
+          body: "العزل المائي الفعال لا يقتصر فقط على وضع طلاء؛ بل يتطلب إعداداً دقيقاً للسطح، وميولاً مناسبة للتصريف، ودمجاً سلساً مع أنظمة السباكة في المبنى. من خلال معالجة هذه الأعمال المدنية الحيوية أثناء البناء أو التجديدات المستهدفة، يمكن لأصحاب العقارات حماية استثماراتهم ضد التغيرات المناخية غير المتوقعة وأعطال السباكة.",
+        },
+      ],
+      en: [
+        {
+          title: "Understanding Waterproofing in Modern Construction",
+          body: "Waterproofing is a specialized civil engineering process designed to prevent water from penetrating a building's envelope. It is essential for roofs, basements, bathrooms, and exterior walls. At Lamat El-Arabia, we implement multiple layers of protection using high-grade bituminous membranes, polyurethane liquids, and cementitious coatings.",
+        },
+        {
+          title: "The Dangers of Neglecting Waterproofing",
+          body: "Water seepage can rust reinforcing steel inside concrete, leading to structural weakening over time. Damp environments breed mold and mildew, which severely impact indoor air quality and occupant health. Peeling paint, blistering walls, and stained ceilings ruin the visual appeal of commercial and residential spaces, driving up maintenance costs significantly.",
+        },
+        {
+          title: "A Holistic Approach to Effective Waterproofing",
+          body: "Effective waterproofing is not just about applying a coating; it requires precise surface preparation, proper sloping for drainage, and seamless integration with the building's plumbing systems. By addressing these critical civil works during construction or targeted renovations, property owners can safeguard their investments against unexpected weather changes and plumbing failures.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في أعمال العزل المائي السكنية والتجارية",
+        "استخدام أفضل الأغشية والمواد: بيتوميني، بولي يوريثين، أسمنتي",
+        "تنفيذ متكامل يشمل الإعداد والتطبيق والاختبار وضمان الجودة",
+        "فرق متخصصة ومعتمدة في أعمال العزل وحماية المباني",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience in residential and commercial waterproofing",
+        "Use of premium materials: bituminous, polyurethane, and cementitious systems",
+        "Integrated execution covering surface prep, application, testing, and quality assurance",
+        "Specialized certified teams in waterproofing and building protection works",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تعاني من مشاكل تسرب المياه في مبناك؟", description: "تواصل معنا للحصول على تقييم مجاني وحل متكامل لأنظمة العزل المائي.", button: "اطلب تقييماً مجانياً" },
+      en: { title: "Dealing with Water Leakage in Your Building?", description: "Contact us for a free assessment and a comprehensive waterproofing solution.", button: "Get a Free Assessment" },
+    },
+  },
+
+  "smart-home-villa-construction": {
+    slug: "smart-home-villa-construction",
+    title: {
+      ar: "تجهيز فيلتك للمستقبل: دمج تقنيات المنزل الذكي أثناء البناء",
+      en: "Future-Proofing Your Villa: Integrating Smart Home Tech During Construction",
+    },
+    subtitle: {
+      ar: "لماذا يبدأ المنزل الذكي الحقيقي من مرحلة التصميم المعماري وليس بعد الانتهاء من البناء",
+      en: "Why a Truly Smart Home Starts at the Architectural Design Phase, Not After Construction",
+    },
+    description: {
+      ar: "إن بناء منزل ذكي يبدأ قبل وقت طويل من نقل الأثاث. تعرف كيف تضمن لمعة العربية دمج أسلاك التحكم الذكي وأنظمة الأمن والتكييف الآلي بسلاسة في هيكل فيلتك منذ البداية.",
+      en: "Building a smart home starts long before the furniture is moved in. Learn how Lamat El-Arabia seamlessly integrates smart control wiring, security systems, and automated HVAC into your villa's structure from day one.",
+    },
+    keywords: {
+      ar: [
+        "منزل ذكي الرياض", "فيلا ذكية السعودية", "دمج تقنية المنزل الذكي", "أتمتة المنازل السعودية",
+        "أنظمة أمن منازل ذكية", "تكييف ذكي فيلا", "إضاءة ذكية منازل",
+        "مقاول فيلا ذكية الرياض", "لمعة العربية منزل ذكي", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "smart home villa Saudi Arabia", "smart villa construction Riyadh", "home automation KSA",
+        "integrated smart home wiring", "smart HVAC villa", "intelligent lighting villa",
+        "smart security systems villa", "Lamaat Al-Arabiya smart home",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "لماذا يجب دمج التقنية الذكية مبكراً؟",
+          body: "غالباً ما يتضمن تعديل منزل مكتمل بالتكنولوجيا الذكية أسلاكاً مكشوفة قبيحة المظهر أو اعتماداً على شبكات لاسلكية غير مستقرة. من خلال التخطيط للأتمتة خلال المراحل المدنية والكهروميكانيكية الأولية، تضمن لمعة العربية دمج الأسلاك المعقدة ومراكز الخوادم وشبكات الاستشعار بسلاسة في الجدران والأسقف دون أي تشويه بصري.",
+        },
+        {
+          title: "الميزات الذكية الرئيسية التي يجب تضمينها في فيلتك",
+          body: "تتعلم أنظمة التكييف الذكية روتينك، مما يحسن استخدام الطاقة مع ضمان برودة الفيلا في اللحظة التي تخطو فيها للداخل. كما توفر كاميرات المراقبة السلكية والتحكم في الوصول البيومتري والأقفال الذكية أماناً لا مثيل له دون المساس بالجماليات. علاوة على ذلك، يتم ضبط الستائر الآلية والإضاءة الديناميكية تلقائياً بناءً على الوقت من اليوم، مما يعزز الأجواء ويوفر الكهرباء.",
+        },
+        {
+          title: "دور المقاول العام في بناء الفيلا الذكية",
+          body: "يتطلب تنفيذ فيلا ذكية تنسيقاً دقيقاً بين المصممين المعماريين والمهندسين الكهربائيين. وبصفتنا شركة مقاولات متكاملة، فإننا نسد هذه الفجوة. نحن نبني البنية التحتية المادية المصممة لدعم التكنولوجيا المتقدمة للغد، مما يضمن أن منزل أحلامك مجهز حقاً للمستقبل.",
+        },
+      ],
+      en: [
+        {
+          title: "Why Integrate Smart Tech Early?",
+          body: "Retrofitting a completed house with smart technology often involves unsightly exposed wiring or reliance on unstable wireless networks. By planning automation during the initial civil and MEP stages, Lamat El-Arabia ensures that complex wiring, server hubs, and sensor networks are seamlessly built into the walls and ceilings without any visual disruption.",
+        },
+        {
+          title: "Key Smart Features to Include in Your Villa",
+          body: "Smart HVAC systems learn your routine, optimizing energy usage while ensuring the villa is cool the moment you step inside. Hardwired IP cameras, biometric access control, and smart locks offer unparalleled security without compromising aesthetics. Motorized curtains and dynamic lighting adjust automatically based on the time of day, enhancing the ambiance and saving electricity.",
+        },
+        {
+          title: "The Role of the General Contractor in Building a Smart Villa",
+          body: "Executing a smart villa requires precise coordination between architectural designers and electrical engineers. As an integrated contracting firm, we bridge this gap. We build the physical infrastructure tailored to support the advanced technology of tomorrow, ensuring your dream home is truly future-proofed.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "تخطيط متكامل للأنظمة الذكية منذ مرحلة التصميم المعماري",
+        "تمديدات كهربائية وشبكية متخصصة مخفية داخل الجدران والأسقف",
+        "تنسيق كامل بين فرق الهندسة المعمارية والكهربائية والميكانيكية",
+        "خبرة في تنفيذ أنظمة الأمن والتكييف والإضاءة الذكية",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "Integrated smart system planning from the architectural design phase",
+        "Specialized electrical and network cabling concealed within walls and ceilings",
+        "Full coordination between architectural, electrical, and mechanical engineering teams",
+        "Expertise in implementing smart security, HVAC, and lighting systems",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تخطط لبناء فيلا ذكية؟", description: "تواصل معنا للحصول على استشارة مجانية ووضع خطة متكاملة لدمج التقنيات الذكية في فيلتك.", button: "اطلب استشارة" },
+      en: { title: "Planning to Build a Smart Villa?", description: "Contact us for a free consultation and a comprehensive plan to integrate smart technology into your villa.", button: "Get a Consultation" },
     },
   },
 };
