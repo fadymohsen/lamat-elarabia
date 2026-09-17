@@ -35,6 +35,8 @@ export const BLOG_SLUGS = [
   "hidden-roi-premium-mep-systems",
   "advanced-waterproofing-guide",
   "smart-home-villa-construction",
+  "epoxy-flooring-guide-saudi-arabia",
+  "interior-finishing-guide-saudi-arabia",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1550,6 +1552,205 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تخطط لبناء فيلا ذكية؟", description: "تواصل معنا للحصول على استشارة مجانية ووضع خطة متكاملة لدمج التقنيات الذكية في فيلتك.", button: "اطلب استشارة" },
       en: { title: "Planning to Build a Smart Villa?", description: "Contact us for a free consultation and a comprehensive plan to integrate smart technology into your villa.", button: "Get a Consultation" },
+    },
+  },
+
+  "epoxy-flooring-guide-saudi-arabia": {
+    slug: "epoxy-flooring-guide-saudi-arabia",
+    title: {
+      ar: "أرضيات الايبوكسي: الأنواع والمميزات ومجالات الاستخدام في السعودية 2026",
+      en: "Epoxy Flooring: Types, Benefits, and Applications in Saudi Arabia 2026",
+    },
+    subtitle: {
+      ar: "من الايبوكسي الصناعي إلى السكني – دليل متكامل لاختيار النوع الأنسب لمشروعك",
+      en: "From Industrial to Residential – A Complete Guide to Choosing the Right Type for Your Project",
+    },
+    description: {
+      ar: "دليل شامل عن أرضيات الايبوكسي في السعودية: الأنواع، المميزات، مجالات الاستخدام، خطوات التركيب، ونصائح الصيانة، من خبراء لمآت العربية للمقاولات.",
+      en: "A complete guide to epoxy flooring in Saudi Arabia: types, benefits, applications, installation steps, and maintenance tips from the experts at Lamaat Al-Arabia Contracting.",
+    },
+    keywords: {
+      ar: [
+        "الايبوكسي", "أرضيات ايبوكسي", "ايبوكسي صناعي", "ارضيات ايبوكسي للمصانع",
+        "دهان ايبوكسي", "شركة ايبوكسي في السعودية", "أرضيات ايبوكسي الرياض",
+        "ايبوكسي ذاتي التسوية", "ايبوكسي معدني", "لمعة العربية ايبوكسي",
+        "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "epoxy flooring Saudi Arabia", "industrial epoxy", "epoxy flooring for factories",
+        "epoxy coating", "epoxy flooring company Saudi Arabia", "self-leveling epoxy Riyadh",
+        "metallic epoxy flooring KSA", "Lamaat Al-Arabia epoxy flooring",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ما هو الايبوكسي وكيف يعمل؟",
+          body: "الايبوكسي هو نوع من الراتنجات (البوليمرات) السائلة التي تُطبَّق على الأرضيات الخرسانية في عدة طبقات، لتتصلب بعد ذلك وتُكوّن سطحًا صلبًا، لامعًا، وخاليًا من الفواصل. تتفاعل مادة الايبوكسي كيميائيًا مع مادة مقسّية (Hardener) لتكوين رابطة قوية تلتصق بالسطح الخرساني، وتُنتج طبقة مقاومة للاحتكاك والمواد الكيميائية وتحمل الأوزان الثقيلة.",
+        },
+        {
+          title: "أنواع أرضيات الايبوكسي",
+          body: "تتعدد أنواع أرضيات الايبوكسي بحسب الاستخدام والمظهر: الايبوكسي ذاتي التسوية للمساحات التجارية والمعارض، والايبوكسي الصناعي الثقيل لتحمل الأحمال الكبيرة والمعدات في المصانع، والايبوكسي المعدني الذي يعطي مظهرًا ثلاثي الأبعاد يشبه الرخام للفلل الفاخرة، والايبوكسي بالرقائق الملونة للمرائب والمناطق الرياضية، إضافة إلى الايبوكسي المضاد للكهرباء الساكنة لغرف الخوادم والمنشآت الإلكترونية.",
+        },
+        {
+          title: "أبرز مميزات أرضيات الايبوكسي",
+          body: "سطح متصل خالٍ من الفواصل يمنع تجمع الأتربة والبكتيريا، مقاومة عالية للمواد الكيميائية والبقع، متانة طويلة الأمد تتحمل حركة المرور الكثيفة والأحمال الثقيلة. يمنح مظهرًا احترافيًا عصريًا مع خيارات تصميم متعددة، كما تُضاف بعض أنواعه مواد مانعة للانزلاق لتحسين معايير السلامة في المنشآت الصناعية. يتميز كذلك بسرعة التركيب مقارنة بالأرضيات التقليدية مما يقلل من فترة توقف العمل.",
+        },
+        {
+          title: "خطوات تركيب أرضيات الايبوكسي",
+          body: "يمر تركيب أرضيات الايبوكسي عبر مراحل فنية دقيقة: تجهيز السطح الخرساني بإزالة الأتربة والزيوت عبر السنفرة الميكانيكية أو السندبلاست، ثم إصلاح الشقوق والفجوات، وتطبيق طبقة الأساس (Primer) لضمان التصاق قوي، ثم تركيب طبقة الايبوكسي الرئيسية وفق النوع المختار، وأخيرًا تطبيق الطبقة الواقية النهائية (Top Coat) وإجراء الفحص الشامل قبل التسليم. التطبيق في ظروف جوية غير مناسبة من أكثر أسباب فشل الطبقة شيوعًا.",
+        },
+        {
+          title: "الايبوكسي مقابل الأرضيات التقليدية",
+          body: "رغم أن تكلفة التركيب الأولية قد تكون متقاربة مع الأرضيات التقليدية كالبورسلين أو الرخام، إلا أن انخفاض تكاليف الصيانة على مدى سنوات يجعل الايبوكسي خيارًا اقتصاديًا في البيئات الصناعية والتجارية عالية الاستخدام. يتميز بسرعة التنفيذ ومقاومته للرطوبة، غير أنه غير مناسب للمساحات الخارجية المكشوفة للشمس المباشرة دون معالجة خاصة مقاومة للأشعة فوق البنفسجية.",
+        },
+      ],
+      en: [
+        {
+          title: "What Is Epoxy Flooring and How Does It Work?",
+          body: "Epoxy is a type of liquid resin (polymer) applied to concrete floors in multiple layers, which then cures into a hard, glossy, seamless surface. The epoxy resin chemically reacts with a hardener to form a strong bond that adheres to the concrete substrate, producing a layer resistant to abrasion and chemicals, capable of withstanding heavy loads.",
+        },
+        {
+          title: "Types of Epoxy Flooring",
+          body: "Epoxy flooring comes in several types: Self-Leveling Epoxy for commercial spaces and showrooms requiring a clean, professional look; Heavy-Duty Industrial Epoxy engineered for forklift traffic and heavy loads in factories and warehouses; Metallic Epoxy creating a striking 3D marble-like finish for luxury villas and showrooms; Flake/Quartz Epoxy blending colored flakes for garages and recreation areas; and Anti-Static Epoxy for server rooms and electronics facilities requiring ESD control.",
+        },
+        {
+          title: "Key Benefits of Epoxy Flooring",
+          body: "A seamless, joint-free surface prevents dust and bacteria buildup, making daily cleaning significantly easier. High resistance to chemicals and stains suits industrial environments. Long-term durability withstands heavy traffic and loads with minimal wear, reducing long-term maintenance costs. It delivers a professional, modern appearance with multiple design options. Anti-slip additives can be incorporated for improved safety, and relatively fast installation reduces facility downtime.",
+        },
+        {
+          title: "The Epoxy Flooring Installation Process",
+          body: "Installation involves precise technical stages: surface preparation by removing dust, oils, and cracks through mechanical grinding or sandblasting; concrete repair to address any cracks; primer application for strong adhesion; main epoxy layer installation per the selected type; top coat application for scratch and UV resistance; and a final inspection for bubbles or defects. Working with a specialized team is essential — applying epoxy under unsuitable temperature or humidity conditions is one of the most common causes of coating failure.",
+        },
+        {
+          title: "Epoxy vs. Traditional Flooring",
+          body: "While initial installation costs may be comparable to porcelain tile or marble, lower maintenance costs over the years often make epoxy the more economical choice in high-traffic industrial and commercial environments. It offers faster installation and forms a sealed moisture barrier protecting the concrete beneath. However, epoxy is not well-suited to outdoor areas with extended direct sunlight exposure without special UV-resistant treatment, where certain stone floors remain better suited.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة منذ عام 2005 في تطبيق أرضيات الايبوكسي الصناعية والتجارية والسكنية",
+        "فريق فني مؤهل في تجهيز الأسطح واختيار المواد المناسبة لكل بيئة استخدام",
+        "خدمات متكاملة تشمل السندبلاست وتجهيز الأسطح ضمن أعمال التشطيبات",
+        "تنفيذ دقيق وفق المواصفات مع ضمان شامل على جميع الأعمال",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "Experience since 2005 in industrial, commercial, and residential epoxy flooring",
+        "Qualified technical team in surface preparation and selecting the right materials for each use case",
+        "Integrated services including sandblasting and surface preparation within finishing works",
+        "Precise execution per specifications with a full warranty on all works",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تفكر في تركيب أرضية ايبوكسي لمنشأتك؟", description: "تواصل مع فريق لمآت العربية لتحديد النوع الأنسب لاحتياجاتك والحصول على استشارة فنية مجانية.", button: "اطلب استشارة مجانية" },
+      en: { title: "Thinking About Epoxy Flooring for Your Facility?", description: "Get in touch with the Lamaat Al-Arabia team to identify the right type for your needs and get a free technical consultation.", button: "Get a Free Consultation" },
+    },
+  },
+
+  "interior-finishing-guide-saudi-arabia": {
+    slug: "interior-finishing-guide-saudi-arabia",
+    title: {
+      ar: "التشطيب الداخلي للفلل والشقق في السعودية: الدليل الشامل 2026",
+      en: "Interior Finishing for Villas & Apartments in Saudi Arabia: The Complete 2026 Guide",
+    },
+    subtitle: {
+      ar: "من أعمال التأسيس حتى التشطيبات النهائية – مراحل ومستويات وعوامل التكلفة",
+      en: "From First-Fix to Final Finishes – Stages, Quality Levels, and Cost Factors",
+    },
+    description: {
+      ar: "دليلك الكامل للتشطيب الداخلي في السعودية 2026: المراحل، الأنواع، عوامل التكلفة، وأهم الأخطاء الشائعة، مع نصائح من خبراء لمآت العربية للمقاولات.",
+      en: "A complete guide to interior finishing in Saudi Arabia for 2026: stages, types, cost factors, and common mistakes to avoid, with expert tips from Lamaat Al-Arabia Contracting.",
+    },
+    keywords: {
+      ar: [
+        "التشطيب الداخلي", "تشطيب شقق", "تشطيب فلل", "مراحل التشطيب",
+        "شركة تشطيبات في السعودية", "تشطيب داخلي فاخر", "تشطيب داخلي الرياض",
+        "مراحل التشطيب الداخلي", "تكلفة تشطيب فيلا", "مقاول تشطيب موثوق",
+        "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "interior finishing Saudi Arabia", "villa finishing KSA", "apartment finishing",
+        "interior fit-out Riyadh", "luxury interior finishing", "interior finishing stages",
+        "villa finishing cost Saudi Arabia", "reliable finishing contractor KSA",
+        "Lamaat Al-Arabia interior finishing",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ما هو التشطيب الداخلي ولماذا يستحق اهتمامك؟",
+          body: "التشطيب الداخلي هو مجموعة الأعمال التي تُنفذ بعد استكمال الهيكل الإنشائي للمبنى، وتشمل كل ما يظهر للعين ويُلمس يوميًا: الأرضيات، الجدران، الأسقف، الأبواب، الدهانات، والتشطيبات الكهربائية والصحية الظاهرة. جودة التشطيب تحدد العمر الافتراضي للمواد والتجهيزات، والراحة اليومية وكفاءة المساحة، والقيمة السوقية للعقار عند البيع أو التأجير، وتكاليف الصيانة المستقبلية.",
+        },
+        {
+          title: "مراحل التشطيب الداخلي خطوة بخطوة",
+          body: "ينفَّذ التشطيب الداخلي وفق تسلسل هندسي دقيق: أعمال التأسيس (السباكة والكهرباء) داخل الجدران قبل إغلاقها، ثم العزل المائي والحراري خاصة في الأسطح والحمامات، ثم اللياسة وتجهيز الأسطح، ثم تركيب قواطع الأبواب والأرضيات (رخام، بورسلين، باركيه، أو إيبوكسي)، ثم أعمال الجبس والأسقف المعلقة والإضاءة المخفية، وأخيرًا الدهانات والتركيبات النهائية. أي إخلال بهذا الترتيب يؤدي إلى مشاكل باهظة التكلفة لاحقًا.",
+        },
+        {
+          title: "أنواع ومستويات التشطيب الداخلي",
+          body: "يتدرج التشطيب حسب مستوى الجودة من الاقتصادي (مواد جيدة بأسعار معقولة) إلى المتوسط (توازن بين الجودة والتكلفة وهو الأكثر طلبًا) إلى الفاخر (مواد مستوردة وتصاميم مخصصة) وصولًا إلى فائق الفخامة للقصور والمشاريع الفندقية. وحسب النمط التصميمي يتراوح بين الحديث (خطوط بسيطة وألوان محايدة) والكلاسيكي (تفاصيل مزخرفة وأعمال جبس معقدة) والنيو كلاسيك الذي يجمع البساطة العصرية بالفخامة الكلاسيكية.",
+        },
+        {
+          title: "أبرز الأخطاء الشائعة عند التشطيب الداخلي",
+          body: "تخطي مرحلة التخطيط الهندسي المسبق والبدء بالتنفيذ دون مخططات واضحة للكهرباء والسباكة، واختيار المقاول بناءً على الأقل سعرًا فقط، والترتيب غير الصحيح لمراحل التنفيذ مما يؤدي لإعادة العمل وهدر المواد، وسوء تخطيط أماكن المفاتيح والمقابس، وعدم فحص أعمال السباكة والعزل المائي بدقة قبل إغلاق الأرضيات، وغياب الإشراف الهندسي المتخصص أثناء التنفيذ.",
+        },
+        {
+          title: "نصائح عملية لاختيار شركة تشطيب داخلي موثوقة",
+          body: "راجع أعمالًا سابقة فعلية وليس فقط صور العروض التقديمية. تأكد من وجود فريق هندسي مختص للإشراف اليومي. اطلب عقدًا واضحًا يحدد المواد والمواصفات والجدول الزمني وبنود الضمان. تحقق من قدرة الشركة على تنسيق التخصصات المختلفة (كهرباء، سباكة، تكييف، ديكور) تحت مظلة واحدة. اسأل عن مدة الضمان على أعمال العزل والسباكة والكهرباء، وقارن بين عروض أسعار متعددة مبنية على نفس المواصفات الفنية.",
+        },
+      ],
+      en: [
+        {
+          title: "What Is Interior Finishing, and Why Does It Matter?",
+          body: "Interior finishing covers all the work carried out after a building's structural shell is complete — everything you see and touch daily: flooring, walls, ceilings, doors, paint, and the visible electrical and plumbing fittings. Finishing quality determines the lifespan of interior materials and fixtures, daily comfort and space efficiency, the property's market value when sold or rented, and future maintenance costs.",
+        },
+        {
+          title: "The Interior Finishing Process, Step by Step",
+          body: "Interior finishing follows a precise engineering sequence: first-fix electrical and plumbing work inside walls before they're closed; waterproofing and thermal insulation on roofs, bathrooms, and kitchens; plastering and surface preparation; door frame and flooring installation (marble, porcelain, parquet, or epoxy); gypsum work, suspended ceilings, and concealed lighting; then painting and final fixtures. Disrupting this order often leads to costly rework — following it with a specialized contractor saves time and money.",
+        },
+        {
+          title: "Types and Levels of Interior Finishing",
+          body: "Quality levels range from Economy (good materials at reasonable prices for budget projects) to Standard/Mid-range (the most requested tier balancing quality and cost) to Super Luxe (imported materials and custom designs) to Ultra Luxe (fully bespoke solutions for palaces and hospitality projects). Design styles include Modern (clean lines, neutral colors, open layouts), Classic (ornate detailing and elaborate gypsum work), and Neo-classic — the most requested style in the Saudi market today — blending contemporary simplicity with classic elegance.",
+        },
+        {
+          title: "The Most Common Interior Finishing Mistakes",
+          body: "Skipping the engineering planning phase and starting without clear electrical and plumbing layouts. Choosing a contractor based on price alone without evaluating experience or past work. Executing phases out of sequence, leading to rework and wasted materials. Poor planning of switch and socket placement — costly and difficult to fix once walls are closed. Inadequate inspection of plumbing and waterproofing before floors and walls are sealed. Lack of specialized engineering supervision during execution.",
+        },
+        {
+          title: "Tips for Choosing a Reliable Interior Finishing Contractor",
+          body: "Review actual completed projects, not just renders, and ask to visit a finished site. Confirm a dedicated engineering team supervises daily execution. Request a clear contract specifying materials, specifications, timeline, and warranty terms. Check the contractor's ability to coordinate all disciplines (electrical, plumbing, HVAC, decor) under one roof. Ask about warranty periods on insulation, plumbing, and electrical work. Compare multiple quotes built on identical technical specifications for a fair comparison.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تزيد عن 20 عامًا في تشطيبات الفلل والمجمعات السكنية والمشاريع التجارية",
+        "فريق يضم أكثر من 150 كوادر فنية متخصصة في مختلف تخصصات التشطيب",
+        "تنسيق متكامل بين الكهرباء والسباكة والتكييف والديكور تحت إشراف هندسي واحد",
+        "نظام تسليم مفتاح يضمن جودة التنفيذ في كل مرحلة مع ضمان شامل بعد التسليم",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience in villa, residential compound, and commercial finishing",
+        "Team of more than 150 qualified technical professionals across all finishing disciplines",
+        "Integrated coordination between electrical, plumbing, HVAC, and decor under one engineering oversight",
+        "Turnkey delivery system ensuring quality at every stage with a comprehensive post-handover warranty",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تخطط لمشروع تشطيب داخلي لفيلتك أو منشأتك التجارية؟", description: "تواصل مع فريق لمآت العربية للحصول على استشارة واستعراض أعمالنا السابقة في الرياض وجدة والقصيم.", button: "اطلب استشارة" },
+      en: { title: "Planning an Interior Finishing Project for Your Villa or Commercial Facility?", description: "Get in touch with the Lamaat Al-Arabia team for a consultation and to review our completed projects across Riyadh, Jeddah, and Qassim.", button: "Get a Consultation" },
     },
   },
 };
