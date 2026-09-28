@@ -37,6 +37,8 @@ export const BLOG_SLUGS = [
   "smart-home-villa-construction",
   "epoxy-flooring-guide-saudi-arabia",
   "interior-finishing-guide-saudi-arabia",
+  "modern-construction-equipment-saudi-arabia",
+  "saudi-building-code-safety-guide",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1751,6 +1753,210 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تخطط لمشروع تشطيب داخلي لفيلتك أو منشأتك التجارية؟", description: "تواصل مع فريق لمآت العربية للحصول على استشارة واستعراض أعمالنا السابقة في الرياض وجدة والقصيم.", button: "اطلب استشارة" },
       en: { title: "Planning an Interior Finishing Project for Your Villa or Commercial Facility?", description: "Get in touch with the Lamaat Al-Arabia team for a consultation and to review our completed projects across Riyadh, Jeddah, and Qassim.", button: "Get a Consultation" },
+    },
+  },
+
+  "modern-construction-equipment-saudi-arabia": {
+    slug: "modern-construction-equipment-saudi-arabia",
+    title: {
+      ar: "المعدات الحديثة في البناء: كيف غيّرت الشدات الميكانيكية وجه النجارة الإنشائية",
+      en: "Modern Construction Equipment: How Mechanical Formwork Transformed Structural Carpentry",
+    },
+    subtitle: {
+      ar: "من الشدات الخشبية إلى الأنظمة الميكانيكية – سرعة وجودة وتوفير في مشاريع البناء",
+      en: "From Timber Formwork to Mechanical Systems – Speed, Quality & Savings in Construction Projects",
+    },
+    description: {
+      ar: "تعرّف على دور المعدات الحديثة في البناء، وكيف رفعت الشدات الميكانيكية كفاءة النجارة الإنشائية وسرّعت أعمال العظم بدقة أعلى وتكلفة أقل.",
+      en: "Learn how modern construction equipment and mechanical formwork systems have elevated structural carpentry efficiency, accelerating shell & core works with higher precision and lower cost.",
+    },
+    keywords: {
+      ar: [
+        "المعدات الحديثة في البناء", "الشدات الميكانيكية", "نجارة البناء", "النجارة الإنشائية",
+        "أعمال العظم", "شركة مقاولات في السعودية", "شدات معدنية", "شدات خشبية",
+        "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "modern construction equipment Saudi Arabia", "mechanical formwork KSA", "structural carpentry",
+        "shell and core works", "formwork systems", "construction contractor Saudi Arabia",
+        "steel formwork vs timber", "Lamaat Al-Arabiya construction",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الشدات الميكانيكية: ثورة في نجارة البناء الحديثة",
+          body: "اعتمدت النجارة التقليدية لعقود على الأخشاب والدعامات الخشبية التي تُقصّ وتُثبّت في الموقع قطعة قطعة. أما الشدات الميكانيكية فهي أنظمة جاهزة مصنّعة من الفولاذ أو الألمنيوم، تُركّب بوصلات محكمة وتُفك وتُعاد استخدامها عشرات المرات. وتشمل أشهر أنواعها: شدات الجدران والأعمدة المعدنية، والشدات المنزلقة والمتسلقة للأبراج، ودعامات الأسقف القابلة للتعديل، وأنظمة الشدات الطاولية. الثورة الحقيقية تكمن في قابلية إعادة الاستخدام: الشدة الخشبية تخدم مرتين أو ثلاثاً، بينما المعدنية تخدم مئات الدورات.",
+        },
+        {
+          title: "دور المعدات الحديثة في رفع كفاءة النجارة الإنشائية",
+          body: "تسريع دورة الطابق لتُقاس بالأيام لا بالأسابيع بفضل الشدات الجاهزة وأبراج الرفع. جودة سطح خرساني أعلى بفضل الألواح المعدنية المغطاة بالفيلم التي تعطي أسطحاً مستوية ومتطابقة. تقليل الهدر بالقص المسبق والوحدات المعيارية. دعم الجودة والمتانة بمنع تسرب الأسمنت من الفواصل وتقليل ظاهرة التعشيش. الاستفادة من الخرسانة الجاهزة والمضخات عالية القدرة داخل شدة قوية ومحكمة.",
+        },
+        {
+          title: "التقنيات الحديثة: نحو بناء أسرع وأكثر دقة",
+          body: "نمذجة معلومات البناء (BIM) للتخطيط المسبق واكتشاف التعارضات قبل التنفيذ. أجهزة المسح بالليزر والمحطات المتكاملة تضبط المناسيب بدقة المليمترات. المسح ثلاثي الأبعاد والطائرات المسيّرة لمتابعة تقدم الأعمال. الحساسات والمراقبة الذكية لتحديد الوقت الأمثل لفك الشدة. الأنظمة الوقائية المدمجة مع الشدة لتقليل حوادث السقوط. تدريب الكوادر عنصر جوهري لأن الشدة الميكانيكية تتطلب فنيين يعرفون تسلسل التركيب وحدود التحميل.",
+        },
+        {
+          title: "واجهة المبنى وأهميتها بعد اكتمال الهيكل",
+          body: "بعد اكتمال الهيكل الخرساني تأتي الواجهة لتتحدث باسم المبنى. أهميتها تشمل: الحماية من الظروف الجوية كحرارة الصيف والغبار والرطوبة الساحلية، وكفاءة الطاقة حيث تخفض الواجهة المعزولة أحمال التكييف، والقيمة السوقية حيث ترفع الواجهة الجذابة سعر البيع والإيجار، والاتساق مع الهيكل حيث تنعكس جودة الشدة على استواء الواجهة. ننصح بالتفكير في الواجهة منذ مرحلة التصميم الإنشائي لا بعد الانتهاء من العظم.",
+        },
+        {
+          title: "أسباب اختلاف تكاليف أعمال العظم من منطقة لأخرى",
+          body: "طبيعة التربة والأساسات: التربة الضعيفة أو ذات المياه الجوفية المرتفعة ترفع تكلفة الأساسات. أسعار مواد البناء والنقل: المسافة إلى مصانع الخرسانة والحديد تؤثر على السعر. توفر العمالة الماهرة: المدن الكبرى قد تشهد ضغطاً على العمالة الفنية. الظروف المناخية: الصب في الأجواء الحارة يتطلب معالجة خاصة. طبيعة المشروع: عدد الأدوار وتعقيد الأعمدة والبلاطات تحدد نوع الشدة المطلوبة. حجم الشركة ومعداتها: الشركة المجهزة بمعدات ملكها تنجز أسرع وتتحكم بالتكلفة.",
+        },
+      ],
+      en: [
+        {
+          title: "Mechanical Formwork: A Revolution in Modern Structural Carpentry",
+          body: "Traditional carpentry relied for decades on timber props cut and fixed piece by piece on site. Mechanical formwork systems, made from steel or aluminium, use precision connectors and can be reused dozens of times. Key types include wall and column panel systems, slip and climbing forms for towers, adjustable steel shores for slabs, and table formwork units lifted by crane from floor to floor. The real breakthrough is reusability: timber serves two or three pours, while steel systems last hundreds of cycles, steadily lowering the cost per square metre.",
+        },
+        {
+          title: "How Modern Equipment Elevates Structural Carpentry Efficiency",
+          body: "Floor cycle times are measured in days rather than weeks thanks to pre-assembled formwork and lifting towers. Film-faced steel panels produce flat, uniform concrete surfaces that need less plastering, shortening the finishing phase. Pre-cut modules and standardised units slash on-site waste. Tight panel joints prevent cement leakage and reduce honeycombing inside the concrete mass. High-capacity pumps paired with robust formwork improve pour quality and reduce the risk of localised collapse.",
+        },
+        {
+          title: "Digital Technologies: Faster and More Precise Construction",
+          body: "BIM (Building Information Modelling) enables pre-construction planning and clash detection between structural and MEP elements. Laser surveying and total stations set levels and axes to millimetre accuracy. 3D scanning and drones track progress and compare as-built conditions against the design. Embedded sensors monitor concrete maturity to determine the optimal stripping time instead of guesswork. Integrated safety rails and platforms built into the formwork itself reduce fall incidents. Workforce training remains essential because mechanical formwork demands technicians who understand assembly sequences and load limits.",
+        },
+        {
+          title: "Why Building Facades Matter After the Structure Is Complete",
+          body: "Once the concrete frame is finished, the facade becomes the building's public face. Its importance goes beyond aesthetics: it shields against harsh weather — summer heat, dust, and coastal humidity; a well-insulated facade cuts cooling loads and electricity bills; an attractive facade raises sale and rental values and gives the project a clear visual identity; and formwork quality directly affects facade flatness — a precise frame means an easier, cheaper cladding installation. We recommend planning the facade from the structural design stage, not after shell & core is done.",
+        },
+        {
+          title: "Why Shell & Core Costs Vary by Region",
+          body: "Soil conditions and foundations: weak, sandy, or high-water-table soils increase foundation costs. Material and transport prices: distance from concrete and steel plants affects the final price. Skilled labour availability: major cities may face skilled-trade shortages that push wages up. Climate: hot-weather concrete pours require special curing and admixtures. Project complexity: the number of floors, column layouts, and slab shapes determine formwork type and cost. Contractor capacity: a firm that owns its equipment completes work faster and controls costs better than one that rents everything.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "أكثر من 20 عامًا من الخبرة في أعمال العظم والتنفيذ الإنشائي",
+        "أنظمة شدات ميكانيكية حديثة مملوكة للشركة",
+        "فريق هندسي متخصص في تصميم الشدات وحساب الأحمال",
+        "التزام بمعايير الكود السعودي وإجراءات السلامة في كل مرحلة",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience in shell & core and structural execution",
+        "Company-owned modern mechanical formwork systems",
+        "Specialised engineering team for formwork design and load calculations",
+        "Full compliance with Saudi Building Code and safety procedures at every stage",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تبحث عن شريك إنشائي يمتلك معدات حديثة؟", description: "تواصل معنا لمناقشة مشروعك والحصول على عرض سعر مفصّل لأعمال العظم والتشطيب.", button: "اطلب عرض سعر" },
+      en: { title: "Looking for a Construction Partner with Modern Equipment?", description: "Contact us to discuss your project and get a detailed quote for shell & core and finishing works.", button: "Request a Quote" },
+    },
+  },
+
+  "saudi-building-code-safety-guide": {
+    slug: "saudi-building-code-safety-guide",
+    title: {
+      ar: "وسائل الأمان والكود السعودي: دليلك لسلامة المنشآت والمشاريع الإنشائية",
+      en: "Safety Standards & the Saudi Building Code: Your Guide to Structural and Site Safety",
+    },
+    subtitle: {
+      ar: "الكود السعودي للبناء، وسائل الأمان، مقارنة بالكود الإماراتي، التراخيص، التأمين، واختبار التربة",
+      en: "Saudi Building Code, Safety Measures, UAE Code Comparison, Permits, Insurance & Soil Testing",
+    },
+    description: {
+      ar: "دليل شامل عن الكود السعودي للبناء ووسائل الأمان والسلامة المهنية، ومقارنته بالكود الإماراتي، مع أهمية التراخيص والتأمين واختبار التربة واختيار شركة المقاولات.",
+      en: "A comprehensive guide to the Saudi Building Code, construction safety measures, occupational health standards, a comparison with the UAE code, and the importance of permits, insurance, soil testing, and choosing the right contractor.",
+    },
+    keywords: {
+      ar: [
+        "الكود السعودي للبناء", "وسائل الأمان في البناء", "السلامة المهنية", "الكود الإماراتي",
+        "تراخيص البناء", "اختبار التربة", "شركة مقاولات", "معايير البناء الخليجي",
+        "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "Saudi Building Code", "construction safety standards KSA", "occupational safety construction",
+        "UAE building code comparison", "building permits Saudi Arabia", "soil testing construction",
+        "construction contractor safety", "Lamaat Al-Arabiya safety",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الكود السعودي: المعيار الأساسي للسلامة الإنشائية",
+          body: "كود البناء السعودي (SBC) هو المرجع الفني الموحد لأعمال التصميم والإنشاء في المملكة، وتشرف عليه اللجنة الوطنية لكود البناء السعودي. يتكوّن من أجزاء متخصصة تشمل: الاشتراطات المعمارية والإنشائية (الأحمال، الأساسات، الخرسانة المسلحة، المنشآت الفولاذية)، واشتراطات الحماية من الحريق (مسارات الهروب، أنظمة الإنذار والإطفاء)، والأنظمة الميكانيكية والكهربائية والصحية، وترشيد الطاقة والعزل الحراري. قيمة الكود أنه يوحّد اللغة الفنية بين المالك والمصمم والمقاول.",
+        },
+        {
+          title: "وسائل الأمان: حماية المنشآت وموقع التنفيذ",
+          body: "تنقسم وسائل الأمان إلى قسمين: أمان المنشأة بعد التسليم (تصميم إنشائي يراعي الأحمال والزلازل، جودة الخرسانة والحديد، أنظمة الحماية من الحريق، عزل ضد الرطوبة والحرارة)، وأمان الموقع أثناء التنفيذ (تأمين الحفريات، سلامة الشدات والأعمال المؤقتة وفحصها قبل كل صب، حواجز حماية من السقوط، تنظيم حركة الآليات والرافعات). تكتمل الصورة بالتفتيش الدوري والتوثيق لكل مرحلة قبل الانتقال لما بعدها.",
+        },
+        {
+          title: "دليل السلامة المهنية وفقاً لاشتراطات الكود السعودي",
+          body: "معدات الوقاية الشخصية: خوذات وأحذية وسترات عاكسة وقفازات وأحزمة أمان. العمل على المرتفعات: سقالات معتمدة ومنصات آمنة وتدريب العاملين. إدارة الأحمال والرافعات: فحص المعدات وتشغيلها بمشغلين مؤهلين فقط. الكهرباء المؤقتة: لوحات معزولة ومؤرّضة. الحماية من الحرارة: توفير المياه والظلال والالتزام بقرار منع العمل وقت الظهيرة صيفاً. الاستعداد للطوارئ: خطة إخلاء وحقائب إسعافات أولية. مسؤول سلامة متفرغ في المشاريع الكبيرة.",
+        },
+        {
+          title: "الكود السعودي والكود الإماراتي: مقارنة هندسية شاملة",
+          body: "أوجه التوافق: كلا البلدين يعتمد على مرجعيات عالمية حديثة، ويشترط كلاهما معايير الجودة والسلامة، ويفرض إجراءات حماية من الإجهاد الحراري. أوجه الاختلاف: في السعودية كود وطني موحد، بينما تعمل الإمارات بأكواد تختلف من إمارة لأخرى. يختلف التركيز بحسب التربة والمناخ وطبيعة المدن. لكل دولة جهات ترخيص وتفتيش ومنصات ومتطلبات مستندات خاصة. لا تفترض أن تصميماً معتمداً في بلد يُقبل تلقائياً في الآخر.",
+        },
+        {
+          title: "تراخيص البناء والتأمين واختبار التربة",
+          body: "رخصة البناء هي الضمان النظامي بأن مشروعك خضع لمراجعة الجهات المختصة عبر منصة بلدي. التأمين يشمل تأمين أخطار المقاولين والمسؤولية تجاه الغير والعمال والعيوب الخفية. اختبار التربة يُفضَّل إجراؤه قبل الشراء لمعرفة التكلفة الحقيقية للأساسات والوقاية من مخاطر التربة الانتفاشية والسبخية، ولتقييم السعر العادل للأرض. شركات المقاولات المصنفة تتفوق على المقاول الفرد بالفريق الهندسي المتكامل والقدرة المالية والالتزام النظامي.",
+        },
+        {
+          title: "أخطاء شائعة تخالف اشتراطات الكود والسلامة",
+          body: "البدء قبل اكتمال الترخيص يعرّض المشروع للإيقاف والغرامات. إهمال فحص عينات الخرسانة لا يكشف المقاومة الفعلية. تقليص بنود السلامة لتوفير التكلفة قد يؤدي لحادث يكلف أضعافه. تعديل المخططات في الموقع دون اعتماد هندسي قد يخلّ بتوزيع الأحمال. غياب التوثيق يُضعف موقف المالك عند أي نزاع. الوقاية من هذه الأخطاء لا تحتاج لميزانية كبيرة بل لانضباط وإدارة واعية.",
+        },
+      ],
+      en: [
+        {
+          title: "The Saudi Building Code: The Foundation of Structural Safety",
+          body: "The Saudi Building Code (SBC) is the unified technical reference for all design and construction work in the Kingdom, overseen by the National Committee for the Saudi Building Code. It comprises specialised sections covering: architectural and structural requirements (loads, foundations, reinforced concrete, steel structures), fire protection (escape routes, alarm and suppression systems), mechanical, electrical and plumbing systems, and energy conservation and thermal insulation. The Code's value lies in establishing a common technical language among owners, designers, and contractors.",
+        },
+        {
+          title: "Safety Measures: Protecting the Structure and the Site",
+          body: "Safety splits into two linked areas. Post-handover building safety includes structural design accounting for live, dead, wind, and seismic loads; tested concrete and steel quality; fire-protection systems with rated doors, escape routes, and sprinklers; and moisture and thermal insulation. On-site execution safety covers excavation shoring and barriers, formwork inspection before every pour, fall-protection nets and guardrails, and controlled crane and heavy-equipment zones. The picture is completed by periodic inspection and documentation — every phase is checked and signed off before the next begins.",
+        },
+        {
+          title: "Occupational Safety Under Saudi Building Code Requirements",
+          body: "PPE includes hard hats, safety boots, reflective vests, gloves, goggles, and harnesses matched to the task. Working at height requires certified scaffolding, safe platforms, and trained operators. Crane and load management demands equipment inspections and qualified operators only. Temporary electrics must use earthed, insulated panels with code-compliant wiring. Heat-stress protection means providing water, shade, and rest breaks, and observing the midday work ban during summer. Emergency readiness requires a clear evacuation plan, first-aid kits, and trained responders. Large projects need a dedicated full-time safety officer.",
+        },
+        {
+          title: "Saudi Building Code vs. UAE Building Code: A Comprehensive Comparison",
+          body: "Similarities: both countries base their codes on recognised international standards, both require quality and safety compliance before licensing and handover, and both mandate heat-stress protections for workers. Differences: Saudi Arabia uses a single national code under one national committee, while the UAE operates with codes that vary by emirate — Dubai and Abu Dhabi each have their own requirements, plus federal fire and life-safety codes. Each country — and each emirate — has its own licensing and inspection authorities, platforms, and document requirements. Never assume a design approved in one country is automatically accepted in the other.",
+        },
+        {
+          title: "Building Permits, Insurance & Soil Testing",
+          body: "A building permit is not just paperwork — it is the legal guarantee that your project has been reviewed by the competent authorities through the Baladi platform. Insurance typically covers contractors' all-risks, third-party liability, worker protection, and latent-defect coverage. Soil testing is ideally done before purchasing the land to reveal the true foundation cost, guard against risks like expansive or sabkha soils, and provide an objective basis for price negotiation. Classified contracting companies outperform individual contractors through integrated engineering teams, financial resilience, regulatory compliance, and transparent cost reporting.",
+        },
+        {
+          title: "Common Mistakes That Violate Code and Safety Requirements",
+          body: "Starting before the permit is issued exposes the project to fines, stoppages, and demolition orders. Skipping concrete sample testing means the actual strength remains unknown. Cutting safety line items to save cost can lead to an accident that costs many times more and halts work for weeks. Modifying structural drawings on site without engineering approval can compromise load distribution. Failing to document inspection results and supervision reports weakens the owner's position in any dispute or warranty claim. Preventing these mistakes requires discipline and informed management, not a bigger budget.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "التزام صارم بالكود السعودي للبناء في كل مرحلة من مراحل التنفيذ",
+        "فريق سلامة مهنية متفرغ ومؤهل لإدارة مخاطر الموقع",
+        "خبرة تتجاوز 20 عامًا في المشاريع السكنية والتجارية والصناعية",
+        "توثيق هندسي شامل وتقارير فحص دورية لكل مرحلة",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "Strict compliance with the Saudi Building Code at every construction stage",
+        "Dedicated, qualified occupational safety team for on-site risk management",
+        "20+ years of experience across residential, commercial, and industrial projects",
+        "Comprehensive engineering documentation and periodic inspection reports for every phase",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تبحث عن شركة مقاولات ملتزمة بأعلى معايير السلامة؟", description: "تواصل معنا للحصول على استشارة أولية ومناقشة متطلبات مشروعك وفق الكود السعودي.", button: "اطلب استشارة" },
+      en: { title: "Looking for a Contractor Committed to the Highest Safety Standards?", description: "Contact us for an initial consultation and to discuss your project requirements under the Saudi Building Code.", button: "Get a Consultation" },
     },
   },
 };
