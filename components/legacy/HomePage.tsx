@@ -23,7 +23,6 @@ const CLIENTS: { src: string; title: string }[] = [
   { src: "/wp-content/uploads/2025/11/logo-12.png", title: "مجموعة بن لادن السعودية" },
   { src: "/wp-content/uploads/2025/11/logo-9.png", title: "إيرباص" },
   { src: "/wp-content/uploads/2025/11/logo-7.png", title: "فرع الشركة العامة للتعهدات" },
-  { src: "/wp-content/uploads/2025/11/images-2-Photoroom.png", title: "شركة خليج الكوثر للتجارة و المقاولات" },
   { src: "/wp-content/uploads/2025/11/2K-s9Ek5_400x400-Photoroom.png", title: "شركة مهمات الشرق الاوسط المحدودة (ميتكو)" },
   { src: "/wp-content/uploads/2025/11/images-1-Photoroom.png", title: "شركه اسناد السلام المحدوده" },
   { src: "/wp-content/uploads/2025/11/logo-10.png", title: "شركة علوي تونسي" },
@@ -34,7 +33,6 @@ const CLIENTS: { src: string; title: string }[] = [
   { src: "/wp-content/uploads/2025/11/images-Photoroom.png", title: "الشركة السعودية لخدمات السيارات والمعدات (ساسكو)" },
   { src: "/wp-content/uploads/2025/11/captu337-Photoroom.png", title: "شركة الأولي المتحدة" },
   { src: "/wp-content/uploads/2025/11/images-Photoroom-1.png", title: "شركة الدانوب للمواد الغذائية و الكماليات" },
-  { src: "/wp-content/uploads/2025/11/images-1-Photoroom-1.png", title: "الشركة العربية السعودية للهندسة المحدودة" },
 ];
 
 const CERTIFICATES: string[] = [
@@ -281,6 +279,8 @@ export default async function HomePage({ locale = "ar" }: HomePageProps) {
               key={i}
               className={`flex flex-col items-center gap-2 text-center w-full ${
                 i === CLIENTS.length - 1 && CLIENTS.length % 3 === 1 ? "col-start-2 sm:col-start-auto" : ""
+              } ${
+                CLIENTS.length % 5 !== 0 && i === CLIENTS.length - (CLIENTS.length % 5) ? "md:col-start-2" : ""
               }`}
             >
               <div className="relative h-16 w-full">
