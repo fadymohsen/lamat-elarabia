@@ -44,15 +44,12 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
   return (
     <div
       dir={isAr ? "rtl" : "ltr"}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#141e16] shadow-md py-2" : "h-0"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 h-0"
     >
       {/* Nav pill - desktop */}
-      <div className={`absolute left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[88px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block transition-all duration-300 ${
+      <div className={`absolute left-1/2 -translate-x-1/2 w-[880px] max-w-[92vw] h-[88px] rounded-full bg-[#b8987f] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.1)] hidden md:block transition-all duration-300 ${
         scrolled ? "top-[4px]" : "top-[44px]"
       }`}>
-        <Image src="/images/figma/nav-pill-bg.svg" alt="" fill className="object-fill" />
         <nav className={`relative z-10 h-full flex items-center justify-center gap-[48px] px-6 ${isAr ? "flex-row-reverse" : ""}`}>
           {/* Logo inside nav */}
           <Link
@@ -75,7 +72,7 @@ export default function SiteHeader({ locale = "ar", page = "" }: SiteHeaderProps
           <span className="w-[1px] h-[24px] bg-white/30" />
           <Link
             href={switchHref}
-            className="font-['Tajawal',sans-serif] text-[14px] text-[#b8987f] whitespace-nowrap hover:text-white transition-colors"
+            className="font-['Tajawal',sans-serif] text-[14px] text-white/80 whitespace-nowrap hover:text-white transition-colors"
           >
             {switchLabel}
           </Link>
