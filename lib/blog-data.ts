@@ -39,6 +39,10 @@ export const BLOG_SLUGS = [
   "interior-finishing-guide-saudi-arabia",
   "modern-construction-equipment-saudi-arabia",
   "saudi-building-code-safety-guide",
+  "preventive-maintenance-contracts-buildings",
+  "building-permits-regulations-guide-saudi-arabia",
+  "industrial-facility-finishing-factories",
+  "commercial-supply-building-finishing-materials",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -1957,6 +1961,435 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هل تبحث عن شركة مقاولات ملتزمة بأعلى معايير السلامة؟", description: "تواصل معنا للحصول على استشارة أولية ومناقشة متطلبات مشروعك وفق الكود السعودي.", button: "اطلب استشارة" },
       en: { title: "Looking for a Contractor Committed to the Highest Safety Standards?", description: "Contact us for an initial consultation and to discuss your project requirements under the Saudi Building Code.", button: "Get a Consultation" },
+    },
+  },
+  "preventive-maintenance-contracts-buildings": {
+    slug: "preventive-maintenance-contracts-buildings",
+    title: {
+      ar: "عقود الصيانة الدورية الوقائية للمباني: الدرع الذي يحمي استثمارك العقاري",
+      en: "Preventive Maintenance Contracts: The Shield That Protects Your Real Estate Investment",
+    },
+    subtitle: {
+      ar: "صيانة دورية شاملة للكهرباء والسباكة والتكييف وأنظمة السلامة في المباني التجارية والسكنية والصناعية",
+      en: "Comprehensive Periodic Maintenance for Electrical, Plumbing, HVAC & Safety Systems in Commercial, Residential & Industrial Buildings",
+    },
+    description: {
+      ar: "دليل شامل عن عقود الصيانة الدورية الوقائية للمباني: الفرق بين الصيانة الوقائية والطارئة، ما يشمله العقد، الجدول الزمني المثالي، الفوائد المالية، وكيفية اختيار شركة صيانة معتمدة. لمعة العربية للمقاولات – خبرة +20 عامًا.",
+      en: "A comprehensive guide to preventive maintenance contracts for buildings: reactive vs. preventive maintenance, what the contract covers, the ideal inspection schedule, financial benefits, and how to choose a certified provider. Lamaat Al-Arabiya Contracting – 20+ years of experience.",
+    },
+    keywords: {
+      ar: [
+        "عقود صيانة دورية", "صيانة وقائية مباني", "صيانة مباني تجارية", "صيانة فلل",
+        "صيانة تكييف السعودية", "صيانة كهرباء وسباكة", "شركة صيانة مباني الرياض",
+        "عقد صيانة شامل", "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "preventive maintenance contracts", "building maintenance Saudi Arabia", "HVAC maintenance KSA",
+        "commercial building maintenance", "villa maintenance contract", "electrical plumbing maintenance",
+        "maintenance contractor Riyadh", "Lamaat Al-Arabiya maintenance",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ما الفرق بين الصيانة الوقائية والصيانة الطارئة؟",
+          body: "الصيانة الطارئة (Reactive Maintenance) هي ما يحدث حين تتعطل وحدة كهربائية أو يتسرب خط مياه، فتتصل بفني لإصلاح المشكلة فورًا. هذا النمط يبدو أرخص على المدى القصير لأنك لا تدفع شيئًا حتى تحدث المشكلة، لكنه في الحقيقة الأسلوب الأغلى على المدى الطويل، لأن الأعطال الطارئة تأتي دائمًا مصحوبة بثلاث تكاليف خفية: توقف النشاط، السعر المرتفع لخدمة الطوارئ، وضرر إضافي قد يلحق بأجزاء أخرى من النظام نتيجة العطل الأصلي.\n\nالصيانة الدورية الوقائية (Preventive Maintenance) هي عكس ذلك تمامًا: فحص وصيانة دورية مجدولة مسبقًا لكل الأنظمة الحيوية في المبنى، قبل ظهور أي عطل، بهدف اكتشاف علامات التآكل المبكرة ومعالجتها قبل أن تتحول إلى أعطال كاملة. الفارق يشبه الفرق بين زيارة الطبيب لفحص دوري سنوي، وبين الذهاب للطوارئ بعد تجاهل الأعراض لأشهر.",
+        },
+        {
+          title: "ماذا يشمل عقد الصيانة الدورية عند لمعة العربية؟",
+          body: "عقد الصيانة الشامل الذي نقدمه يغطي الأنظمة الأساسية التي تحدد تشغيل أي مبنى، تجاريًا كان أو سكنيًا أو صناعيًا:\n\nالكهرباء: فحص اللوحات الكهربائية الرئيسية والفرعية، قياس الأحمال، التأكد من سلامة التأريض، وفحص نقاط الاتصال المعرّضة للسخونة الزائدة التي قد تسبب حرائق كهربائية.\n\nالسباكة: فحص شبكات المياه والصرف، الكشف المبكر عن أي تسريبات داخل الجدران أو تحت الأرضيات، وصيانة المضخات وخزانات المياه.\n\nالتكييف (HVAC): تنظيف الفلاتر والملفات، فحص غاز التبريد، صيانة الضواغط، وهي الخدمة الأعلى طلبًا في المناخ السعودي حيث يعمل نظام التكييف بأقصى طاقته لشهور متواصلة.\n\nالدفاع المدني والسلامة: فحص أنظمة الإنذار والإطفاء، التأكد من صلاحية طفايات الحريق، واختبار مخارج الطوارئ وأنظمة الإضاءة الاحتياطية.",
+        },
+        {
+          title: "الجدول الزمني المثالي لفحوصات الصيانة",
+          body: "ليست كل الأنظمة تحتاج نفس وتيرة الفحص. جدول الصيانة الفعّال عادة ما يتوزع كالتالي:\n\nفحوصات شهرية: أنظمة الإنذار والإطفاء، فلاتر التكييف في المواسم شديدة الحرارة، واللوحات الكهربائية في المنشآت الصناعية عالية الاستهلاك.\n\nفحوصات ربع سنوية: شبكات السباكة الرئيسية، مضخات المياه، وأنظمة الإضاءة الاحتياطية.\n\nفحوصات نصف سنوية وسنوية: صيانة شاملة لوحدات التكييف المركزية، اختبار شامل لأنظمة الدفاع المدني، وفحص الهيكل الإنشائي الظاهر (الشروخ، تسرب المياه، تآكل الواجهات).\n\nهذا التوزيع يضمن أن الأنظمة الأكثر عرضة للأعطال المفاجئة (كالكهرباء والتكييف) تحظى بمتابعة أقرب، بينما تُفحص الأنظمة الأبطأ تدهورًا على فترات أوسع.",
+        },
+        {
+          title: "الفوائد المالية لعقود الصيانة الدورية",
+          body: "الصيانة الوقائية ليست بندًا في ميزانية \"النفقات\"، بل هي أداة لحماية قيمة الأصل نفسه:\n\nخفض تكاليف الطوارئ بشكل كبير: إصلاح عطل مبكر يكلف عادة جزءًا يسيرًا مما يكلفه إصلاح نفس العطل بعد تفاقمه.\n\nإطالة العمر الافتراضي للأنظمة: وحدة تكييف تخضع لصيانة دورية منتظمة قد تعمل لسنوات إضافية مقارنة بأخرى مهملة.\n\nالحفاظ على القيمة السوقية للعقار: المبنى الموثّق بسجل صيانة منتظم أكثر جاذبية عند البيع أو التأجير من مبنى بلا سجل صيانة واضح.\n\nتقليل مخاطر التوقف التشغيلي: لمنشأة تجارية أو صناعية، كل ساعة توقف غير مخطط لها تعني خسارة مباشرة في الإيرادات.",
+        },
+        {
+          title: "من يحتاج عقد صيانة دورية؟",
+          body: "عمليًا، أي مبنى يُستخدم بشكل مستمر يحتاج خطة صيانة وقائية، لكن الحاجة تصبح حرجة بشكل خاص في:\n\nالمولات والمراكز التجارية: حيث يعني توقف التكييف أو الإضاءة في ساعة ذروة خسارة مباشرة لعشرات المحلات في وقت واحد.\n\nالمصانع والمنشآت الصناعية: حيث يرتبط توقف أي نظام كهروميكانيكي بتوقف خط إنتاج كامل.\n\nالفلل الفاخرة والمجمعات السكنية الراقية: حيث يتوقع الساكن مستوى خدمة لا يقبل بالأعطال المفاجئة.\n\nالمنشآت الحكومية والتعليمية: التي تخضع لمعايير سلامة صارمة ولا تحتمل التوقف المفاجئ لأي نظام حيوي.",
+        },
+        {
+          title: "ما الذي يحدد تكلفة عقد الصيانة الدورية؟",
+          body: "مساحة المبنى ونوعه: صيانة مول تجاري بمساحة عشرات الآلاف من الأمتار تختلف جذريًا عن صيانة فيلا سكنية.\n\nعدد الأنظمة المشمولة: عقد يغطي الكهرباء والسباكة والتكييف والسلامة معًا أغلى من عقد يغطي نظامًا واحدًا فقط، لكنه غالبًا أوفر على المدى الطويل من توقيع أربعة عقود منفصلة.\n\nعمر المبنى وحالة الأنظمة الحالية: مبنى جديد بأنظمة حديثة يحتاج فحصًا روتينيًا أخف من مبنى قديم تراكمت فيه مشاكل لم تُعالج لسنوات.\n\nعدد الزيارات الدورية المتفق عليها: عقد بزيارات شهرية أشمل من عقد بزيارات ربع سنوية، وهذا ينعكس على السعر.\n\nمن المهم عدم الانجراف وراء أرخص عرض فقط، بل مقارنة ما يشمله كل عقد بالتفصيل: عدد الزيارات، الأنظمة المغطاة، وما إذا كانت قطع الغيار الأساسية مشمولة أم تُحتسب بشكل منفصل.",
+        },
+      ],
+      en: [
+        {
+          title: "Preventive Maintenance vs. Reactive Maintenance",
+          body: "Reactive maintenance is what happens when an electrical unit fails or a water line leaks, and you call a technician to fix it immediately. This looks cheaper in the short term because you pay nothing until something breaks — but it's actually the more expensive approach over time, because emergency failures always carry three hidden costs: operational downtime, premium emergency-service pricing, and secondary damage that can spread to other parts of the system from the original fault.\n\nPreventive maintenance is the opposite: a pre-scheduled, recurring inspection and servicing routine for every critical building system, performed before any failure occurs, aimed at catching early wear signs and addressing them before they become full breakdowns. The difference is the same as an annual physical checkup versus an ER visit after ignoring symptoms for months.",
+        },
+        {
+          title: "What Our Maintenance Contract Covers",
+          body: "Our comprehensive maintenance contract covers the core systems that determine how any building — commercial, residential, or industrial — actually runs:\n\nElectrical: Inspecting main and sub-distribution panels, measuring loads, verifying grounding integrity, and checking connection points prone to overheating, which can lead to electrical fires.\n\nPlumbing: Inspecting water supply and drainage networks, early detection of leaks inside walls or under floors, and servicing pumps and water tanks.\n\nHVAC: Cleaning filters and coils, checking refrigerant levels, and servicing compressors — the single most in-demand service in the Saudi climate, where AC systems run at full capacity for months at a time.\n\nCivil Defense & Safety: Inspecting alarm and firefighting systems, verifying fire extinguishers are valid and functional, and testing emergency exits and backup lighting systems.",
+        },
+        {
+          title: "The Ideal Inspection Schedule",
+          body: "Not every system needs the same inspection frequency. An effective maintenance schedule typically breaks down as follows:\n\nMonthly checks: Alarm and firefighting systems, AC filters during peak-heat months, and electrical panels in high-consumption industrial facilities.\n\nQuarterly checks: Main plumbing networks, water pumps, and backup lighting systems.\n\nSemi-annual and annual checks: Comprehensive servicing of central AC units, full testing of civil defense systems, and a visual inspection of the visible structure (cracks, water seepage, facade wear).\n\nThis distribution ensures the systems most prone to sudden failure — electrical and HVAC — receive closer monitoring, while slower-degrading systems are inspected at wider intervals.",
+        },
+        {
+          title: "The Financial Case for Preventive Maintenance Contracts",
+          body: "Preventive maintenance isn't a line item under \"expenses\" — it's a tool for protecting the value of the asset itself:\n\nSignificantly lower emergency repair costs: Catching an issue early typically costs a fraction of fixing the same issue after it escalates.\n\nExtended equipment lifespan: An AC unit under regular preventive maintenance can run for additional years compared to one that's neglected.\n\nPreserved market value: A building with a documented, regular maintenance record is far more attractive at sale or lease than one with no clear maintenance history.\n\nReduced downtime risk: For a commercial or industrial facility, every hour of unplanned downtime is a direct hit to revenue.",
+        },
+        {
+          title: "Who Actually Needs a Preventive Maintenance Contract?",
+          body: "Practically speaking, any continuously-used building benefits from a preventive maintenance plan, but the need becomes critical for:\n\nMalls and retail centers, where an AC or lighting failure during peak hours means dozens of shops lose business simultaneously.\n\nFactories and industrial facilities, where any electromechanical system going down halts an entire production line.\n\nLuxury villas and premium residential complexes, where occupants expect a service level that doesn't tolerate sudden breakdowns.\n\nGovernment and educational facilities, which operate under strict safety standards and can't tolerate a sudden outage of any critical system.",
+        },
+        {
+          title: "What Determines the Cost of a Maintenance Contract?",
+          body: "Building size and type: Maintaining a tens-of-thousands-of-square-meter mall is fundamentally different from maintaining a residential villa.\n\nNumber of systems covered: A contract covering electrical, plumbing, HVAC, and safety together costs more than one covering a single system — but it's typically more economical long-term than signing four separate contracts.\n\nBuilding age and current system condition: A new building with modern systems needs lighter routine checks than an older one with years of unaddressed issues.\n\nNumber of agreed-upon periodic visits: A monthly-visit contract is more comprehensive than a quarterly one, and pricing reflects that.\n\nIt's worth avoiding the temptation to simply pick the cheapest quote — instead, compare what each contract actually covers in detail: number of visits, systems included, and whether core spare parts are included or billed separately.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في صيانة المباني التجارية والسكنية والصناعية",
+        "فريق فني متعدد التخصصات: كهرباء، سباكة، تكييف، وأنظمة سلامة",
+        "تقارير فحص دورية موثقة وخطة استجابة واضحة للطوارئ",
+        "عقود صيانة مصممة حسب طبيعة كل مبنى واستخدامه",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience maintaining commercial, residential, and industrial buildings",
+        "Multi-disciplinary technical team: electrical, plumbing, HVAC, and safety systems",
+        "Documented periodic inspection reports and a clear emergency response plan",
+        "Maintenance contracts tailored to each building's nature and use",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تحتاج عقد صيانة دورية لمبناك؟", description: "تواصل معنا لتصميم خطة صيانة وقائية تناسب طبيعة مبناك واستخدامه وتحمي استثمارك العقاري على المدى الطويل.", button: "اطلب عرض سعر" },
+      en: { title: "Need a Preventive Maintenance Contract for Your Building?", description: "Contact us to design a preventive maintenance plan tailored to your building's nature and use, protecting your real estate investment long-term.", button: "Get a Quote" },
+    },
+  },
+  "building-permits-regulations-guide-saudi-arabia": {
+    slug: "building-permits-regulations-guide-saudi-arabia",
+    title: {
+      ar: "دليلك الشامل لرخص البناء والاشتراطات النظامية في السعودية",
+      en: "Your Complete Guide to Building Permits & Regulatory Requirements in Saudi Arabia",
+    },
+    subtitle: {
+      ar: "خطوات استخراج رخصة البناء، فحص التربة، الاشتراطات حسب نوع المشروع، والمستندات المطلوبة",
+      en: "Permit Steps, Soil Testing, Requirements by Project Type & Required Documents",
+    },
+    description: {
+      ar: "دليل شامل لرخص البناء والاشتراطات النظامية في السعودية: خطوات استخراج الرخصة عبر منصة بلدي، فحص التربة، الاشتراطات حسب نوع المشروع، المستندات المطلوبة، وأخطاء شائعة تعطل المشاريع. لمعة العربية للمقاولات – خبرة +20 عامًا.",
+      en: "A complete guide to building permits and regulatory requirements in Saudi Arabia: permit steps via the Balady platform, soil testing, requirements by project type, required documents, and common mistakes that delay projects. Lamaat Al-Arabiya Contracting – 20+ years of experience.",
+    },
+    keywords: {
+      ar: [
+        "رخصة بناء السعودية", "اشتراطات البناء", "منصة بلدي", "فحص تربة",
+        "رخصة إشغال", "اشتراطات البلدية", "تراخيص بناء الرياض", "رخصة بناء جدة",
+        "شركة مقاولات مرخصة", "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "building permit Saudi Arabia", "Balady platform permit", "construction regulations KSA",
+        "soil testing Saudi Arabia", "occupancy permit Saudi", "building requirements Riyadh",
+        "licensed contractor Saudi Arabia", "Lamaat Al-Arabiya permits",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "لماذا رخصة البناء ليست مجرد ورقة؟",
+          body: "يظن كثيرون أن رخصة البناء إجراء شكلي يُستخرج بسرعة بمجرد تقديم المخططات. الحقيقة أن الرخصة هي محصلة نهائية لسلسلة من الفحوصات والموافقات: مطابقة المخطط لاشتراطات البلدية، التأكد من توافق استخدام الأرض مع الغرض من المبنى (سكني، تجاري، صناعي)، والتحقق من عدم تعارض المشروع مع أي ارتدادات أو ارتفاعات محددة نظامًا لتلك المنطقة بالذات.\n\nرخصة البناء الصادرة بشكل صحيح ليست فقط شرطًا قانونيًا للبدء بالتنفيذ، بل هي أيضًا حماية لصاحب المشروع نفسه: فبدونها، قد يواجه أوامر إيقاف العمل، أو حتى الهدم الجزئي في حالات المخالفات الجسيمة، بعد إنفاق مبالغ كبيرة على التنفيذ.",
+        },
+        {
+          title: "خطوات استخراج رخصة البناء في السعودية",
+          body: "العملية في جوهرها تمر بمراحل متسلسلة:\n\nالتأكد من الصك والمخطط المساحي: قبل أي شيء، يجب التأكد من أن حدود الأرض في الصك مطابقة للواقع، وأن المخطط المساحي معتمد من الجهة المختصة.\n\nاستخراج كروكي الأرض واشتراطات البناء: عبر منصة \"بلدي\" أو مكاتب الهندسة المعتمدة، يتم الحصول على اشتراطات البناء الخاصة بالقطعة تحديدًا: نسبة البناء المسموحة، الارتدادات الأمامية والجانبية والخلفية، والارتفاع الأقصى المسموح.\n\nإعداد المخططات الهندسية المعتمدة: يقوم مكتب هندسي معتمد بإعداد المخططات المعمارية والإنشائية والكهروميكانيكية، بما يتوافق تمامًا مع الاشتراطات المستخرجة.\n\nتقديم الطلب والحصول على الرخصة: تُقدَّم المخططات عبر منصة بلدي، وتتم مراجعتها من قبل البلدية، وقد يُطلب تعديلات قبل الموافقة النهائية وإصدار رخصة البناء رسميًا.\n\nرخصة الإشغال بعد الانتهاء: بعد اكتمال التنفيذ، يُستخرج تقرير إنجاز وفحص نهائي، يليه إصدار رخصة الإشغال التي تسمح رسميًا باستخدام المبنى.",
+        },
+        {
+          title: "فحص التربة: الخطوة التي يتجاهلها كثيرون قبل شراء الأرض",
+          body: "واحدة من أكثر الأخطاء شيوعًا، وأكثرها كلفة، هي شراء الأرض وتصميم المبنى قبل إجراء فحص تربة فعلي. فحص التربة يحدد نوع الأساسات المناسبة (سطحية أو عميقة)، ومدى تحمل التربة، ووجود أي مشاكل جيولوجية كالتربة الانتفاشية المنتشرة في بعض مناطق المملكة.\n\nتخطي هذه الخطوة قد يبدو توفيرًا في الوقت والمال في البداية، لكنه غالبًا ما ينتهي بأحد سيناريوهين مكلفين: إما تصميم أساسات مبالغ فيها \"احتياطًا\" لتغطية المجهول، مما يرفع التكلفة دون داعٍ، أو الأسوأ، تصميم أساسات غير كافية تظهر مشاكلها (شروخ، هبوط غير متساوٍ) بعد سنوات من البناء.",
+        },
+        {
+          title: "الاشتراطات النظامية حسب نوع المشروع",
+          body: "تختلف الاشتراطات النظامية بشكل جوهري حسب طبيعة المشروع:\n\nالمشاريع السكنية: تركز الاشتراطات على نسبة البناء، الارتدادات، وعدد الأدوار المسموح به حسب تصنيف المنطقة السكنية.\n\nالمشاريع التجارية: تضاف اشتراطات إضافية خاصة بمواقف السيارات، مخارج الطوارئ، وأحمال الحريق، نظرًا لارتفاع الكثافة البشرية المتوقعة.\n\nالمنشآت الصناعية: تخضع لاشتراطات أكثر تعقيدًا تتعلق بالمسافات الأمنية، معالجة النفايات، وأنظمة السلامة الصناعية، وغالبًا ما تحتاج موافقات إضافية من جهات متخصصة.\n\nالمنشآت الدينية (المساجد والجوامع): لها اشتراطات مختلفة تمامًا تتعلق بالمساحات المخصصة للصلاة، اتجاه القبلة، ومرافق الوضوء، وغالبًا ما تمر بمسار موافقات منفصل عبر الجهات المعنية بالشؤون الدينية.",
+        },
+        {
+          title: "المستندات الأساسية التي ستحتاجها قبل التقديم",
+          body: "تختلف تفاصيل المستندات المطلوبة قليلًا حسب البلدية ونوع المشروع، لكن هناك مجموعة أساسية تتكرر في معظم الحالات:\n\nصك الملكية ساري وخالٍ من أي نزاع أو رهن يمنع التصرف في الأرض.\n\nالمخطط المساحي المعتمد من الجهة المختصة، مطابقًا لحدود الصك فعليًا على الأرض.\n\nكروكي الاشتراطات الصادر من البلدية والمحدد لنسبة البناء والارتدادات والارتفاعات.\n\nالمخططات الهندسية الكاملة (معمارية، إنشائية، كهروميكانيكية) من مكتب هندسي معتمد.\n\nتقرير فحص التربة، خصوصًا للمشاريع التجارية والصناعية والمباني متعددة الأدوار.\n\nتفويض رسمي في حال كان من يقدّم الطلب غير مالك الأرض شخصيًا.",
+        },
+        {
+          title: "تكلفة التأخير: ماذا يحدث عند إهمال الجانب النظامي؟",
+          body: "البدء في التنفيذ دون رخصة نهائية معتمدة قد يؤدي إلى:\n\nأوامر إيقاف فوري للعمل، مع ما يترتب عليه من تكاليف تأخير وتوقف العمالة والمعدات في الموقع.\n\nغرامات مالية تختلف حسب حجم المخالفة ونوعها.\n\nصعوبة الحصول على التمويل البنكي، إذ تشترط أغلب البنوك وجود رخصة بناء سارية ضمن شروط تمويل المشاريع العقارية.\n\nتعقيد عملية البيع أو التسجيل العقاري لاحقًا، في حال كان المبنى منفَّذًا جزئيًا أو كليًا خارج نطاق الرخصة الأصلية.\n\nفي المقابل، مشروع يسير وفق مسار نظامي صحيح منذ اليوم الأول يتحرك بسرعة أكبر في كل مرحلة لاحقة، من التمويل إلى التسجيل إلى البيع أو التأجير.",
+        },
+      ],
+      en: [
+        {
+          title: "Why a Building Permit Isn't Just a Piece of Paper",
+          body: "Many people assume a building permit is a formality, quickly issued once drawings are submitted. In reality, the permit is the end result of a chain of checks and approvals: confirming the design matches municipal requirements, verifying the land-use classification matches the building's purpose (residential, commercial, industrial), and confirming the project doesn't violate any setbacks or height limits specific to that particular zone.\n\nA properly issued building permit isn't just a legal prerequisite to start construction — it also protects the project owner. Without it, you can face stop-work orders, or even partial demolition in cases of serious violations, after already spending significant money on execution.",
+        },
+        {
+          title: "Steps to Obtain a Building Permit in Saudi Arabia",
+          body: "The process follows a sequential path:\n\nVerify the Title Deed and Survey Map: Before anything else, confirm the land boundaries in the title deed actually match reality on the ground, and that the survey map is approved by the relevant authority.\n\nObtain the Land Sketch and Building Requirements: Through the \"Balady\" platform or licensed engineering offices, you obtain the specific building requirements for that exact plot: allowed building ratio, front/side/rear setbacks, and maximum permitted height.\n\nPrepare Approved Engineering Drawings: A licensed engineering office prepares the architectural, structural, and electromechanical drawings, fully matching the requirements obtained in the previous step.\n\nSubmit the Application and Obtain the Permit: Drawings are submitted through the Balady platform and reviewed by the municipality. Revisions may be requested before final approval and official permit issuance.\n\nOccupancy Permit After Completion: Once construction is complete, a completion and final inspection report is issued, followed by an occupancy permit that officially allows the building to be used.",
+        },
+        {
+          title: "Soil Testing: The Step Many People Skip Before Buying Land",
+          body: "One of the most common — and most costly — mistakes is buying the land and designing the building before running an actual soil test. Soil testing determines the appropriate foundation type (shallow or deep), the soil's load-bearing capacity, and whether there are any geological issues, such as expansive soil, which is present in certain regions of the Kingdom.\n\nSkipping this step might look like a time and cost saving at first, but it usually ends in one of two expensive scenarios: either an over-engineered, overly conservative foundation designed \"just in case\" to cover the unknown — inflating cost unnecessarily — or worse, an inadequate foundation whose problems (cracks, uneven settling) only show up years after construction, when repairs are far more costly and complex.",
+        },
+        {
+          title: "Regulatory Requirements by Project Type",
+          body: "Regulatory requirements differ fundamentally depending on the nature of the project:\n\nResidential projects: Requirements focus on building ratio, setbacks, and the number of floors permitted based on the residential zone classification.\n\nCommercial projects: Additional requirements apply around parking, emergency exits, and fire loads, given the higher expected human density.\n\nIndustrial facilities: Subject to more complex requirements around safety distances, waste handling, and industrial safety systems, and typically require additional approvals from specialized authorities.\n\nReligious facilities (mosques): Follow an entirely different set of requirements related to prayer-area space, qibla direction, and ablution facilities, usually going through a separate approval track with religious affairs authorities.",
+        },
+        {
+          title: "Key Documents You'll Need Before Applying",
+          body: "Exact document requirements vary slightly by municipality and project type, but a core set repeats across most cases:\n\nA valid title deed, free of any dispute or lien that would prevent dealing with the land.\n\nAn approved survey map, actually matching the title deed boundaries on the ground.\n\nA requirements sketch issued by the municipality, specifying building ratio, setbacks, and height limits.\n\nComplete engineering drawings (architectural, structural, electromechanical) from a licensed engineering office.\n\nA soil test report, particularly for commercial, industrial, and multi-story projects.\n\nAn official authorization, if the applicant isn't the landowner personally.\n\nPreparing these documents precisely from the start significantly reduces the number of review and revision cycles with the municipality.",
+        },
+        {
+          title: "The Cost of Delay: What Happens When the Regulatory Side Is Ignored?",
+          body: "Starting construction without a final approved permit can lead to:\n\nImmediate stop-work orders, along with the resulting cost of delay and idle labor and equipment on site.\n\nFinancial penalties, varying by the size and nature of the violation.\n\nDifficulty securing bank financing, since most banks require a valid building permit as a condition for real estate project financing.\n\nComplications in future sale or property registration, if the building was partially or fully executed outside the scope of the original permit.\n\nBy contrast, a project that follows the correct regulatory path from day one moves faster at every subsequent stage — financing, registration, sale, or lease.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في التعامل مع البلديات والجهات الرقابية",
+        "إدارة المسار النظامي كاملًا: من اشتراطات القطعة إلى رخصة الإشغال",
+        "فريق هندسي معتمد لإعداد المخططات المطابقة للاشتراطات من المرة الأولى",
+        "تنسيق مباشر مع مكاتب فحص التربة والمكاتب الهندسية المعتمدة",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience dealing with municipalities and regulatory authorities",
+        "Full regulatory path management: from plot requirements to occupancy permit",
+        "Licensed engineering team preparing compliant drawings from the first submission",
+        "Direct coordination with soil testing firms and licensed engineering offices",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "تخطط لمشروعك القادم وتحتاج من يتولى الجانب النظامي؟", description: "تواصل معنا لإدارة مسار الترخيص والتنفيذ معًا، من اشتراطات القطعة إلى رخصة الإشغال.", button: "اطلب استشارة" },
+      en: { title: "Planning Your Next Project and Need the Regulatory Side Handled?", description: "Contact us to manage the full permitting and execution path — from plot requirements to occupancy permit.", button: "Get a Consultation" },
+    },
+  },
+  "industrial-facility-finishing-factories": {
+    slug: "industrial-facility-finishing-factories",
+    title: {
+      ar: "تشطيب وتجهيز المنشآت الصناعية والمصانع: من الهيكل الخرساني إلى التشغيل الكامل",
+      en: "Industrial Facility & Factory Construction: From Concrete Shell to Full Operation",
+    },
+    subtitle: {
+      ar: "أرضيات صناعية، عزل حراري وصوتي، أنظمة كهروميكانيكية، سفع رملي، ومعايير السلامة للمنشآت الصناعية",
+      en: "Industrial Flooring, Thermal & Acoustic Insulation, MEP Systems, Sandblasting & Safety Standards for Industrial Facilities",
+    },
+    description: {
+      ar: "دليل شامل لتشطيب وتجهيز المنشآت الصناعية والمصانع: الأرضيات الصناعية، العزل، الأنظمة الكهروميكانيكية، السفع الرملي، متطلبات السلامة، واختيار مواد التشطيب المناسبة. لمعة العربية للمقاولات – خبرة +20 عامًا.",
+      en: "A comprehensive guide to finishing and equipping industrial facilities and factories: industrial flooring, insulation, MEP systems, sandblasting, safety requirements, and choosing the right finishing materials. Lamaat Al-Arabiya Contracting – 20+ years of experience.",
+    },
+    keywords: {
+      ar: [
+        "تشطيب مصانع", "تجهيز منشآت صناعية", "أرضيات صناعية", "إيبوكسي صناعي",
+        "سفع رملي", "أنظمة كهروميكانيكية مصانع", "سلامة منشآت صناعية",
+        "مقاول مصانع السعودية", "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "industrial facility finishing", "factory fit-out Saudi Arabia", "industrial flooring KSA",
+        "industrial epoxy flooring", "sandblasting industrial", "MEP systems factories",
+        "industrial safety standards", "Lamaat Al-Arabiya industrial",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ما الذي يميز تشطيب المنشآت الصناعية عن المشاريع الأخرى؟",
+          body: "الفارق الجوهري هو أن كل قرار تصميمي في مصنع له تبعات تشغيلية مباشرة. اختيار نوع الأرضية ليس قرارًا جماليًا بل قرارًا هندسيًا يحدد قدرة المبنى على تحمل أحمال المعدات الثقيلة والحركة المستمرة للرافعات الشوكية. اختيار نظام التهوية ليس مسألة راحة بل مسألة سلامة مهنية في بيئة قد تحتوي على أبخرة أو غبار صناعي. حتى اختيار الدهانات يتحدد بمدى مقاومتها الكيميائية، لا بجمال اللون.\n\nهذا يعني أن تصميم منشأة صناعية يبدأ من دراسة العملية التشغيلية نفسها (خط الإنتاج، حركة المواد الخام والمنتج النهائي، متطلبات التخزين)، ثم يُبنى المبنى حول هذه العملية، وليس العكس.",
+        },
+        {
+          title: "مراحل تجهيز مصنع أو منشأة صناعية",
+          body: "الأرضيات الصناعية: تختلف جذريًا عن أرضيات المباني الأخرى، إذ يجب أن تتحمل أحمالًا ثقيلة ثابتة ومتحركة، ومقاومة للتآكل الكيميائي في حال التعامل مع مواد كاشطة أو كيميائية. الإيبوكسي الصناعي، والأرضيات الخرسانية المصقولة عالية التحمل، من أكثر الحلول استخدامًا.\n\nالعزل الحراري والصوتي: المصانع التي تحتوي على معدات مولّدة للحرارة أو الضوضاء تحتاج عزلًا مدروسًا يحمي بيئة العمل ويقلل استهلاك الطاقة.\n\nالأنظمة الكهروميكانيكية: العمود الفقري الفعلي لأي منشأة صناعية: توزيع الأحمال الكهربائية بما يتناسب مع استهلاك المعدات الثقيلة، أنظمة التهوية والتبريد الصناعي، وشبكات المياه والصرف الصناعي التي قد تحتاج معالجة خاصة قبل التصريف.\n\nالسفع الرملي والحماية من التآكل: للهياكل المعدنية والخزانات والأنابيب، يُعد السفع الرملي خطوة تحضيرية أساسية قبل أي طلاء واقٍ، لضمان التصاق الطلاء بشكل صحيح وإطالة عمر المنشأة الصناعية ضد الصدأ والتآكل.",
+        },
+        {
+          title: "متطلبات السلامة والدفاع المدني في المنشآت الصناعية",
+          body: "تخضع المنشآت الصناعية لمعايير سلامة أكثر صرامة مقارنة بالمباني السكنية والتجارية:\n\nأنظمة إطفاء متخصصة حسب نوع النشاط الصناعي (بعض المواد تتطلب أنظمة إطفاء غير مائية).\n\nمسافات أمنية بين وحدات التخزين والمعدات، خصوصًا في حال وجود مواد قابلة للاشتعال.\n\nمخارج طوارئ محسوبة بدقة وفق عدد العمالة المتوقع في كل وردية.\n\nمعالجة النفايات الصناعية وفق الاشتراطات البيئية قبل أي تصريف أو تخلص منها.\n\nهذه المتطلبات ليست بندًا إضافيًا اختياريًا، بل شرطًا أساسيًا للحصول على التراخيص التشغيلية اللازمة لبدء عمل المصنع رسميًا.",
+        },
+        {
+          title: "اختيار مواد التشطيب الصناعي المناسبة",
+          body: "معايير اختيار المواد في البيئة الصناعية تختلف جذريًا عن المباني الأخرى:\n\nمقاومة كيميائية: للأرضيات والجدران المعرضة لمواد كاشطة أو أحماض أو زيوت صناعية.\n\nالقدرة على تحمل الأحمال الثقيلة: سواء الثابتة (المعدات الكبيرة) أو المتحركة (الرافعات الشوكية وعربات النقل).\n\nمقاومة الحريق: خصوصًا في المناطق القريبة من خطوط الإنتاج عالية الحرارة أو التخزين الكيميائي.\n\nسهولة التنظيف والتعقيم: أمر حاسم في الصناعات الغذائية والدوائية تحديدًا.",
+        },
+        {
+          title: "أنواع المنشآت الصناعية التي تحتاج منهجية مختلفة",
+          body: "المستودعات ومراكز التوزيع اللوجستي: الأولوية لارتفاع المبنى لاستيعاب الرفوف العالية، وعرض الممرات الداخلية لحركة الرافعات الشوكية، وأنظمة إنذار حريق تتناسب مع كميات التخزين الكبيرة.\n\nالمصانع الغذائية والدوائية: تتطلب معايير نظافة وتعقيم صارمة، أرضيات سهلة التنظيف ومقاومة للبكتيريا، وأنظمة تهوية تمنع تلوث الهواء المتبادل.\n\nالورش ومصانع المعادن: تحتاج أرضيات فائقة التحمل لمقاومة الصدمات والأوزان الثقيلة، وأنظمة تهوية قوية للتعامل مع الغبار المعدني والأبخرة.\n\nمنشآت التخزين الكيميائي: الأكثر تعقيدًا من حيث متطلبات السلامة، إذ تحتاج مسافات أمنية دقيقة، أرضيات مقاومة كيميائيًا بشكل خاص، وأنظمة إطفاء غير تقليدية.",
+        },
+        {
+          title: "التكلفة التقريبية وعوامل التسعير",
+          body: "تتفاوت تكلفة مشاريع المنشآت الصناعية بشكل كبير حسب عدة عوامل موضوعية لا يمكن تحديدها برقم ثابت دون دراسة المشروع فعليًا:\n\nطبيعة النشاط الصناعي: مصنع غذائي يحتاج معايير نظافة وتهوية مختلفة تمامًا عن مصنع معدني أو كيميائي.\n\nمساحة المنشأة وارتفاعها: المنشآت ذات الارتفاعات الكبيرة (لاستيعاب الرافعات العلوية مثلًا) تختلف تكلفتها عن المباني الصناعية ذات الطابق الواحد العادي.\n\nمستوى الأتمتة والأنظمة الكهروميكانيكية المطلوبة: كلما زادت درجة التعقيد التقني، زادت تكلفة الأنظمة الداعمة.\n\nموقع المنشأة: القرب من الموانئ أو المناطق الصناعية المخصصة قد يوفر في تكاليف البنية التحتية مقارنة بمواقع أبعد.",
+        },
+        {
+          title: "أخطاء تكلف أصحاب المصانع وقتًا ومالًا",
+          body: "تأجيل التفكير في حركة المعدات والرافعات الشوكية حتى مرحلة متأخرة من التصميم، مما يتطلب تعديلات مكلفة لاحقًا في عرض الممرات أو ارتفاع الأبواب.\n\nاختيار أرضيات غير مناسبة لنوع النشاط، فتبدأ بالتآكل أو التشقق بعد أشهر قليلة من التشغيل الفعلي.\n\nإغفال التخطيط لمعالجة النفايات الصناعية من البداية، مما يستدعي تعديلات لاحقة مكلفة للامتثال البيئي.\n\nالتعامل مع مقاولين متعددين لكل نظام على حدة (أرضيات، كهروميكانيك، سفع رملي) دون تنسيق واحد يربط بين جميع الأنظمة.",
+        },
+      ],
+      en: [
+        {
+          title: "What Sets Industrial Fit-Out Apart From Other Projects?",
+          body: "The fundamental difference is that every design decision in a factory has direct operational consequences. Choosing a floor type isn't an aesthetic decision — it's an engineering one that determines the building's ability to handle heavy equipment loads and continuous forklift traffic. Choosing a ventilation system isn't about comfort — it's an occupational safety matter in an environment that may contain fumes or industrial dust. Even paint selection is driven by chemical resistance, not color appeal.\n\nThis means designing an industrial facility starts from studying the operational process itself (production line, raw material and finished product flow, storage requirements), then building the structure around that process — not the other way around.",
+        },
+        {
+          title: "Phases of Fitting Out a Factory or Industrial Facility",
+          body: "Industrial flooring: Fundamentally different from other building floors — it must withstand heavy static and dynamic loads and resist chemical corrosion when dealing with abrasive or chemical materials. Industrial epoxy and high-strength polished concrete are among the most widely used solutions.\n\nThermal and acoustic insulation: Factories with heat- or noise-generating equipment need carefully designed insulation that protects the work environment and reduces energy consumption.\n\nMEP systems: The actual backbone of any industrial facility — electrical load distribution matched to heavy equipment consumption, industrial ventilation and cooling systems, and industrial water supply and drainage networks that may require special treatment before discharge.\n\nSandblasting and corrosion protection: For metal structures, tanks, and pipes, sandblasting is an essential preparatory step before any protective coating, ensuring proper paint adhesion and extending the facility's lifespan against rust and corrosion.",
+        },
+        {
+          title: "Safety & Civil Defense Requirements in Industrial Facilities",
+          body: "Industrial facilities are subject to stricter safety standards compared to residential and commercial buildings:\n\nSpecialized fire suppression systems based on the type of industrial activity (some materials require non-water-based suppression systems).\n\nSafety distances between storage units and equipment, especially when flammable materials are present.\n\nEmergency exits calculated precisely based on the expected workforce per shift.\n\nIndustrial waste treatment in compliance with environmental regulations before any discharge or disposal.\n\nThese requirements are not optional extras — they are fundamental prerequisites for obtaining the operational licenses needed to officially start factory operations.",
+        },
+        {
+          title: "Choosing the Right Industrial Finishing Materials",
+          body: "Material selection criteria in industrial environments differ fundamentally from other buildings:\n\nChemical resistance: For floors and walls exposed to abrasive materials, acids, or industrial oils.\n\nHeavy load capacity: Both static (large machinery) and dynamic (forklifts and transport carts).\n\nFire resistance: Especially in areas near high-temperature production lines or chemical storage.\n\nEase of cleaning and sterilization: Critical in food and pharmaceutical industries specifically.",
+        },
+        {
+          title: "Industrial Facility Types That Need a Different Approach",
+          body: "Warehouses and logistics distribution centers: Priority goes to building height (to accommodate high racks and storage systems), internal aisle width for forklift movement, and fire alarm systems scaled to large storage volumes.\n\nFood and pharmaceutical factories: Require strict hygiene and sterilization standards, easy-to-clean antibacterial floors, and ventilation systems that prevent cross-contamination between different production zones.\n\nWorkshops and metal factories: Need ultra-heavy-duty floors to resist impact and heavy weights, powerful ventilation to handle metal dust and welding/cutting fumes, plus stricter sandblasting and corrosion protection standards.\n\nChemical storage facilities: The most complex in terms of safety requirements — precise safety distances, specially chemical-resistant floors, and non-conventional fire suppression systems based on the stored materials.",
+        },
+        {
+          title: "Approximate Cost and Pricing Factors",
+          body: "Industrial facility project costs vary significantly based on several objective factors that can't be reduced to a fixed number without an actual project study:\n\nType of industrial activity: A food factory needs entirely different cleanliness and ventilation standards than a metal or chemical plant.\n\nFacility area and height: Facilities with high ceilings (to accommodate overhead cranes, for instance) cost differently than standard single-story industrial buildings.\n\nRequired level of automation and electromechanical systems: The higher the technical complexity, the higher the cost of supporting systems.\n\nFacility location: Proximity to ports or designated industrial zones can save on infrastructure costs compared to more remote sites.",
+        },
+        {
+          title: "Mistakes That Cost Factory Owners Time and Money",
+          body: "Postponing equipment and forklift movement planning until a late design stage, requiring costly adjustments to aisle widths or door heights.\n\nChoosing floors unsuitable for the type of activity, leading to erosion or cracking within months of actual operation.\n\nOverlooking industrial waste treatment planning from the start, requiring expensive retrofits for environmental compliance.\n\nUsing multiple separate contractors for each system (flooring, MEP, sandblasting) without a single coordinating party linking all systems together.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في تجهيز المنشآت الصناعية والمصانع",
+        "أعمال فعلية موثقة في السفع الرملي الصناعي والأنظمة الكهروميكانيكية",
+        "إدارة مشروع واحدة متكاملة تربط بين جميع الأنظمة",
+        "دراسة طبيعة النشاط التشغيلي قبل وضع أي تصميم",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of experience equipping industrial facilities and factories",
+        "Documented work in industrial sandblasting and MEP systems",
+        "Single integrated project management linking all systems together",
+        "Operational process study before any design is drafted",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "تخطط لتجهيز منشأة صناعية أو مصنع؟", description: "تواصل معنا لمناقشة احتياجات مشروعك الصناعي من الهيكل الخرساني إلى التشغيل الكامل.", button: "اطلب استشارة" },
+      en: { title: "Planning to Equip an Industrial Facility or Factory?", description: "Contact us to discuss your industrial project needs — from concrete shell to full operation.", button: "Get a Consultation" },
+    },
+  },
+  "commercial-supply-building-finishing-materials": {
+    slug: "commercial-supply-building-finishing-materials",
+    title: {
+      ar: "دليل التوريد التجاري لمواد البناء والتشطيب: كيف تضمن جودة مشروعك من أول خطوة",
+      en: "Commercial Supply of Building & Finishing Materials: How to Protect Your Project From Day One",
+    },
+    subtitle: {
+      ar: "مواد بناء أساسية، مواد تشطيب وديكور، مواد نظافة وعناية، وتوريد تجاري بكميات مضمونة الجودة",
+      en: "Core Building Materials, Finishing & Decor Products, Cleaning & Care Supplies, and Quality-Guaranteed Commercial Supply",
+    },
+    description: {
+      ar: "دليل شامل للتوريد التجاري لمواد البناء والتشطيب: الفرق بين الشراء الفردي والتوريد التجاري، ما يشمله التوريد، معايير اختيار المورد، وأخطاء شائعة عند شراء المواد بالجملة. لمعة العربية للمقاولات – خبرة +20 عامًا.",
+      en: "A comprehensive guide to commercial supply of building and finishing materials: retail vs. commercial supply, what it covers, supplier selection criteria, and common bulk-purchasing mistakes. Lamaat Al-Arabiya Contracting – 20+ years of experience.",
+    },
+    keywords: {
+      ar: [
+        "توريد مواد بناء", "توريد تجاري مواد تشطيب", "مواد بناء بالجملة السعودية",
+        "مورد مواد بناء الرياض", "توريد بلاط ورخام", "مواد عزل مائي وحراري",
+        "شركة توريد مواد بناء", "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "building materials supply Saudi Arabia", "commercial supply finishing materials",
+        "bulk construction materials KSA", "building materials supplier Riyadh",
+        "tile marble supply", "waterproofing insulation materials",
+        "construction material supplier", "Lamaat Al-Arabiya supply",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "ما هو التوريد التجاري لمواد البناء؟",
+          body: "التوريد التجاري هو عملية تأمين كل ما يحتاجه المشروع من مواد خام ومنتجات تشطيب وتركيبات، بكميات تجارية من مصادر موثوقة ومطابقة للمعايير السعودية والدولية. يشمل ذلك كل شيء من الأسمنت والحديد ومواد العزل، إلى البلاط والدهانات والأدوات الصحية والكهربائية.\n\nالفرق بين \"الشراء\" و\"التوريد التجاري\" هو الفرق بين الدخول لمحل مواد بناء وشراء قطعة بقطعة، وبين وجود شريك واحد يدرس احتياجات مشروعك المادية كاملة، يؤمّنها بأسعار تنافسية، يضمن تجانس الدفعات بين شحنات المادة الواحدة، ويلتزم بجدول توريد مرتبط بمراحل التنفيذ الفعلية.",
+        },
+        {
+          title: "أقسام التوريد التجاري عند لمعة العربية",
+          body: "مواد البناء الأساسية: أسمنت، حديد، ركام، عزل مائي وحراري، وأنواع مختلفة من الطوب. هذه المواد تحدد سلامة الهيكل الإنشائي نفسه، ولا مجال للتنازل عن المواصفات أو المصدر.\n\nمواد التشطيب والديكور: بلاط ورخام، دهانات، أبواب ونوافذ، أسقف معلقة، وأدوات صحية وكهربائية. هنا تهم الجماليات إلى جانب المتانة، ويصبح تجانس الدفعات أمرًا حرجًا، خصوصًا في البلاط والرخام حيث يمكن أن يتفاوت اللون بشكل ملحوظ بين دفعة وأخرى.\n\nمواد النظافة والعناية: فئة غالبًا ما تُهمل، لكنها ضرورية لفترة ما بعد التسليم مباشرة: منتجات عناية بأسطح الرخام والسيراميك والإيبوكسي والخشب، ومعدات تنظيف صناعية للمنشآت التجارية والصناعية الكبيرة.",
+        },
+        {
+          title: "لماذا التوريد عبر مقاول واحد أفضل من موردين متعددين؟",
+          body: "كثير من أصحاب المشاريع يفضلون التعامل مع موردين منفصلين لكل مادة بحثًا عن أفضل سعر للقطعة الواحدة. هذا منطقي نظريًا، لكنه يخلق ثلاث مشاكل عملية متكررة:\n\nتفاوت الجودة بين الموردين: مادة عزل من مورد ومنتج مشابه بنفس الاسم من مورد آخر قد يؤديان أداءً مختلفًا تمامًا في الواقع.\n\nتأخر التوريد المتسلسل: حين يتأخر مورد واحد في مادة حرجة (الحديد مثلًا)، يتوقف الموقع بالكامل حتى لو كان كل مورد آخر جاهزًا.\n\nغياب نقطة مساءلة واحدة: إذا ظهر عيب في مادة بعد سنة من التسليم، يصبح من الصعب فعليًا تحديد ما إذا كان المقاول أو المورد الرئيسي أو مورد فرعي هو المسؤول.\n\nحين يكون التوريد ضمن نطاق المقاول الرئيسي، تبقى المسؤولية مع طرف واحد، والجودة متسقة عبر المشروع بالكامل.",
+        },
+        {
+          title: "كيف تؤثر جودة المواد على عمر المبنى؟",
+          body: "الفرق بين أسمنت مطابق للمواصفات وآخر غير مطابق قد يعني عقودًا من الفرق في عمر المنشأة. والفرق بين عزل مائي أصلي ومنتج مقلّد قد يعني ظهور تسريب بعد موسم شتاء واحد، رغم أن كليهما بدا متطابقًا يوم التركيب.\n\nفي المناخ السعودي تحديدًا، مع تقلبات حادة في درجات الحرارة بين الصيف والشتاء، ورطوبة مرتفعة في المناطق الساحلية كجدة، تصبح مقاومة المواد للتمدد والانكماش الحراري ومقاومتها للرطوبة عوامل حاسمة لا يظهر أثرها إلا بعد سنوات من الاستخدام الفعلي.",
+        },
+        {
+          title: "التوقيت مهم: كيف يؤثر الموسم والموقع على التوريد",
+          body: "في الصيف، حين ترتفع درجات الحرارة بشكل حاد في الرياض والقصيم، يمكن أن تتأثر بعض مواد التشطيب الحساسة للحرارة (بعض اللواصق مثلًا) أثناء النقل والتخزين إذا لم تُعامل بشكل صحيح. وفي جدة والمناطق الساحلية، تتطلب الرطوبة العالية تخزينًا دقيقًا لمواد كالأسمنت والجبس لحمايتها من التكتل أو فقدان خصائصها.\n\nكما تتغير مواعيد التوريد مع دورات الطلب في السوق: مواسم الذروة في قطاع المقاولات تضغط على المواد الأساسية كالحديد والأسمنت، مما قد يرفع الأسعار أو يمدد أوقات التسليم إذا لم يُخطط لها مسبقًا.",
+        },
+        {
+          title: "قائمة فحص سريعة قبل توقيع اتفاقية توريد",
+          body: "قبل توقيع أي عقد توريد، تأكد أن الاتفاقية تغطي بوضوح:\n\nجدول توريد مرتبط بمراحل التنفيذ، وليس تاريخ توريد عام واحد لكل المواد.\n\nبند واضح يضمن تجانس الدفعات للمواد المرئية (بلاط، رخام، دهانات).\n\nخطة بديلة في حال نقص مادة معينة في السوق، بدلًا من توقف المشروع بالكامل.\n\nشروط ضمان مكتوبة لكل فئة من المواد، وليس ضمانًا عامًا واحدًا غامضًا.\n\nخطة توريد منفصلة لمواد ما بعد التسليم (العناية والصيانة)، إذا كان المشروع منشأة تجارية أو صناعية كبيرة.",
+        },
+      ],
+      en: [
+        {
+          title: "What Is Commercial Material Supply?",
+          body: "In simple terms, it's the process of securing everything a project needs — raw materials, finishing products, and fittings — in commercial quantities, from reliable sources, meeting Saudi and international standards. This spans everything from cement, steel, and insulation materials on one end, to tiles, paints, and sanitary and electrical fittings on the other.\n\nThe difference between \"buying\" and \"commercial supply\" is the difference between walking into a materials shop and purchasing item by item, versus having a single partner who studies your project's full material requirements, secures them at competitive prices, guarantees batch consistency across different shipments of the same material, and commits to a delivery schedule tied to actual construction phases.",
+        },
+        {
+          title: "The Three Pillars of Our Supply Service",
+          body: "Core Building Materials: Cement, steel, aggregate, waterproofing and thermal insulation, and various types of brick. These are the materials that determine the integrity of the structure itself — there's no room to compromise on specification or source here.\n\nFinishing & Decor Materials: Tiles and marble, paints, doors and windows, suspended ceilings, and sanitary and electrical fittings. Here, aesthetics matter alongside durability, and batch consistency becomes critical — especially with tile and marble, where color shade can vary noticeably between lots.\n\nCleaning & Care Materials: This category is often overlooked, yet it's essential for the period immediately after handover: surface care products for marble, ceramic, epoxy, and wood, plus industrial cleaning equipment for large commercial and industrial facilities.",
+        },
+        {
+          title: "Why Supply Through One Contractor Beats Multiple Suppliers",
+          body: "Many project owners prefer dealing with separate suppliers for each material in search of the best price per item. That's reasonable in theory, but it creates three recurring practical problems:\n\nQuality mismatches between suppliers: Insulation from one supplier and a similarly-named product from another may perform very differently in practice, despite sharing a brand name.\n\nDelivery delays that cascade: When one supplier falls behind on a critical material (rebar, for instance), the entire site can grind to a halt even if every other supplier is ready.\n\nNo single point of accountability: If a material defect appears a year after handover, it becomes genuinely difficult to determine whether the contractor, the main supplier, or a sub-supplier is responsible.\n\nWhen supply is part of the main contractor's scope, accountability stays with one party, quality stays consistent across the entire project, and the delivery schedule is genuinely tied to construction phases.",
+        },
+        {
+          title: "How Material Quality Affects a Building's Lifespan",
+          body: "The difference between cement that meets specification and cement that doesn't can mean decades of difference in a structure's lifespan. The difference between genuine waterproofing and an imitation product can mean a leak appearing after a single winter season, even though both looked identical on installation day.\n\nIn the Saudi climate specifically — with sharp temperature swings between summer and winter, and elevated humidity in coastal areas like Jeddah — materials' resistance to thermal expansion and contraction, and their resistance to moisture, become decisive factors whose impact only shows up after years of actual use.",
+        },
+        {
+          title: "Timing Matters: How Season and Region Affect Supply",
+          body: "In summer, when temperatures spike sharply in Riyadh and Qassim, certain heat-sensitive finishing materials (some adhesives, for example) can be affected during transport and storage if not handled correctly. In Jeddah and other coastal areas, higher humidity requires careful storage of materials like cement and gypsum to protect them from clumping or losing their properties before use.\n\nDelivery timelines also shift with market demand cycles: peak seasons in the contracting sector put pressure on core materials like steel and cement, which can raise prices or extend lead times if not planned for in advance. This is exactly why a supply partner with established relationships with manufacturers and major distributors matters more than relying on the spot market when a need arises.",
+        },
+        {
+          title: "A Quick Checklist Before You Sign a Supply Agreement",
+          body: "Before signing any supply contract, make sure the agreement clearly covers:\n\nA delivery schedule tied to construction phases, not a single generic delivery date for all materials.\n\nA clear clause guaranteeing batch consistency for visible finishing materials (tile, marble, paint).\n\nA backup plan for when a specific material runs short in the market, instead of the entire project stalling.\n\nWritten warranty terms for each material category, not one vague blanket warranty.\n\nA separate supply plan for post-handover materials (care and maintenance), if the project is a large commercial or industrial facility.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في السوق السعودي تجمع بين التنفيذ والتوريد تحت سقف واحد",
+        "علاقات مباشرة مع المصنّعين والموزعين الرئيسيين لضمان أفضل الأسعار والتوفر",
+        "ضمان تجانس الدفعات لمواد التشطيب المرئية (بلاط، رخام، دهانات)",
+        "جدول توريد مرتبط فعليًا بمراحل تنفيذ المشروع",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years in the Saudi market combining execution and supply under one roof",
+        "Direct relationships with manufacturers and major distributors for best pricing and availability",
+        "Guaranteed batch consistency for visible finishing materials (tile, marble, paint)",
+        "Delivery schedule genuinely tied to project execution phases",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "تحتاج شريك توريد موثوق لمشروعك؟", description: "تواصل معنا للحصول على عرض توريد مصمم حسب احتياجات مشروعك، سواء كنت مقاولًا أو مالك مشروع.", button: "اطلب عرض سعر" },
+      en: { title: "Need a Reliable Supply Partner for Your Project?", description: "Contact us for a supply quote tailored to your project's needs — whether you're a contractor or a project owner.", button: "Get a Quote" },
     },
   },
 };
