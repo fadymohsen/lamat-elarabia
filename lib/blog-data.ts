@@ -43,6 +43,8 @@ export const BLOG_SLUGS = [
   "building-permits-regulations-guide-saudi-arabia",
   "industrial-facility-finishing-factories",
   "commercial-supply-building-finishing-materials",
+  "modern-facade-design-trends-saudi-arabia",
+  "commercial-fit-out-renovation-saudi-arabia",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -2390,6 +2392,217 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "تحتاج شريك توريد موثوق لمشروعك؟", description: "تواصل معنا للحصول على عرض توريد مصمم حسب احتياجات مشروعك، سواء كنت مقاولًا أو مالك مشروع.", button: "اطلب عرض سعر" },
       en: { title: "Need a Reliable Supply Partner for Your Project?", description: "Contact us for a supply quote tailored to your project's needs — whether you're a contractor or a project owner.", button: "Get a Quote" },
+    },
+  },
+  "modern-facade-design-trends-saudi-arabia": {
+    slug: "modern-facade-design-trends-saudi-arabia",
+    title: {
+      ar: "اتجاهات تصميم الواجهات المعمارية الحديثة في السعودية 2026",
+      en: "Modern Facade Design Trends in Saudi Arabia: 2026 Guide",
+    },
+    subtitle: {
+      ar: "الخامات والأنماط التي تشكّل واجهات الفلل والمباني التجارية في السعودية، واشتراطات الكود السعودي التي تحكمها",
+      en: "Materials, styles, climate performance, and code requirements shaping villas, commercial buildings, and mixed-use developments across Saudi Arabia",
+    },
+    description: {
+      ar: "استعراض لاتجاهات تصميم الواجهات المعمارية التي تشكّل الفلل والمباني التجارية والمشاريع متعددة الاستخدامات في السعودية 2026: الخامات، الأنماط، والأداء الحراري.",
+      en: "Explore the facade design trends shaping villas, commercial buildings, and mixed-use developments across Saudi Arabia in 2026 — materials, styles, climate performance, and code requirements.",
+    },
+    keywords: {
+      ar: [
+        "تصميم الواجهات المعمارية", "واجهات حجرية فلل", "واجهات زجاجية تجارية",
+        "ألوان الواجهات الحديثة", "كسوة GRC", "اشتراطات الكود السعودي للواجهات",
+        "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "modern facade design Saudi Arabia", "stone facade KSA", "glass curtain wall villa",
+        "facade colors trends", "GRC facade cladding", "SBC facade requirements",
+        "Lamaat Al-Arabiya facade", "facade contractor Riyadh",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "لماذا أصبح تصميم الواجهة قرارًا أكبر",
+          body: "قبل عقد من الزمن، كانت كثير من الواجهات السكنية في السعودية تعتمد نطاقًا ضيقًا من الكسوة الحجرية واللياسة المدهونة. أما اليوم، فيطلب العملاء مزيجًا أوسع — حجر مدمج مع شاشات معدنية، وواجهات زجاجية ستائرية للمباني التجارية، وتفاصيل GRC (خرسانة مقواة بالزجاج) كانت تُعد قبل سنوات خيارًا مخصصًا باهظ التكلفة. ثلاث قوى تدفع هذا التحول: ارتفاع توقعات المشترين في سوق عقاري تنافسي، واشتراطات تصميم بلدية تفضّل بشكل متزايد مشاهد شوارع مميزة، ودروس مستفادة من واجهات لم تؤدِّ جيدًا تحت حرارة الشمس في السعودية.\n\nهذه النقطة الأخيرة أهم مما يدركه كثير من أصحاب المنازل. فالواجهة ليست سطحًا فقط — إنها جزء من الغلاف الإنشائي الذي يتفاعل مباشرة مع أنظمة العزل الحراري والمائي خلفها. فتصميم واجهة لافت يتجاهل الحركة الحرارية أو تصريف المياه أو التهوية خلف الكسوة سيُطوّر تشققات أو بقعًا أو ترسبات خلال مواسم قليلة — ولهذا يجب التخطيط لتصميم الواجهة وهندسة الغلاف الإنشائي معًا، لا تسليمهما لفريقين منفصلين.",
+        },
+        {
+          title: "أنماط الواجهات الرائجة في السعودية لعام 2026",
+          body: "الحجر الطبيعي والمصنّع بأطر بسيطة: يظل الحجر الخامة الأكثر طلبًا للفلل، لكن أسلوب التطبيق تغيّر: الألواح كبيرة الحجم بفواصل محدودة الظهور، مقترنة بأطر نوافذ معدنية داكنة، حلّت محل أنماط الحجر المجزأة بكثافة. درجات الحجر الجيري والرملي التي تعكس طابع المنطقة لا تزال رائجة، وغالبًا ما تُدمج مع خامة واحدة مغايرة كلمسة تباين.\n\nالواجهات الزجاجية الستائرية للمباني التجارية ومتعددة الاستخدامات: تظل أنظمة الواجهات الزجاجية الستائرية مهيمنة على واجهات الطابق الأرضي والطوابق العليا — لكن بشكل متزايد تُحدَّد بزجاج ذي إشعاعية منخفضة (Low-E) للتحكم في اكتساب الحرارة الشمسية، وهو اشتراط يرتبط مباشرة ببنود كفاءة الطاقة في الكود السعودي.\n\nتفاصيل الـ GRC (الخرسانة المقواة بالزجاج): تتيح ألواح GRC إعادة إنتاج أنماط هندسية معقدة — غالبًا مستوحاة من المشربية التقليدية — بحجم كبير وبوزن خفيف وتكلفة أقل مقارنة بالحجر المنحوت. والنمط المثقّب يعمل أيضًا كمظلة شمسية تقلل من اكتساب الحرارة المباشر على الواجهات الغربية والجنوبية.\n\nتركيبة الخامات المتعددة: بدلًا من خامة كسوة واحدة لكامل الواجهة، تطلب تصاميم 2026 بشكل متزايد توزيعًا مدروسًا للخامات: حجر عند القاعدة للمتانة والحضور الملموس، شاشات معدنية أو ألواح GRC في الطوابق العلوية للنمط والتظليل، وزجاج يتركز حيث تهم الإطلالة والإضاءة الطبيعية أكثر.\n\nألوان أكثر دكانة وتشبعًا: رغم أن درجات الأبيض والبيج لا تزال شائعة لخصائصها العاكسة للحرارة، هناك إقبال متزايد على لمسات الرمادي الداكن والبرونزي والطيني العميق — تُستخدم بشكل انتقائي عند المدخل أو إطارات النوافذ أو الزعانف الرأسية بدلًا من تغطية الواجهة كاملة، بما يوازن بين التميز البصري والأداء الحراري.",
+        },
+        {
+          title: "مقارنة سريعة لخامات الواجهات",
+          body: "الحجر الطبيعي: الأنسب للفلل والواجهات الفاخرة — ثقيل ويحتاج تخطيطًا إنشائيًا داعمًا.\n\nألواح GRC: الأنسب للأنماط والتظليل والزخارف التراثية — خفيف وقابل للتخصيص واقتصادي عند التنفيذ بحجم كبير.\n\nالواجهة الزجاجية الستائرية: الأنسب للمباني التجارية ومتعددة الاستخدامات — يتطلب زجاجًا Low-E للتحكم الحراري.\n\nالكسوة/الشاشات المعدنية: الأنسب للألواح المميزة والتظليل الشمسي — يحتاج طلاءً مقاومًا للتآكل في المناطق الساحلية.\n\nاللياسة/المحارة المصقولة: الأنسب للفلل ذات الميزانية المحدودة — تكلفة أقل، تتطلب عزلًا مائيًا جيدًا تحتها.",
+        },
+        {
+          title: "اعتبارات الكود السعودي للبناء بخصوص الواجهات",
+          body: "تصميم الواجهات في السعودية ليس جماليًا بحتًا — فهو يتقاطع مع عدة بنود في الكود السعودي: التثبيت الإنشائي ومقاومة أحمال الرياح لأنظمة الكسوة، واشتراطات مقاومة الحريق للخامات المستخدمة فوق ارتفاعات معينة، ومعايير كفاءة الطاقة التي تحكم نسب الزجاج ومعامل اكتساب الحرارة الشمسية للواجهات التجارية. كما تطبّق البلديات في الرياض وجدة وغيرها من المدن الكبرى بشكل متزايد اشتراطات تصميم خاصة بها فوق الحد الأدنى للكود، خصوصًا للواجهات التجارية المطلة على الشوارع. اعتماد تصميم واجهة بسلاسة يعني التحقق من هذه الاشتراطات في مرحلة الفكرة — لا بعد اعتماد المخططات النهائية.",
+        },
+        {
+          title: "أخطاء شائعة في تصميم الواجهات",
+          body: "اختيار الكسوة قبل هندسة الغلاف الإنشائي، ما يؤدي إلى تعارض بين فكرة التصميم وما يمكن للهيكل دعمه فعليًا.\n\nتجاهل فواصل التمدد الحراري، ما يسبب تشققات في ألواح الحجر وGRC خلال سنوات قليلة.\n\nالإفراط في التزجيج على الواجهات الغربية دون تظليل كافٍ، ما يرفع أحمال التبريد بشكل كبير.\n\nتخطي نموذج تجريبي للواجهة، ما يسبب مفاجآت في اللون أو الملمس عند بدء التركيب الكامل.\n\nالتقليل من تقدير متطلبات الصيانة — بعض أنظمة الكسوة الفاخرة تحتاج معدات وصول خاصة للتنظيف والفحص يجب تخطيطها ضمن تصميم المبنى.",
+        },
+        {
+          title: "كيف تُحسب تكلفة مشاريع الواجهات عادة",
+          body: "تتحدد تكلفة مشاريع الواجهات في السعودية وفق اختيار الخامة (الحجر الطبيعي والواجهات الزجاجية الستائرية في الفئة الفاخرة، واللياسة المصقولة في الفئة الاقتصادية)، وتعقيد الواجهة (الواجهات متعددة الخامات أغلى لكل متر مربع من الجدران المسطحة أحادية الخامة)، ومتطلبات الدعم الإنشائي للخامات الأثقل، وما إذا كان المشروع يحتاج تصنيعًا مخصصًا — كأنماط GRC المصممة خصيصًا — مقابل ألواح بمقاسات قياسية.",
+        },
+      ],
+      en: [
+        {
+          title: "Why Facade Design Has Become a Bigger Decision",
+          body: "A decade ago, many residential facades in Saudi Arabia defaulted to a narrow range of stone cladding and painted render. Today, clients are asking for a wider mix — stone combined with metal screens, glass curtain walls on commercial frontages, and GRC (glass-reinforced concrete) detailing that would have been considered a premium, custom option a few years ago. Three forces are driving this shift: rising buyer expectations in a competitive real estate market, municipal design guidelines that increasingly favor distinctive streetscapes, and lessons learned from facades that didn't perform well in Saudi heat and sun exposure.\n\nThat last point matters more than most homeowners realize. A facade is not just a surface — it's part of the building envelope that interacts directly with the insulation and waterproofing systems behind it. A striking facade design that ignores thermal movement, water drainage, or ventilation behind the cladding will develop cracking, staining, or efflorescence within a few seasons — which is why facade design and building envelope engineering need to be planned together, not handed to separate teams.",
+        },
+        {
+          title: "Facade Styles Trending in Saudi Arabia for 2026",
+          body: "Natural and Engineered Stone with Minimalist Framing: Stone remains the most requested material for villas, but the application has changed: large-format panels with minimal visible joints, paired with dark metal window frames, have replaced the heavily segmented stone patterns common a decade ago. Limestone and sandstone tones that echo the regional landscape remain popular, often combined with one contrasting accent material.\n\nGlass Curtain Walls for Commercial and Mixed-Use Buildings: For retail, office, and mixed-use developments, glass curtain wall systems continue to dominate street-level and upper-floor facades — but increasingly specified with high-performance, low-emissivity (low-E) coated glass to control solar heat gain, a requirement that connects directly to SBC energy-efficiency provisions.\n\nGRC (Glass-Reinforced Concrete) Detailing: GRC panels allow intricate geometric patterns — often inspired by traditional mashrabiya screening — to be reproduced at scale, lightweight, and cost-effectively compared to carved stone. The perforated pattern also functions as solar shading, reducing direct heat gain on west- and south-facing elevations.\n\nMixed-Material Composition: Rather than a single cladding material across an entire elevation, 2026 facade briefs increasingly call for deliberate material zoning: stone at the base for durability and tactile presence, metal screens or GRC panels at upper levels for pattern and shading, and glazing concentrated where views and daylight matter most.\n\nDarker, More Saturated Color Palettes: While white and beige tones remain common for their heat-reflective properties, there's a growing appetite for charcoal, bronze, and deep terracotta accents — used selectively on entry features, window surrounds, or vertical fins rather than across full elevations, balancing visual distinctiveness with thermal performance.",
+        },
+        {
+          title: "Facade Materials: Quick Comparison",
+          body: "Natural stone: Best for villas and high-end facades — heavy, needs structural support planning.\n\nGRC panels: Best for pattern, screening, and heritage motifs — lightweight, customizable, cost-effective at scale.\n\nGlass curtain wall: Best for commercial and mixed-use — requires low-E glazing for heat control.\n\nMetal cladding/screens: Best for accent panels and solar shading — needs corrosion-resistant coating in coastal areas.\n\nTextured render/plaster: Best for budget-conscious villas — lower cost, requires quality waterproofing beneath.",
+        },
+        {
+          title: "Saudi Building Code Considerations for Facades",
+          body: "Facade design in Saudi Arabia isn't purely aesthetic — it intersects with several SBC provisions: structural attachment and wind-load resistance for cladding systems, fire-rating requirements for materials used above certain building heights, and energy-efficiency standards that govern glazing ratios and solar heat gain coefficients on commercial facades. Municipalities in Riyadh, Jeddah, and other major cities also increasingly apply their own design review guidelines on top of SBC minimums, particularly for street-facing commercial frontages. Getting a facade design approved smoothly means checking these requirements at the concept stage — not after drawings are finalized.",
+        },
+        {
+          title: "Common Facade Design Mistakes",
+          body: "Choosing cladding before the building envelope is engineered, leading to conflicts between the design intent and what the structure can actually support.\n\nIgnoring thermal expansion joints, which causes cracking in stone and GRC panels within a few years.\n\nOver-glazing west-facing elevations without adequate shading, dramatically increasing cooling loads.\n\nSkipping a facade mockup or sample panel, resulting in color or texture surprises once full-scale installation begins.\n\nUnderestimating maintenance access — some premium cladding systems require specific access equipment for cleaning and inspection that should be planned into the building design.",
+        },
+        {
+          title: "How Facade Costs Are Typically Structured",
+          body: "Facade project costs in Saudi Arabia are driven by material selection (natural stone and curtain wall systems sit at the premium end, textured render at the economical end), elevation complexity (articulated, multi-material facades cost more per square meter than flat single-material walls), structural support requirements for heavier materials, and whether the project needs custom fabrication — as with bespoke GRC patterns — versus standard panel sizes.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "تصميم الواجهة كجزء من الغلاف الإنشائي الكامل بالتنسيق مع الهندسة الإنشائية والعزل",
+        "خبرة تنفيذ تتجاوز 20 عامًا في الرياض وجدة والقصيم",
+        "تنسيق بين اختيار الخامة والأداء الحراري واشتراطات الكود السعودي",
+        "تنفيذ واجهات حجرية وزجاجية وGRC ومعدنية بأعلى معايير الجودة",
+        "أنظمة واجهات تحافظ على مظهرها وأدائها لعقود",
+      ],
+      en: [
+        "Facade design handled as part of the full building envelope — coordinated with structural engineering and insulation",
+        "20+ years of delivery experience across Riyadh, Jeddah, and Qassim",
+        "Coordination between material selection, thermal performance, and SBC code compliance",
+        "Execution of stone, glass, GRC, and metal facades to the highest quality standards",
+        "Facade systems that hold their appearance and performance for decades",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "صمّم واجهة تؤدي بنفس كفاءة مظهرها", description: "في لمعة العربية، يُدار تصميم الواجهة كجزء من الغلاف الإنشائي الكامل — بالتنسيق مع الهندسة الإنشائية والعزل منذ أولى مراحل التصميم.", button: "احصل على استشارة" },
+      en: { title: "Design a Facade That Performs as Well as It Looks", description: "At Lamaat Al-Arabiya, facade design is handled as part of the full building envelope — coordinated with structural engineering, insulation, and waterproofing from the earliest design stages.", button: "Get a Consultation" },
+    },
+  },
+  "commercial-fit-out-renovation-saudi-arabia": {
+    slug: "commercial-fit-out-renovation-saudi-arabia",
+    title: {
+      ar: "تجديد وتأهيل المساحات التجارية والمكاتب في السعودية (Fit-out)",
+      en: "Commercial Fit-Out & Renovation in Saudi Arabia: A Complete Guide",
+    },
+    subtitle: {
+      ar: "الفرق بين التشطيب الأول وإعادة التأهيل، المراحل، التكلفة، وكيفية تقليل التعطيل على العمل",
+      en: "The difference between first fit-out and refurbishment, phases, costs, and how to minimize business disruption",
+    },
+    description: {
+      ar: "دليل شامل عن تجديد وتأهيل المساحات التجارية والمكاتب في السعودية: الفرق بين التشطيب الأول وإعادة التأهيل، المراحل، التكلفة، وكيفية تقليل التعطيل على العمل.",
+      en: "A complete guide to commercial fit-out and renovation in Saudi Arabia — the difference between first fit-out and refurbishment, phases, costs, and how to minimize business disruption.",
+    },
+    keywords: {
+      ar: [
+        "تجديد المساحات التجارية", "فيت اوت تجاري", "تجديد مكاتب", "تهيئة محلات تجارية",
+        "تكلفة تجديد مساحة تجارية", "تنفيذ ليلي للتجديد",
+        "لمعة العربية مقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "commercial fit-out and renovation Saudi Arabia", "office fit-out Saudi Arabia",
+        "retail shop renovation", "shell and core vs fit-out",
+        "commercial space renovation cost", "after-hours renovation",
+        "Lamaat Al-Arabiya fit-out", "commercial renovation Riyadh",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "الفيت أوت مقابل التشطيب الأول: ما الفرق؟",
+          body: "مشروع التشطيب الداخلي لأول مرة يبدأ من هيكل خام: أرضيات خرسانية، جدران غير مشطبة، ولا أنظمة ميكانيكية أو كهربائية أو سباكة مُركّبة. أما الفيت أوت (Fit-out)، فيبدأ عادة من مساحة \"شل آند كور\" (Shell & Core) تحتوي بالفعل على أنظمة المبنى الأساسية، والعمل يتمحور حول بناء الداخل ليناسب علامة تجارية ومتطلبات تشغيلية محددة: القواطع، الأرضيات، الأسقف، الإضاءة، عناصر الهوية البصرية، والتجهيزات.\n\nأما إعادة التأهيل (Renovation) فهي فئة ثالثة بالكامل — تعني إعادة صياغة مساحة سبق تشطيبها واستخدامها، غالبًا مع التخطيط حول عقد إيجار قائم، أو ساعات عمل، أو نشاط تجاري يجب أن يستمر خلال التنفيذ. كل سيناريو من هذه السيناريوهات الثلاثة يحتاج أسلوب تسلسل مختلفًا، ولهذا فإن تحديد نطاق المشروع بدقة من البداية أهم مما يتوقعه معظم العملاء.",
+        },
+        {
+          title: "الصناعي والتجاري والمكتبي: أولويات فيت أوت مختلفة",
+          body: "المحلات والمساحات التجارية: تُبنى مشاريع الفيت أوت التجاري حول اتساق العلامة التجارية وتجربة العميل: ألوان وتشطيبات محددة للعلامة، أرضيات متينة تتحمل الحركة الكثيفة، إضاءة مصممة حول عرض المنتجات، وغالبًا جدول زمني ضيق — إذ تُنفَّذ كثير من مشاريع الفيت أوت التجاري داخل المولات والشوارع التجارية ليلًا أو خلال عطلة نهاية الأسبوع لتجنب الإغلاق خلال ساعات العمل.\n\nالمكاتب: تُعطي مشاريع فيت أوت المكاتب الأولوية لكفاءة التخطيط، والراحة الصوتية، وتقسيم مناطق التكييف بين الأقسام المختلفة، وبشكل متزايد، التصاميم المرنة الملائمة للعمل الهجين. كما يجب التخطيط مبكرًا لبنية الكابلات الخاصة بأنظمة تقنية المعلومات والصوت والصورة.\n\nالمطاعم والمنشآت الفندقية: تحمل مشاريع هذا القطاع طبقات إضافية: أنظمة تهوية المطابخ ومصائد الدهون، والأسطح المطابقة لمعايير سلامة الغذاء، ومتطلبات مكافحة الحريق الخاصة بالمطابخ التجارية — وكلها تحتاج تنسيقًا مع إجراءات اعتماد الدفاع المدني بالتوازي مع رخصة البناء العامة.",
+        },
+        {
+          title: "مراحل مشروع التهيئة والتجديد التجاري النموذجي",
+          body: "مسح الموقع وتقييم الوضع القائم — التأكد مما هو موجود فعليًا خلف الجدران والأسقف قبل اعتماد التصميم، إذ لا تطابق مخططات الشل آند كور دائمًا الواقع المُنفَّذ.\n\nالتصميم وتنسيق التراخيص — تصميم المخطط، تنسيق الأنظمة الميكانيكية والكهربائية والسباكة، والحصول على اعتمادات البلدية والدفاع المدني قبل بدء العمل.\n\nالهدم وإزالة التشطيبات القائمة (في حالات التجديد) — إزالة التشطيبات أو القواطع أو التجهيزات التي يجب استبدالها، وغالبًا ما تتطلب تحضير سطح مثل السندبلاست حيث يجب إزالة الطلاءات القديمة أو التآكل قبل تطبيق تشطيبات جديدة.\n\nالتمديدات الأولية للأنظمة — الكهرباء، مجاري التكييف، السباكة، وكابلات البيانات قبل إغلاق الجدران.\n\nالقواطع والأسقف والأرضيات — مرحلة البناء الأساسية.\n\nالتشطيبات والهوية البصرية — الدهانات، تغطيات الجدران، اللافتات، النجارة، والتجهيزات.\n\nالمعاينات النهائية والتسليم — اعتماد الدفاع المدني، معاينة البلدية، ومعالجة قائمة الملاحظات قبل استلام المستأجر للمساحة.",
+        },
+        {
+          title: "تقليل التعطيل على نشاط تجاري قائم",
+          body: "بالنسبة لأعمال التجديد داخل نشاط تجاري يجب أن يستمر، التسلسل هو كل شيء. من الأساليب الشائعة:\n\nمناطق عمل مرحلية، بحيث يُجدَّد قسم واحد بينما تبقى بقية المساحة مفتوحة للعملاء أو الموظفين.\n\nالجدولة بعد ساعات العمل أو ليلًا، وهو شائع خصوصًا للمحلات داخل المولات النشطة حيث لا يمكن الوصول نهارًا.\n\nجدولة مكثفة في عطلة نهاية الأسبوع، لضغط الأعمال المزعجة أو المعطلة في نوافذ الإغلاق.\n\nاحتواء الغبار والضوضاء، باستخدام قواطع مؤقتة وأنظمة ضغط سلبي حتى لا تتأثر المناطق النشطة بالأعمال القريبة.\n\nالمقاول الذي سبق له تنسيق مشاريع فيت أوت داخل مولات ومستشفيات ومباني مكتبية نشطة يعرف كيف يسلسل العمل لتقليل الأثر على النشاط التجاري.",
+        },
+        {
+          title: "عوامل التكلفة والجدول الزمني",
+          body: "تتفاوت تكلفة مشاريع الفيت أوت والتجديد في السعودية بشكل كبير وفق:\n\nنطاق أعمال الأنظمة — المساحة ذات السعة الكهربائية والتكييف الكافية مسبقًا تكلف أقل بكثير من مساحة تحتاج ترقية ميكانيكية كاملة.\n\nدرجة التشطيب — تشطيبات المتاجر الرائدة أو المنشآت الفندقية أغلى بكثير من تشطيبات المكاتب القياسية.\n\nقيود ساعات العمل — العمل بعد ساعات الدوام أو في عطلات نهاية الأسبوع يحمل عادة تكلفة إضافية.\n\nتعقيد الهدم — إزالة التشطيبات القديمة، خصوصًا عند وجود تجهيزات قائمة ثقيلة، تضيف تكلفة ووقتًا.\n\nمدة الاعتمادات — الجدول الزمني لاعتماد الدفاع المدني والبلدية للمساحات ذات الاستخدام الغذائي أو العام قد يؤثر على الجدول الكلي للمشروع أكثر من أعمال التنفيذ نفسها.",
+        },
+        {
+          title: "أخطاء شائعة في مشاريع الفيت أوت التجاري",
+          body: "اعتماد التصميم قبل المسح الفعلي للوضع القائم، ما يؤدي إلى تعارض بين التصميم وبنية الأنظمة الفعلية خلف الجدران.\n\nالتقليل من تقدير مدة الاعتمادات، خصوصًا للمطاعم والمساحات التي تحتاج اعتماد الدفاع المدني.\n\nاختيار التشطيبات دون مراعاة الحركة ومتطلبات التنظيف، ما يسبب تآكلًا مبكرًا.\n\nعدم التخطيط لاستمرارية العمل أثناء التجديد، ما يؤدي لخسارة إيرادات يمكن تجنبها.\n\nتخطي قائمة ملاحظات تفصيلية قبل التسليم، ما يدفع معالجة العيوب إلى فترة تشغيل المستأجر بدلًا من قبل الافتتاح.\n\nإهمال التنسيق مع إدارة المول أو المبنى بخصوص ساعات التسليم ومسارات نقل المواد، ما قد يؤخر بدء العمل فعليًا رغم جاهزية الفريق.",
+        },
+      ],
+      en: [
+        {
+          title: "Fit-Out vs. First-Time Finishing: What's the Difference?",
+          body: "A first interior finishing project starts from a bare shell: concrete floors, unfinished walls, and no mechanical, electrical, or plumbing systems in place. Fit-out, by contrast, usually starts from a \"shell and core\" space that already has base building systems installed, and the work is about building out the interior to suit a specific tenant's brand and operational needs: partitions, flooring, ceilings, lighting, branding elements, and fixtures.\n\nRenovation is a third category entirely — it means reworking a space that has already been finished and used, often while planning around an existing lease, operating hours, or a business that needs to keep running during the work. Each of these three scenarios needs a different sequencing approach, which is why scoping the project correctly at the outset matters more than most clients expect.",
+        },
+        {
+          title: "Industrial, Retail, and Office: Different Fit-Out Priorities",
+          body: "Retail and Commercial Shops: Retail fit-outs are driven by brand consistency and customer experience: specific brand colors and finishes, durable flooring that holds up to heavy foot traffic, lighting designed around merchandising, and often a tight turnaround — many retail fit-outs in malls and commercial strips are scheduled overnight or over a weekend to avoid closing during trading hours.\n\nOffices: Office fit-outs prioritize layout efficiency, acoustic comfort, HVAC zoning for different departments, and increasingly, flexible or hybrid-work-friendly layouts. Cabling infrastructure for IT and AV systems also needs to be planned early, since retrofitting cable routes after partitions and ceilings are closed up is expensive and disruptive.\n\nRestaurants and Hospitality: These fit-outs carry additional layers: kitchen ventilation and grease-trap systems, food-safety-compliant surfaces, and fire-suppression requirements specific to commercial kitchens — all of which need to be coordinated with civil defense approval processes alongside the general building permit.",
+        },
+        {
+          title: "The Typical Fit-Out and Renovation Process",
+          body: "Site survey and existing-conditions assessment — confirming what's actually behind the walls and ceiling before design finalizes, since shell-and-core drawings don't always match as-built reality.\n\nDesign and permit coordination — layout design, MEP coordination, and securing municipal and civil defense approvals before work begins.\n\nDemolition and strip-out (for renovations) — removing existing finishes, partitions, or fixtures that are being replaced, often requiring surface prep such as sandblasting where old coatings or corrosion need to be removed before new finishes go on.\n\nMEP rough-in — electrical, HVAC ducting, plumbing, and data cabling installed before walls close up.\n\nPartitioning, ceilings, and flooring — the core build-out phase.\n\nFinishes and branding — paint, wall coverings, signage, millwork, and fixtures.\n\nFinal inspections and handover — civil defense sign-off, municipal inspection, and snag-list resolution before the tenant takes occupancy.",
+        },
+        {
+          title: "Minimizing Disruption to an Operating Business",
+          body: "For renovations happening inside a business that needs to keep operating, sequencing is everything. Common approaches include:\n\nPhased work zones, renovating one section while the rest of the space remains open to customers or staff.\n\nAfter-hours and overnight scheduling, particularly common for retail units inside active malls where daytime access isn't possible.\n\nWeekend-intensive scheduling, compressing noisy or disruptive work (demolition, major MEP changes) into closure windows.\n\nDust and noise containment, using temporary partitions and negative-pressure setups so active areas aren't affected by construction happening nearby.\n\nA contractor who has coordinated fit-outs inside active malls, hospitals, and office buildings knows how to sequence work so the business impact is minimized — this is usually the single biggest factor separating a smooth renovation from one that damages customer experience during the work itself.",
+        },
+        {
+          title: "Cost and Timeline Factors",
+          body: "Fit-out and renovation costs in Saudi Arabia vary significantly based on:\n\nScope of MEP work — a space with adequate existing electrical and HVAC capacity costs far less to fit out than one needing a full mechanical upgrade.\n\nFinish grade — flagship retail or hospitality finishes cost considerably more than standard office-grade finishes.\n\nWorking-hours restrictions — after-hours or weekend-only work typically carries a premium due to labor scheduling and reduced daily working windows.\n\nDemolition complexity — removing old finishes, especially where heavy existing fixtures are involved, adds both cost and time.\n\nApproval timeline — civil defense and municipal approval timelines for food service and public-occupancy spaces can affect the overall project schedule more than the construction work itself.",
+        },
+        {
+          title: "Common Mistakes in Commercial Fit-Out Projects",
+          body: "Finalizing the design before the as-built survey, leading to clashes between the design and the actual MEP infrastructure behind the walls.\n\nUnderestimating approval lead time, especially for restaurants and spaces requiring civil defense sign-off.\n\nChoosing finishes without checking foot-traffic and cleaning requirements, leading to premature wear.\n\nNot planning for business continuity during renovation, resulting in avoidable revenue loss.\n\nSkipping a detailed snag list before handover, pushing defect resolution into the tenant's operating period instead of before opening.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تنفيذ فيت أوت وتجديد تجاري تتجاوز 20 عامًا في الرياض وجدة والقصيم",
+        "تنفيذ داخل مولات ومباني مكتبية ومنشآت نشطة مع تقليل التعطيل على العمل",
+        "جدولة مرنة تشمل العمل الليلي وعطلات نهاية الأسبوع",
+        "تنسيق كامل مع البلدية والدفاع المدني للحصول على الاعتمادات",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "20+ years of commercial fit-out and renovation experience across Riyadh, Jeddah, and Qassim",
+        "Execution inside active malls, office buildings, and operating facilities with minimal business disruption",
+        "Flexible scheduling including overnight and weekend work",
+        "Full coordination with municipality and civil defense for approvals",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هيّئ مساحتك مع مقاول يفهم بيئات العمل الحية", description: "تنفذ لمعة العربية مشاريع التهيئة والتجديد التجاري في الرياض وجدة والقصيم — من المحلات والمكاتب إلى التشطيبات التجارية واسعة النطاق للمولات والمطارات — بجدولة مصممة للحفاظ على استمرار عملك.", button: "احصل على استشارة" },
+      en: { title: "Fit Out Your Space With a Contractor That Understands Live Business Environments", description: "Lamaat Al-Arabiya delivers commercial fit-out and renovation projects across Riyadh, Jeddah, and Qassim — from retail units and offices to large-scale commercial finishing for malls and airports — with scheduling built around keeping your business running.", button: "Get a Consultation" },
     },
   },
 };
