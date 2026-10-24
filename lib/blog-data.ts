@@ -45,6 +45,8 @@ export const BLOG_SLUGS = [
   "commercial-supply-building-finishing-materials",
   "modern-facade-design-trends-saudi-arabia",
   "commercial-fit-out-renovation-saudi-arabia",
+  "villa-building-journey-saudi-arabia",
+  "choosing-right-contractor-saudi-arabia",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -2603,6 +2605,310 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     cta: {
       ar: { title: "هيّئ مساحتك مع مقاول يفهم بيئات العمل الحية", description: "تنفذ لمعة العربية مشاريع التهيئة والتجديد التجاري في الرياض وجدة والقصيم — من المحلات والمكاتب إلى التشطيبات التجارية واسعة النطاق للمولات والمطارات — بجدولة مصممة للحفاظ على استمرار عملك.", button: "احصل على استشارة" },
       en: { title: "Fit Out Your Space With a Contractor That Understands Live Business Environments", description: "Lamaat Al-Arabiya delivers commercial fit-out and renovation projects across Riyadh, Jeddah, and Qassim — from retail units and offices to large-scale commercial finishing for malls and airports — with scheduling built around keeping your business running.", button: "Get a Consultation" },
+    },
+  },
+  "villa-building-journey-saudi-arabia": {
+    slug: "villa-building-journey-saudi-arabia",
+    title: {
+      ar: "من الفكرة إلى الواقع: رحلة بناء فيلا أحلامك في السعودية",
+      en: "From Vision to Reality: The Journey of Building Your Dream Villa in Saudi Arabia",
+    },
+    subtitle: {
+      ar: "ما يبدو عليه بناء فيلا فعليًا، مرحلة بمرحلة — كما يصفه عملاؤنا",
+      en: "What building a villa actually looks and feels like, stage by stage — as our clients describe it",
+    },
+    description: {
+      ar: "بناء الفيلا ليس مجرد جدول زمني إنشائي — إنه رحلة عاطفية. هذا هو شكل وملمس هذه الرحلة فعليًا، من أول رسمة إلى يوم الاستلام.",
+      en: "Building a villa isn't just a construction timeline — it's an emotional journey. Here's what that journey actually looks and feels like, from the first sketch to move-in day.",
+    },
+    keywords: {
+      ar: [
+        "بناء فيلا الأحلام في السعودية", "تجربة بناء فيلا", "مراحل بناء الفيلا",
+        "رحلة بناء منزل في السعودية", "شعور بناء فيلا", "يوم استلام الفيلا",
+        "بناء فيلا الرياض", "بناء فيلا جدة", "بناء فيلا القصيم",
+        "لمعة العربية للمقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "building a dream villa in Saudi Arabia", "villa building experience", "stages of building a villa",
+        "building a home journey KSA", "what it feels like to build a villa", "villa move-in day",
+        "villa construction Riyadh", "villa building Jeddah", "Lamaat Al-Arabiya villa",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "اللحظة التي تتوقف فيها عن كونها حلمًا وتبدأ كخطة",
+          body: "تبدأ معظم رحلات الفيلا قبل أول اجتماع مع المقاول بوقت طويل. تبدأ في محادثات على مائدة العشاء — \"ماذا لو انفتح المطبخ على الحديقة\"، \"نحتاج مجلسًا يشعرنا بالدفء لا بالرسمية\"، \"غرف الأطفال يجب أن تتشارك ممرًا لا جدارًا\". هذه الرغبات الصغيرة والمحددة هي نقطة البداية الحقيقية، قبل وجود أي رسمة بوقت طويل.\n\nأصعب جزء في هذه المرحلة المبكرة ليس اختيار الطراز. إنه ترجمة شعور — الطريقة التي تريد أن يشعرك بها المنزل عندما تدخل إليه بعد يوم طويل — إلى شيء يمكن للمهندس والمقاول تنفيذه فعليًا. هذه الترجمة لا تنجح إلا عندما يأخذ من يبني منزلك وقتًا كافيًا للاستماع أولًا.",
+        },
+        {
+          title: "مشاهدة الأرض تتحول إلى شكل",
+          body: "هناك نوع محدد من الإثارة يحدث عندما تبدأ أعمال الحفر — عندما تضع الأوتاد والخيوط أخيرًا علامات توضح أين سيكون بابك الأمامي، وصالتك، ونوافذ غرف أطفالك. بالنسبة لمعظم العملاء، هذه أول مرة يشعر المشروع فيها بأنه حقيقي لا نظري. يمكنك أن تمشي على محيط منزلك المستقبلي قبل وضع بلوكة واحدة، وتقريبًا كل عميل يفعل ذلك، أكثر من مرة.\n\nهذه المرحلة تمر بسرعة وتبدو شبه صامتة من الخارج — حفر، أعمال أساسات، قواعد — لكنها المرحلة التي تحدد كل ما يليها. المنزل الذي سيصمد لعقود يكسب قوته هنا، بهدوء، قبل أن يراه أحد.",
+        },
+        {
+          title: "الهيكل يرتفع",
+          body: "ثم تأتي المرحلة التي تفاجئ معظم أصحاب الفلل لأول مرة: كم يبدو الهيكل سريعًا في الارتفاع بمجرد أن تبدأ الأعمدة والكمرات في التركيب. ما كان أرضًا مسطحة قبل أسابيع قليلة أصبح له ارتفاع، وغرف يمكنك المشي فيها، وخط سقف يرتفع في السماء. كثيرًا ما يخبرنا العملاء أن هذه المرحلة هي أول مرة \"يبدو فيها المنزل كشيء ما\" — رغم أن الحرفية الحقيقية لا تزال أمامها.\n\nوهي أيضًا المرحلة التي تُتخذ فيها قرارات مبكرة عن جودة بناء الفيلا — من النوع الذي لا يظهر في جولة معاينة سريعة، لكنه يهم بشكل كبير خلال العشرين سنة القادمة — كل يوم، سواء كان أحد يراقب أم لا.",
+        },
+        {
+          title: "المنتصف الطويل والهادئ",
+          body: "إذا كانت أعمال الحفر وارتفاع الهيكل هما اللحظتان المثيرتان في البداية والنهاية، فإن المرحلة الوسطى — رفع الجدران، تمديد الأنظمة، تركيب السقف — هي حيث يُختبَر الصبر. هذه المرحلة التي يصفها العملاء غالبًا بأنها \"لا تبدو أنها تتحرك\"، رغم أنه خلف الكواليس، تُتخذ فيها قرارات أكثر من أي نقطة أخرى في المشروع: أين يذهب كل مفتاح، كيف ستُضاء كل غرفة، أي تشطيبات سيُعاش معها فعليًا للعقد القادم.\n\nهذه أيضًا المرحلة التي يكسب فيها المقاول الجيد أكبر قدر من الثقة — ليس من خلال تقدم مرئي مثير، بل من خلال تواصل ثابت عن ما يحدث ولماذا، حتى عندما يكون \"ما يحدث\" أمرًا غير مبهر مثل تمديدات الكهرباء الأولية.",
+        },
+        {
+          title: "المرحلة التي تشعر فيها أخيرًا أن المنزل أصبح لك",
+          body: "ثم يحدث التحول الذي لا يحضّرك له أحد بالكامل: اليوم الذي تُطلى فيه أول طبقة دهان، أو يُركَّب أول بلاط، وفجأة يتوقف المنزل عن الشعور كموقع بناء ويبدأ بالشعور كمنزل. هنا يفعل التشطيب الداخلي شيئًا لا يمكن للعمل الإنشائي فعله أبدًا — يحوّل مساحة مبنية إلى مساحة معيوشة. كثيرًا ما يقول العملاء أن هذه المرحلة هي حين يبدؤون بزيارة الموقع أكثر، ليس لأن هناك المزيد لمراجعته، بل لأنه بدأ يبدو حقيقيًا.\n\nخيارات بدت نظرية على لوح الخامات — درجة حجر، تشطيب خزانة، درجة إضاءة — تصبح فجأة ملمس الحياة اليومية.",
+        },
+        {
+          title: "يوم الاستلام",
+          body: "وأخيرًا، يأتي يوم يتذكره كل عميل بتفاصيل محددة، سينمائية تقريبًا: أول مرة يفتح فيها باب منزله الخاص، ويمشي في غرف كانت رسمة وأصبحت الآن ملكه ببساطة، ويقف في مطبخ بدأ كتعليق عابر على مائدة عشاء منذ أشهر أو سنوات.\n\nهذه اللحظة هي السبب الكامل الذي جعل المرحلة الوسطى الطويلة، والقرارات الإنشائية الهادئة، ومئات الخيارات الصغيرة طوال الطريق، تستحق الصبر الذي تطلبته.",
+        },
+        {
+          title: "ما يجعل الرحلة أسهل",
+          body: "بالنظر إلى الخلف، يذكر معظم العملاء نفس الأمور القليلة التي صنعت الفرق الأكبر في شعورهم بالتجربة:\n\n• إخبارهم بالحقيقة مبكرًا، حتى عندما كانت الحقيقة تأخيرًا أو تكلفة لم يخططوا لها.\n• وجود شخص واحد يتصلون به، بدلًا من البحث عن إجابات عبر عشرة مقاولين فرعيين.\n• رؤية الموقع بانتظام، حتى خلال المرحلة الوسطى \"المملة\"، حتى لا يشعروا أن النتيجة النهائية منفصلة عن العملية.\n• الثقة بمن يتخذ القرارات التي لا يرونها — خيارات الهيكل والأنظمة التي لا تظهر إلا بعد سنوات، في منزل يصمد أو لا يصمد.",
+        },
+        {
+          title: "اللحظات الصغيرة التي لا تُذكر في أي عقد",
+          body: "لا أحد يكتب في العقد \"اللحظة التي يرى فيها الأبناء غرفتهم لأول مرة\" أو \"الشعور عند اختيار اللون النهائي لجدار المجلس بعد نقاشات طويلة في المنزل\". لكن هذه هي اللحظات التي يتذكرها العملاء أكثر من أي جدول زمني أو بند تعاقدي. نحن نراها تتكرر مع كل أسرة تقريبًا: الجدة التي تطلب زاوية هادئة قرب النافذة، الأب الذي يقيس المسافة بين المطبخ وطاولة الطعام بخطواته أكثر من مرة، الأم التي تتخيل رائحة القهوة في صباح أول يوم.",
+        },
+        {
+          title: "عندما يتغير شيء في منتصف الطريق",
+          body: "من الطبيعي جدًا أن تتغير رغبة ما في منتصف المشروع — عائلة تكبر، أو فكرة جديدة تظهر بعد رؤية غرفة فعليًا لأول مرة بدل تخيلها على ورق. الرحلات الجيدة ليست تلك التي تسير بلا أي تغيير، بل تلك التي تتعامل مع التغيير بمرونة وصراحة، بدلًا من محاولة فرض الخطة الأصلية رغم تغيّر الحاجة الحقيقية.",
+        },
+        {
+          title: "كل رحلة فيلا مختلفة — وهذا هو المقصود",
+          body: "لا توجد أسرتان تسيران في هذا الطريق بنفس الطريقة. بعضهم يتحرك بسرعة وحسم؛ وآخرون يحتاجون وقتًا ليشعروا باليقين حول كل خيار. كلاهما طبيعي تمامًا، وشريك المقاولات المناسب يتكيف مع سرعة الأسرة، لا العكس.",
+        },
+        {
+          title: "سرنا هذا الطريق مع مئات الأسر",
+          body: "في لمعة العربية، بنينا فللًا في الرياض وجدة والقصيم — لكن ما نتذكره أكثر ليس الهياكل نفسها. إنه محادثات مائدة العشاء التي بدأت كل واحدة منها، وأيام الاستلام التي أنهتها.\n\nوبعد سنوات من استلام المفتاح، يظل شيء واحد ثابتًا في كل القصص التي نسمعها من عملائنا: لا أحد يتذكر تفاصيل الجدول الزمني أو أرقام الفواتير بقدر ما يتذكر شعور الدخول لأول مرة إلى منزل لم يكن موجودًا إلا في خيالهم قبل أشهر.",
+        },
+      ],
+      en: [
+        {
+          title: "The Moment It Stops Being a Dream and Starts Being a Plan",
+          body: "Most villa journeys begin long before the first contractor meeting. They begin in conversations at the dinner table — \"what if the kitchen opened onto the garden,\" \"we need a majlis that feels warm, not formal,\" \"the kids' rooms should share a hallway but not a wall.\" These small, specific wishes are the real starting point, long before a single drawing exists.\n\nThe hardest part of this early stage isn't choosing a style. It's translating a feeling — the way you want the house to feel when you walk in after a long day — into something an architect and a contractor can actually build. That translation only works when the people building your home take the time to listen first.",
+        },
+        {
+          title: "Watching the Plot Become a Shape",
+          body: "There's a specific kind of excitement that happens when the groundbreaking begins — when stakes and string lines finally mark out where your front door, your living room, your children's windows will be. For most clients, this is the first time the project feels real rather than theoretical. You can walk the outline of your future home before a single block is laid, and almost everyone does, more than once.\n\nThis stage moves fast and feels almost silent from the outside — excavation, foundation work, footings — but it's the stage that determines everything that follows. A home that will stand for decades earns its strength here, quietly, before anyone can see it.",
+        },
+        {
+          title: "The Skeleton Rising",
+          body: "Then comes the part that surprises most first-time villa owners: how quickly the structure seems to rise once columns and beams start going up. What was a flat plot a few weeks ago suddenly has height, rooms you can walk through, a roofline against the sky. Clients often tell us this is the stage where the house first \"looks like something\" — even though the real craftsmanship is still ahead.\n\nIt's also the stage where early decisions about villa construction quality — the kind that don't show up in a walkthrough but matter enormously over the following twenty years — are being made every single day, whether or not anyone is watching.",
+        },
+        {
+          title: "The Long, Quiet Middle",
+          body: "If the groundbreaking and the rising structure are the exciting bookends, the middle stretch — walls going up, systems being routed, roofing going on — is where patience gets tested. This is the stage clients describe most often as \"it doesn't feel like it's moving,\" even when, behind the scenes, more decisions are being made than at any other point in the project: where every switch goes, how every room will be lit, which finishes will actually be lived with for the next decade.\n\nThis is also where a good contractor earns the most trust — not through dramatic visible progress, but through steady communication about what's happening and why, even when the \"what\" is something as unglamorous as electrical rough-in.",
+        },
+        {
+          title: "The Stage Where It Finally Feels Like Yours",
+          body: "Then comes the shift nobody quite prepares you for: the day the first coat of paint goes on, or the first tile is set, and suddenly the house stops feeling like a construction site and starts feeling like a home. This is where interior finishing does something structural work never can — it turns a built space into a lived one. Clients often say this is the stage they start visiting the site more often, not because there's more to check, but because it's starting to feel real.\n\nChoices that felt abstract on a materials board — a stone tone, a cabinet finish, a lighting temperature — suddenly become the texture of daily life.",
+        },
+        {
+          title: "Move-In Day",
+          body: "And then, eventually, there's a day that every client remembers in specific, almost cinematic detail: the first time they unlock their own front door, walk through rooms that used to be a drawing and are now simply theirs, and stand in a kitchen that started as someone's offhand comment at a dinner table months or years earlier.\n\nThis moment is the entire reason the long middle stretch, the quiet structural decisions, and the hundreds of small choices along the way were worth the patience they required.",
+        },
+        {
+          title: "What Makes the Journey Easier",
+          body: "Looking back, most clients say the same few things made the biggest difference in how the experience felt, not just how the house turned out:\n\n• Being told the truth early, even when the truth was a delay or a cost they hadn't planned for.\n• Having one person to call, rather than chasing answers across a dozen subcontractors.\n• Seeing the site regularly, even during the \"boring\" middle stretch, so the finished product never felt disconnected from the process.\n• Trusting the people making the decisions they couldn't see — the structural and systems choices that don't show up until years later, in a home that holds up or doesn't.",
+        },
+        {
+          title: "The Small Moments No Contract Ever Mentions",
+          body: "No contract ever lists \"the moment the kids see their room for the first time,\" or \"how it feels to finally settle on the majlis wall color after weeks of back-and-forth at home.\" But these are the moments clients remember longer than any timeline or line item. We see them repeat with almost every family: a grandmother asking for a quiet corner near a window, a father pacing out the distance between the kitchen and the dining table more than once just to be sure, a mother already imagining the smell of coffee on the first morning.",
+        },
+        {
+          title: "When Something Changes Midway Through",
+          body: "It's completely normal for a wish to shift partway through a project — a family grows, or a new idea emerges once a room can actually be seen rather than imagined on paper. The good journeys aren't the ones with zero changes; they're the ones where change is handled with flexibility and honesty, rather than forcing the original plan despite a genuinely different need.",
+        },
+        {
+          title: "Every Villa Journey Is Different — and That's the Point",
+          body: "No two families walk this path the same way. Some move fast and decisively; others take time to feel certain about every choice. Both are completely normal, and the right contracting partner adjusts to the pace of the family, not the other way around.",
+        },
+        {
+          title: "We've Walked This Road With Hundreds of Families",
+          body: "At Lamaat Al-Arabiya, we've built villas across Riyadh, Jeddah, and Qassim — but what we remember most isn't the structures themselves. It's the dinner-table conversations that started each one, and the move-in days that finished them.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة بناء فلل تتجاوز 20 عامًا في الرياض وجدة والقصيم",
+        "تواصل مستمر وشفاف في كل مرحلة من مراحل البناء",
+        "مرونة في التعامل مع التغييرات أثناء المشروع",
+        "شخص واحد مسؤول عن التنسيق بدلًا من عشرات المقاولين الفرعيين",
+        "تسليم مفتاح — من محادثة مائدة العشاء إلى يوم الاستلام",
+      ],
+      en: [
+        "20+ years of villa building experience across Riyadh, Jeddah, and Qassim",
+        "Consistent, transparent communication at every stage of construction",
+        "Flexibility to handle changes midway through the project",
+        "One point of contact instead of chasing a dozen subcontractors",
+        "Turnkey delivery — from the dinner-table conversation to move-in day",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "إذا كنت تقف في بداية رحلة فيلتك الخاصة", description: "سنكون سعداء بالسير فيها معك — بدءًا بمحادثة، لا بعقد.", button: "ابدأ المحادثة" },
+      en: { title: "If you're standing at the beginning of your own villa journey", description: "We'd be glad to walk it with you — starting with a conversation, not a contract.", button: "Start the Conversation" },
+    },
+  },
+  "choosing-right-contractor-saudi-arabia": {
+    slug: "choosing-right-contractor-saudi-arabia",
+    title: {
+      ar: "كيف تختار شريك المقاولات المناسب لمشروعك في السعودية",
+      en: "How to Choose the Right Contracting Partner for Your Project in Saudi Arabia",
+    },
+    subtitle: {
+      ar: "ما يفرّق فعليًا بين شريك مقاولات تقدر تثق فيه وآخر يعرّضك للمخاطر",
+      en: "What actually separates a trustworthy contracting partner from a risky one",
+    },
+    description: {
+      ar: "اختيار المقاول من أهم القرارات في أي مشروع بناء. هذا ما يفرّق فعليًا بين شريك مقاولات تقدر تثق فيه وآخر يعرّضك للمخاطر في السعودية.",
+      en: "Choosing a contractor is one of the biggest decisions in any build. Here's what actually separates a trustworthy contracting partner from a risky one in Saudi Arabia.",
+    },
+    keywords: {
+      ar: [
+        "اختيار مقاول في السعودية", "كيف تختار شركة مقاولات", "مقاول موثوق في السعودية",
+        "أسئلة تسألها لمقاول الفيلا", "علامات تحذيرية من المقاول", "شركة مقاولات موثوقة في السعودية",
+        "لمعة العربية للمقاولات", "لمعه العربية", "لمعة", "لمعه",
+        "مقاول فلل الرياض", "مقاول جدة", "مقاول القصيم",
+      ],
+      en: [
+        "choosing a contractor in Saudi Arabia", "how to pick a contracting company", "trusted contractor KSA",
+        "villa contractor questions to ask", "contractor red flags", "reliable construction company Saudi Arabia",
+        "Lamaat Al-Arabiya contractor", "contractor Riyadh Jeddah Qassim",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "السؤال الحقيقي وراء السؤال",
+          body: "عندما يسأل عميل \"كيف أختار مقاولًا جيدًا؟\"، فإن ما يسأله فعليًا هو: من يمكنني أن أثق أنه لن يختفي في منتصف الطريق، أو يختصر في أمور لن ألاحظها إلا بعد فوات الوقت، أو يرفع الفاتورة بهدوء؟ هذا هو السؤال الحقيقي، ويستحق إجابة حقيقية — لا قائمة عامة تتكرر في كل نتيجة بحث عن \"تحقق من ترخيصه\".",
+        },
+        {
+          title: "العلامات التي تهم فعليًا",
+          body: "المقاول الذي يبدأ بسعر قبل أن يفهم مساحتك، وجدولك الزمني، وحاجات أسرتك، أو هوية علامتك التجارية، يبيعك رقمًا لا حلًا. أما من يستحق الثقة فيقضي وقتًا حقيقيًا في فهم المشروع قبل تسعيره.\n\nانظر إلى مشاريع المقاول المكتملة — فيلا هنا، وحدة تجارية هناك، مسجد أو منشأة عامة في مكان آخر. هل تبقى الجودة ثابتة، أم تتغير حسب ميزانية العميل؟ المقاول الذي يستحق التوظيف يعامل فيلا متوسطة بنفس العناية التي يعامل بها مشروعًا تجاريًا رائدًا.\n\nكل مشروع حقيقي يواجه عقبات — تأخر خامة، تعديل تصميم، ظرف في الموقع لم يتوقعه أحد. الفرق بين مقاول تحتفظ به ومقاول تستبعده ليس في حدوث المشاكل؛ بل في كيفية علمك بها — منه، مبكرًا، أم من شرخ في جدارك بعد ستة أشهر.",
+        },
+        {
+          title: "الترخيص ومطابقة الكود: أمر مفترض لا ميزة تسويقية",
+          body: "أي مقاول يستحق العمل معه يعمل بالفعل ضمن الكود السعودي للبناء كحد أدنى، لا كخاصية إضافية يعلن عنها لإظهار الثقة. إذا بدأت شركة عرضها التسويقي بـ \"نحن نلتزم بالكود\"، فاسأل نفسك لماذا احتاج ذلك للذكر من البداية.",
+        },
+        {
+          title: "لا يختفي بعد التسليم",
+          body: "المصافحة عند التسليم ليست نهاية العلاقة — بل اللحظة التي تكتشف فيها إن كانت تعني شيئًا من الأساس. المقاول الذي يرد عندما تتصل به بخصوص مشكلة صغيرة بعد ثمانية أشهر يقول لك شيئًا عن نظرته للعلاقة. ومن يصمت لم يكن شريكًا حقيقيًا أصلًا.",
+        },
+        {
+          title: "العلامات التحذيرية التي لا يخبرك بها أحد",
+          body: "• عرض سعر أقل بشكل مثير للشك من كل العروض الأخرى، دون توضيح واضح لما يختلف في أسلوبهم. أحدٌ يدفع ثمن هذا الفارق — وغالبًا أنت، لاحقًا، من جودة العمل.\n• التردد في كتابة نطاق العمل. وعد شفهي عن \"ما هو مشمول\" لا يعني شيئًا بعد بدء التنفيذ.\n• غياب نقطة اتصال واحدة واضحة. إذا كان كل سؤال يتنقل بين ثلاثة أشخاص بثلاث إجابات مختلفة، فالمشروع سيشعرك بالشيء نفسه.\n• الضغط لاتخاذ قرار سريع. المقاول الجيد يريدك واثقًا من القرار، لا متسرعًا فيه.\n• محفظة أعمال كلها تصاميم افتراضية، بلا مشاريع منفذة. التصاميم الافتراضية تُظهر النية. المشاريع المنفذة تُظهر القدرة.",
+        },
+        {
+          title: "الثقة لا تُبنى من إعلان واحد",
+          body: "كثير من الشركات تستثمر في حملة تسويقية لافتة، وصور احترافية لمشاريع لم تنفذها هي نفسها، ومراجعات لا تعرف مصدرها الحقيقي. هذا لا يعني أن كل شركة تسوّق نفسها بشكل جيد تخدعك — لكنه يعني أن التسويق وحده لا يكفي كمعيار. الطريقة الأضمن هي أن تطلب التحقق من مصدر كل مشروع يُعرض عليك: هل هو مشروعهم فعليًا؟ هل يمكنك زيارته أو التحدث مع صاحبه؟",
+        },
+        {
+          title: "حجم الشركة ليس هو المعيار الحاسم",
+          body: "من الأخطاء الشائعة الافتراض أن الشركة الأكبر هي الأكثر أمانًا، أو أن الشركة الأصغر ستكون أرخص وأسرع بالضرورة. الحقيقة أعقد من ذلك. شركة كبيرة قد تكون أكثر استقرارًا ماليًا، لكنها قد تعاملك كرقم في قائمة مشاريع ضخمة. شركة أصغر قد تعطيك اهتمامًا شخصيًا أكبر، لكنها قد لا تملك نفس عمق الموارد عند حدوث أزمة. المعيار الحقيقي ليس الحجم، بل مدى وضوح كل شركة في شرح كيف ستتعامل مع مشروعك بالتحديد.",
+        },
+        {
+          title: "كيف تبدو المحادثة الأولى الجيدة",
+          body: "أقوى إشارة مبكرة لا تأتي من كتيب تسويقي — بل من طريقة حديث المقاول معك في الاجتماع الأول. هل يسألك كيف ستستخدم المساحة فعليًا، لا فقط كيف يجب أن تبدو؟ هل يذكر أمورًا لم تفكر فيها — التهوية، الصيانة المستقبلية، كيف سيتحمل التصميم صيف السعودية؟ هذا الحس في التفكير بخطوات أبعد منك هو بالضبط ما تدفع ثمنه، ويظهر في المحادثة قبل أن يظهر في الموقع بكثير.",
+        },
+        {
+          title: "المشاريع ثنائية اللغة وعابرة الحدود تحتاج طبقة إضافية من الثقة",
+          body: "بالنسبة للعملاء العاملين بين السعودية والمنطقة الأوسع، أو من ينسقون بين أطراف عربية وإنجليزية، وضوح التواصل ليس رفاهية — بل النقطة التي تفشل المشاريع فيها بهدوء. مواصفات تضيع في الترجمة، اعتمادات تعني شيئًا مختلفًا لكل طرف، جداول زمنية تنحرف لأن أحدًا لم يرصد سوء فهم مبكرًا.",
+        },
+        {
+          title: "أسئلة تستحق أن تُسأل قبل التوقيع على أي شيء",
+          body: "1. \"هل يمكنني رؤية مشروع أنهيته منذ سنة على الأقل، والتحدث مع ذلك العميل؟\"\n2. \"ماذا يحدث فعليًا إذا احتجنا تغيير شيء في منتصف المشروع؟\"\n3. \"من بالضبط سأتصل به إذا حدث خطأ ما — اليوم، وبعد سنة من الآن؟\"\n4. \"ما الأمر الذي لا يسأل العملاء عنه عادة لكن يجب أن يسألوا؟\"\n\nهذا السؤال الأخير يخبرك أكثر من أي سؤال آخر. الإجابة تكشف إن كنت تتحدث مع من بنى أشياء فعليًا، أم من باعها فقط.",
+        },
+        {
+          title: "لماذا يستحق هذا القرار وقتًا أكبر مما يحصل عليه عادة",
+          body: "كثير من الناس يقضون وقتًا أطول في اختيار سيارة مما يقضونه في اختيار من سيبني المكان الذي سيعيشون فيه أو يديرون منه أعمالهم للعشرين سنة القادمة. هذا مفهوم — فالعملية غير مألوفة، وكل مقاول يبدو واثقًا في الاجتماع. لكن تكلفة الخطأ في هذا القرار لا تُقاس بالإزعاج. بل تُقاس بالمال والوقت والإحباط الهادئ الذي يأتي من العيش داخل اختصارات شخص آخر.",
+        },
+        {
+          title: "اللحظة التي تكشف كل شيء: كيف يتعامل المقاول مع خطأ",
+          body: "لا يوجد مشروع بلا أخطاء صغيرة. اللحظة الحقيقية التي تكشف قيمة المقاول ليست أثناء سير العمل بسلاسة، بل عندما يحدث خطأ ويحتاج أحد أن يتحمل مسؤوليته. هل يبادر بالاعتذار ويقترح حلًا، أم يحاول تبرير الأمر أو إلقاء اللوم على طرف آخر؟ هذه اللحظة، وإن بدت صغيرة، تخبرك أكثر من أي عقد موقّع عن نوع العلاقة التي ستعيشها طوال المشروع.",
+        },
+        {
+          title: "شريك، لا مجرد مقاول",
+          body: "في لمعة العربية، بنينا سمعتنا في الرياض وجدة والقصيم على كوننا المقاول الذي يعود إليه العملاء لمشروعهم التالي — لا فقط من أنهى المشروع السابق. من الفلل إلى التشطيبات التجارية واسعة النطاق، تنطبق نفس الصراحة، ونفس وضوح التواصل، ونفس المعيار، سواء كانت الميزانية متوسطة أو كان المشروع رائدًا.\n\nسواء كان مشروعك فيلا في الرياض، أو وحدة تجارية في جدة، أو منشأة في القصيم، فإن أول قرار تتخذه بشأنه هو الأهم: من ستختار ليحوّل الفكرة إلى واقع تعيش فيه أو تعمل منه لسنوات طويلة قادمة.",
+        },
+      ],
+      en: [
+        {
+          title: "The Question Behind the Question",
+          body: "When a client asks \"how do I choose a good contractor,\" what they're really asking is: who can I trust not to disappear halfway through, cut corners I won't notice until it's too late, or quietly pad the invoice? That's the real question, and it deserves a real answer — not a generic list of \"check their license\" advice that every search result repeats.",
+        },
+        {
+          title: "Signals That Actually Matter",
+          body: "A contractor who starts with a price before understanding your space, your timeline, your family's needs, or your brand's identity is selling you a number, not a solution. The ones worth trusting spend real time understanding the project before they quote it — because a serious estimate can't exist without that understanding.\n\nLook across a contractor's completed projects — a villa here, a commercial unit there, a mosque or public facility somewhere else. Does the quality hold steady, or does it swing depending on the client's budget? A contractor worth hiring treats a modest villa with the same care as a flagship commercial build.\n\nEvery real project hits friction — a material delay, a design change, a site condition nobody anticipated. The difference between a contractor you keep and one you fire isn't whether problems happen; it's whether you hear about them from them, early, or from a crack in your wall six months later.",
+        },
+        {
+          title: "Licensing and Code Compliance: A Given, Not a Selling Point",
+          body: "Any contractor worth working with is already operating within the Saudi Building Code as a baseline, not a bonus feature they advertise to seem trustworthy. If a company leads with \"we follow the code\" as its main pitch, ask yourself why that needed saying at all.",
+        },
+        {
+          title: "They Don't Disappear After Handover",
+          body: "The handshake at handover isn't the end of the relationship — it's the point where you find out if it ever meant anything. A contractor who responds when you call about a small issue eight months later is telling you something about how they see the relationship. One who goes silent was never really a partner to begin with.",
+        },
+        {
+          title: "The Red Flags Nobody Tells You About",
+          body: "• A quote that's suspiciously lower than everyone else's, with no clear explanation of what's different about their approach. Someone is paying for that gap — usually you, later, in quality.\n• Reluctance to put the scope in writing. A verbal promise about \"what's included\" means nothing once work begins.\n• No clear single point of contact. If every question bounces between three different people with three different answers, the project will feel that way too.\n• Pressure to decide fast. A good contractor wants you confident in the decision, not rushed into it.\n• A portfolio that's all renderings, no finished work. Renderings show intention. Finished projects show capability.",
+        },
+        {
+          title: "Trust Isn't Built From One Good Ad",
+          body: "Plenty of companies invest heavily in a polished marketing campaign, professional photography of projects they didn't actually build, and reviews whose source you can't verify. That doesn't mean every well-marketed company is misleading you — but it does mean marketing alone isn't a reliable filter. The safer approach is to ask to verify the source of every project shown to you: is it genuinely theirs? Can you visit it, or speak to the person who lives or works there?",
+        },
+        {
+          title: "Company Size Isn't the Deciding Factor",
+          body: "A common mistake is assuming a bigger company is automatically safer, or that a smaller one will necessarily be cheaper and faster. The reality is more nuanced. A large company may be more financially stable, but it may also treat you as one line item in a long project list. A smaller company may give you more personal attention, but may not have the same depth of resources if something goes wrong. The real measure isn't size — it's how clearly each company explains how they'll handle your specific project, with its specific scale and requirements.",
+        },
+        {
+          title: "What a Good First Conversation Looks Like",
+          body: "The best early signal isn't in a brochure — it's in how a contractor talks to you in the first meeting. Do they ask about how you'll actually use the space, not just what it should look like? Do they mention things you hadn't thought of — ventilation, future maintenance, how the design will hold up to Saudi summers? That instinct to think a few steps ahead of you is exactly what you're paying for, and it shows up in conversation long before it shows up on-site.",
+        },
+        {
+          title: "Bilingual, Cross-Border Projects Need an Extra Layer of Trust",
+          body: "For clients working across Saudi Arabia and the wider region, or coordinating between Arabic- and English-speaking stakeholders, communication clarity isn't a nice-to-have — it's where projects quietly go wrong. Specifications that get lost in translation, approvals that mean something different to each party, timelines that drift because nobody flagged a misunderstanding early.",
+        },
+        {
+          title: "Questions Worth Asking Before You Sign Anything",
+          body: "1. \"Can I see a project you finished at least a year ago, and can I talk to that client?\"\n2. \"What happens, in practice, if we need to change something mid-project?\"\n3. \"Who exactly will I be calling if something goes wrong — today, and a year from now?\"\n4. \"What's the one thing clients usually don't ask about that they should?\"\n\nThat last question tells you more than any of the others. The answer reveals whether you're talking to someone who's actually built things, or someone who's only sold them.",
+        },
+        {
+          title: "Why This Decision Deserves More Time Than It Usually Gets",
+          body: "Most people spend more time choosing a car than choosing who builds the place they'll live or run their business from for the next twenty years. That's understandable — the process is unfamiliar, and every contractor sounds confident in a meeting. But the cost of getting this one decision wrong isn't measured in inconvenience. It's measured in money, time, and the quiet frustration of living inside someone else's shortcuts.",
+        },
+        {
+          title: "A Partner, Not Just a Contractor",
+          body: "At Lamaat Al-Arabiya, we've built our reputation across Riyadh, Jeddah, and Qassim on being the contractor clients call back for their next project — not just the one who finished the last one. From villas to large-scale commercial finishing, the same honesty, the same clear communication, and the same standard apply, whether the budget is modest or the project is a flagship.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة تتجاوز 20 عامًا في الرياض وجدة والقصيم",
+        "نقطة اتصال واحدة واضحة طوال المشروع",
+        "شفافية كاملة في التكاليف والجداول الزمنية والتأخيرات",
+        "جودة ثابتة سواء كان المشروع فيلا أو تشطيبًا تجاريًا",
+        "دعم مستمر بعد التسليم — لا نختفي بعد المصافحة",
+      ],
+      en: [
+        "20+ years of experience across Riyadh, Jeddah, and Qassim",
+        "One clear point of contact throughout the entire project",
+        "Full transparency on costs, timelines, and delays",
+        "Consistent quality whether the project is a villa or a commercial fit-out",
+        "Ongoing support after handover — we don't disappear after the handshake",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "لديك مشروع في بالك؟", description: "لنبدأ المحادثة الأولى — بلا ضغط، فقط وضوح.", button: "ابدأ المحادثة" },
+      en: { title: "Have a project in mind?", description: "Let's have the first conversation — no pressure, just clarity.", button: "Start the Conversation" },
     },
   },
 };
