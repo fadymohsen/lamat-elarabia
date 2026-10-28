@@ -175,6 +175,12 @@ const BLOG_CARDS = {
       excerpt: "أنظمة MEP هي الجهاز العصبي لأي مبنى حديث – لماذا يكلفك التوفير أكثر وكيف تحقق الجودة عائداً قوياً عاماً بعد عام.",
       tag: "خدمات فنية",
     },
+    {
+      slug: "epoxy-flooring-factories-shops-saudi-arabia",
+      title: "ارضيات الايبوكسي للمصانع والمحلات التجارية في السعودية: الدليل الشامل",
+      excerpt: "دليل متخصص عن أعمال الايبوكسي للمصانع والمحلات التجارية: الأنظمة الصناعية الثقيلة، تجهيز الأسطح، الالتزام بمعايير السلامة، مدة التنفيذ، والصيانة.",
+      tag: "أرضيات صناعية",
+    },
   ],
   en: [
     {
@@ -266,6 +272,12 @@ const BLOG_CARDS = {
       title: "The Hidden ROI of Premium MEP Systems in Construction",
       excerpt: "MEP systems are the central nervous system of any modern building — why cutting corners costs more and how quality delivers strong ROI year after year.",
       tag: "Technical Services",
+    },
+    {
+      slug: "epoxy-flooring-factories-shops-saudi-arabia",
+      title: "Industrial & Commercial Epoxy Flooring in Saudi Arabia: The Complete Guide for Factories and Retail Shops",
+      excerpt: "A specialized guide to epoxy flooring for factories and commercial shops in Saudi Arabia: industrial-grade systems, surface prep, safety compliance, installation timelines, and maintenance.",
+      tag: "Industrial Flooring",
     },
   ],
 };

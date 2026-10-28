@@ -2912,4 +2912,141 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
       en: { title: "Have a project in mind?", description: "Let's have the first conversation — no pressure, just clarity.", button: "Start the Conversation" },
     },
   },
+  "epoxy-flooring-factories-shops-saudi-arabia": {
+    slug: "epoxy-flooring-factories-shops-saudi-arabia",
+    title: {
+      ar: "ارضيات الايبوكسي للمصانع والمحلات التجارية في السعودية: الدليل الشامل",
+      en: "Industrial & Commercial Epoxy Flooring in Saudi Arabia: The Complete Guide for Factories and Retail Shops",
+    },
+    subtitle: {
+      ar: "أرضيتان مختلفتان تمامًا، وشريك ايبوكسي واحد موثوق — من أرضية المصنع إلى واجهة المحل",
+      en: "Two Very Different Floors, One Trusted Epoxy Partner — From Factory Floors to Storefronts",
+    },
+    description: {
+      ar: "دليل متخصص عن أعمال الايبوكسي للمصانع والمحلات التجارية في السعودية: الأنظمة الصناعية الثقيلة، تجهيز الأسطح، الالتزام بمعايير السلامة، مدة التنفيذ، والصيانة، من خبراء لمعة العربية للمقاولات.",
+      en: "A specialized guide to epoxy flooring for factories and commercial shops in Saudi Arabia: industrial-grade systems, surface prep, safety compliance, installation timelines, and maintenance — from Lamaat Al-Arabia Contracting.",
+    },
+    keywords: {
+      ar: [
+        "ارضيات ايبوكسي للمصانع والمحلات التجارية", "ايبوكسي صناعي للمصانع", "ايبوكسي مقاوم للكيماويات",
+        "ارضيات ايبوكسي محلات تجارية", "ايبوكسي مضاد للكهرباء الساكنة", "تركيب ايبوكسي الرياض",
+        "لمعة العربية للمقاولات", "لمعه العربية", "لمعة", "لمعه",
+      ],
+      en: [
+        "industrial and commercial epoxy flooring Saudi Arabia", "factory floor coating Saudi Arabia", "chemical-resistant epoxy",
+        "retail epoxy flooring", "anti-static epoxy flooring", "epoxy flooring installation Riyadh",
+        "Lamaat Al-Arabiya epoxy", "epoxy flooring contractor KSA",
+      ],
+    },
+    sections: {
+      ar: [
+        {
+          title: "لماذا يحتاج المصانع والمحلات التجارية إلى نهج مختلف في تنفيذ الايبوكسي",
+          body: "كثيرًا ما يُنظر إلى أرضيات الايبوكسي كمنتج واحد، لكن صالة الإنتاج في مصنع ومعرضًا تجاريًا يطلبان من هذا المنتج مهمتين مختلفتين تمامًا. فصالة الإنتاج تحتاج نظامًا يتحمل حركة الرافعات الشوكية، وتسرب الزيوت، والعمل المتواصل على مدار الساعة دون أن يتشقق. أما المحل أو الصيدلية فيحتاج لمسة لامعة تعكس هوية العلامة التجارية، وتُنفَّذ بسرعة تكفي ألا يخسر المحل يوم عمل كامل. وغالبًا ما تكون أرضية الايبوكسي مجرد طبقة واحدة ضمن نطاق تشطيب أوسع يشمل الأرضيات والجدران والتجهيزات، إلا أن التعامل مع المصنع والمحل كمشروع واحد هو السبب الأبرز وراء فشل كثير من أعمال الايبوكسي. هذا الدليل يستعرض الحالتين كل على حدة، لتتمكن من إبلاغ مقاول التنفيذ بالتوقعات الصحيحة منذ البداية.",
+        },
+        {
+          title: "أرضيات المصانع: ما الذي يجب أن يوفره الايبوكسي الصناعي الثقيل",
+          body: "تعيش الأرضية الصناعية في ظروف لا يراها معرض تجاري أبدًا، لذا يجب اختيار النظام وفق الاستخدام الفعلي لا بند \"طلاء ايبوكسي\" عام:\n\n• فئة الأحمال وحركة المرور — حركة الرافعات الشوكية وعربات النقل المستمرة تستدعي نظامًا أكثر سماكة يُطبَّق بالمسطرين أو نظام رش ثقيل، لا طبقة ذاتية التسوية رقيقة.\n• مقاومة الزيوت والمواد الكيميائية — ورش الصيانة ومناطق تخزين المواد الكيميائية تحتاج تركيبات مقاومة للزيوت والأحماض والمذيبات حتى لا تتلف السطح الخرساني عند أي تسرب.\n• الحماية من الكهرباء الساكنة — خطوط تجميع الإلكترونيات وغرف المعدات الحساسة تتطلب ايبوكسي موصل أو مُبدِّد للشحنات الساكنة لمنع أي تلف ناتج عن التفريغ الكهربائي.\n• سطح صحي خالٍ من الفواصل — منشآت تصنيع الأغذية والأدوية تحتاج سطحًا متصلًا يقاوم تراكم البكتيريا ويتحمل الغسيل المتكرر.\n• تركيبات سريعة التصلب — المصانع التي لا تحتمل توقفًا طويلًا غالبًا ما تحتاج أنظمة تصل إلى قوة تحمل كاملة خلال ساعات لا أيام.\n\nاختيار الفئة الخاطئة هنا هو السبب الأول لفشل أرضيات المصانع مبكرًا؛ فالايبوكسي ذاتي التسوية المختار لرخص سعره لن يصمد في ممر رافعة شوكية.",
+        },
+        {
+          title: "تجهيز أرضية المصنع: لماذا تحدد عملية التجهيز نجاح العمل بالكامل",
+          body: "عدد أكبر من مشاريع الايبوكسي الصناعي يفشل بسبب ضعف تجهيز السطح أكثر مما يفشل بسبب الايبوكسي نفسه. فالأرضيات الصناعية القديمة غالبًا ما تكون ملوّثة بسنوات من الزيوت والشحوم والأتربة المتغلغلة التي لا يزيلها المسح أو السنفرة الخفيفة. يجب فتح السطح الخرساني ميكانيكيًا عبر السنفرة الماسية أو السفع بالكاشطات، ليلتصق الايبوكسي بسطح نظيف وسليم بدلًا من الجلوس فوق طبقة ملوّثة ستتقشر لاحقًا. وللمنشآت التي تحتاج مساحة تجهيز مخصصة وفق المعايير الدولية، تغطي خدمة تجهيز غرف السفع الرملي وتركيب المضخات الميكانيكية لدينا هذا النوع من البنية التحتية، بما يشمل أنظمة التهوية والتحكم بالأتربة واستعادة مادة السفع.",
+        },
+        {
+          title: "الايبوكسي التجاري والمحلات: مصمم من أجل الهوية والسرعة وحركة الزوار",
+          body: "تُقيَّم أرضية المحل أو المعرض أو المطعم بمعايير مختلفة تمامًا، وأبرزها:\n\n• مظهر يعكس الهوية التجارية — الايبوكسي ذاتي التسوية بلون العلامة التجارية، أو التشطيب المعدني شبه الرخامي للمعارض الفاخرة، أصبح بديلًا لما كان يتطلب سابقًا حجرًا مستوردًا.\n• سرعة التنفيذ — غالبية مشاريع الايبوكسي التجاري تُجدوَل ليلًا أو خلال عطلة نهاية الأسبوع تحديدًا حتى لا يخسر المحل أيام عمله، إذ تسمح التركيبات سريعة التصلب بإعادة الفتح خلال 24-48 ساعة من آخر طبقة.\n• النظافة وسهولة التعقيم — الصيدليات والمقاهي والمحلات الغذائية تستفيد من السطح نفسه الخالي من الفواصل الذي تعتمد عليه المصانع، لكن بتشطيب جمالي.\n• التحمل أمام حركة الزوار والعربات — عربات التسوق والحركة اليومية للزوار تُجهد الأرضية بشكل مختلف عن المعدات الصناعية، لذا تُختار الطبقة العلوية لمقاومة الخدوش لا التعرض الكيميائي.\n\nوغالبًا ما يندرج هذا النوع من أعمال الايبوكسي التجاري ضمن نطاق أوسع من أعمال التشطيبات التجارية — الأرضيات والواجهات والإضاءة والأعمال الكهروميكانيكية للمولات والمعارض والمنشآت الفندقية.",
+        },
+        {
+          title: "السلامة والالتزام بالكود لا تحتمل التهاون في الحالتين",
+          body: "سواء كان الأمر يتعلق بممر في مستودع أو مدخل محل تجاري، فإن الأرضية الجميلة غير الآمنة تمثل مسؤولية قانونية. المواد المانعة للانزلاق ضرورية في أي منطقة معرضة للماء أو الزيوت أو الغسيل المتكرر — وتنطبق هذه المعايير على غرف الغسيل الصناعية ومداخل المحلات في موسم الأمطار على حد سواء. وبخلاف مقاومة الانزلاق، فإن معايير مقاومة الحريق، ومتطلبات السلامة المهنية، ووثائق الفحص للمنشآت التجارية والصناعية تندرج جميعها تحت الكود السعودي للبناء.",
+        },
+        {
+          title: "يوم التنفيذ: عمل على مراحل في المصانع مقابل عمل خارج أوقات الدوام في المحلات",
+          body: "يختلف القطاعان أيضًا اختلافًا تامًا في طريقة جدولة التنفيذ. ففي المصانع، يُقسَّم العمل عادة قسمًا تلو الآخر، بالتنسيق مع فترات التوقف المخطط لها للصيانة، بحيث يتوقف جزء من خط الإنتاج فقط في كل مرة، مع وضع حواجز ولافتات تحمي المناطق المُعالَجة من حركة الأقدام أو المركبات المبكرة. أما في المحلات والمعارض، فيُغلَق المكان بالكامل لفترة قصيرة ومكثفة — ليلًا، أو خلال عطلة نهاية الأسبوع، أو عند إعادة تهيئة المحل المجدولة — مع حماية المعروضات والتجهيزات وتسليم المساحة جاهزة للعمل. والمقاول الذي يخطط تسلسل العمل وفق ساعات تشغيلك الفعلية، لا وفق مساحة الأرضية فقط، هو من يجعل التوقف محسوبًا في الحالتين.",
+        },
+        {
+          title: "الحفاظ على أداء الأرضية: الصيانة حسب القطاع",
+          body: "تختلف احتياجات الصيانة بقدر اختلاف التنفيذ. فأرضيات المصانع تحتاج تنظيفًا فوريًا لأي تسرب كيميائي أو زيتي، وفحصًا دوريًا للممرات عالية الحركة لرصد التآكل، ودورة إعادة طلاء مبنية على حجم الحمل الفعلي لا على تاريخ ثابت في التقويم. أما أرضيات المحلات والمعارض فتحتاج مسحًا رطبًا يوميًا بمنظف متعادل الحموضة، وحماية من الأثاث المسحوب أو الأتربة المجلوبة من الخارج، وتجديدًا دوريًا للطبقة العلوية للحفاظ على اللمعان واللون — روتين أخف بكثير، لكنه يحمي نوعًا مختلفًا تمامًا من الاستثمار: المظهر الذي يراه الزبون.",
+        },
+        {
+          title: "عوامل التكلفة والمدة الزمنية التي يجب التخطيط لها",
+          body: "تُحدَّد تكلفة أرضية المصنع أساسًا بناءً على المساحة، وفئة الحمل وحركة المرور المطلوبة، ومستوى التعرض الكيميائي، وعدد الطبقات التي تستلزمها حالة السطح بعد التجهيز — فالسطح شديد التلوث يضيف تكلفة تجهيز قبل وضع أي طبقة ايبوكسي. أما تكلفة أرضية المحل فتعتمد أكثر على تعقيد التشطيب (طبقة لونية بسيطة مقابل نظام معدني أو زخرفي)، والمساحة الإجمالية، وأي فرق سعري ناتج عن الجدولة خارج أوقات الدوام. وفي الحالتين، اطلب عرض سعر يفصل بين تجهيز السطح ونظام الايبوكسي نفسه وأي ميزات سلامة أو زخرفية إضافية، لتقارن بين العروض على أساس واحد.",
+        },
+        {
+          title: "لست متأكدًا من نوع الايبوكسي المناسب لمشروعك؟",
+          body: "يركز هذا الدليل تحديدًا على المصانع والمحلات التجارية، لكن أرضيات الايبوكسي تغطي أيضًا الفلل والمرائب وغرف الخوادم، ولكل منها متطلباته الخاصة. للاطلاع على شرح شامل لكل الأنواع — ذاتي التسوية، الصناعي الثقيل، المعدني، الرقائق الملونة، والمضاد للكهرباء الساكنة — راجع دليلنا الشامل لأرضيات الايبوكسي الذي يستعرض خطوات التركيب ومقارنة الايبوكسي بالأرضيات التقليدية.",
+        },
+        {
+          title: "الأسئلة الشائعة",
+          body: "هل يمكن استخدام نفس الايبوكسي للمصنع والمحل؟\nليس كمنتج واحد. التركيبة الأساسية قد تتشابه، لكن السماكة والمواد المضافة والتشطيب تُحدَّد بشكل مختلف تبعًا لحركة الرافعات والتعرض الكيميائي مقابل حركة الزوار ومظهر العلامة التجارية.\n\nكم يستغرق إغلاق أرضية المصنع؟\nيعتمد ذلك على النظام والمساحة، لكن تنفيذ العمل على مراحل مع تركيبات سريعة التصلب يُبقي معظم المنشآت تعمل بطاقة جزئية بدلًا من التوقف الكامل.\n\nهل يمكن أن يبقى المحل مفتوحًا أثناء التركيب؟\nلا — يجب إغلاق المساحة التي تُطلى بالكامل أثناء مدة التصلب، ولهذا تُجدوَل معظم مشاريع المحلات التجارية ليلًا أو خلال عطلة نهاية الأسبوع بدلًا من أوقات الدوام.\n\nهل الايبوكسي المانع للانزلاق أغلى سعرًا؟\nتضيف المادة المانعة للانزلاق تكلفة بسيطة، لكنها أقل بكثير من تكلفة أي حادث انزلاق في غرفة غسيل أو مدخل أو منطقة عمل رطبة.\n\nكم مرة تحتاج أرضية الايبوكسي الصناعية إلى إعادة طلاء؟\nيعتمد ذلك على حجم الحركة ومستوى التعرض الكيميائي أكثر من اعتماده على جدول زمني ثابت — والفحص الدوري للممرات عالية الاستخدام هو الطريقة الأدق لتحديد موعد إعادة الطلاء التالية.",
+        },
+      ],
+      en: [
+        {
+          title: "Why Factories and Shops Need a Different Approach to Epoxy",
+          body: "Epoxy flooring is often talked about as a single product, but a factory floor and a retail showroom ask it to do two completely different jobs. A production hall needs a system that survives forklift traffic, spilled oils, and round-the-clock operation without cracking. A boutique or pharmacy needs a glossy, on-brand finish installed fast enough that the shop barely loses a trading day. Epoxy is usually just one layer within a wider finishing scope, alongside flooring, walls, and fit-out, but treating factories and shops as the same project is where most epoxy failures start. This guide walks through both worlds separately, so you can brief your contractor with the right expectations from day one.",
+        },
+        {
+          title: "Factory Floors: What Heavy-Duty Industrial Epoxy Must Deliver",
+          body: "An industrial floor lives under conditions a showroom never sees. The system has to be specified around the actual use, not a generic \"epoxy coating\" line item:\n\n• Load and traffic class — continuous forklift and pallet-jack traffic calls for a thicker, trowel-applied or heavy-duty broadcast system rather than a thin self-leveling coat.\n• Chemical and oil resistance — workshops, maintenance bays, and chemical storage areas need formulations resistant to oils, acids, and solvents so spills don't eat into the slab.\n• Anti-static (ESD) protection — electronics assembly lines and sensitive equipment rooms require conductive or dissipative epoxy to prevent static discharge damage.\n• Hygienic, seamless finish — food-processing and pharmaceutical facilities need a joint-free surface that resists bacterial growth and tolerates frequent washdown.\n• Fast-cure formulations — plants that can't afford a long shutdown often need systems that reach foot-traffic and full-load strength within hours rather than days.\n\nPicking the wrong category here is the single most common cause of early failure on a factory floor — a self-leveling epoxy chosen for its price will not survive a forklift aisle.",
+        },
+        {
+          title: "Getting the Factory Floor Ready: Why Surface Preparation Decides Everything",
+          body: "More industrial epoxy jobs fail from poor surface preparation than from the epoxy itself. Older factory slabs are typically contaminated with years of embedded oil, grease, and dust that a mop or light sanding will never remove. The concrete needs to be mechanically opened up through diamond grinding or abrasive blasting, so the epoxy bonds to sound, clean substrate instead of sitting on a contaminated film that eventually peels. For facilities that also need a dedicated preparation area built to standard, our sandblasting room setup and mechanical pump installation service covers this kind of infrastructure, built to international standards for ventilation, dust control, and abrasive recovery.",
+        },
+        {
+          title: "Commercial & Retail Epoxy: Built for Brand, Speed and Foot Traffic",
+          body: "A shop, showroom, or restaurant floor is judged by completely different criteria. Here the priorities are:\n\n• Appearance that matches the brand — self-leveling glossy epoxy in a brand color, or a metallic/marbled finish for a premium showroom look, replaces what used to require imported stone.\n• Speed of installation — most retail epoxy projects are scheduled overnight or over a weekend precisely so the business doesn't lose trading days; fast-cure systems let a shop reopen within 24–48 hours of the final coat.\n• Hygiene and cleanability — pharmacies, cafés, and food outlets benefit from the same joint-free, easy-to-sanitize surface that factories rely on, just in a decorative finish.\n• Durability under foot and cart traffic — shopping carts, trolleys, and daily foot traffic wear a floor differently than industrial equipment, so the topcoat is selected for scratch and scuff resistance rather than chemical exposure.\n\nThis retail-focused epoxy work typically sits inside a broader commercial finishing scope — flooring, facades, lighting, and MEP for malls, showrooms, and hospitality spaces.",
+        },
+        {
+          title: "Safety and Code Compliance Are Non-Negotiable in Both Settings",
+          body: "Whether it's a warehouse aisle or a shop entrance, a floor that looks good but isn't safe is a liability. Anti-slip additives are essential in any area exposed to water, oil, or heavy washdown — factory wash bays and shop entrances during rainy season both qualify. Beyond slip resistance, fire-rating, occupational safety requirements, and inspection documentation for commercial and industrial facilities all fall under the Saudi Building Code.",
+        },
+        {
+          title: "Installation Day: Phased Work in Factories vs. After-Hours Work in Shops",
+          body: "The two sectors also differ completely in how the work itself is scheduled. Factories are usually treated section by section, coordinated with planned maintenance shutdowns so only part of the production line is offline at any time, with barriers and signage protecting cured areas from early foot or vehicle traffic. Shops and showrooms are typically closed off entirely for a short, intensive window — overnight, over a weekend, or during a scheduled store refresh — with fixtures and merchandise protected and the space handed back ready to trade. A contractor who plans the sequence around your operating hours, not just the floor area, is what keeps downtime predictable in both cases.",
+        },
+        {
+          title: "Keeping the Floor Performing: Maintenance by Sector",
+          body: "Maintenance needs diverge just as much as installation does. Factory floors need prompt clean-up of chemical or oil spills, periodic inspection of high-traffic aisles for wear, and a recoat cycle based on actual load rather than a fixed date. Retail floors need daily damp-mopping with a pH-neutral cleaner, protection from dragged furniture or tracked-in grit, and an occasional topcoat refresh to keep the gloss and color looking new — a lighter routine, but one protecting a different kind of investment: the customer-facing appearance of the business.",
+        },
+        {
+          title: "Cost and Timeline Factors to Plan For",
+          body: "A factory floor is priced mainly on area, the required load/traffic class, chemical exposure level, and how many coats the surface condition demands after preparation — a badly contaminated slab adds preparation cost before a drop of epoxy is applied. A shop floor is priced more on finish complexity (plain color versus metallic or decorative), total area, and any premium for after-hours or weekend scheduling. In both cases, ask for a scope that separates preparation, the epoxy system itself, and any extra safety or decorative features, so you're comparing like-for-like between quotes.",
+        },
+        {
+          title: "Not Sure Which Epoxy System Fits Your Project?",
+          body: "This guide focuses specifically on factories and commercial shops, but epoxy flooring also covers villas, garages, and server rooms with their own requirements. For a full breakdown of every type — self-leveling, heavy-duty industrial, metallic, flake/quartz, and anti-static — see our complete epoxy flooring guide, which walks through the installation process and how epoxy compares with traditional flooring.",
+        },
+        {
+          title: "Frequently Asked Questions",
+          body: "Can the same epoxy be used for a factory and a shop?\nNot as a single product. The base chemistry is similar, but thickness, additives, and finish are specified differently for forklift and chemical exposure versus foot traffic and brand appearance.\n\nHow long does a factory floor need to be shut down?\nIt depends on the system and area, but phasing the work section by section with fast-cure formulations keeps most facilities running at partial capacity rather than shutting down entirely.\n\nCan a shop stay open during installation?\nNo — the coated area must be fully closed while the epoxy cures, which is why most retail projects are scheduled overnight or over a weekend rather than during trading hours.\n\nIs anti-slip epoxy more expensive?\nThe additive adds a modest cost, but it's far cheaper than the liability of a slip-and-fall incident in a wash bay, entrance, or wet-process area.\n\nHow often does an industrial epoxy floor need recoating?\nIt depends on traffic volume and chemical exposure rather than a fixed schedule — periodic inspection of high-wear aisles is the most reliable way to plan the next recoat.",
+        },
+      ],
+    },
+    whyUs: {
+      ar: [
+        "خبرة منذ عام 2005 في تنفيذ أرضيات المصانع الصناعية وأرضيات المحلات التجارية على حد سواء",
+        "قدرة داخلية على تجهيز الأسطح، تشمل السفع الرملي المخصص والسنفرة الميكانيكية",
+        "فريق فني يحدد فئة الايبوكسي المناسبة لكل استخدام، لا طبقة واحدة لكل الحالات",
+        "جدولة تُبنى على ساعات تشغيل منشأتك، من التوقف المرحلي للمصانع إلى التركيب الليلي للمحلات",
+        "تغطية شاملة: الرياض – جدة – القصيم – جميع مناطق المملكة",
+      ],
+      en: [
+        "Experience since 2005 delivering both industrial factory floors and commercial retail epoxy projects",
+        "In-house surface-preparation capability, including dedicated sandblasting and mechanical grinding",
+        "Technical team that specifies the right epoxy class per use case — not a one-size-fits-all coating",
+        "Scheduling built around your operating hours, from phased factory shutdowns to overnight shop installs",
+        "Full coverage: Riyadh – Jeddah – Qassim – all Saudi regions",
+      ],
+    },
+    areas: {
+      ar: ["الرياض ومنطقة الرياض", "جدة ومنطقة مكة المكرمة", "القصيم وبريدة", "جميع مناطق المملكة"],
+      en: ["Riyadh & Riyadh Region", "Jeddah & Makkah Region", "Qassim & Buraydah", "All regions across Saudi Arabia"],
+    },
+    cta: {
+      ar: { title: "هل تخطط لمشروع أرضيات ايبوكسي لمصنعك أو منشأتك التجارية؟", description: "تواصل مع فريق لمعة العربية للحصول على استشارة فنية مجانية ونطاق عمل مبني على ساعات تشغيل منشأتك الفعلية.", button: "اطلب استشارة مجانية" },
+      en: { title: "Planning an Epoxy Flooring Project for Your Factory or Commercial Space?", description: "Get in touch with the Lamaat Al-Arabia team for a free technical consultation and a scope built around your facility's actual operating hours.", button: "Get a Free Consultation" },
+    },
+  },
 };
