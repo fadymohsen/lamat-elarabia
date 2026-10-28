@@ -47,6 +47,7 @@ export const BLOG_SLUGS = [
   "commercial-fit-out-renovation-saudi-arabia",
   "villa-building-journey-saudi-arabia",
   "choosing-right-contractor-saudi-arabia",
+  "epoxy-flooring-factories-shops-saudi-arabia",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
